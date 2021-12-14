@@ -1,0 +1,4028 @@
+UOFiddler_v4.9.11
+Developer: AsY!um
+Website: https://github.com/polserver | GitHub: https://github.com/polserver/UOFiddler
+Support @ Discord: unknown | (Discord Handle: AsYlum-#3853)
+
+----
+
+Revision: c7abb0877f2fcf82da2778dc95a7168df3d132a5
+Author: AsY!um- <web@asylum.pl>
+Date: 11/20/2021 5:59:01 PM
+Message:
+Updated change log and version.
+
+----
+Modified: UoFiddler/Forms/AboutBoxForm.resx
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: 216a62dece6b30b4d5ac22b929e5edcc63c3b717
+Author: AsY!um- <web@asylum.pl>
+Date: 11/20/2021 5:48:13 PM
+Message:
+Fixed typo in items control.
+
+----
+Modified: UoFiddler.Controls/UserControls/ItemsControl.cs
+
+Revision: 562c924c4f36b8318973f2c52513d39eb5762fd7
+Author: AsY!um- <web@asylum.pl>
+Date: 11/20/2021 5:47:51 PM
+Message:
+Added "Show Free Slots" for land tiles.
+
+----
+Modified: UoFiddler.Controls/UserControls/LandTilesControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/LandTilesControl.cs
+
+Revision: 5b99698b6b6bd5587d840e32b1bfca3f15a604ac
+Author: AsY!um- <web@asylum.pl>
+Date: 11/20/2021 5:17:12 PM
+Message:
+Added "Show Free Slots" for textures.
+
+----
+Modified: UoFiddler.Controls/UserControls/TexturesControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/TexturesControl.cs
+
+Revision: 89cd9630fca2de73e1c80f24dd4e7a5522e30d4f
+Author: AsY!um- <web@asylum.pl>
+Date: 11/14/2021 4:09:15 AM
+Message:
+Updated change log and version.
+
+----
+Modified: UoFiddler/Forms/AboutBoxForm.resx
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: e7100bebdda8e62bf0f485bcba7cb7f0f27aab08
+Author: AsY!um- <web@asylum.pl>
+Date: 11/13/2021 6:40:02 PM
+Message:
+Initial fix for SendItem command for ClassicUO.
+
+----
+Modified: Ultima/Client.cs
+Modified: Ultima/NativeMethods.cs
+
+Revision: 3a9f4b2d321d1c57d85dbcc6e2e6678f162c6460
+Author: AsY!um- <web@asylum.pl>
+Date: 11/13/2021 3:30:22 PM
+Message:
+Prevent multiple subscriptions of same event handler.
+
+----
+Modified: UoFiddler.Plugin.SendItem/SendItem.cs
+
+Revision: 9d4c90f3bf201fad9e4317b5951079e0a9c35251
+Author: AsY!um- <web@asylum.pl>
+Date: 11/13/2021 8:19:28 AM
+Message:
+Minor build speed optimizations.
+
+----
+Modified: UoFiddler.Plugin.MultiEditor/UoFiddler.Plugin.MultiEditor.csproj
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: e1c18b7ab685f79b9eeb3f596224c0570973f87b
+Author: AsY!um- <web@asylum.pl>
+Date: 11/8/2021 1:41:10 PM
+Message:
+Compare plugin - fixed field names.
+
+----
+Modified: UoFiddler.Plugin.Compare/Classes/SecondArt.cs
+Modified: UoFiddler.Plugin.Compare/Classes/SecondGump.cs
+
+Revision: 0b0da7c593603bddf1337321b29ae4057e5586b0
+Author: AsY!um- <web@asylum.pl>
+Date: 11/7/2021 1:10:43 PM
+Message:
+Fixed typo in UOPPacker.
+
+----
+Modified: UoFiddler.Plugin.UopPacker/UserControls/UopPackerControl.cs
+
+Revision: 0a8e823c07d854c71f4e2cce98c60fff128463fa
+Author: AsY!um- <web@asylum.pl>
+Date: 11/6/2021 7:36:20 PM
+Message:
+Use Array.Empty instead of creating empty arrays each time.
+
+----
+Modified: Ultima/CalibrationInfo.cs
+Modified: Ultima/Multis.cs
+Modified: Ultima/TileMatrix.cs
+Modified: Ultima/Verdata.cs
+Modified: UoFiddler/Forms/PathSettingsForm.cs
+
+Revision: 3892e2f0052fe78f00c67201d119d70187c81f79
+Author: AsY!um- <web@asylum.pl>
+Date: 11/6/2021 11:12:21 AM
+Message:
+Updated change log and version.
+
+----
+Modified: UoFiddler/Forms/AboutBoxForm.resx
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: 47fe30936bdd3550ecdd460e34ab1f8658d6a396
+Author: AsY!um- <web@asylum.pl>
+Date: 11/6/2021 10:16:37 AM
+Message:
+Fixed reading of width and height for statics.
+
+----
+Modified: Ultima/Art.cs
+
+Revision: 9efc8bcc26ce4d4c617ddb513de44bf949c587fd
+Author: AsY!um- <web@asylum.pl>
+Date: 10/24/2021 3:17:45 PM
+Message:
+Added search by name to hues control. Resolves #80
+
+----
+Modified: UoFiddler.Controls/UserControls/HuesControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/HuesControl.cs
+Modified: UoFiddler.Controls/UserControls/HuesControl.resx
+Modified: UoFiddler.Controls/UserControls/ItemsControl.Designer.cs
+
+Revision: 4e4a3bbd50f5032259c91a4a6942616926fdea23
+Author: AsY!um- <web@asylum.pl>
+Date: 10/24/2021 12:49:08 PM
+Message:
+Fixed sound id offsets. Added additional sound id offset setting for POL users. Fixes #89
+
+----
+Modified: Ultima/Sound.cs
+Modified: UoFiddler.Controls/Classes/Options.cs
+Modified: UoFiddler.Controls/UserControls/SoundsControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/SoundsControl.cs
+Modified: UoFiddler/Classes/FiddlerOptions.cs
+Modified: UoFiddler/Forms/MainForm.cs
+Modified: UoFiddler/Forms/OptionsForm.Designer.cs
+Modified: UoFiddler/Forms/OptionsForm.cs
+Modified: UoFiddler/Forms/OptionsForm.resx
+Modified: UoFiddler/Options_default.xml
+
+Revision: a8a76c39aa6733b7f8d8ccdcd4ca61acec192428
+Author: AsY!um- <web@asylum.pl>
+Date: 7/18/2021 8:09:13 AM
+Message:
+Updated change log and version.
+
+----
+Modified: UoFiddler/Forms/AboutBoxForm.resx
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: 5cefb107961637f1748f0f02d82315a62bb0794f
+Author: AsY!um- <web@asylum.pl>
+Date: 7/18/2021 8:03:14 AM
+Message:
+Fixed invalid speech.mul id value reading (it's no longer limited to 256).
+
+----
+Modified: Ultima/SpeechList.cs
+Modified: UoFiddler.Controls/UserControls/SpeechControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/SpeechControl.cs
+
+Revision: 8cd393a956ae659d8578c7cb37a08d9cd7d8cf7a
+Author: AsY!um- <web@asylum.pl>
+Date: 12/5/2020 6:01:42 PM
+Message:
+Updated animationlist.xml.
+
+----
+Modified: UoFiddler/Animationlist.xml
+
+Revision: a9662b6a023d892179fb07310109524f66aee1d3
+Author: AsY!um- <web@asylum.pl>
+Date: 6/27/2021 10:19:44 AM
+Message:
+Updated change log and version.
+
+----
+Modified: UoFiddler/Forms/AboutBoxForm.resx
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: 619ffd42f78c13274f8eeb325de3800e214f4307
+Author: AsY!um- <web@asylum.pl>
+Date: 6/27/2021 9:33:40 AM
+Message:
+Updated Serilog.Sinks.File package.
+
+----
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: d3fcc09410bfeb47de9f3614aa5e73a8fd1375f2
+Author: AsY!um- <web@asylum.pl>
+Date: 6/18/2021 6:17:46 PM
+Message:
+Updated animation editor layout.
+
+----
+Modified: UoFiddler.Controls/Forms/AnimationEditForm.Designer.cs
+Modified: UoFiddler.Controls/Forms/AnimationEditForm.cs
+Modified: UoFiddler.Controls/Forms/AnimationEditForm.resx
+
+Revision: 1b644b38be8392ff589fc358be07a2ac6a5d2e0b
+Author: AsY!um- <web@asylum.pl>
+Date: 4/24/2021 2:03:58 PM
+Message:
+Disabled maximaze/minimaze options for Load Profile form.
+
+----
+Modified: UoFiddler/Forms/LoadProfileForm.Designer.cs
+
+Revision: 2630234c00653330f0bcaa5ce3c2cdf7c3f5f842
+Author: AsY!um- <web@asylum.pl>
+Date: 4/24/2021 12:23:31 PM
+Message:
+Renamed Hue tab to Hues. Hues control - added quick Search option. You can now jump to hue by it's index. Displayed hue index values are now 0-based same as stored in hues.mul.
+
+----
+Modified: UoFiddler.Controls/Forms/HueEditForm.cs
+Modified: UoFiddler.Controls/UserControls/HuesControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/HuesControl.cs
+Modified: UoFiddler.Controls/UserControls/HuesControl.resx
+Modified: UoFiddler/Forms/MainForm.Designer.cs
+Modified: UoFiddler/Forms/MainForm.cs
+
+Revision: 72e7c987f2f433457ec266111f864a7e35f3eec6
+Author: AsY!um- <web@asylum.pl>
+Date: 4/24/2021 7:53:36 AM
+Message:
+Fixed crash when providing invalid regular expression pattern string in items, land tiles, tiledata and cliloc tabs.
+
+Cliloc tab. "Goto text" uses case insensitive string comparison by default. You can switch to regular expression if needed.
+----
+Added: UoFiddler.Controls/Classes/SearchHelper.cs
+Added: UoFiddler.Controls/Classes/SearchResult.cs
+Modified: UoFiddler.Controls/UserControls/ClilocControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/ClilocControl.cs
+Modified: UoFiddler.Controls/UserControls/ItemsControl.cs
+Modified: UoFiddler.Controls/UserControls/LandTilesControl.cs
+Modified: UoFiddler.Controls/UserControls/TileDataControl.cs
+
+Revision: e2ebfad037bb9336373475a103401407d945b7e8
+Author: AsY!um- <web@asylum.pl>
+Date: 3/30/2021 10:23:02 AM
+Message:
+New options. You can now select selection color and focus color for tile view controls (items, land tiles, textures and fonts).
+
+----
+Modified: UoFiddler.Controls/Classes/Options.cs
+Modified: UoFiddler.Controls/UserControls/FontsControl.cs
+Modified: UoFiddler.Controls/UserControls/ItemsControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/ItemsControl.cs
+Modified: UoFiddler.Controls/UserControls/LandTilesControl.cs
+Modified: UoFiddler.Controls/UserControls/TexturesControl.cs
+Modified: UoFiddler.Controls/UserControls/TileView/TileViewControl.cs
+Modified: UoFiddler/Classes/FiddlerOptions.cs
+Modified: UoFiddler/Forms/MainForm.cs
+Modified: UoFiddler/Forms/OptionsForm.Designer.cs
+Modified: UoFiddler/Forms/OptionsForm.cs
+Modified: UoFiddler/Forms/OptionsForm.resx
+
+Revision: 687c63d7f5342b98fb16044626f72fe3e459a1df
+Author: AsY!um- <web@asylum.pl>
+Date: 3/15/2021 9:44:13 AM
+Message:
+Fixed 'Show Free Slots' on Items tab when using UOP file format. Fixed 'Show Free Slots' on Gumps tab.
+
+----
+Modified: Ultima/FileIndex.cs
+Modified: UoFiddler.Controls/UserControls/GumpControl.cs
+
+Revision: 069b961fcc677c0e1519367522ded085ff033d3c
+Author: AsY!um- <web@asylum.pl>
+Date: 3/6/2021 4:57:42 PM
+Message:
+Fixed invalid marking of AnimData as modified.
+
+----
+Modified: UoFiddler.Controls/UserControls/AnimDataControl.cs
+
+Revision: 9e247e33e69a445e511d0e90375c5d939d51d3f4
+Author: AsY!um- <web@asylum.pl>
+Date: 3/7/2021 6:05:23 AM
+Message:
+Prevent loading tiledata when application starts.
+
+----
+Modified: UoFiddler.Controls/UserControls/ItemsControl.cs
+Modified: UoFiddler.Controls/UserControls/LandTilesControl.cs
+
+Revision: 7cd3a159605d941274983be3dd60a58f827b5c85
+Author: AsY!um- <web@asylum.pl>
+Date: 3/4/2021 10:48:25 AM
+Message:
+Minor cleanup.
+
+----
+Modified: UoFiddler.Controls/UserControls/RadarColorControl.cs
+
+Revision: 90e2e88f85d256064b955cd04a82c66e8644db5f
+Author: DiPaolaMarco <80000132+DiPaolaMarco@users.noreply.github.com>
+Date: 3/4/2021 10:42:11 AM
+Message:
+New feature in RadarColorControl - Average All (#86)
+
+* RadarColorControl - Average All
+
+
+
+Added a new button in RadarCol tab which checks all items and sets all black non empty ones to average color in RadarCol. It's batch update command.
+----
+Modified: UoFiddler.Controls/UserControls/RadarColorControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/RadarColorControl.cs
+
+Revision: e3f3926c01b1a7bebd9b401a038e1cd2f2245adf
+Author: AsY!um- <web@asylum.pl>
+Date: 3/3/2021 5:47:09 PM
+Message:
+Cleanup - Ultima.FileIndex.
+
+----
+Modified: Ultima/FileIndex.cs
+
+Revision: 32eabcb68dfe5ffc06e92a3e47425dc9a48f3fb4
+Author: AsY!um- <web@asylum.pl>
+Date: 3/3/2021 3:38:40 PM
+Message:
+Updated Octokit to 0.50.0.
+
+----
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: c200140d5446661421c717dae19ddd73a0060d18
+Author: AsY!um- <web@asylum.pl>
+Date: 3/3/2021 3:05:12 PM
+Message:
+Fixed mapping of animations with bodyid > 1696. They should show up to max body id of 2048 which is UO limit.
+
+----
+Modified: Ultima/Animations.cs
+
+Revision: 22f91f3beae2317fabd02b0adc0dd415cd4d3f69
+Author: AsY!um- <web@asylum.pl>
+Date: 3/3/2021 11:56:40 AM
+Message:
+Old controls removal (#84)
+
+* Removed old items, land tiles and texture controls. 
+
+* Removed obsolete hash file usage.
+
+* Renamed alternative controls. Updated controls design files.
+
+* Updated designer files for all forms and controls.
+
+* "Replace" button on animation edit form has been hidden until its implementation is finished.
+----
+Modified: Ultima/Files.cs
+Modified: UoFiddler.Controls/Classes/Options.cs
+Modified: UoFiddler.Controls/Forms/AnimationEditForm.Designer.cs
+Modified: UoFiddler.Controls/Forms/AnimationListNewEntriesForm.Designer.cs
+Modified: UoFiddler.Controls/Forms/ClilocAddForm.Designer.cs
+Modified: UoFiddler.Controls/Forms/ClilocDetailForm.Designer.cs
+Modified: UoFiddler.Controls/Forms/FontOffsetForm.Designer.cs
+Modified: UoFiddler.Controls/Forms/FontTextForm.Designer.cs
+Modified: UoFiddler.Controls/Forms/GumpSearchForm.Designer.cs
+Modified: UoFiddler.Controls/Forms/HueEditForm.Designer.cs
+Modified: UoFiddler.Controls/Forms/HuePopUpDress.Designer.cs
+Modified: UoFiddler.Controls/Forms/HuePopUpForm.Designer.cs
+Modified: UoFiddler.Controls/Forms/HuePopUpItemForm.Designer.cs
+Modified: UoFiddler.Controls/Forms/ItemDetailForm.Designer.cs
+Modified: UoFiddler.Controls/Forms/ItemSearchForm.Designer.cs
+Modified: UoFiddler.Controls/Forms/ItemSearchForm.cs
+Modified: UoFiddler.Controls/Forms/LandTileSearchForm.Designer.cs
+Modified: UoFiddler.Controls/Forms/LandTileSearchForm.cs
+Modified: UoFiddler.Controls/Forms/MapClearStaticsForm.Designer.cs
+Modified: UoFiddler.Controls/Forms/MapDetailsForm.Designer.cs
+Modified: UoFiddler.Controls/Forms/MapDiffInsertForm.Designer.cs
+Modified: UoFiddler.Controls/Forms/MapMarkerForm.Designer.cs
+Modified: UoFiddler.Controls/Forms/MapMeltStaticsForm.Designer.cs
+Modified: UoFiddler.Controls/Forms/MapReplaceForm.Designer.cs
+Modified: UoFiddler.Controls/Forms/MapReplaceTilesForm.Designer.cs
+Modified: UoFiddler.Controls/Forms/MultiImportForm.Designer.cs
+Modified: UoFiddler.Controls/Forms/ProgressBarDialog.Designer.cs
+Modified: UoFiddler.Controls/Forms/SoundsSearchForm.Designer.cs
+Modified: UoFiddler.Controls/Forms/TextureSearchForm.Designer.cs
+Modified: UoFiddler.Controls/Forms/TextureSearchForm.cs
+Modified: UoFiddler.Controls/Forms/TileDataFilterForm.Designer.cs
+Modified: UoFiddler.Controls/Forms/TileDatasSearchForm.Designer.cs
+Modified: UoFiddler.Controls/Plugin/Interfaces/IPluginHost.cs
+Modified: UoFiddler.Controls/Plugin/PluginEvents.cs
+Modified: UoFiddler.Controls/Plugin/PluginServices.cs
+Modified: UoFiddler.Controls/UoFiddler.Controls.csproj
+Modified: UoFiddler.Controls/UserControls/AnimDataControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/AnimationListControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/ClilocControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/DressControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/DressControl.resx
+Modified: UoFiddler.Controls/UserControls/FontsControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/GumpControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/HuesControl.Designer.cs
+Deleted: UoFiddler.Controls/UserControls/ItemShowControl.Designer.cs
+Deleted: UoFiddler.Controls/UserControls/ItemShowControl.cs
+Deleted: UoFiddler.Controls/UserControls/ItemShowControl.resx
+Rename: UoFiddler.Controls/UserControls/ItemsControl.Designer.cs (from UoFiddler.Controls/UserControls/ItemShowAlternativeControl.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/ItemsControl.cs (from UoFiddler.Controls/UserControls/ItemShowAlternativeControl.cs)
+Rename: UoFiddler.Controls/UserControls/ItemsControl.resx (from UoFiddler.Controls/UserControls/ItemShowAlternativeControl.resx)
+Deleted: UoFiddler.Controls/UserControls/LandTilesAlternativeControl.Designer.cs
+Deleted: UoFiddler.Controls/UserControls/LandTilesAlternativeControl.cs
+Deleted: UoFiddler.Controls/UserControls/LandTilesAlternativeControl.resx
+Modified: UoFiddler.Controls/UserControls/LandTilesControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/LandTilesControl.cs
+Modified: UoFiddler.Controls/UserControls/LandTilesControl.resx
+Modified: UoFiddler.Controls/UserControls/LightControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/MapControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/MultiMapControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/MultisControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/RadarColorControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/RadarColorControl.cs
+Modified: UoFiddler.Controls/UserControls/SkillGroupControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/SkillsControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/SoundsControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/SpeechControl.Designer.cs
+Deleted: UoFiddler.Controls/UserControls/TextureControl.Designer.cs
+Deleted: UoFiddler.Controls/UserControls/TextureControl.cs
+Deleted: UoFiddler.Controls/UserControls/TextureControl.resx
+Rename: UoFiddler.Controls/UserControls/TexturesControl.Designer.cs (from UoFiddler.Controls/UserControls/TextureAlternativeControl.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/TexturesControl.cs (from UoFiddler.Controls/UserControls/TextureAlternativeControl.cs)
+Rename: UoFiddler.Controls/UserControls/TexturesControl.resx (from UoFiddler.Controls/UserControls/TextureAlternativeControl.resx)
+Modified: UoFiddler.Controls/UserControls/TileDataControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/TileDataControl.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareCliLocControl.Designer.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareGumpControl.Designer.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareHuesControl.Designer.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareHuesControl.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareItemControl.Designer.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareLandControl.Designer.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareMapControl.Designer.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareTextureControl.Designer.cs
+Modified: UoFiddler.Plugin.ExamplePlugin/ExamplePluginBase.cs
+Modified: UoFiddler.Plugin.ExamplePlugin/Forms/ExampleForm.Designer.cs
+Modified: UoFiddler.Plugin.ExamplePlugin/UserControls/ExampleControl.Designer.cs
+Modified: UoFiddler.Plugin.MassImport/Forms/MassImportForm.Designer.cs
+Modified: UoFiddler.Plugin.MultiEditor/MultiEditorPluginBase.cs
+Modified: UoFiddler.Plugin.SendItem/Forms/SendItemOptionsForm.Designer.cs
+Modified: UoFiddler.Plugin.SendItem/Forms/SendItemOptionsForm.resx
+Modified: UoFiddler.Plugin.SendItem/SendItem.cs
+Modified: UoFiddler.Plugin.UopPacker/UserControls/UopPackerControl.Designer.cs
+Modified: UoFiddler/Classes/FiddlerOptions.cs
+Modified: UoFiddler/Forms/AboutBoxForm.Designer.cs
+Modified: UoFiddler/Forms/ExceptionForm.Designer.cs
+Modified: UoFiddler/Forms/LoadProfileForm.Designer.cs
+Modified: UoFiddler/Forms/MainForm.Designer.cs
+Modified: UoFiddler/Forms/MainForm.cs
+Modified: UoFiddler/Forms/ManagePluginsForm.Designer.cs
+Modified: UoFiddler/Forms/ManageToolsForm.Designer.cs
+Modified: UoFiddler/Forms/OptionsForm.Designer.cs
+Modified: UoFiddler/Forms/OptionsForm.cs
+Modified: UoFiddler/Forms/PathSettingsForm.Designer.cs
+Modified: UoFiddler/Forms/UnDockedForm.Designer.cs
+Modified: UoFiddler/Options_default.xml
+
+Revision: bece829d366335bd165377888c54ed5d96d241d6
+Author: AsY!um- <web@asylum.pl>
+Date: 3/2/2021 5:29:31 PM
+Message:
+Added messages for mass "Set texture".
+Added indicator when land tile was changed by using "Set texture".
+Added option to enable changing TexID on field double click (default off).
+----
+Modified: UoFiddler.Controls/UserControls/TileDataControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/TileDataControl.cs
+
+Revision: b2b05e3e9e4dd88f48b5725527ba6badce27e587
+Author: Maybacco <58206325+Maybacco@users.noreply.github.com>
+Date: 3/2/2021 4:26:39 PM
+Message:
+New functions in Land Tiles, Gumps, Texture and Tiledata tabs (#79)
+
+"Insert starting from" option added to Gumps, Land Tiles and Textures tabs. Added "Set textures" option for Tiledata tab.
+----
+Modified: Ultima/Textures.cs
+Modified: UoFiddler.Controls/UserControls/GumpControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/GumpControl.cs
+Modified: UoFiddler.Controls/UserControls/LandTilesAlternativeControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/LandTilesAlternativeControl.cs
+Modified: UoFiddler.Controls/UserControls/LandTilesControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/LandTilesControl.cs
+Modified: UoFiddler.Controls/UserControls/TextureAlternativeControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/TextureAlternativeControl.cs
+Modified: UoFiddler.Controls/UserControls/TextureControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/TextureControl.cs
+Modified: UoFiddler.Controls/UserControls/TileDataControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/TileDataControl.cs
+
+Revision: f6467f88ca463f8087c0faf357b65303648bb1f2
+Author: AsY!um- <web@asylum.pl>
+Date: 2/14/2021 12:10:17 PM
+Message:
+Fix map size pre-selection when using .uop format.
+
+----
+Modified: Ultima/Files.cs
+
+Revision: 16ea88ce89606244822b11da4dc3e969599d4ce1
+Author: AsY!um- <web@asylum.pl>
+Date: 2/4/2021 4:43:56 PM
+Message:
+Added Select in Gumps Tab menu option for Items and Tiledata context menus.
+
+----
+Modified: UoFiddler.Controls/UserControls/GumpControl.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowAlternativeControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowAlternativeControl.cs
+Modified: UoFiddler.Controls/UserControls/TileDataControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/TileDataControl.cs
+Modified: UoFiddler.Controls/UserControls/TileDataControl.resx
+
+Revision: f572d5c71f7b5f8df3db98a68c4638115a3e6462
+Author: AsY!um- <web@asylum.pl>
+Date: 2/3/2021 11:55:37 AM
+Message:
+Added required dependencies to allow build with `dotnet build` command.
+
+----
+Modified: UoFiddler.Controls/UoFiddler.Controls.csproj
+Modified: UoFiddler.Plugin.MultiEditor/UoFiddler.Plugin.MultiEditor.csproj
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: d37c4ae03d8d32f90a6fbccfbeecca7e04afb4d3
+Author: AsY!um- <web@asylum.pl>
+Date: 1/27/2021 4:51:10 PM
+Message:
+Updated change log and version.
+
+----
+Modified: UoFiddler/Forms/AboutBoxForm.resx
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: aa53083ba1b32d621eb2348e909984fcd778c225
+Author: AsY!um- <web@asylum.pl>
+Date: 1/27/2021 3:25:14 PM
+Message:
+Cleanup - RadarColorControl.
+
+----
+Modified: UoFiddler.Controls/UserControls/RadarColorControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/RadarColorControl.cs
+
+Revision: 8361139dc918651bb4ea18536dc134f48b2de915
+Author: AsY!um- <web@asylum.pl>
+Date: 1/27/2021 1:01:53 PM
+Message:
+Updated tab name in TileDataControl.
+
+----
+Modified: UoFiddler.Controls/UserControls/TileDataControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/TileDataControl.resx
+
+Revision: 01dfd0db921db077febca6e4a66a9fbe96f1e94a
+Author: AsY!um- <web@asylum.pl>
+Date: 1/27/2021 12:45:08 PM
+Message:
+Updated MaxItemId() with correct value for HS.
+
+----
+Modified: Ultima/Art.cs
+Modified: UoFiddler.Plugin.Compare/Classes/SecondArt.cs
+
+Revision: 8de90ca0ec8527676698c095485d82e95144697d
+Author: AsY!um- <web@asylum.pl>
+Date: 1/16/2021 5:01:58 PM
+Message:
+Faster Fonts tab loading. Show Unicode group only when loading Unicode fonts.
+
+----
+Modified: UoFiddler.Controls/UserControls/FontsControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/FontsControl.cs
+Modified: UoFiddler.Controls/UserControls/FontsControl.resx
+
+Revision: f64b5514fc9ac46b6fb2d63dac35437d8b4d1e6d
+Author: AsY!um- <web@asylum.pl>
+Date: 1/16/2021 4:20:55 PM
+Message:
+Updated FontsControl to use new tile view control instead of regular list view.
+
+----
+Modified: UoFiddler.Controls/UserControls/FontsControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/FontsControl.cs
+
+Revision: d91a6f2f82ffb51a961b4bcba37a3999633b05e2
+Author: AsY!um- <web@asylum.pl>
+Date: 1/16/2021 12:28:14 PM
+Message:
+Exported file naming adjustments. Updated name of Textures tab. Added mouse cursor indicator when exporting in batch.
+
+----
+Modified: UoFiddler.Controls/UserControls/LandTilesAlternativeControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/LandTilesAlternativeControl.cs
+Modified: UoFiddler.Controls/UserControls/LandTilesControl.cs
+Modified: UoFiddler.Controls/UserControls/TextureAlternativeControl.cs
+Modified: UoFiddler.Controls/UserControls/TextureControl.cs
+Modified: UoFiddler/Forms/MainForm.Designer.cs
+
+Revision: 6433ed2e7088ef0c4be5b29bf138e8f06e9f4824
+Author: AsY!um- <web@asylum.pl>
+Date: 1/16/2021 12:27:49 PM
+Message:
+Export all option for Textures tab.
+
+----
+Modified: UoFiddler.Controls/UserControls/TextureAlternativeControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/TextureAlternativeControl.cs
+Modified: UoFiddler.Controls/UserControls/TextureControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/TextureControl.cs
+
+Revision: 20b23fd72088b64aca77a372d99807eeb927fbf1
+Author: AsY!um- <web@asylum.pl>
+Date: 1/16/2021 10:48:10 AM
+Message:
+New tile view control for Textures tab.
+
+----
+Modified: UoFiddler.Controls/UserControls/TextureAlternativeControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/TextureAlternativeControl.cs
+
+Revision: 009d2aa6055b79fbffe34cbb28c6bb769552f008
+Author: AsY!um- <web@asylum.pl>
+Date: 1/13/2021 5:22:20 PM
+Message:
+New tile view control for items and land tiles in alternative design mode.
+
+----
+Modified: UoFiddler.Controls/Plugin/Interfaces/IPluginHost.cs
+Modified: UoFiddler.Controls/Plugin/PluginServices.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowAlternativeControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowAlternativeControl.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowAlternativeControl.resx
+Modified: UoFiddler.Controls/UserControls/LandTilesAlternativeControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/LandTilesAlternativeControl.cs
+Modified: UoFiddler.Controls/UserControls/LandTilesAlternativeControl.resx
+Added: UoFiddler.Controls/UserControls/TileView/CacheItemsEventHandler.cs
+Added: UoFiddler.Controls/UserControls/TileView/IndicesCollection.cs
+Added: UoFiddler.Controls/UserControls/TileView/TileViewControl.cs
+Modified: UoFiddler.Plugin.ExamplePlugin/ExamplePluginBase.cs
+Modified: UoFiddler.Plugin.SendItem/SendItem.cs
+
+Revision: 1971e5341a12b4c9c88e860c0524fcbcdc1deb95
+Author: AsY!um- <web@asylum.pl>
+Date: 1/12/2021 6:07:31 PM
+Message:
+Updated item size parameter in options.
+
+----
+Modified: UoFiddler/Forms/OptionsForm.Designer.cs
+
+Revision: 8e66e93d11417e66ab4617fad870d79fa3b77038
+Author: AsY!um- <web@asylum.pl>
+Date: 1/17/2021 1:11:38 PM
+Message:
+Fixed missing click handler for AnimData Save button.
+
+----
+Modified: UoFiddler.Controls/UserControls/AnimDataControl.Designer.cs
+
+Revision: 3fb928f4f7facd6e7e14fdfd5ec24f0c10b38bab
+Author: AsY!um- <web@asylum.pl>
+Date: 1/12/2021 6:08:13 PM
+Message:
+Cleanup - ProgressBarDialog.
+
+----
+Modified: UoFiddler.Controls/Forms/ProgressBarDialog.Designer.cs
+Modified: UoFiddler.Controls/Forms/ProgressBarDialog.cs
+
+Revision: 4b29f76ebbefff496667a98d2c5aaecf6f1b658f
+Author: AsY!um- <web@asylum.pl>
+Date: 1/14/2021 2:03:15 PM
+Message:
+Removed duplicated code from AnimationListNewEntriesForm.
+
+----
+Modified: UoFiddler.Controls/Forms/AnimationListNewEntriesForm.cs
+
+Revision: 33ba7b2906d18184761e918292914b13eb6ea0e6
+Author: AsY!um- <web@asylum.pl>
+Date: 1/10/2021 6:20:40 PM
+Message:
+Removed duplicated code from AnimationEditForm.
+
+----
+Modified: UoFiddler.Controls/Forms/AnimationEditForm.cs
+
+Revision: 471811eb48e305513364f35ccd5b8b4e2c231ff8
+Author: AsY!um- <web@asylum.pl>
+Date: 1/10/2021 5:10:25 PM
+Message:
+Cleanup.
+
+----
+Modified: Ultima/AnimationEdit.cs
+Modified: UoFiddler.Controls/UserControls/AnimDataControl.cs
+Modified: UoFiddler.Controls/UserControls/MapControl.cs
+Modified: UoFiddler.Controls/UserControls/SoundsControl.cs
+
+Revision: d5948d835b28f36f8c985e2b24b265c33b4945f4
+Author: AsY!um- <web@asylum.pl>
+Date: 1/10/2021 4:52:55 PM
+Message:
+Added null checks in CompareMapControl.cs.
+
+----
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareMapControl.cs
+
+Revision: d456d729ff608aa76d4e08875edb1b9acb0f272e
+Author: AsY!um- <web@asylum.pl>
+Date: 1/10/2021 4:52:26 PM
+Message:
+Fixed file header template in .editorconfig.
+
+----
+Modified: .editorconfig
+
+Revision: e7e943ab94c1e0d5ca4dc8f8e25b4a9001757286
+Author: AsY!um- <web@asylum.pl>
+Date: 1/10/2021 4:42:31 PM
+Message:
+Cleanup.
+
+----
+Modified: Ultima/AnimationEdit.cs
+Modified: Ultima/Map.cs
+Modified: Ultima/SpeechList.cs
+Modified: Ultima/StringList.cs
+Modified: Ultima/TileMatrix.cs
+Modified: UoFiddler.Controls/Forms/AnimationEditForm.cs
+Modified: UoFiddler.Controls/Plugin/PluginBase.cs
+Modified: UoFiddler.Controls/Plugin/PluginServices.cs
+Modified: UoFiddler.Plugin.Compare/ComparePluginBase.cs
+Modified: UoFiddler.Plugin.ExamplePlugin/ExamplePluginBase.cs
+Modified: UoFiddler.Plugin.MassImport/MassImportPluginBase.cs
+Modified: UoFiddler.Plugin.MultiEditor/MultiEditorPluginBase.cs
+Modified: UoFiddler.Plugin.SendItem/SendItem.cs
+Modified: UoFiddler.Plugin.UopPacker/UopPacker.cs
+
+Revision: 9d4ef428b7a94292ab3e7f688b1a9c664a5d45a1
+Author: AsY!um- <web@asylum.pl>
+Date: 1/10/2021 4:19:04 PM
+Message:
+Added exception catch for multimap control.
+
+----
+Modified: UoFiddler.Controls/UserControls/MultiMapControl.cs
+
+Revision: f57cdcc821f029a36c27bc6dda257637f8c23eb2
+Author: AsY!um- <web@asylum.pl>
+Date: 1/10/2021 4:18:06 PM
+Message:
+Fixed - possible loss of fraction.
+
+----
+Modified: UoFiddler.Controls/Forms/HueEditForm.cs
+
+Revision: 2639974a56208dbe8c82360ffc82048ebe0932fa
+Author: AsY!um- <web@asylum.pl>
+Date: 1/10/2021 4:07:07 PM
+Message:
+Updated .gitignore.
+
+----
+Modified: .gitignore
+
+Revision: 06346eb9c34e07b5c8ace68fff5acecf6023f58a
+Author: AsY!um- <web@asylum.pl>
+Date: 1/10/2021 4:03:57 PM
+Message:
+Cleanup.
+
+----
+Modified: Ultima/Hues.cs
+Modified: Ultima/NativeMethods.cs
+Modified: Ultima/SkillGroups.cs
+Modified: Ultima/Skills.cs
+Modified: Ultima/Sound.cs
+Modified: Ultima/TileData.cs
+Modified: UoFiddler.Controls/Forms/AnimationEditForm.cs
+Modified: UoFiddler.Controls/UserControls/AnimDataControl.cs
+
+Revision: bb85e609597bf7530d6fecd020f0c7c55c51d821
+Author: AsY!um- <web@asylum.pl>
+Date: 12/24/2020 8:13:44 AM
+Message:
+Cleanup. Extracted some redundant code to common methods.
+
+----
+Modified: Ultima/AnimationEdit.cs
+Modified: Ultima/Animations.cs
+Modified: Ultima/BodyConverter.cs
+Modified: Ultima/FileIndex.cs
+Modified: Ultima/Files.cs
+Modified: Ultima/Verdata.cs
+Modified: UoFiddler.Controls/Classes/Options.cs
+Modified: UoFiddler.Controls/Forms/AnimationEditForm.cs
+Modified: UoFiddler.Controls/Forms/ItemDetailForm.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowAlternativeControl.cs
+Modified: UoFiddler.Controls/UserControls/MultisControl.cs
+Modified: UoFiddler.Controls/UserControls/SoundsControl.cs
+Modified: UoFiddler.Controls/UserControls/TileDataControl.cs
+Modified: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditorControl.cs
+
+Revision: 0058959e396c8c996b8f4045c97e5b06ed0a9263
+Author: AsY!um- <web@asylum.pl>
+Date: 12/24/2020 6:41:10 AM
+Message:
+Mass import plugin - example xml file should be generated in defined output path.
+
+----
+Modified: UoFiddler.Plugin.MassImport/Forms/MassImportForm.cs
+
+Revision: 10af0a775899f0894c6bb95b948c470a6b0e994e
+Author: AsY!um- <web@asylum.pl>
+Date: 12/24/2020 6:32:21 AM
+Message:
+Fixed .csproj formatting. Removed unused ruleset entries.
+
+----
+Modified: Ultima/Ultima.csproj
+Modified: UoFiddler.Controls/UoFiddler.Controls.csproj
+Modified: UoFiddler.Plugin.Compare/UoFiddler.Plugin.Compare.csproj
+Modified: UoFiddler.Plugin.ExamplePlugin/UoFiddler.Plugin.ExamplePlugin.csproj
+Modified: UoFiddler.Plugin.MassImport/UoFiddler.Plugin.MassImport.csproj
+Modified: UoFiddler.Plugin.MultiEditor/UoFiddler.Plugin.MultiEditor.csproj
+Modified: UoFiddler.Plugin.SendItem/UoFiddler.Plugin.SendItem.csproj
+Modified: UoFiddler.Plugin.UopPacker/UoFiddler.Plugin.UopPacker.csproj
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: a5b020d050796fd60f4f0a7ec3436d90d5b6f83a
+Author: AsY!um- <web@asylum.pl>
+Date: 12/5/2020 6:01:30 PM
+Message:
+Clear default text on Speech tab.
+
+----
+Modified: UoFiddler.Controls/UserControls/SpeechControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/SpeechControl.cs
+
+Revision: 8a0eda2bdc8c47f857fbfdf8de305cb09a72eeb0
+Author: AsY!um- <web@asylum.pl>
+Date: 12/5/2020 4:59:44 PM
+Message:
+Updated change log and version.
+
+----
+Modified: UoFiddler/Forms/AboutBoxForm.resx
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: 422be546c2c882518cd4cfd3884f736a45424661
+Author: AsY!um- <web@asylum.pl>
+Date: 12/5/2020 4:54:48 PM
+Message:
+Fixed rare hang when selecting tiles in Items/LandTiles tab from other tabs. Fixes #1. Fixed crash when using context menu in tiledata item list.
+
+----
+Modified: UoFiddler.Controls/UserControls/ItemShowControl.cs
+Modified: UoFiddler.Controls/UserControls/LandTilesControl.cs
+Modified: UoFiddler.Controls/UserControls/RadarColorControl.cs
+Modified: UoFiddler.Controls/UserControls/TileDataControl.cs
+
+Revision: 65a05ca5514f1bae1047b4dc8edec18732734900
+Author: AsY!um- <web@asylum.pl>
+Date: 12/5/2020 2:55:16 PM
+Message:
+Dress tab cleanup. Replaced Hashtable with Dictionary. Extended report to full 2048 animation values for future use.
+
+----
+Modified: UoFiddler.Controls/UserControls/DressControl.cs
+
+Revision: 1e08364fbb9d0335a8b61209120bc61a67c0cf3f
+Author: AsY!um- <web@asylum.pl>
+Date: 12/5/2020 10:19:43 AM
+Message:
+Cleanup. Extracted some classes to separate files. Removed unnecessary suppression in TileData.cs. Fixed tooltip in Options.
+
+----
+Modified: Ultima/Animations.cs
+Modified: Ultima/Animdata.cs
+Added: Ultima/BodyConverter.cs
+Added: Ultima/BodyTable.cs
+Modified: Ultima/FileIndex.cs
+Modified: Ultima/Gumps.cs
+Modified: Ultima/Textures.cs
+Modified: Ultima/TileData.cs
+Modified: UoFiddler.Controls/Forms/AnimationListNewEntriesForm.cs
+Modified: UoFiddler.Controls/Forms/HueEditForm.cs
+Modified: UoFiddler.Controls/Forms/ItemDetailForm.cs
+Modified: UoFiddler.Controls/UserControls/AnimDataControl.cs
+Modified: UoFiddler.Controls/UserControls/AnimationListControl.cs
+Modified: UoFiddler.Controls/UserControls/DressControl.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowAlternativeControl.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowControl.cs
+Modified: UoFiddler/Forms/OptionsForm.Designer.cs
+
+Revision: 98cca24ae5592af8be664fbb7146a4421c0ff834
+Author: AsY!um- <web@asylum.pl>
+Date: 12/5/2020 9:04:13 AM
+Message:
+Replaced HashTable with Dictionary.
+
+----
+Modified: Ultima/Animations.cs
+Modified: Ultima/Animdata.cs
+Modified: Ultima/Gumps.cs
+Modified: Ultima/Textures.cs
+Modified: UoFiddler.Controls/Forms/AnimationListNewEntriesForm.cs
+Modified: UoFiddler.Controls/UserControls/DressControl.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareHuesControl.cs
+
+Revision: 485d8f87e97b7ea0cee3bf4e9bcf811237005aba
+Author: AsY!um- <web@asylum.pl>
+Date: 11/30/2020 5:54:03 PM
+Message:
+Fixed multi design saving for UO architect. File extension changed to .uoa.txt to indicate that it is text format and not binary one. Updated import options for UO Architect txt files. Fixes #21
+
+----
+Modified: Ultima/Multis.cs
+Modified: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditorControl.Designer.cs
+Modified: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditorControl.cs
+Modified: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditorControl.resx
+
+Revision: 5670982426ad8afad43723db2cf9963fcf503c68
+Author: AsY!um- <web@asylum.pl>
+Date: 11/30/2020 5:40:22 PM
+Message:
+Reduced flickering on Tiles tab in multi editor plugin.
+
+----
+Modified: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditorControl.Designer.cs
+Modified: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditorControl.cs
+Modified: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditorControl.resx
+
+Revision: cc76907f99a31a447d1710d71f9fa471f344e405
+Author: AsY!um- <web@asylum.pl>
+Date: 11/29/2020 3:00:21 PM
+Message:
+Removed unsafe from Art.IsValidStatic() method.
+
+----
+Modified: Ultima/Art.cs
+
+Revision: 8b3a4e732dc85b67944b00096cda379ed1d69775
+Author: AsY!um- <web@asylum.pl>
+Date: 11/29/2020 2:26:14 PM
+Message:
+Updated change log and version.
+
+----
+Modified: UoFiddler/Forms/AboutBoxForm.resx
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: a57fbb059e46fcefe2d0be9fbea1debe26099341
+Author: AsY!um- <web@asylum.pl>
+Date: 11/24/2020 10:19:59 AM
+Message:
+Fixed Animdata crash when trying to remove frame instead of animation entry. Updated Animdata layout.
+
+----
+Modified: UoFiddler.Controls/UserControls/AnimDataControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/AnimDataControl.cs
+
+Revision: 520297b3cf34a6013ff88b8227f69dbd601746c5
+Author: AsY!um- <web@asylum.pl>
+Date: 11/17/2020 7:37:24 AM
+Message:
+Fixed crash when changing anim file in animation editor.
+
+----
+Modified: UoFiddler.Controls/Forms/AnimationEditForm.cs
+
+Revision: 23f373ccb2470da93286fcf828b7be093804d195
+Author: AsY!um- <web@asylum.pl>
+Date: 11/17/2020 6:57:17 AM
+Message:
+Fixed crash when exporting multi images.
+
+----
+Modified: UoFiddler.Controls/UserControls/MultisControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/MultisControl.cs
+
+Revision: 5e7c19ac1e644c78a04182c7de26678e2308995e
+Author: AsY!um- <web@asylum.pl>
+Date: 11/17/2020 6:39:11 AM
+Message:
+Updated Serilog package to 2.10.0.
+
+----
+Modified: UoFiddler.Controls/UoFiddler.Controls.csproj
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: 447391a6171527273d9be61a91d43f761a338d77
+Author: AsY!um- <web@asylum.pl>
+Date: 11/17/2020 6:29:05 AM
+Message:
+Added hexadecimal values to animation list. Fixed status bar text formatting.
+
+----
+Modified: UoFiddler.Controls/UserControls/AnimationListControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/AnimationListControl.cs
+
+Revision: d2abc4905924162612323da4e706e7dca0aba9e5
+Author: AsY!um- <web@asylum.pl>
+Date: 11/17/2020 5:38:41 AM
+Message:
+Fixed wrong path setting when multiple UO clients are installed. It's workaround but will do for now.
+
+----
+Modified: UoFiddler.Plugin.Compare/ComparePluginBase.cs
+Modified: UoFiddler.Plugin.ExamplePlugin/ExamplePluginBase.cs
+Modified: UoFiddler.Plugin.MassImport/MassImportPluginBase.cs
+Modified: UoFiddler.Plugin.MultiEditor/MultiEditorPluginBase.cs
+Modified: UoFiddler.Plugin.SendItem/SendItem.cs
+Modified: UoFiddler.Plugin.UopPacker/UopPacker.cs
+
+Revision: ea9448a6efc54208ab830e1d985c4327c64172f7
+Author: AsY!um- <web@asylum.pl>
+Date: 10/25/2020 5:20:45 PM
+Message:
+Fixed missing tiles from art tab - the max id was without 4k landtiles offset.
+
+----
+Modified: Ultima/Art.cs
+
+Revision: 135719f192a9da87757069018674642c11e21bdd
+Author: AsY!um- <web@asylum.pl>
+Date: 10/25/2020 5:19:14 PM
+Message:
+Fixed textures not showing in alternative design mode.
+
+----
+Modified: UoFiddler.Controls/UserControls/TextureAlternativeControl.cs
+
+Revision: cd56fcf260f133711a7cc75ef9c467009d7ae927
+Author: AsY!um- <web@asylum.pl>
+Date: 8/14/2020 4:01:43 PM
+Message:
+Added option to change background for Multis tab. (#57)
+
+Added option to change background for Multis tab.
+
+
+
+You can now choose background color for Multis tab. The color will be used as background when exporting multi images. PNG format support transparency so by default it will have transparent background on export but it can be turned off and exported with solid background color.
+
+
+
+Default background color is white.
+----
+Modified: UoFiddler.Controls/UserControls/MultisControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/MultisControl.cs
+Modified: UoFiddler.Controls/UserControls/MultisControl.resx
+
+Revision: c09f2e383b6156694d70d5ba4731e1f4c64935ec
+Author: AsY!um- <web@asylum.pl>
+Date: 8/13/2020 6:56:03 PM
+Message:
+Fixed hue selection. It won't darken the selected cell upon select.
+
+----
+Modified: Ultima/Hues.cs
+Modified: UoFiddler.Controls/Forms/HueEditForm.Designer.cs
+Modified: UoFiddler.Controls/Forms/HueEditForm.cs
+
+Revision: 896764360c333a758fb028feb905988ac7d09f62
+Author: AsY!um- <web@asylum.pl>
+Date: 8/13/2020 1:48:27 PM
+Message:
+Fixed Gargoyle radio button visibility when reloading files.
+
+----
+Modified: UoFiddler.Controls/UserControls/DressControl.cs
+
+Revision: af57b478ffddfc17b1fcddb2efe56d85b8f21006
+Author: Davide Iuffrida <david.iuffri94@hotmail.it>
+Date: 8/13/2020 1:43:08 PM
+Message:
+Added gargoyles to Dress Tab (#54)
+
+* Added gargoyles to Dress Tab
+
+
+
+Note: Animation also added but because of the UOP anim file that contains (I think) the animation for the Gargoyle movements, it won't work, but it's already implemented.
+
+
+
+* Added check to enable gargoyles only if version is major to UOHS
+
+* Fixed reinitialization for the _fileIndex when the Gumps are reloaded, some errors in the parameters.
+----
+Modified: Ultima/Gumps.cs
+Modified: UoFiddler.Controls/UserControls/DressControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/DressControl.cs
+Modified: UoFiddler.Controls/UserControls/DressControl.resx
+
+Revision: c2139e9c7a92f245826682d4dcc6511a340ff9ec
+Author: Davide Iuffrida <david.iuffri94@hotmail.it>
+Date: 8/13/2020 12:14:14 PM
+Message:
+Added ZoomIn/Out via the Mouse Wheel Scroll (#52)
+
+* Added zoom in/out via the mouse wheel scroll.
+
+* Added min/max values for zoom level. I can't go over  4 or lower than 0.25.
+----
+Modified: UoFiddler.Controls/UserControls/MapControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/MapControl.cs
+
+Revision: ba34a4955842ecba2f1c460e19c53ab4202a1294
+Author: AsY!um- <web@asylum.pl>
+Date: 8/12/2020 5:47:46 PM
+Message:
+Fixed invalid texture saving.
+
+----
+Modified: Ultima/Textures.cs
+
+Revision: db6a920be07748c999f5df9d5bb1f5b48458174d
+Author: Davide Iuffrida <david.iuffri94@hotmail.it>
+Date: 8/11/2020 3:27:22 PM
+Message:
+Fixed the right click over the CliLoc Goto Textbox. (#53)
+
+----
+Modified: UoFiddler.Controls/UserControls/ClilocControl.Designer.cs
+
+Revision: da1787a5de55ac2a38ed538ae0fa981705c40285
+Author: AsY!um- <web@asylum.pl>
+Date: 8/9/2020 12:44:47 PM
+Message:
+Updated change log and version.
+
+----
+Modified: UoFiddler/Forms/AboutBoxForm.resx
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: a72e1402ce31ce3ece5f3f04857b46931bdbebd8
+Author: AsY!um- <web@asylum.pl>
+Date: 8/9/2020 12:43:00 PM
+Message:
+Updated label descriptions.
+
+----
+Modified: UoFiddler.Controls/UserControls/ItemShowAlternativeControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowControl.Designer.cs
+
+Revision: ee1f412e0a3bdcdaedb3ef63a8e5d408dd101bb2
+Author: Davide Iuffrida <david.iuffri94@hotmail.it>
+Date: 8/9/2020 12:26:11 PM
+Message:
+Sound tab right panel (#50)
+
+* Adding back the right panel for Sounds tab
+
+* Added Insert\Replace using original functions
+
+* Added sort, fixed layout
+
+* Added up option for default value:
+
+- Default value is True, so there will be always the panel on.
+
+- To disable it always, just remove the check from the Options form.
+
+- You can disable it for the session just using the current method of doing Right click -> Toggle Right Panel into the Sounds Tab
+
+
+
+* Added new search feature:
+
+- Added Previous button to search, so you can go back to your search
+----
+Modified: UoFiddler.Controls/Classes/Options.cs
+Modified: UoFiddler.Controls/UserControls/SoundsControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/SoundsControl.cs
+Modified: UoFiddler/Classes/FiddlerOptions.cs
+Modified: UoFiddler/Forms/OptionsForm.Designer.cs
+Modified: UoFiddler/Forms/OptionsForm.cs
+Modified: UoFiddler/Options_default.xml
+
+Revision: 283a56fb010541e0175ee1e303b1c8d2c98d8bbc
+Author: Davide Iuffrida <david.iuffri94@hotmail.it>
+Date: 8/9/2020 11:22:30 AM
+Message:
+Background Color change on ItemList (#48)
+
+* Background Color change on ItemList
+
+
+
+- Added possibility to change BackgroundColor via ContextMenu item for both ListView and Detail
+
+
+
+* Change BackgroundColor to ItemShowAlternative
+
+
+
+- Added change color context menu also for the Item Show Alternative Control, both for Item and Details
+----
+Modified: UoFiddler.Controls/UserControls/ItemShowAlternativeControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowAlternativeControl.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowAlternativeControl.resx
+Modified: UoFiddler.Controls/UserControls/ItemShowControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowControl.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowControl.resx
+
+Revision: 60452f5488ac668ad161d3bd501552baa17ca82d
+Author: AsY!um- <web@asylum.pl>
+Date: 8/4/2020 10:00:03 AM
+Message:
+Updated change log.
+
+----
+Modified: UoFiddler/Forms/AboutBoxForm.resx
+
+Revision: cd7a35534ffaee5c9119a67b86e43b5830a6cc7e
+Author: AsY!um- <web@asylum.pl>
+Date: 8/4/2020 9:55:13 AM
+Message:
+Updated change log and version.
+
+----
+Modified: UoFiddler/Forms/AboutBoxForm.Designer.cs
+Modified: UoFiddler/Forms/AboutBoxForm.resx
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: 90acfc799f35a9ecd976d1f4c60cb54935ac5324
+Author: AsY!um- <web@asylum.pl>
+Date: 8/4/2020 9:37:16 AM
+Message:
+Updated year value in projects.
+
+----
+Modified: UoFiddler.Controls/UoFiddler.Controls.csproj
+Modified: UoFiddler.Plugin.Compare/UoFiddler.Plugin.Compare.csproj
+Modified: UoFiddler.Plugin.ExamplePlugin/UoFiddler.Plugin.ExamplePlugin.csproj
+Modified: UoFiddler.Plugin.MassImport/UoFiddler.Plugin.MassImport.csproj
+Modified: UoFiddler.Plugin.MultiEditor/UoFiddler.Plugin.MultiEditor.csproj
+Modified: UoFiddler.Plugin.SendItem/UoFiddler.Plugin.SendItem.csproj
+Modified: UoFiddler.Plugin.UopPacker/UoFiddler.Plugin.UopPacker.csproj
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: f0d8b7f0fb6942b950f27cd01d058a8579615d9c
+Author: AsY!um- <web@asylum.pl>
+Date: 8/4/2020 9:36:30 AM
+Message:
+Added currently selected profile name to main window title.
+
+----
+Modified: UoFiddler/FiddlerAppContext.cs
+
+Revision: af1f055002079207a74535e0fdcebe8b08e3ddf4
+Author: AsY!um- <web@asylum.pl>
+Date: 8/4/2020 9:36:00 AM
+Message:
+Added missing ship tiles to multieditor.
+
+----
+Modified: UoFiddler.Plugin.MultiEditor/multieditor.xml
+
+Revision: e49a5e47a693d41420d776dc6c4d3f5d688f1651
+Author: AsY!um- <web@asylum.pl>
+Date: 8/2/2020 5:29:57 PM
+Message:
+Fixed position of frames imported in AnimationEdit.
+
+----
+Modified: Ultima/AnimationEdit.cs
+Modified: UoFiddler.Controls/Forms/AnimationEditForm.Designer.cs
+Modified: UoFiddler.Controls/Forms/AnimationEditForm.cs
+
+Revision: ec258df993b6a9b847b3adfd552c6c512c311c9e
+Author: AsY!um- <web@asylum.pl>
+Date: 7/16/2020 4:52:55 PM
+Message:
+Cleanup.
+
+----
+Modified: Ultima/ASCIIFont.cs
+Modified: Ultima/AnimationEdit.cs
+Modified: Ultima/Animations.cs
+Modified: Ultima/Art.cs
+Modified: Ultima/FileIndex.cs
+Modified: Ultima/Gumps.cs
+Added: Ultima/Helpers/UopUtils.cs
+Modified: Ultima/Hues.cs
+Modified: Ultima/Map.cs
+Modified: Ultima/MultiMap.cs
+Modified: Ultima/Multis.cs
+Modified: Ultima/RadarCol.cs
+Modified: Ultima/SkillGroups.cs
+Modified: Ultima/Skills.cs
+Modified: Ultima/Sound.cs
+Modified: Ultima/SpeechList.cs
+Modified: Ultima/StringEntry.cs
+Modified: Ultima/StringList.cs
+Modified: Ultima/Textures.cs
+Modified: Ultima/TileList.cs
+Modified: Ultima/TileMatrix.cs
+Modified: Ultima/UnicodeFont.cs
+Modified: Ultima/Verdata.cs
+Modified: UoFiddler.Controls/Forms/AnimationEditForm.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareCliLocControl.Designer.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareCliLocControl.cs
+
+Revision: 40ea06019a295d854d8a7d26e8ef22de00dcb265
+Author: AsY!um- <web@asylum.pl>
+Date: 7/13/2020 7:36:25 AM
+Message:
+Updated OctoKit package.
+
+----
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: 34879f8f97a350214199957cca58228d376b055d
+Author: AsY!um- <web@asylum.pl>
+Date: 7/15/2020 5:00:07 PM
+Message:
+Prevent exception when interacting with map during preload.
+
+----
+Modified: UoFiddler.Controls/UserControls/MapControl.Designer.cs
+Modified: UoFiddler.Controls/UserControls/MapControl.cs
+
+Revision: a87a0ec474d64f0bc123f3022ba1ab5e9d2e35fa
+Author: AsY!um- <web@asylum.pl>
+Date: 7/13/2020 7:35:11 AM
+Message:
+Renamed controls and forms to avoid variable names collisions.
+
+----
+Modified: Ultima/Art.cs
+Modified: Ultima/FileIndex.cs
+Modified: Ultima/Map.cs
+Modified: Ultima/Multis.cs
+Modified: Ultima/TileMatrix.cs
+Modified: Ultima/TileMatrixPatch.cs
+Rename: UoFiddler.Controls/Forms/AnimationEditForm.Designer.cs (from UoFiddler.Controls/Forms/AnimationEdit.Designer.cs)
+Rename: UoFiddler.Controls/Forms/AnimationEditForm.cs (from UoFiddler.Controls/Forms/AnimationEdit.cs)
+Rename: UoFiddler.Controls/Forms/AnimationEditForm.resx (from UoFiddler.Controls/Forms/AnimationEdit.resx)
+Rename: UoFiddler.Controls/Forms/AnimationListNewEntriesForm.Designer.cs (from UoFiddler.Controls/Forms/AnimationlistNewEntries.Designer.cs)
+Rename: UoFiddler.Controls/Forms/AnimationListNewEntriesForm.cs (from UoFiddler.Controls/Forms/AnimationlistNewEntries.cs)
+Rename: UoFiddler.Controls/Forms/AnimationListNewEntriesForm.resx (from UoFiddler.Controls/Forms/AnimationlistNewEntries.resx)
+Rename: UoFiddler.Controls/Forms/ClilocAddForm.Designer.cs (from UoFiddler.Controls/Forms/ClilocAdd.Designer.cs)
+Rename: UoFiddler.Controls/Forms/ClilocAddForm.cs (from UoFiddler.Controls/Forms/ClilocAdd.cs)
+Rename: UoFiddler.Controls/Forms/ClilocAddForm.resx (from UoFiddler.Controls/Forms/ClilocAdd.resx)
+Rename: UoFiddler.Controls/Forms/ClilocDetailForm.Designer.cs (from UoFiddler.Controls/Forms/ClilocDetail.Designer.cs)
+Rename: UoFiddler.Controls/Forms/ClilocDetailForm.cs (from UoFiddler.Controls/Forms/ClilocDetail.cs)
+Rename: UoFiddler.Controls/Forms/ClilocDetailForm.resx (from UoFiddler.Controls/Forms/ClilocDetail.resx)
+Rename: UoFiddler.Controls/Forms/FontOffsetForm.Designer.cs (from UoFiddler.Controls/Forms/FontOffset.Designer.cs)
+Rename: UoFiddler.Controls/Forms/FontOffsetForm.cs (from UoFiddler.Controls/Forms/FontOffset.cs)
+Rename: UoFiddler.Controls/Forms/FontOffsetForm.resx (from UoFiddler.Controls/Forms/FontOffset.resx)
+Rename: UoFiddler.Controls/Forms/FontTextForm.Designer.cs (from UoFiddler.Controls/Forms/FontText.Designer.cs)
+Rename: UoFiddler.Controls/Forms/FontTextForm.cs (from UoFiddler.Controls/Forms/FontText.cs)
+Rename: UoFiddler.Controls/Forms/FontTextForm.resx (from UoFiddler.Controls/Forms/FontText.resx)
+Rename: UoFiddler.Controls/Forms/GumpSearchForm.Designer.cs (from UoFiddler.Controls/Forms/GumpSearch.Designer.cs)
+Rename: UoFiddler.Controls/Forms/GumpSearchForm.cs (from UoFiddler.Controls/Forms/GumpSearch.cs)
+Rename: UoFiddler.Controls/Forms/GumpSearchForm.resx (from UoFiddler.Controls/Forms/GumpSearch.resx)
+Rename: UoFiddler.Controls/Forms/HueEditForm.Designer.cs (from UoFiddler.Controls/Forms/HueEdit.Designer.cs)
+Rename: UoFiddler.Controls/Forms/HueEditForm.cs (from UoFiddler.Controls/Forms/HueEdit.cs)
+Rename: UoFiddler.Controls/Forms/HueEditForm.resx (from UoFiddler.Controls/Forms/HueEdit.resx)
+Modified: UoFiddler.Controls/Forms/HuePopUpDress.Designer.cs
+Modified: UoFiddler.Controls/Forms/HuePopUpDress.cs
+Rename: UoFiddler.Controls/Forms/HuePopUpForm.Designer.cs (from UoFiddler.Controls/Forms/HuePopUp.Designer.cs)
+Rename: UoFiddler.Controls/Forms/HuePopUpForm.cs (from UoFiddler.Controls/Forms/HuePopUp.cs)
+Rename: UoFiddler.Controls/Forms/HuePopUpForm.resx (from UoFiddler.Controls/Forms/HuePopUp.resx)
+Rename: UoFiddler.Controls/Forms/HuePopUpItemForm.Designer.cs (from UoFiddler.Controls/Forms/HuePopUpItem.Designer.cs)
+Rename: UoFiddler.Controls/Forms/HuePopUpItemForm.cs (from UoFiddler.Controls/Forms/HuePopUpItem.cs)
+Rename: UoFiddler.Controls/Forms/HuePopUpItemForm.resx (from UoFiddler.Controls/Forms/HuePopUpItem.resx)
+Rename: UoFiddler.Controls/Forms/ItemDetailForm.Designer.cs (from UoFiddler.Controls/Forms/ItemDetail.Designer.cs)
+Rename: UoFiddler.Controls/Forms/ItemDetailForm.cs (from UoFiddler.Controls/Forms/ItemDetail.cs)
+Rename: UoFiddler.Controls/Forms/ItemDetailForm.resx (from UoFiddler.Controls/Forms/ItemDetail.resx)
+Rename: UoFiddler.Controls/Forms/ItemSearchForm.Designer.cs (from UoFiddler.Controls/Forms/ItemSearch.Designer.cs)
+Rename: UoFiddler.Controls/Forms/ItemSearchForm.cs (from UoFiddler.Controls/Forms/ItemSearch.cs)
+Rename: UoFiddler.Controls/Forms/ItemSearchForm.resx (from UoFiddler.Controls/Forms/ItemSearch.resx)
+Rename: UoFiddler.Controls/Forms/LandTileSearchForm.Designer.cs (from UoFiddler.Controls/Forms/LandTileSearch.Designer.cs)
+Rename: UoFiddler.Controls/Forms/LandTileSearchForm.cs (from UoFiddler.Controls/Forms/LandTileSearch.cs)
+Rename: UoFiddler.Controls/Forms/LandTileSearchForm.resx (from UoFiddler.Controls/Forms/LandTileSearch.resx)
+Rename: UoFiddler.Controls/Forms/MapClearStaticsForm.Designer.cs (from UoFiddler.Controls/Forms/MapClearStatics.Designer.cs)
+Rename: UoFiddler.Controls/Forms/MapClearStaticsForm.cs (from UoFiddler.Controls/Forms/MapClearStatics.cs)
+Rename: UoFiddler.Controls/Forms/MapClearStaticsForm.resx (from UoFiddler.Controls/Forms/MapClearStatics.resx)
+Rename: UoFiddler.Controls/Forms/MapDetailsForm.Designer.cs (from UoFiddler.Controls/Forms/MapDetails.Designer.cs)
+Rename: UoFiddler.Controls/Forms/MapDetailsForm.cs (from UoFiddler.Controls/Forms/MapDetails.cs)
+Rename: UoFiddler.Controls/Forms/MapDetailsForm.resx (from UoFiddler.Controls/Forms/MapDetails.resx)
+Rename: UoFiddler.Controls/Forms/MapDiffInsertForm.Designer.cs (from UoFiddler.Controls/Forms/MapDiffInsert.Designer.cs)
+Rename: UoFiddler.Controls/Forms/MapDiffInsertForm.cs (from UoFiddler.Controls/Forms/MapDiffInsert.cs)
+Rename: UoFiddler.Controls/Forms/MapDiffInsertForm.resx (from UoFiddler.Controls/Forms/MapDiffInsert.resx)
+Rename: UoFiddler.Controls/Forms/MapMarkerForm.Designer.cs (from UoFiddler.Controls/Forms/MapMarker.Designer.cs)
+Rename: UoFiddler.Controls/Forms/MapMarkerForm.cs (from UoFiddler.Controls/Forms/MapMarker.cs)
+Rename: UoFiddler.Controls/Forms/MapMarkerForm.resx (from UoFiddler.Controls/Forms/MapMarker.resx)
+Rename: UoFiddler.Controls/Forms/MapMeltStaticsForm.Designer.cs (from UoFiddler.Controls/Forms/MapMeltStatics.Designer.cs)
+Rename: UoFiddler.Controls/Forms/MapMeltStaticsForm.cs (from UoFiddler.Controls/Forms/MapMeltStatics.cs)
+Rename: UoFiddler.Controls/Forms/MapMeltStaticsForm.resx (from UoFiddler.Controls/Forms/MapMeltStatics.resx)
+Rename: UoFiddler.Controls/Forms/MapReplaceForm.Designer.cs (from UoFiddler.Controls/Forms/MapReplace.Designer.cs)
+Rename: UoFiddler.Controls/Forms/MapReplaceForm.cs (from UoFiddler.Controls/Forms/MapReplace.cs)
+Rename: UoFiddler.Controls/Forms/MapReplaceForm.resx (from UoFiddler.Controls/Forms/MapReplace.resx)
+Rename: UoFiddler.Controls/Forms/MapReplaceTilesForm.Designer.cs (from UoFiddler.Controls/Forms/MapReplaceTiles.Designer.cs)
+Rename: UoFiddler.Controls/Forms/MapReplaceTilesForm.cs (from UoFiddler.Controls/Forms/MapReplaceTiles.cs)
+Rename: UoFiddler.Controls/Forms/MapReplaceTilesForm.resx (from UoFiddler.Controls/Forms/MapReplaceTiles.resx)
+Rename: UoFiddler.Controls/Forms/MultiImportForm.Designer.cs (from UoFiddler.Controls/Forms/MultiImport.Designer.cs)
+Rename: UoFiddler.Controls/Forms/MultiImportForm.cs (from UoFiddler.Controls/Forms/MultiImport.cs)
+Rename: UoFiddler.Controls/Forms/MultiImportForm.resx (from UoFiddler.Controls/Forms/MultiImport.resx)
+Rename: UoFiddler.Controls/Forms/ProgressBarDialog.Designer.cs (from UoFiddler.Controls/Forms/ProgressBar.Designer.cs)
+Rename: UoFiddler.Controls/Forms/ProgressBarDialog.cs (from UoFiddler.Controls/Forms/ProgressBar.cs)
+Rename: UoFiddler.Controls/Forms/ProgressBarDialog.resx (from UoFiddler.Controls/Forms/ProgressBar.resx)
+Rename: UoFiddler.Controls/Forms/SoundsSearchForm.Designer.cs (from UoFiddler.Controls/Forms/SoundsSearch.Designer.cs)
+Rename: UoFiddler.Controls/Forms/SoundsSearchForm.cs (from UoFiddler.Controls/Forms/SoundsSearch.cs)
+Rename: UoFiddler.Controls/Forms/SoundsSearchForm.resx (from UoFiddler.Controls/Forms/SoundsSearch.resx)
+Rename: UoFiddler.Controls/Forms/TextureSearchForm.Designer.cs (from UoFiddler.Controls/Forms/TextureSearch.Designer.cs)
+Rename: UoFiddler.Controls/Forms/TextureSearchForm.cs (from UoFiddler.Controls/Forms/TextureSearch.cs)
+Rename: UoFiddler.Controls/Forms/TextureSearchForm.resx (from UoFiddler.Controls/Forms/TextureSearch.resx)
+Rename: UoFiddler.Controls/Forms/TileDataFilterForm.Designer.cs (from UoFiddler.Controls/Forms/TileDataFilter.Designer.cs)
+Rename: UoFiddler.Controls/Forms/TileDataFilterForm.cs (from UoFiddler.Controls/Forms/TileDataFilter.cs)
+Rename: UoFiddler.Controls/Forms/TileDataFilterForm.resx (from UoFiddler.Controls/Forms/TileDataFilter.resx)
+Rename: UoFiddler.Controls/Forms/TileDatasSearchForm.Designer.cs (from UoFiddler.Controls/Forms/TileDatasSearch.Designer.cs)
+Rename: UoFiddler.Controls/Forms/TileDatasSearchForm.cs (from UoFiddler.Controls/Forms/TileDatasSearch.cs)
+Rename: UoFiddler.Controls/Forms/TileDatasSearchForm.resx (from UoFiddler.Controls/Forms/TileDatasSearch.resx)
+Modified: UoFiddler.Controls/Plugin/Interfaces/IPluginHost.cs
+Modified: UoFiddler.Controls/Plugin/PluginServices.cs
+Modified: UoFiddler.Controls/UoFiddler.Controls.csproj
+Rename: UoFiddler.Controls/UserControls/AnimDataControl.Designer.cs (from UoFiddler.Controls/UserControls/AnimData.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/AnimDataControl.cs (from UoFiddler.Controls/UserControls/AnimData.cs)
+Rename: UoFiddler.Controls/UserControls/AnimDataControl.resx (from UoFiddler.Controls/UserControls/AnimData.resx)
+Rename: UoFiddler.Controls/UserControls/AnimationListControl.Designer.cs (from UoFiddler.Controls/UserControls/AnimationList.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/AnimationListControl.cs (from UoFiddler.Controls/UserControls/AnimationList.cs)
+Rename: UoFiddler.Controls/UserControls/AnimationListControl.resx (from UoFiddler.Controls/UserControls/AnimationList.resx)
+Rename: UoFiddler.Controls/UserControls/ClilocControl.Designer.cs (from UoFiddler.Controls/UserControls/Cliloc.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/ClilocControl.cs (from UoFiddler.Controls/UserControls/Cliloc.cs)
+Rename: UoFiddler.Controls/UserControls/ClilocControl.resx (from UoFiddler.Controls/UserControls/Cliloc.resx)
+Rename: UoFiddler.Controls/UserControls/DressControl.Designer.cs (from UoFiddler.Controls/UserControls/Dress.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/DressControl.cs (from UoFiddler.Controls/UserControls/Dress.cs)
+Rename: UoFiddler.Controls/UserControls/DressControl.resx (from UoFiddler.Controls/UserControls/Dress.resx)
+Rename: UoFiddler.Controls/UserControls/FontsControl.Designer.cs (from UoFiddler.Controls/UserControls/Fonts.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/FontsControl.cs (from UoFiddler.Controls/UserControls/Fonts.cs)
+Rename: UoFiddler.Controls/UserControls/FontsControl.resx (from UoFiddler.Controls/UserControls/Fonts.resx)
+Rename: UoFiddler.Controls/UserControls/GumpControl.Designer.cs (from UoFiddler.Controls/UserControls/Gump.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/GumpControl.cs (from UoFiddler.Controls/UserControls/Gump.cs)
+Rename: UoFiddler.Controls/UserControls/GumpControl.resx (from UoFiddler.Controls/UserControls/Gump.resx)
+Rename: UoFiddler.Controls/UserControls/HuesControl.Designer.cs (from UoFiddler.Controls/UserControls/Hues.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/HuesControl.cs (from UoFiddler.Controls/UserControls/Hues.cs)
+Rename: UoFiddler.Controls/UserControls/HuesControl.resx (from UoFiddler.Controls/UserControls/Hues.resx)
+Rename: UoFiddler.Controls/UserControls/ItemShowAlternativeControl.Designer.cs (from UoFiddler.Controls/UserControls/ItemShowAlternative.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/ItemShowAlternativeControl.cs (from UoFiddler.Controls/UserControls/ItemShowAlternative.cs)
+Rename: UoFiddler.Controls/UserControls/ItemShowAlternativeControl.resx (from UoFiddler.Controls/UserControls/ItemShowAlternative.resx)
+Rename: UoFiddler.Controls/UserControls/ItemShowControl.Designer.cs (from UoFiddler.Controls/UserControls/ItemShow.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/ItemShowControl.cs (from UoFiddler.Controls/UserControls/ItemShow.cs)
+Rename: UoFiddler.Controls/UserControls/ItemShowControl.resx (from UoFiddler.Controls/UserControls/ItemShow.resx)
+Rename: UoFiddler.Controls/UserControls/LandTilesAlternativeControl.Designer.cs (from UoFiddler.Controls/UserControls/LandTilesAlternative.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/LandTilesAlternativeControl.cs (from UoFiddler.Controls/UserControls/LandTilesAlternative.cs)
+Rename: UoFiddler.Controls/UserControls/LandTilesAlternativeControl.resx (from UoFiddler.Controls/UserControls/LandTilesAlternative.resx)
+Rename: UoFiddler.Controls/UserControls/LandTilesControl.Designer.cs (from UoFiddler.Controls/UserControls/LandTiles.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/LandTilesControl.cs (from UoFiddler.Controls/UserControls/LandTiles.cs)
+Rename: UoFiddler.Controls/UserControls/LandTilesControl.resx (from UoFiddler.Controls/UserControls/LandTiles.resx)
+Rename: UoFiddler.Controls/UserControls/LightControl.Designer.cs (from UoFiddler.Controls/UserControls/Light.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/LightControl.cs (from UoFiddler.Controls/UserControls/Light.cs)
+Rename: UoFiddler.Controls/UserControls/LightControl.resx (from UoFiddler.Controls/UserControls/Light.resx)
+Rename: UoFiddler.Controls/UserControls/MapControl.Designer.cs (from UoFiddler.Controls/UserControls/Map.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/MapControl.cs (from UoFiddler.Controls/UserControls/Map.cs)
+Rename: UoFiddler.Controls/UserControls/MapControl.resx (from UoFiddler.Controls/UserControls/Map.resx)
+Rename: UoFiddler.Controls/UserControls/MultiMapControl.Designer.cs (from UoFiddler.Controls/UserControls/MultiMap.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/MultiMapControl.cs (from UoFiddler.Controls/UserControls/MultiMap.cs)
+Rename: UoFiddler.Controls/UserControls/MultiMapControl.resx (from UoFiddler.Controls/UserControls/MultiMap.resx)
+Rename: UoFiddler.Controls/UserControls/MultisControl.Designer.cs (from UoFiddler.Controls/UserControls/Multis.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/MultisControl.cs (from UoFiddler.Controls/UserControls/Multis.cs)
+Rename: UoFiddler.Controls/UserControls/MultisControl.resx (from UoFiddler.Controls/UserControls/Multis.resx)
+Rename: UoFiddler.Controls/UserControls/RadarColorControl.Designer.cs (from UoFiddler.Controls/UserControls/RadarColor.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/RadarColorControl.cs (from UoFiddler.Controls/UserControls/RadarColor.cs)
+Rename: UoFiddler.Controls/UserControls/RadarColorControl.resx (from UoFiddler.Controls/UserControls/RadarColor.resx)
+Rename: UoFiddler.Controls/UserControls/SkillGroupControl.Designer.cs (from UoFiddler.Controls/UserControls/SkillGrp.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/SkillGroupControl.cs (from UoFiddler.Controls/UserControls/SkillGrp.cs)
+Rename: UoFiddler.Controls/UserControls/SkillGroupControl.resx (from UoFiddler.Controls/UserControls/SkillGrp.resx)
+Rename: UoFiddler.Controls/UserControls/SkillsControl.Designer.cs (from UoFiddler.Controls/UserControls/Skills.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/SkillsControl.cs (from UoFiddler.Controls/UserControls/Skills.cs)
+Rename: UoFiddler.Controls/UserControls/SkillsControl.resx (from UoFiddler.Controls/UserControls/Skills.resx)
+Rename: UoFiddler.Controls/UserControls/SoundsControl.Designer.cs (from UoFiddler.Controls/UserControls/Sounds.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/SoundsControl.cs (from UoFiddler.Controls/UserControls/Sounds.cs)
+Rename: UoFiddler.Controls/UserControls/SoundsControl.resx (from UoFiddler.Controls/UserControls/Sounds.resx)
+Rename: UoFiddler.Controls/UserControls/SpeechControl.Designer.cs (from UoFiddler.Controls/UserControls/Speech.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/SpeechControl.cs (from UoFiddler.Controls/UserControls/Speech.cs)
+Rename: UoFiddler.Controls/UserControls/SpeechControl.resx (from UoFiddler.Controls/UserControls/Speech.resx)
+Rename: UoFiddler.Controls/UserControls/TextureAlternativeControl.Designer.cs (from UoFiddler.Controls/UserControls/TextureAlternative.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/TextureAlternativeControl.cs (from UoFiddler.Controls/UserControls/TextureAlternative.cs)
+Rename: UoFiddler.Controls/UserControls/TextureAlternativeControl.resx (from UoFiddler.Controls/UserControls/TextureAlternative.resx)
+Rename: UoFiddler.Controls/UserControls/TextureControl.Designer.cs (from UoFiddler.Controls/UserControls/Texture.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/TextureControl.cs (from UoFiddler.Controls/UserControls/Texture.cs)
+Rename: UoFiddler.Controls/UserControls/TextureControl.resx (from UoFiddler.Controls/UserControls/Texture.resx)
+Rename: UoFiddler.Controls/UserControls/TileDataControl.Designer.cs (from UoFiddler.Controls/UserControls/TileDatas.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/TileDataControl.cs (from UoFiddler.Controls/UserControls/TileDatas.cs)
+Rename: UoFiddler.Controls/UserControls/TileDataControl.resx (from UoFiddler.Controls/UserControls/TileDatas.resx)
+Modified: UoFiddler.Plugin.Compare/ComparePluginBase.cs
+Modified: UoFiddler.Plugin.Compare/UoFiddler.Plugin.Compare.csproj
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareCliLocControl.Designer.cs (from UoFiddler.Plugin.Compare/UserControls/CompareCliLoc.Designer.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareCliLocControl.cs (from UoFiddler.Plugin.Compare/UserControls/CompareCliLoc.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareCliLocControl.resx (from UoFiddler.Plugin.Compare/UserControls/CompareCliLoc.resx)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareGumpControl.Designer.cs (from UoFiddler.Plugin.Compare/UserControls/CompareGump.Designer.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareGumpControl.cs (from UoFiddler.Plugin.Compare/UserControls/CompareGump.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareGumpControl.resx (from UoFiddler.Plugin.Compare/UserControls/CompareGump.resx)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareHuesControl.Designer.cs (from UoFiddler.Plugin.Compare/UserControls/CompareHues.Designer.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareHuesControl.cs (from UoFiddler.Plugin.Compare/UserControls/CompareHues.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareHuesControl.resx (from UoFiddler.Plugin.Compare/UserControls/CompareHues.resx)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareItemControl.Designer.cs (from UoFiddler.Plugin.Compare/UserControls/CompareItem.Designer.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareItemControl.cs (from UoFiddler.Plugin.Compare/UserControls/CompareItem.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareItemControl.resx (from UoFiddler.Plugin.Compare/UserControls/CompareItem.resx)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareLandControl.Designer.cs (from UoFiddler.Plugin.Compare/UserControls/CompareLand.Designer.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareLandControl.cs (from UoFiddler.Plugin.Compare/UserControls/CompareLand.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareLandControl.resx (from UoFiddler.Plugin.Compare/UserControls/CompareLand.resx)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareMapControl.Designer.cs (from UoFiddler.Plugin.Compare/UserControls/CompareMap.Designer.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareMapControl.cs (from UoFiddler.Plugin.Compare/UserControls/CompareMap.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareMapControl.resx (from UoFiddler.Plugin.Compare/UserControls/CompareMap.resx)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareTextureControl.Designer.cs (from UoFiddler.Plugin.Compare/UserControls/CompareTexture.Designer.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareTextureControl.cs (from UoFiddler.Plugin.Compare/UserControls/CompareTexture.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareTextureControl.resx (from UoFiddler.Plugin.Compare/UserControls/CompareTexture.resx)
+Modified: UoFiddler.Plugin.ExamplePlugin/ExamplePluginBase.cs
+Rename: UoFiddler.Plugin.ExamplePlugin/Forms/ExampleForm.Designer.cs (from UoFiddler.Plugin.ExamplePlugin/Forms/Example.Designer.cs)
+Rename: UoFiddler.Plugin.ExamplePlugin/Forms/ExampleForm.cs (from UoFiddler.Plugin.ExamplePlugin/Forms/Example.cs)
+Rename: UoFiddler.Plugin.ExamplePlugin/Forms/ExampleForm.resx (from UoFiddler.Plugin.ExamplePlugin/Forms/Example.resx)
+Modified: UoFiddler.Plugin.ExamplePlugin/UoFiddler.Plugin.ExamplePlugin.csproj
+Rename: UoFiddler.Plugin.ExamplePlugin/UserControls/ExampleControl.Designer.cs (from UoFiddler.Plugin.ExamplePlugin/UserControls/ExampleUserControl.Designer.cs)
+Rename: UoFiddler.Plugin.ExamplePlugin/UserControls/ExampleControl.cs (from UoFiddler.Plugin.ExamplePlugin/UserControls/ExampleUserControl.cs)
+Rename: UoFiddler.Plugin.ExamplePlugin/UserControls/ExampleControl.resx (from UoFiddler.Plugin.ExamplePlugin/UserControls/ExampleUserControl.resx)
+Rename: UoFiddler.Plugin.MassImport/Forms/MassImportForm.Designer.cs (from UoFiddler.Plugin.MassImport/Forms/MassImport.Designer.cs)
+Rename: UoFiddler.Plugin.MassImport/Forms/MassImportForm.cs (from UoFiddler.Plugin.MassImport/Forms/MassImport.cs)
+Rename: UoFiddler.Plugin.MassImport/Forms/MassImportForm.resx (from UoFiddler.Plugin.MassImport/Forms/MassImport.resx)
+Modified: UoFiddler.Plugin.MassImport/MassImportPluginBase.cs
+Modified: UoFiddler.Plugin.MassImport/UoFiddler.Plugin.MassImport.csproj
+Modified: UoFiddler.Plugin.MultiEditor/Classes/MultiEditorComponentList.cs
+Modified: UoFiddler.Plugin.MultiEditor/MultiEditorPluginBase.cs
+Modified: UoFiddler.Plugin.MultiEditor/UoFiddler.Plugin.MultiEditor.csproj
+Rename: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditorControl.Designer.cs (from UoFiddler.Plugin.MultiEditor/UserControls/MultiEditor.Designer.cs)
+Rename: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditorControl.cs (from UoFiddler.Plugin.MultiEditor/UserControls/MultiEditor.cs)
+Rename: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditorControl.resx (from UoFiddler.Plugin.MultiEditor/UserControls/MultiEditor.resx)
+Rename: UoFiddler.Plugin.SendItem/Forms/SendItemOptionsForm.Designer.cs (from UoFiddler.Plugin.SendItem/Forms/Option.Designer.cs)
+Rename: UoFiddler.Plugin.SendItem/Forms/SendItemOptionsForm.cs (from UoFiddler.Plugin.SendItem/Forms/Option.cs)
+Rename: UoFiddler.Plugin.SendItem/Forms/SendItemOptionsForm.resx (from UoFiddler.Plugin.SendItem/Forms/Option.resx)
+Modified: UoFiddler.Plugin.SendItem/SendItem.cs
+Modified: UoFiddler.Plugin.SendItem/UoFiddler.Plugin.SendItem.csproj
+Modified: UoFiddler.Plugin.UopPacker/Classes/LegacyMulFileConverter.cs
+Modified: UoFiddler/FiddlerAppContext.cs
+Rename: UoFiddler/Forms/AboutBoxForm.Designer.cs (from UoFiddler/Forms/AboutBox.Designer.cs)
+Rename: UoFiddler/Forms/AboutBoxForm.cs (from UoFiddler/Forms/AboutBox.cs)
+Rename: UoFiddler/Forms/AboutBoxForm.resx (from UoFiddler/Forms/AboutBox.resx)
+Rename: UoFiddler/Forms/LoadProfileForm.Designer.cs (from UoFiddler/Forms/LoadProfile.Designer.cs)
+Rename: UoFiddler/Forms/LoadProfileForm.cs (from UoFiddler/Forms/LoadProfile.cs)
+Rename: UoFiddler/Forms/LoadProfileForm.resx (from UoFiddler/Forms/LoadProfile.resx)
+Modified: UoFiddler/Forms/MainForm.Designer.cs
+Modified: UoFiddler/Forms/MainForm.cs
+Rename: UoFiddler/Forms/ManagePluginsForm.Designer.cs (from UoFiddler/Forms/ManagePlugins.Designer.cs)
+Rename: UoFiddler/Forms/ManagePluginsForm.cs (from UoFiddler/Forms/ManagePlugins.cs)
+Rename: UoFiddler/Forms/ManagePluginsForm.resx (from UoFiddler/Forms/ManagePlugins.resx)
+Rename: UoFiddler/Forms/ManageToolsForm.Designer.cs (from UoFiddler/Forms/ManageTools.Designer.cs)
+Rename: UoFiddler/Forms/ManageToolsForm.cs (from UoFiddler/Forms/ManageTools.cs)
+Rename: UoFiddler/Forms/ManageToolsForm.resx (from UoFiddler/Forms/ManageTools.resx)
+Rename: UoFiddler/Forms/PathSettingsForm.Designer.cs (from UoFiddler/Forms/PathSettings.Designer.cs)
+Rename: UoFiddler/Forms/PathSettingsForm.cs (from UoFiddler/Forms/PathSettings.cs)
+Rename: UoFiddler/Forms/PathSettingsForm.resx (from UoFiddler/Forms/PathSettings.resx)
+Rename: UoFiddler/Forms/UnDockedForm.Designer.cs (from UoFiddler/Forms/UnDocked.Designer.cs)
+Rename: UoFiddler/Forms/UnDockedForm.cs (from UoFiddler/Forms/UnDocked.cs)
+Rename: UoFiddler/Forms/UnDockedForm.resx (from UoFiddler/Forms/UnDocked.resx)
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: cc59a5017df8d68b2efb5ce178a3cca95e3635fd
+Author: AsY!um- <web@asylum.pl>
+Date: 7/12/2020 8:02:54 PM
+Message:
+Prevent Visual Studio Designer from reading UO Files when displaying controls on main form.
+
+----
+Added: UoFiddler.Controls/Helpers/FormsDesignerHelper.cs
+Modified: UoFiddler.Controls/UserControls/AnimData.cs
+Modified: UoFiddler.Controls/UserControls/AnimationList.cs
+Modified: UoFiddler.Controls/UserControls/Cliloc.cs
+Modified: UoFiddler.Controls/UserControls/Dress.cs
+Modified: UoFiddler.Controls/UserControls/Fonts.cs
+Modified: UoFiddler.Controls/UserControls/Gump.cs
+Modified: UoFiddler.Controls/UserControls/Hues.cs
+Modified: UoFiddler.Controls/UserControls/ItemShow.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowAlternative.Designer.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowAlternative.cs
+Modified: UoFiddler.Controls/UserControls/LandTiles.cs
+Modified: UoFiddler.Controls/UserControls/LandTilesAlternative.cs
+Modified: UoFiddler.Controls/UserControls/Light.cs
+Modified: UoFiddler.Controls/UserControls/Map.cs
+Modified: UoFiddler.Controls/UserControls/MultiMap.cs
+Modified: UoFiddler.Controls/UserControls/Multis.cs
+Modified: UoFiddler.Controls/UserControls/RadarColor.cs
+Modified: UoFiddler.Controls/UserControls/SkillGrp.cs
+Modified: UoFiddler.Controls/UserControls/Skills.cs
+Modified: UoFiddler.Controls/UserControls/Sounds.cs
+Modified: UoFiddler.Controls/UserControls/Speech.cs
+Modified: UoFiddler.Controls/UserControls/Texture.cs
+Modified: UoFiddler.Controls/UserControls/TextureAlternative.cs
+Modified: UoFiddler.Controls/UserControls/TileDatas.cs
+
+Revision: 89b5a3b19dba8f46ed4e27134cbef7be96c743f0
+Author: AsY!um- <web@asylum.pl>
+Date: 7/12/2020 5:03:02 PM
+Message:
+Updated main menu to be more consistent.
+
+----
+Modified: UoFiddler/Forms/MainForm.Designer.cs
+Modified: UoFiddler/Forms/MainForm.cs
+
+Revision: 184dfdaaaf240e9fd6b7966d8c3bc57179c2ea8d
+Author: AsY!um- <web@asylum.pl>
+Date: 7/9/2020 10:57:50 AM
+Message:
+Removed leftover code from tiledata control.
+
+----
+Modified: UoFiddler.Controls/UserControls/TileDatas.cs
+
+Revision: 3101aac7075faffc8b87b7d7f4a41a4f43153a41
+Author: AsY!um- <web@asylum.pl>
+Date: 7/9/2020 10:00:33 AM
+Message:
+Updated change log.
+
+----
+Modified: UoFiddler/Forms/AboutBox.resx
+
+Revision: c2209a72d8b182ad13cad344b15b46e8b9c33e97
+Author: AsY!um- <web@asylum.pl>
+Date: 7/9/2020 9:53:26 AM
+Message:
+Undo file index length value change.
+
+----
+Modified: Ultima/Art.cs
+
+Revision: f6c766ed597b76c69a310020c3aafd59e573ff1a
+Author: AsY!um- <web@asylum.pl>
+Date: 7/9/2020 7:11:13 AM
+Message:
+Restored Settings -> Reload files option. Updated art ranges. Redo disposing of no longer used images in pictureboxes (drunken coder syndrome).
+
+----
+Modified: Ultima/Art.cs
+Modified: UoFiddler.Controls/Forms/AnimationEdit.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowAlternative.cs
+Modified: UoFiddler.Controls/UserControls/Light.cs
+Modified: UoFiddler.Controls/UserControls/TileDatas.cs
+Modified: UoFiddler.Plugin.Compare/Classes/SecondArt.cs
+Modified: UoFiddler/Forms/MainForm.Designer.cs
+Modified: UoFiddler/Forms/MainForm.cs
+
+Revision: 997dec71a143a6b5105604d1f242fc1aa4c32605
+Author: AsY!um- <web@asylum.pl>
+Date: 7/8/2020 5:41:32 PM
+Message:
+Fixed path settings. #24
+
+----
+Modified: Ultima/Files.cs
+Modified: UoFiddler/Forms/PathSettings.Designer.cs
+Modified: UoFiddler/Forms/PathSettings.cs
+
+Revision: 365a5438cf142b5e9321d76594e13cec188c7fe3
+Author: AsY!um- <web@asylum.pl>
+Date: 7/8/2020 5:39:32 PM
+Message:
+Fixed compilation warning. Minor code cleanup.
+
+----
+Modified: Ultima/FileIndex.cs
+
+Revision: 4ed8835f978538b2a42bb361077736f9affc10f9
+Author: AsY!um- <web@asylum.pl>
+Date: 5/28/2020 4:36:29 PM
+Message:
+Cleanup and fixes.
+
+Minor fixes and adjustments:
+- fixed typo in AboutBox,
+- added DoubleBuffered on forms and controls,
+- fixed loading map overlays from xml,
+- updated disposing of graphic objects,
+- updated bodyconv.def to avoid parsing wrong lines,
+- reuse brushes on AnimationEdit form; updated control names for better readability,
+- fixed cache for anim 2, 3, 4, 5,
+- fixed rare crash on Animation tab,
+- you can now resize AnimationEdit form,
+- minor UI adjustments.
+----
+Modified: Ultima/AnimationEdit.cs
+Modified: Ultima/Animations.cs
+Modified: Ultima/Multis.cs
+Modified: UoFiddler.Controls/Forms/AnimationEdit.Designer.cs
+Modified: UoFiddler.Controls/Forms/AnimationEdit.cs
+Modified: UoFiddler.Controls/Forms/AnimationEdit.resx
+Modified: UoFiddler.Controls/Forms/AnimationlistNewEntries.Designer.cs
+Modified: UoFiddler.Controls/Forms/ClilocAdd.Designer.cs
+Modified: UoFiddler.Controls/Forms/ClilocDetail.Designer.cs
+Modified: UoFiddler.Controls/Forms/FontOffset.Designer.cs
+Modified: UoFiddler.Controls/Forms/FontText.Designer.cs
+Modified: UoFiddler.Controls/Forms/GumpSearch.Designer.cs
+Modified: UoFiddler.Controls/Forms/HueEdit.Designer.cs
+Modified: UoFiddler.Controls/Forms/HueEdit.cs
+Modified: UoFiddler.Controls/Forms/HuePopUp.Designer.cs
+Modified: UoFiddler.Controls/Forms/HuePopUpDress.Designer.cs
+Modified: UoFiddler.Controls/Forms/HuePopUpItem.Designer.cs
+Modified: UoFiddler.Controls/Forms/ItemDetail.Designer.cs
+Modified: UoFiddler.Controls/Forms/ItemSearch.Designer.cs
+Modified: UoFiddler.Controls/Forms/LandTileSearch.Designer.cs
+Modified: UoFiddler.Controls/Forms/MapClearStatics.Designer.cs
+Modified: UoFiddler.Controls/Forms/MapDetails.Designer.cs
+Modified: UoFiddler.Controls/Forms/MapDiffInsert.Designer.cs
+Modified: UoFiddler.Controls/Forms/MapMarker.Designer.cs
+Modified: UoFiddler.Controls/Forms/MapMeltStatics.Designer.cs
+Modified: UoFiddler.Controls/Forms/MapReplace.Designer.cs
+Modified: UoFiddler.Controls/Forms/MapReplaceTiles.Designer.cs
+Modified: UoFiddler.Controls/Forms/MultiImport.Designer.cs
+Modified: UoFiddler.Controls/Forms/ProgressBar.Designer.cs
+Modified: UoFiddler.Controls/Forms/SoundsSearch.Designer.cs
+Modified: UoFiddler.Controls/Forms/TextureSearch.Designer.cs
+Modified: UoFiddler.Controls/Forms/TileDataFilter.Designer.cs
+Modified: UoFiddler.Controls/Forms/TileDatasSearch.Designer.cs
+Modified: UoFiddler.Controls/Plugin/PluginServices.cs
+Modified: UoFiddler.Controls/UserControls/AnimData.Designer.cs
+Modified: UoFiddler.Controls/UserControls/AnimationList.cs
+Modified: UoFiddler.Controls/UserControls/Dress.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Fonts.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Fonts.cs
+Modified: UoFiddler.Controls/UserControls/Gump.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Gump.cs
+Modified: UoFiddler.Controls/UserControls/Hues.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Hues.cs
+Modified: UoFiddler.Controls/UserControls/ItemShow.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowAlternative.Designer.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowAlternative.cs
+Modified: UoFiddler.Controls/UserControls/LandTiles.Designer.cs
+Modified: UoFiddler.Controls/UserControls/LandTiles.cs
+Modified: UoFiddler.Controls/UserControls/LandTilesAlternative.Designer.cs
+Modified: UoFiddler.Controls/UserControls/LandTilesAlternative.cs
+Modified: UoFiddler.Controls/UserControls/Light.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Light.cs
+Modified: UoFiddler.Controls/UserControls/Map.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Map.cs
+Modified: UoFiddler.Controls/UserControls/MultiMap.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Multis.Designer.cs
+Modified: UoFiddler.Controls/UserControls/RadarColor.Designer.cs
+Modified: UoFiddler.Controls/UserControls/SkillGrp.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Skills.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Sounds.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Speech.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Texture.Designer.cs
+Modified: UoFiddler.Controls/UserControls/TextureAlternative.Designer.cs
+Modified: UoFiddler.Controls/UserControls/TextureAlternative.cs
+Modified: UoFiddler.Controls/UserControls/TileDatas.Designer.cs
+Modified: UoFiddler.Controls/UserControls/TileDatas.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareCliLoc.Designer.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareGump.Designer.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareHues.Designer.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareHues.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareItem.Designer.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareLand.Designer.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareMap.Designer.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareMap.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareTexture.Designer.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareTexture.cs
+Modified: UoFiddler.Plugin.ExamplePlugin/Forms/Example.Designer.cs
+Modified: UoFiddler.Plugin.ExamplePlugin/UserControls/ExampleUserControl.Designer.cs
+Modified: UoFiddler.Plugin.MassImport/Forms/MassImport.Designer.cs
+Modified: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditor.Designer.cs
+Modified: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditor.resx
+Modified: UoFiddler.Plugin.SendItem/Forms/Option.Designer.cs
+Modified: UoFiddler.Plugin.UopPacker/UserControls/UopPackerControl.Designer.cs
+Modified: UoFiddler/Forms/AboutBox.Designer.cs
+Modified: UoFiddler/Forms/AboutBox.resx
+Modified: UoFiddler/Forms/ExceptionForm.Designer.cs
+Modified: UoFiddler/Forms/LoadProfile.Designer.cs
+Modified: UoFiddler/Forms/MainForm.Designer.cs
+Modified: UoFiddler/Forms/MainForm.cs
+Modified: UoFiddler/Forms/ManagePlugins.Designer.cs
+Modified: UoFiddler/Forms/ManageTools.Designer.cs
+Modified: UoFiddler/Forms/OptionsForm.Designer.cs
+Modified: UoFiddler/Forms/PathSettings.Designer.cs
+Modified: UoFiddler/Forms/UnDocked.Designer.cs
+
+Revision: 3ba9ffbbbab98de1b3b0af7e9de4c323451c18c6
+Author: AsY!um- <web@asylum.pl>
+Date: 7/6/2020 5:39:36 PM
+Message:
+Fixed max item id for hues. It will be taken from currently defined max id in Art.
+
+----
+Modified: UoFiddler.Controls/Forms/HueEdit.cs
+
+Revision: 0196f1c290f4030eadcf23396dad2a270992efde
+Author: AsY!um- <web@asylum.pl>
+Date: 6/3/2020 5:23:15 PM
+Message:
+Fix example XML formatting on MapReplaceTile form.
+
+----
+Modified: UoFiddler.Controls/Forms/MapReplaceTiles.Designer.cs
+Modified: UoFiddler.Controls/Forms/MapReplaceTiles.resx
+
+Revision: 70490a4d01d2d3f03554fa54f1b033d0251c2cc9
+Author: AsY!um- <web@asylum.pl>
+Date: 5/28/2020 10:12:03 AM
+Message:
+Updated Octokit nuget package.
+
+----
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: f7c3079052598bde05f38d10d446c095337a4b91
+Author: AsY!um- <web@asylum.pl>
+Date: 7/5/2020 5:50:22 PM
+Message:
+Updated few flag names.
+
+----
+Modified: Ultima/TileData.cs
+Modified: UoFiddler.Controls/UserControls/TileDatas.cs
+
+Revision: 8e74c6367e27744a79e93831ba68f14864814623
+Author: AsY!um- <web@asylum.pl>
+Date: 7/5/2020 5:35:47 PM
+Message:
+Updated change log. Disabled Reload files option because file loading is not fully updated and it can crash UOFiddler in some cases. It is safer to set new file path and restart UOFiddler.
+
+----
+Modified: UoFiddler/Forms/AboutBox.resx
+Modified: UoFiddler/Forms/MainForm.Designer.cs
+
+Revision: c76ec05258f963228e04de678c23723d7573971e
+Author: AsY!um- <web@asylum.pl>
+Date: 7/5/2020 5:27:11 PM
+Message:
+Updated tiledata flags to support High Seas extended format. Additional flags will only show if files are in HS format or later.
+
+----
+Modified: Ultima/TileData.cs
+Modified: UoFiddler.Controls/Forms/TileDataFilter.cs
+Modified: UoFiddler.Controls/UserControls/TileDatas.Designer.cs
+Modified: UoFiddler.Controls/UserControls/TileDatas.cs
+
+Revision: 0e9c99966e7060ff815bf99d2dbb74ae57f67bdf
+Author: AsY!um- <web@asylum.pl>
+Date: 5/27/2020 6:35:10 PM
+Message:
+Forms and user controls cleanup. Updated all designer views.
+
+----
+Modified: Ultima/Multis.cs
+Modified: Ultima/Skills.cs
+Modified: UoFiddler.Controls/Forms/AnimationEdit.Designer.cs
+Modified: UoFiddler.Controls/Forms/AnimationEdit.cs
+Modified: UoFiddler.Controls/Forms/AnimationEdit.resx
+Modified: UoFiddler.Controls/Forms/AnimationlistNewEntries.Designer.cs
+Modified: UoFiddler.Controls/Forms/ClilocAdd.Designer.cs
+Modified: UoFiddler.Controls/Forms/ClilocAdd.resx
+Modified: UoFiddler.Controls/Forms/ClilocDetail.Designer.cs
+Modified: UoFiddler.Controls/Forms/FontOffset.Designer.cs
+Modified: UoFiddler.Controls/Forms/FontOffset.resx
+Modified: UoFiddler.Controls/Forms/FontText.Designer.cs
+Modified: UoFiddler.Controls/Forms/FontText.resx
+Modified: UoFiddler.Controls/Forms/GumpSearch.Designer.cs
+Modified: UoFiddler.Controls/Forms/HueEdit.Designer.cs
+Modified: UoFiddler.Controls/Forms/HuePopUp.Designer.cs
+Modified: UoFiddler.Controls/Forms/HuePopUp.resx
+Modified: UoFiddler.Controls/Forms/HuePopUpDress.Designer.cs
+Modified: UoFiddler.Controls/Forms/HuePopUpDress.resx
+Modified: UoFiddler.Controls/Forms/HuePopUpItem.Designer.cs
+Modified: UoFiddler.Controls/Forms/HuePopUpItem.resx
+Modified: UoFiddler.Controls/Forms/ItemDetail.Designer.cs
+Modified: UoFiddler.Controls/Forms/ItemDetail.resx
+Modified: UoFiddler.Controls/Forms/ItemSearch.Designer.cs
+Modified: UoFiddler.Controls/Forms/ItemSearch.resx
+Modified: UoFiddler.Controls/Forms/LandTileSearch.Designer.cs
+Modified: UoFiddler.Controls/Forms/LandTileSearch.resx
+Modified: UoFiddler.Controls/Forms/MapClearStatics.Designer.cs
+Modified: UoFiddler.Controls/Forms/MapClearStatics.resx
+Modified: UoFiddler.Controls/Forms/MapDetails.Designer.cs
+Modified: UoFiddler.Controls/Forms/MapDetails.resx
+Modified: UoFiddler.Controls/Forms/MapDiffInsert.Designer.cs
+Modified: UoFiddler.Controls/Forms/MapDiffInsert.cs
+Modified: UoFiddler.Controls/Forms/MapDiffInsert.resx
+Modified: UoFiddler.Controls/Forms/MapMarker.Designer.cs
+Modified: UoFiddler.Controls/Forms/MapMarker.cs
+Modified: UoFiddler.Controls/Forms/MapMarker.resx
+Modified: UoFiddler.Controls/Forms/MapMeltStatics.Designer.cs
+Modified: UoFiddler.Controls/Forms/MapMeltStatics.resx
+Modified: UoFiddler.Controls/Forms/MapReplace.Designer.cs
+Modified: UoFiddler.Controls/Forms/MapReplace.resx
+Modified: UoFiddler.Controls/Forms/MapReplaceTiles.Designer.cs
+Modified: UoFiddler.Controls/Forms/MapReplaceTiles.resx
+Modified: UoFiddler.Controls/Forms/MultiImport.Designer.cs
+Modified: UoFiddler.Controls/Forms/MultiImport.resx
+Modified: UoFiddler.Controls/Forms/ProgressBar.Designer.cs
+Modified: UoFiddler.Controls/Forms/ProgressBar.cs
+Modified: UoFiddler.Controls/Forms/ProgressBar.resx
+Modified: UoFiddler.Controls/Forms/SoundsSearch.Designer.cs
+Modified: UoFiddler.Controls/Forms/TextureSearch.Designer.cs
+Modified: UoFiddler.Controls/Forms/TextureSearch.resx
+Modified: UoFiddler.Controls/Forms/TileDataFilter.Designer.cs
+Modified: UoFiddler.Controls/Forms/TileDataFilter.resx
+Modified: UoFiddler.Controls/Forms/TileDatasSearch.Designer.cs
+Modified: UoFiddler.Controls/Forms/TileDatasSearch.resx
+Modified: UoFiddler.Controls/Helpers/RichTextBoxExtensions.cs
+Modified: UoFiddler.Controls/Helpers/StringExtensions.cs
+Modified: UoFiddler.Controls/Helpers/ThrowIf.cs
+Modified: UoFiddler.Controls/Plugin/GlobalPlugins.cs
+Modified: UoFiddler.Controls/UoFiddler.Controls.csproj
+Modified: UoFiddler.Controls/UserControls/AnimData.Designer.cs
+Modified: UoFiddler.Controls/UserControls/AnimData.resx
+Modified: UoFiddler.Controls/UserControls/AnimationList.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Cliloc.Designer.cs
+Modified: UoFiddler.Controls/UserControls/CollapsibleSplitter.Designer.cs
+Added: UoFiddler.Controls/UserControls/CollapsibleSplitter.resx
+Modified: UoFiddler.Controls/UserControls/Dress.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Fonts.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Gump.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Hues.Designer.cs
+Modified: UoFiddler.Controls/UserControls/ItemShow.Designer.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowAlternative.Designer.cs
+Modified: UoFiddler.Controls/UserControls/LandTiles.Designer.cs
+Modified: UoFiddler.Controls/UserControls/LandTilesAlternative.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Light.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Light.resx
+Modified: UoFiddler.Controls/UserControls/Map.Designer.cs
+Modified: UoFiddler.Controls/UserControls/MultiMap.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Multis.Designer.cs
+Modified: UoFiddler.Controls/UserControls/RadarColor.Designer.cs
+Modified: UoFiddler.Controls/UserControls/RadarColor.resx
+Modified: UoFiddler.Controls/UserControls/SkillGrp.Designer.cs
+Modified: UoFiddler.Controls/UserControls/SkillGrp.resx
+Modified: UoFiddler.Controls/UserControls/Skills.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Skills.cs
+Modified: UoFiddler.Controls/UserControls/Skills.resx
+Modified: UoFiddler.Controls/UserControls/Sounds.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Speech.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Texture.Designer.cs
+Modified: UoFiddler.Controls/UserControls/TextureAlternative.Designer.cs
+Modified: UoFiddler.Controls/UserControls/TileDatas.Designer.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareCliLoc.Designer.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareCliLoc.resx
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareGump.Designer.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareHues.Designer.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareItem.Designer.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareLand.Designer.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareMap.Designer.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareTexture.Designer.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareTexture.resx
+Modified: UoFiddler.Plugin.ExamplePlugin/Forms/Example.Designer.cs
+Modified: UoFiddler.Plugin.ExamplePlugin/UserControls/ExampleUserControl.Designer.cs
+Modified: UoFiddler.Plugin.MassImport/Forms/MassImport.Designer.cs
+Modified: UoFiddler.Plugin.MassImport/Forms/MassImport.resx
+Modified: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditor.Designer.cs
+Modified: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditor.cs
+Modified: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditor.resx
+Modified: UoFiddler.Plugin.SendItem/Forms/Option.Designer.cs
+Modified: UoFiddler.Plugin.UopPacker/UserControls/UopPackerControl.Designer.cs
+Modified: UoFiddler/Forms/AboutBox.Designer.cs
+Modified: UoFiddler/Forms/ExceptionForm.Designer.cs
+Modified: UoFiddler/Forms/LoadProfile.Designer.cs
+Modified: UoFiddler/Forms/LoadProfile.cs
+Modified: UoFiddler/Forms/MainForm.Designer.cs
+Modified: UoFiddler/Forms/MainForm.cs
+Modified: UoFiddler/Forms/ManagePlugins.Designer.cs
+Modified: UoFiddler/Forms/ManageTools.Designer.cs
+Modified: UoFiddler/Forms/ManageTools.resx
+Modified: UoFiddler/Forms/OptionsForm.Designer.cs
+Modified: UoFiddler/Forms/OptionsForm.resx
+Modified: UoFiddler/Forms/PathSettings.Designer.cs
+Modified: UoFiddler/Forms/UnDocked.Designer.cs
+Modified: UoFiddler/Forms/UnDocked.resx
+
+Revision: 0ef8bf404e8f70973ff4f4016a6cc91a8f98719e
+Author: AsY!um- <web@asylum.pl>
+Date: 5/27/2020 4:35:45 PM
+Message:
+Added Z level information to exported multi image if selected Z value is different than maximum.
+
+----
+Modified: Ultima/Multis.cs
+Modified: UoFiddler.Controls/UserControls/Multis.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Multis.cs
+Modified: UoFiddler/Forms/AboutBox.resx
+
+Revision: 48cc04dd2396b179752f1d08d676607b8edfcd37
+Author: AsY!um- <web@asylum.pl>
+Date: 5/27/2020 3:22:46 PM
+Message:
+Updated change log.
+
+----
+Modified: UoFiddler/Forms/AboutBox.resx
+
+Revision: d07d6e1a0acaf223b878710668bc1a57d9bbeb12
+Author: AsY!um- <web@asylum.pl>
+Date: 5/26/2020 7:27:34 PM
+Message:
+Ultima project cleanup.
+
+----
+Modified: Ultima/ASCIIFont.cs
+Modified: Ultima/AnimationEdit.cs
+Modified: Ultima/Animations.cs
+Modified: Ultima/Animdata.cs
+Modified: Ultima/Art.cs
+Modified: Ultima/CalibrationInfo.cs
+Modified: Ultima/Client.cs
+Modified: Ultima/FileIndex.cs
+Modified: Ultima/Files.cs
+Modified: Ultima/Gumps.cs
+Modified: Ultima/Helpers/Extensions.cs
+Modified: Ultima/Hues.cs
+Modified: Ultima/Light.cs
+Modified: Ultima/LocationPointer.cs
+Modified: Ultima/Map.cs
+Modified: Ultima/MultiMap.cs
+Modified: Ultima/Multis.cs
+Modified: Ultima/NativeMethods.cs
+Modified: Ultima/ProcessStream.cs
+Modified: Ultima/RadarCol.cs
+Modified: Ultima/SkillGroups.cs
+Modified: Ultima/Skills.cs
+Modified: Ultima/Sound.cs
+Modified: Ultima/SpeechList.cs
+Modified: Ultima/StringEntry.cs
+Modified: Ultima/StringList.cs
+Modified: Ultima/Textures.cs
+Modified: Ultima/TileData.cs
+Modified: Ultima/TileList.cs
+Modified: Ultima/TileMatrix.cs
+Modified: Ultima/TileMatrixPatch.cs
+Modified: Ultima/UnicodeFont.cs
+Modified: Ultima/Verdata.cs
+Modified: Ultima/WindowProcessStream.cs
+Modified: UoFiddler.Controls/Forms/AnimationEdit.cs
+Modified: UoFiddler.Controls/Forms/AnimationlistNewEntries.cs
+Modified: UoFiddler.Controls/UserControls/Dress.cs
+Modified: UoFiddler.Controls/UserControls/Multis.cs
+Modified: UoFiddler/Forms/AboutBox.resx
+
+Revision: 6bede5547c8ade0eec42bf44ec46fa1cd2ae4848
+Author: AsY!um- <web@asylum.pl>
+Date: 5/21/2020 10:09:44 AM
+Message:
+Cleanup and formatting of controls.
+
+----
+Modified: UoFiddler.Controls/Forms/ClilocAdd.cs
+Modified: UoFiddler.Controls/Forms/GumpSearch.cs
+Modified: UoFiddler.Controls/Forms/ItemDetail.cs
+Modified: UoFiddler.Controls/Forms/MapDetails.cs
+Modified: UoFiddler.Controls/Forms/MapReplace.cs
+Modified: UoFiddler.Controls/Forms/SoundsSearch.cs
+Modified: UoFiddler.Controls/Forms/TextureSearch.cs
+Modified: UoFiddler.Controls/Forms/TileDataFilter.cs
+Modified: UoFiddler.Controls/Forms/TileDatasSearch.cs
+Modified: UoFiddler.Controls/Helpers/ThrowIf.cs
+Modified: UoFiddler.Controls/Helpers/TreeViewExtensions.cs
+Modified: UoFiddler.Controls/UserControls/AnimData.cs
+Modified: UoFiddler.Controls/UserControls/AnimationList.cs
+Modified: UoFiddler.Controls/UserControls/CollapsibleSplitter.cs
+Modified: UoFiddler.Controls/UserControls/Dress.cs
+Modified: UoFiddler.Controls/UserControls/Fonts.cs
+Modified: UoFiddler.Controls/UserControls/Gump.cs
+Modified: UoFiddler.Controls/UserControls/ItemShow.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowAlternative.Designer.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowAlternative.cs
+Modified: UoFiddler.Controls/UserControls/LandTiles.cs
+Modified: UoFiddler.Controls/UserControls/LandTilesAlternative.cs
+Modified: UoFiddler.Controls/UserControls/Light.cs
+Modified: UoFiddler.Controls/UserControls/Map.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Map.cs
+Modified: UoFiddler.Controls/UserControls/MultiMap.cs
+Modified: UoFiddler.Controls/UserControls/Multis.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Multis.cs
+Modified: UoFiddler.Controls/UserControls/RadarColor.Designer.cs
+Modified: UoFiddler.Controls/UserControls/RadarColor.cs
+Modified: UoFiddler.Controls/UserControls/SkillGrp.cs
+Modified: UoFiddler.Controls/UserControls/Skills.cs
+Modified: UoFiddler.Controls/UserControls/Sounds.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Sounds.cs
+Modified: UoFiddler.Controls/UserControls/Speech.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Texture.cs
+Modified: UoFiddler.Controls/UserControls/TextureAlternative.cs
+Modified: UoFiddler.Controls/UserControls/TileDatas.Designer.cs
+Modified: UoFiddler.Controls/UserControls/TileDatas.cs
+
+Revision: c6575d4ac11fe63073777131abe675106d053586
+Author: AsY!um- <web@asylum.pl>
+Date: 5/20/2020 2:35:20 PM
+Message:
+Fix multi indexing problem.
+
+----
+Modified: Ultima/Multis.cs
+Modified: UoFiddler.Controls/UserControls/Multis.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Multis.cs
+Modified: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditor.Designer.cs
+Modified: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditor.resx
+
+Revision: 8b21c370c4db318369f1f5eb6544136d981ce0fe
+Author: AsY!um- <web@asylum.pl>
+Date: 5/17/2020 2:06:54 PM
+Message:
+Cleanup controls and forms.
+
+----
+Modified: UoFiddler.Controls/UserControls/CollapsibleSplitter.cs
+Modified: UoFiddler.Controls/UserControls/Dress.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Dress.cs
+Modified: UoFiddler.Controls/UserControls/Dress.resx
+Modified: UoFiddler.Controls/UserControls/Fonts.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Fonts.cs
+Modified: UoFiddler.Controls/UserControls/Fonts.resx
+Modified: UoFiddler.Controls/UserControls/Gump.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Gump.cs
+Modified: UoFiddler.Controls/UserControls/Hues.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Hues.cs
+Modified: UoFiddler.Controls/UserControls/Hues.resx
+Modified: UoFiddler.Controls/UserControls/ItemShow.Designer.cs
+Modified: UoFiddler.Controls/UserControls/ItemShow.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowAlternative.Designer.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowAlternative.cs
+Modified: UoFiddler/Forms/MainForm.Designer.cs
+Modified: UoFiddler/Forms/MainForm.cs
+Modified: UoFiddler/Forms/MainForm.resx
+Modified: UoFiddler/Forms/PathSettings.Designer.cs
+Modified: UoFiddler/Forms/PathSettings.cs
+Modified: UoFiddler/Forms/PathSettings.resx
+
+Revision: bc9af603a295875b97b433226171780bf5377d5d
+Author: AsY!um- <web@asylum.pl>
+Date: 5/19/2020 6:00:18 PM
+Message:
+Animations - moved methods closer to usage.
+
+----
+Modified: UoFiddler.Controls/Classes/Utils.cs
+Modified: UoFiddler.Controls/Forms/AnimationEdit.cs
+
+Revision: 012c5f1f037f261383dde610c7b2b482d9caa8cc
+Author: AsY!um- <web@asylum.pl>
+Date: 5/17/2020 2:06:27 PM
+Message:
+Animation controls cleanup. Extracted common methods and reduced code duplication in AnimationEdit form. Adjusted control naming in animation area.
+
+----
+Modified: UoFiddler.Controls/Forms/AnimationEdit.cs
+Modified: UoFiddler.Controls/Forms/AnimationlistNewEntries.Designer.cs
+Modified: UoFiddler.Controls/Forms/AnimationlistNewEntries.cs
+
+Revision: 61f6fcfb9dda48182091c2f80edf2d0d37278d3e
+Author: AsY!um- <web@asylum.pl>
+Date: 5/17/2020 2:04:25 PM
+Message:
+Removed unused references.
+
+----
+Modified: UoFiddler.Plugin.MultiEditor/UoFiddler.Plugin.MultiEditor.csproj
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: 115fe39b8ec36ffa4d038b502f322b11cb927fa5
+Author: AsY!um- <web@asylum.pl>
+Date: 5/17/2020 12:13:41 PM
+Message:
+AboutBox - changelog update.
+
+----
+Modified: UoFiddler/Forms/AboutBox.resx
+
+Revision: 8475860740053256a1a89752b58b1f3c8fc4b03d
+Author: AsY!um- <web@asylum.pl>
+Date: 5/17/2020 12:11:05 PM
+Message:
+#33 Fixed sounds index display bug.
+
+----
+Modified: UoFiddler.Controls/UserControls/Sounds.cs
+
+Revision: a81a8e621b091f1c770876f5520bfca05cb7c2c1
+Author: AsY!um- <web@asylum.pl>
+Date: 5/17/2020 12:05:43 PM
+Message:
+Sounds control cleanup.
+
+----
+Modified: UoFiddler.Controls/UserControls/Sounds.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Sounds.cs
+Modified: UoFiddler.Controls/UserControls/Sounds.resx
+
+Revision: 85fbab98ed5f6d4d72703d71223a474d360b71a6
+Author: AsY!um- <web@asylum.pl>
+Date: 5/2/2020 7:13:00 PM
+Message:
+Updated Uop Packer to be able to unpack newer classic .uop files. Re-pack to UOP still have problems with art file.
+
+----
+Modified: UoFiddler.Plugin.UopPacker/Classes/LegacyMulFileConverter.cs
+
+Revision: 75cd75f1faa264b6e37ef906a8929e8791e0564f
+Author: AsY!um- <web@asylum.pl>
+Date: 5/2/2020 1:05:35 PM
+Message:
+Fix AnimationList file naming.
+
+----
+Modified: UoFiddler.Controls/UoFiddler.Controls.csproj
+Rename: UoFiddler.Controls/UserControls/AnimationList.Designer.cs (from UoFiddler.Controls/UserControls/Animationlist.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/AnimationList.cs (from UoFiddler.Controls/UserControls/Animationlist.cs)
+Rename: UoFiddler.Controls/UserControls/AnimationList.resx (from UoFiddler.Controls/UserControls/Animationlist.resx)
+
+Revision: 003d9ad3fdf13f7fdedf7d81bef3e500744f9539
+Author: AsY!um- <web@asylum.pl>
+Date: 5/2/2020 11:48:22 AM
+Message:
+Fix gump export option.
+
+----
+Modified: UoFiddler.Controls/UserControls/Gump.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Gump.cs
+
+Revision: 20dd099f16fd3c78f1f8f406e1652489247dd94f
+Author: AsY!um- <web@asylum.pl>
+Date: 5/2/2020 7:41:09 AM
+Message:
+Animation related files - cleanup.
+
+----
+Modified: UoFiddler.Controls/Forms/AnimationEdit.Designer.cs
+Modified: UoFiddler.Controls/Forms/AnimationEdit.resx
+Modified: UoFiddler.Controls/Forms/AnimationlistNewEntries.Designer.cs
+Modified: UoFiddler.Controls/Forms/AnimationlistNewEntries.resx
+Modified: UoFiddler.Controls/UoFiddler.Controls.csproj
+Modified: UoFiddler.Controls/UserControls/AnimData.cs
+Modified: UoFiddler.Controls/UserControls/Animationlist.cs
+
+Revision: 771a772f151e8615997f4819ff3ed4cdb8350f7d
+Author: AsY!um- <web@asylum.pl>
+Date: 5/1/2020 5:16:44 PM
+Message:
+AnimationEdit cleanup - first attempt to simplify redundant code.
+
+----
+Modified: UoFiddler.Controls/Classes/Utils.cs
+Modified: UoFiddler.Controls/Forms/AnimationEdit.Designer.cs
+Modified: UoFiddler.Controls/Forms/AnimationEdit.cs
+
+Revision: 97f4200387ffed739ea4e803ed604a1bcc3b5379
+Author: AsY!um- <web@asylum.pl>
+Date: 5/1/2020 3:09:36 PM
+Message:
+Remove unused using.
+
+----
+Modified: UoFiddler.Controls/Forms/MapClearStatics.cs
+
+Revision: f1cac8eb8fe190364ab92379ebba7f8ff230657e
+Author: AsY!um- <web@asylum.pl>
+Date: 4/14/2020 9:20:28 AM
+Message:
+Display local date time instead of utc date time when api rate limit is exceeded.
+
+----
+Modified: UoFiddler/Classes/UpdateChecker.cs
+
+Revision: 8f2c38e90162878e08904a199865af9a89700007
+Author: AsY!um- <web@asylum.pl>
+Date: 4/14/2020 8:33:03 AM
+Message:
+Auto-update is off by default.
+
+----
+Modified: UoFiddler/Classes/FiddlerOptions.cs
+
+Revision: 4f204261abc20287e3e294ffafb5f48f32880d77
+Author: AsY!um- <web@asylum.pl>
+Date: 4/14/2020 6:28:07 AM
+Message:
+Show AboutBox as modal.
+
+----
+Modified: UoFiddler/Forms/MainForm.cs
+
+Revision: f974275ca6fce76e5c1de6c7a85169fd37739d50
+Author: AsY!um- <web@asylum.pl>
+Date: 4/6/2020 3:58:07 PM
+Message:
+Added file header banner to .editorconfig. Supported by latest VS2019 preview.
+
+----
+Modified: .editorconfig
+
+Revision: 124b7c47c27af1b0312db81118e8ec56159157e8
+Author: AsY!um- <web@asylum.pl>
+Date: 4/6/2020 3:56:51 PM
+Message:
+Code readability fix.
+
+----
+Modified: UoFiddler.Plugin.MultiEditor/Classes/MultiEditorComponentList.cs
+
+Revision: 41baaab75698a6395948cc91af4652d5b7a6c34a
+Author: AsY!um- <web@asylum.pl>
+Date: 4/5/2020 5:53:42 PM
+Message:
+Updated xml dictionaries.
+
+----
+Modified: UoFiddler.Plugin.MultiEditor/multieditor.xml
+Modified: UoFiddler/Animationlist.xml
+Modified: UoFiddler/Multilist.xml
+
+Revision: 8abc77dd5dac0ab9ca48a50722422d993a974143
+Author: AsY!um- <web@asylum.pl>
+Date: 4/5/2020 2:38:31 PM
+Message:
+Added PNG format for exporting images and animation frames.
+
+----
+Modified: UoFiddler.Controls/Classes/Utils.cs
+Modified: UoFiddler.Controls/UserControls/Animationlist.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Animationlist.cs
+Modified: UoFiddler.Controls/UserControls/Animationlist.resx
+Modified: UoFiddler.Controls/UserControls/Dress.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Dress.cs
+Modified: UoFiddler.Controls/UserControls/Dress.resx
+Modified: UoFiddler.Controls/UserControls/Gump.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Gump.cs
+Modified: UoFiddler.Controls/UserControls/Gump.resx
+Modified: UoFiddler.Controls/UserControls/ItemShow.Designer.cs
+Modified: UoFiddler.Controls/UserControls/ItemShow.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowAlternative.Designer.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowAlternative.cs
+Modified: UoFiddler.Controls/UserControls/LandTiles.Designer.cs
+Modified: UoFiddler.Controls/UserControls/LandTiles.cs
+Modified: UoFiddler.Controls/UserControls/LandTilesAlternative.Designer.cs
+Modified: UoFiddler.Controls/UserControls/LandTilesAlternative.cs
+Modified: UoFiddler.Controls/UserControls/LandTilesAlternative.resx
+Modified: UoFiddler.Controls/UserControls/Map.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Map.cs
+Modified: UoFiddler.Controls/UserControls/MultiMap.Designer.cs
+Modified: UoFiddler.Controls/UserControls/MultiMap.cs
+Modified: UoFiddler.Controls/UserControls/MultiMap.resx
+Modified: UoFiddler.Controls/UserControls/Multis.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Multis.cs
+Modified: UoFiddler.Controls/UserControls/Texture.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Texture.cs
+Modified: UoFiddler.Controls/UserControls/Texture.resx
+Modified: UoFiddler.Controls/UserControls/TextureAlternative.Designer.cs
+Modified: UoFiddler.Controls/UserControls/TextureAlternative.cs
+Modified: UoFiddler.Controls/UserControls/TextureAlternative.resx
+Modified: UoFiddler.Controls/UserControls/TileDatas.Designer.cs
+
+Revision: 64e2a974f9cd9f1b2cce6ea0386c1f241b280a5f
+Author: AsY!um- <web@asylum.pl>
+Date: 4/5/2020 1:07:31 PM
+Message:
+Moved graphic assets to Resources folder.
+Changed debug pdb generation to portable format.
+Moved FiddlerAppContext to separate file.
+Further .csproj cleanup.
+----
+Modified: Ultima/Ultima.csproj
+Modified: UoFiddler.Controls/Classes/Options.cs
+Modified: UoFiddler.Controls/UoFiddler.Controls.csproj
+Modified: UoFiddler.Plugin.Compare/UoFiddler.Plugin.Compare.csproj
+Modified: UoFiddler.Plugin.ExamplePlugin/UoFiddler.Plugin.ExamplePlugin.csproj
+Modified: UoFiddler.Plugin.MassImport/UoFiddler.Plugin.MassImport.csproj
+Deleted: UoFiddler.Plugin.MultiEditor/MultiEditor.resx
+Modified: UoFiddler.Plugin.MultiEditor/UoFiddler.Plugin.MultiEditor.csproj
+Modified: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditor.resx
+Modified: UoFiddler.Plugin.SendItem/UoFiddler.Plugin.SendItem.csproj
+Modified: UoFiddler.Plugin.UopPacker/UoFiddler.Plugin.UopPacker.csproj
+Added: UoFiddler/FiddlerAppContext.cs
+Modified: UoFiddler/Program.cs
+Modified: UoFiddler/Properties/Resources.Designer.cs
+Modified: UoFiddler/Properties/Resources.resx
+Rename: UoFiddler/Resources/UOFiddler.jpg (from UoFiddler/UOFiddler.jpg)
+Rename: UoFiddler/Resources/UOFiddlerIcon.ico (from UoFiddler/UOFiddler.ico)
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: e0f82ca2a174283843731cf58b41cde045cbd7dd
+Author: AsY!um- <web@asylum.pl>
+Date: 4/5/2020 9:38:58 AM
+Message:
+Updated version info and change log.
+
+----
+Modified: UoFiddler/Forms/AboutBox.resx
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: ef22c20a1d7fddda9a5a80403ca5f7890e06c644
+Author: AsY!um- <web@asylum.pl>
+Date: 4/5/2020 9:09:01 AM
+Message:
+Removed some of always true/false expressions. Commented out some suspicious code parts.
+
+----
+Modified: UoFiddler.Controls/Forms/AnimationEdit.cs
+Modified: UoFiddler.Controls/Forms/HueEdit.cs
+Modified: UoFiddler.Controls/Forms/MapClearStatics.cs
+Modified: UoFiddler.Controls/Forms/MapDiffInsert.cs
+Modified: UoFiddler.Controls/Forms/MapReplace.cs
+Modified: UoFiddler.Controls/Forms/MapReplaceTiles.cs
+Modified: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditor.cs
+
+Revision: ea1f4e127bb2d028b33d56d366f3a70990387b70
+Author: AsY!um- <web@asylum.pl>
+Date: 4/5/2020 8:51:38 AM
+Message:
+Removed unused files from UOFiddler project. Cleanup of .csproj files.
+
+----
+Modified: UoFiddler.Controls/UoFiddler.Controls.csproj
+Modified: UoFiddler.Plugin.Compare/UoFiddler.Plugin.Compare.csproj
+Modified: UoFiddler.Plugin.ExamplePlugin/Forms/Example.Designer.cs
+Modified: UoFiddler.Plugin.ExamplePlugin/UoFiddler.Plugin.ExamplePlugin.csproj
+Modified: UoFiddler.Plugin.MassImport/UoFiddler.Plugin.MassImport.csproj
+Modified: UoFiddler.Plugin.MultiEditor/UoFiddler.Plugin.MultiEditor.csproj
+Modified: UoFiddler.Plugin.SendItem/UoFiddler.Plugin.SendItem.csproj
+Modified: UoFiddler.Plugin.UopPacker/UoFiddler.Plugin.UopPacker.csproj
+Deleted: UoFiddler/Properties/Settings.Designer.cs
+Deleted: UoFiddler/Properties/Settings.settings
+Deleted: UoFiddler/Properties/app.manifest
+Deleted: UoFiddler/Settings.cs
+Modified: UoFiddler/UoFiddler.csproj
+Deleted: UoFiddler/UoFiddler.csproj.user
+
+Revision: cf5ea9e678c5e0618d36e72c3af90a20766c3b7a
+Author: AsY!um- <web@asylum.pl>
+Date: 4/4/2020 9:17:40 PM
+Message:
+Added UopPacker plugin.
+
+----
+Added: UoFiddler.Plugin.UopPacker/Classes/FileType.cs
+Added: UoFiddler.Plugin.UopPacker/Classes/LegacyMulFileConverter.cs
+Added: UoFiddler.Plugin.UopPacker/UoFiddler.Plugin.UopPacker.csproj
+Added: UoFiddler.Plugin.UopPacker/UopPacker.cs
+Added: UoFiddler.Plugin.UopPacker/UserControls/UopPackerControl.Designer.cs
+Added: UoFiddler.Plugin.UopPacker/UserControls/UopPackerControl.cs
+Added: UoFiddler.Plugin.UopPacker/UserControls/UopPackerControl.resx
+Modified: UoFiddler.sln
+
+Revision: 3aea8e71438ee0ee563c7b3e75d532425d63f9c5
+Author: AsY!um- <web@asylum.pl>
+Date: 4/4/2020 9:17:22 PM
+Message:
+Updated app.config as an attempt to fix problem with plugin assemblies loading.
+
+----
+Modified: UoFiddler/app.config
+
+Revision: 4426aa2ba9fa75014e31437affaf1abb5d323278
+Author: AsY!um- <web@asylum.pl>
+Date: 4/4/2020 9:16:28 PM
+Message:
+Removed empty Properties folder references from plugin projects.
+
+----
+Modified: UoFiddler.Plugin.ExamplePlugin/UoFiddler.Plugin.ExamplePlugin.csproj
+Modified: UoFiddler.Plugin.MassImport/UoFiddler.Plugin.MassImport.csproj
+Modified: UoFiddler.Plugin.SendItem/UoFiddler.Plugin.SendItem.csproj
+
+Revision: d72926150e362371f5f9c0c714ae017357c45304
+Author: AsY!um- <web@asylum.pl>
+Date: 4/4/2020 7:06:54 PM
+Message:
+Log message update.
+
+----
+Modified: UoFiddler/Forms/LoadProfile.cs
+
+Revision: fcfdfb23502958c9212eef7af80a7b023f9bd60d
+Author: AsY!um- <web@asylum.pl>
+Date: 4/4/2020 6:46:12 PM
+Message:
+Added basic logging with Serilog.
+
+----
+Modified: UoFiddler.Controls/Classes/Options.cs
+Modified: UoFiddler.Controls/Plugin/PluginServices.cs
+Modified: UoFiddler.Controls/UoFiddler.Controls.csproj
+Modified: UoFiddler/Classes/FiddlerOptions.cs
+Modified: UoFiddler/Forms/LoadProfile.cs
+Modified: UoFiddler/Forms/MainForm.cs
+Modified: UoFiddler/Forms/ManagePlugins.cs
+Modified: UoFiddler/Program.cs
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: 3f6868d605d9223f1c3460a31719b2a4194cdc8a
+Author: AsY!um- <web@asylum.pl>
+Date: 4/4/2020 4:43:10 PM
+Message:
+Fixed sorting of usings in .editorconfig.
+
+----
+Modified: .editorconfig
+
+Revision: 6657f157e1d348c531a8d21bdfe9c44a3a3dea81
+Author: AsY!um- <web@asylum.pl>
+Date: 4/4/2020 4:17:13 PM
+Message:
+Updated change log.
+
+----
+Modified: UoFiddler/Forms/AboutBox.resx
+
+Revision: e4f668b4880388157d9cc50e5470434e04e706b3
+Author: AsY!um- <web@asylum.pl>
+Date: 4/4/2020 3:37:05 PM
+Message:
+Resize exception form.
+
+----
+Modified: UoFiddler/Forms/ExceptionForm.Designer.cs
+
+Revision: edf266cbd3446306dcf32e4caefac91cef2ffef1
+Author: AsY!um- <web@asylum.pl>
+Date: 4/4/2020 3:32:48 PM
+Message:
+Added custom Appcontext. Moved update checking to github releases API.
+
+----
+Added: UoFiddler.Controls/Helpers/ThrowIf.cs
+Modified: UoFiddler/Classes/FiddlerOptions.cs
+Added: UoFiddler/Classes/UpdateChecker.cs
+Added: UoFiddler/Classes/UpdateResponse.cs
+Added: UoFiddler/Classes/UpdateRunner.cs
+Added: UoFiddler/Classes/VersionTagHelper.cs
+Modified: UoFiddler/Forms/AboutBox.Designer.cs
+Modified: UoFiddler/Forms/AboutBox.cs
+Modified: UoFiddler/Forms/AboutBox.resx
+Modified: UoFiddler/Forms/LoadProfile.Designer.cs
+Modified: UoFiddler/Forms/LoadProfile.cs
+Modified: UoFiddler/Forms/MainForm.cs
+Modified: UoFiddler/Program.cs
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: ecf5c0569260cdf45381218d246d219ff78b9424
+Author: AsY!um- <web@asylum.pl>
+Date: 4/3/2020 4:38:42 PM
+Message:
+Fixed exporting offset.cfg for items alternative design mode.
+
+----
+Modified: UoFiddler.Controls/UserControls/ItemShowAlternative.cs
+Modified: UoFiddler.Plugin.ExamplePlugin/ExamplePluginBase.cs
+
+Revision: dcbc85fdf24de47e503fcc5ee6ebfde0d138ac93
+Author: AsY!um- <web@asylum.pl>
+Date: 4/3/2020 10:59:15 AM
+Message:
+User controls and forms cleanup.
+
+----
+Modified: UoFiddler.Controls/UserControls/ItemShow.Designer.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowAlternative.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Map.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Multis.Designer.cs
+Modified: UoFiddler.Controls/UserControls/Speech.Designer.cs
+Modified: UoFiddler.Controls/UserControls/TileDatas.Designer.cs
+Modified: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditor.Designer.cs
+Modified: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditor.resx
+
+Revision: 8c8488b877e7a1146e6dd3fb18de386992965d4b
+Author: AsY!um- <web@asylum.pl>
+Date: 4/3/2020 10:51:45 AM
+Message:
+Removed unused using.
+
+----
+Modified: UoFiddler.Plugin.SendItem/Forms/Option.cs
+
+Revision: ba6f90b6a9f61e5ec0534ba933100c025048a44e
+Author: AsY!um- <web@asylum.pl>
+Date: 4/3/2020 10:42:56 AM
+Message:
+Fixed naming. Cleanup.
+
+----
+Modified: UoFiddler.Controls/Forms/AnimationEdit.cs
+Modified: UoFiddler.Controls/Forms/MapDiffInsert.cs
+Modified: UoFiddler.Controls/Forms/MapReplace.cs
+Modified: UoFiddler.Controls/UserControls/Dress.cs
+Modified: UoFiddler.Controls/UserControls/Gump.cs
+Modified: UoFiddler.Controls/UserControls/Hues.cs
+Modified: UoFiddler.Controls/UserControls/ItemShow.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowAlternative.cs
+Modified: UoFiddler.Controls/UserControls/LandTiles.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareCliLoc.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareHues.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareMap.cs
+Modified: UoFiddler.Plugin.ExamplePlugin/ExamplePluginBase.cs
+Modified: UoFiddler.Plugin.MultiEditor/Classes/MultiEditorComponentList.cs
+Modified: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditor.cs
+Modified: UoFiddler/Forms/MainForm.cs
+Modified: UoFiddler/Program.cs
+
+Revision: 5ae17249fb5d11092133d1075a43ea20c43a4924
+Author: AsY!um- <web@asylum.pl>
+Date: 4/3/2020 7:47:44 AM
+Message:
+Fixed typo in change log.
+
+----
+Modified: UoFiddler/Forms/AboutBox.resx
+
+Revision: 6e294ce7d9de78f3cde33c8fe0f6bc9e7b006d92
+Author: AsY!um- <web@asylum.pl>
+Date: 4/3/2020 6:49:43 AM
+Message:
+Update change log.
+
+----
+Modified: UoFiddler/Forms/AboutBox.resx
+
+Revision: b5b7dd7a7c6fc88b22636bf80fa11e5acd8f63d7
+Author: AsY!um- <web@asylum.pl>
+Date: 4/3/2020 6:46:11 AM
+Message:
+Copy default config to AppData instead of moving. Added null checks for some of the configuration options.
+
+----
+Modified: UoFiddler.Controls/Classes/Options.cs
+Modified: UoFiddler.Controls/Plugin/PluginServices.cs
+Modified: UoFiddler/Classes/FiddlerOptions.cs
+Modified: UoFiddler/Forms/MainForm.cs
+Modified: UoFiddler/Forms/ManagePlugins.cs
+Modified: UoFiddler/Forms/ManageTools.cs
+
+Revision: fde6e3118d13a8ddfc322f2d481ba0d30b3e2f9f
+Author: AsY!um- <web@asylum.pl>
+Date: 3/31/2020 4:24:19 PM
+Message:
+Fix bug with invisible virtual floor for Z values greater than 0. Fix crash when setting virtual floor level without creating or importing new design first.
+
+----
+Modified: UoFiddler.Plugin.MultiEditor/Classes/MultiEditorComponentList.cs
+Modified: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditor.cs
+
+Revision: 71d97f538fac1ca3b095b737e4452a8ce304d024
+Author: AsY!um- <web@asylum.pl>
+Date: 3/28/2020 4:58:48 PM
+Message:
+Updated change log.
+
+----
+Modified: UoFiddler/Forms/AboutBox.resx
+
+Revision: e34dbb7346dedc24d41cfe7724fde127db81bb66
+Author: AsY!um- <web@asylum.pl>
+Date: 3/28/2020 2:02:38 PM
+Message:
+Added .editorconfig to allow one consistent coding style for UOFiddler solution.
+
+----
+Added: .editorconfig
+Modified: UoFiddler.sln
+
+Revision: d237e262a8febc34b9ac17638ef455e71c913269
+Author: AsY!um- <web@asylum.pl>
+Date: 3/10/2020 5:52:03 PM
+Message:
+Rename main form to avoid designer names confusion about UOFiddler.Controls.
+
+----
+Modified: UoFiddler/Classes/FiddlerOptions.cs
+Modified: UoFiddler/Forms/AboutBox.cs
+Rename: UoFiddler/Forms/MainForm.Designer.cs (from UoFiddler/Forms/UoFiddler.Designer.cs)
+Rename: UoFiddler/Forms/MainForm.cs (from UoFiddler/Forms/UoFiddler.cs)
+Rename: UoFiddler/Forms/MainForm.resx (from UoFiddler/Forms/UoFiddler.resx)
+Modified: UoFiddler/Forms/ManageTools.cs
+Modified: UoFiddler/Forms/OptionsForm.cs
+Modified: UoFiddler/Forms/UnDocked.cs
+Modified: UoFiddler/Program.cs
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: 3beaf8829fc3ad3f17d3a61db91bafece630904b
+Author: AsY!um- <web@asylum.pl>
+Date: 3/8/2020 7:01:31 PM
+Message:
+Trim whitespaces from filename of the UOFiddler update archive. Extract update method in AboutBox.
+
+----
+Modified: UoFiddler/Classes/FiddlerOptions.cs
+Modified: UoFiddler/Forms/AboutBox.cs
+
+Revision: 5f5aff48db91eefd0d5a2b9bad8a2c5b8ab0ba70
+Author: AsY!um- <web@asylum.pl>
+Date: 3/8/2020 6:51:44 PM
+Message:
+Add parentheses according to operator precedence.
+
+----
+Modified: UoFiddler.Controls/Classes/Utils.cs
+Modified: UoFiddler.Controls/Forms/AnimationEdit.cs
+Modified: UoFiddler.Controls/Forms/HueEdit.cs
+Modified: UoFiddler.Controls/Forms/MapDiffInsert.cs
+Modified: UoFiddler.Controls/Forms/MapReplace.cs
+Modified: UoFiddler.Controls/Forms/MapReplaceTiles.cs
+Modified: UoFiddler.Controls/UserControls/AnimData.cs
+Modified: UoFiddler.Controls/UserControls/CollapsibleSplitter.cs
+Modified: UoFiddler.Controls/UserControls/Fonts.cs
+Modified: UoFiddler.Controls/UserControls/Gump.cs
+Modified: UoFiddler.Controls/UserControls/ItemShow.cs
+Modified: UoFiddler.Controls/UserControls/ItemShowAlternative.cs
+Modified: UoFiddler.Controls/UserControls/LandTilesAlternative.cs
+Modified: UoFiddler.Controls/UserControls/Light.cs
+Modified: UoFiddler.Controls/UserControls/Map.cs
+Modified: UoFiddler.Controls/UserControls/Texture.cs
+Modified: UoFiddler.Controls/UserControls/TextureAlternative.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareGump.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareItem.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareLand.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareMap.cs
+Modified: UoFiddler.Plugin.Compare/UserControls/CompareTexture.cs
+Modified: UoFiddler.Plugin.MultiEditor/Classes/MultiEditorComponentList.cs
+Modified: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditor.cs
+
+Revision: a39df4c694aebd64f64752261676c610f326d0b8
+Author: brndd <burneddi@gmail.com>
+Date: 3/27/2020 11:53:07 PM
+Message:
+Fix bitmap to multimap saving.
+
+----
+Modified: Ultima/MultiMap.cs
+
+Revision: 9a4b604f49261ccc36ce8dfb6a0338eb1b9a5ad7
+Author: AsY!um- <web@asylum.pl>
+Date: 2/29/2020 3:26:44 PM
+Message:
+Migrated all .csproj to new format. Updated project references.
+
+----
+Deleted: Ultima/AssemblyInfo.cs
+Modified: Ultima/Multis.cs
+Modified: Ultima/Ultima.csproj
+Deleted: UoFiddler.Controls/Properties/AssemblyInfo.cs
+Modified: UoFiddler.Controls/UoFiddler.Controls.csproj
+Deleted: UoFiddler.Plugin.Compare/Properties/AssemblyInfo.cs
+Modified: UoFiddler.Plugin.Compare/UoFiddler.Plugin.Compare.csproj
+Deleted: UoFiddler.Plugin.ExamplePlugin/Properties/AssemblyInfo.cs
+Modified: UoFiddler.Plugin.ExamplePlugin/UoFiddler.Plugin.ExamplePlugin.csproj
+Deleted: UoFiddler.Plugin.MassImport/Properties/AssemblyInfo.cs
+Modified: UoFiddler.Plugin.MassImport/UoFiddler.Plugin.MassImport.csproj
+Deleted: UoFiddler.Plugin.MultiEditor/Properties/AssemblyInfo.cs
+Modified: UoFiddler.Plugin.MultiEditor/UoFiddler.Plugin.MultiEditor.csproj
+Deleted: UoFiddler.Plugin.SendItem/Properties/AssemblyInfo.cs
+Modified: UoFiddler.Plugin.SendItem/UoFiddler.Plugin.SendItem.csproj
+Modified: UoFiddler.sln
+Deleted: UoFiddler/Properties/AssemblyInfo.cs
+Modified: UoFiddler/Properties/Settings.Designer.cs
+Added: UoFiddler/Settings.cs
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: 600492a6254e417fee829c2a5bc4cfb22872f496
+Author: turleypol <turley@polserver.com>
+Date: 2/29/2020 2:02:30 PM
+Message:
+added readme
+
+----
+Added: README.md
+
+Revision: 876d6d2e0e2bc0418283a47865f5d1abcb515c53
+Author: AsY!um- <web@asylum.pl>
+Date: 2/29/2020 9:12:50 AM
+Message:
+Remove deprecated controls from project - ContextMenu.
+
+----
+Modified: UoFiddler.Controls/UserControls/Hues.cs
+Modified: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditor.Designer.cs
+Modified: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditor.cs
+Modified: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditor.resx
+
+Revision: 41b78b441d929f3ed361d52fc7d6611c46f3dbc7
+Author: AsY!um- <web@asylum.pl>
+Date: 2/29/2020 8:58:54 AM
+Message:
+Updated projects to .NET Framework 4.8. Updated README.md and UOFiddler version.
+
+----
+Modified: Ultima/Ultima.csproj
+Modified: UoFiddler.Controls/UoFiddler.Controls.csproj
+Modified: UoFiddler.Plugin.Compare/UoFiddler.Plugin.Compare.csproj
+Modified: UoFiddler.Plugin.ExamplePlugin/UoFiddler.Plugin.ExamplePlugin.csproj
+Modified: UoFiddler.Plugin.MassImport/UoFiddler.Plugin.MassImport.csproj
+Modified: UoFiddler.Plugin.MultiEditor/UoFiddler.Plugin.MultiEditor.csproj
+Modified: UoFiddler.Plugin.SendItem/UoFiddler.Plugin.SendItem.csproj
+Modified: UoFiddler/Forms/AboutBox.Designer.cs
+Modified: UoFiddler/Forms/AboutBox.resx
+Modified: UoFiddler/Properties/AssemblyInfo.cs
+Modified: UoFiddler/UoFiddler.csproj
+Modified: UoFiddler/app.config
+
+Revision: 904022cb5bf86a0e3cbecd47dc7fe8195d050de6
+Author: Jakub Kalita <Jakub.Kalita.ext@unit4.com>
+Date: 2/28/2020 5:12:02 PM
+Message:
+New solution and project structure. Few exception handling fixes. Adjusted namespaces.
+
+----
+Deleted: Controls/LandTileSearch.resx
+Deleted: Controls/MapClearStatics.resx
+Deleted: Controls/MyEventArgs.cs
+Deleted: Controls/Plugin.cs
+Modified: Ultima/AnimationEdit.cs
+Modified: Ultima/Files.cs
+Rename: UoFiddler.Controls/Classes/ControlEvents.cs (from Controls/Events.cs)
+Added: UoFiddler.Controls/Classes/MyEventArgs.cs
+Rename: UoFiddler.Controls/Classes/Options.cs (from Controls/Options.cs)
+Rename: UoFiddler.Controls/Classes/Utils.cs (from Controls/Utils.cs)
+Rename: UoFiddler.Controls/Forms/AnimationEdit.Designer.cs (from Controls/AnimationEdit.Designer.cs)
+Rename: UoFiddler.Controls/Forms/AnimationEdit.cs (from Controls/AnimationEdit.cs)
+Rename: UoFiddler.Controls/Forms/AnimationEdit.resx (from Controls/AnimationEdit.resx)
+Rename: UoFiddler.Controls/Forms/AnimationlistNewEntries.Designer.cs (from Controls/AnimationlistNewEntries.Designer.cs)
+Rename: UoFiddler.Controls/Forms/AnimationlistNewEntries.cs (from Controls/AnimationlistNewEntries.cs)
+Rename: UoFiddler.Controls/Forms/AnimationlistNewEntries.resx (from Controls/AnimationlistNewEntries.resx)
+Rename: UoFiddler.Controls/Forms/ClilocAdd.Designer.cs (from Controls/ClilocAdd.Designer.cs)
+Rename: UoFiddler.Controls/Forms/ClilocAdd.cs (from Controls/ClilocAdd.cs)
+Rename: UoFiddler.Controls/Forms/ClilocAdd.resx (from Controls/MapDiffInsert.resx)
+Rename: UoFiddler.Controls/Forms/ClilocDetail.Designer.cs (from Controls/ClilocDetail.Designer.cs)
+Rename: UoFiddler.Controls/Forms/ClilocDetail.cs (from Controls/ClilocDetail.cs)
+Rename: UoFiddler.Controls/Forms/ClilocDetail.resx (from Controls/ClilocDetail.resx)
+Rename: UoFiddler.Controls/Forms/FontOffset.Designer.cs (from Controls/FontOffset.Designer.cs)
+Rename: UoFiddler.Controls/Forms/FontOffset.cs (from Controls/FontOffset.cs)
+Rename: UoFiddler.Controls/Forms/FontOffset.resx (from Controls/MapMeltStatics.resx)
+Rename: UoFiddler.Controls/Forms/FontText.Designer.cs (from Controls/FontText.Designer.cs)
+Rename: UoFiddler.Controls/Forms/FontText.cs (from Controls/FontText.cs)
+Rename: UoFiddler.Controls/Forms/FontText.resx (from Controls/MapReplace.resx)
+Rename: UoFiddler.Controls/Forms/GumpSearch.Designer.cs (from Controls/GumpSearch.Designer.cs)
+Rename: UoFiddler.Controls/Forms/GumpSearch.cs (from Controls/GumpSearch.cs)
+Rename: UoFiddler.Controls/Forms/GumpSearch.resx (from Controls/GumpSearch.resx)
+Rename: UoFiddler.Controls/Forms/HueEdit.Designer.cs (from Controls/HueEdit.Designer.cs)
+Rename: UoFiddler.Controls/Forms/HueEdit.cs (from Controls/HueEdit.cs)
+Rename: UoFiddler.Controls/Forms/HueEdit.resx (from Controls/HueEdit.resx)
+Rename: UoFiddler.Controls/Forms/HuePopUp.Designer.cs (from Controls/HuePopUp.Designer.cs)
+Rename: UoFiddler.Controls/Forms/HuePopUp.cs (from Controls/HuePopUp.cs)
+Rename: UoFiddler.Controls/Forms/HuePopUp.resx (from Controls/HuePopUp.resx)
+Rename: UoFiddler.Controls/Forms/HuePopUpDress.Designer.cs (from Controls/HuePopUpDress.Designer.cs)
+Rename: UoFiddler.Controls/Forms/HuePopUpDress.cs (from Controls/HuePopUpDress.cs)
+Rename: UoFiddler.Controls/Forms/HuePopUpDress.resx (from Controls/HuePopUpDress.resx)
+Rename: UoFiddler.Controls/Forms/HuePopUpItem.Designer.cs (from Controls/HuePopUpItem.Designer.cs)
+Rename: UoFiddler.Controls/Forms/HuePopUpItem.cs (from Controls/HuePopUpItem.cs)
+Rename: UoFiddler.Controls/Forms/HuePopUpItem.resx (from Controls/HuePopUpItem.resx)
+Rename: UoFiddler.Controls/Forms/ItemDetail.Designer.cs (from Controls/ItemDetail.Designer.cs)
+Rename: UoFiddler.Controls/Forms/ItemDetail.cs (from Controls/ItemDetail.cs)
+Rename: UoFiddler.Controls/Forms/ItemDetail.resx (from Controls/SkillGrp.resx)
+Rename: UoFiddler.Controls/Forms/ItemSearch.Designer.cs (from Controls/ItemSearch.Designer.cs)
+Rename: UoFiddler.Controls/Forms/ItemSearch.cs (from Controls/ItemSearch.cs)
+Rename: UoFiddler.Controls/Forms/ItemSearch.resx (from Controls/TileDataFilter.resx)
+Rename: UoFiddler.Controls/Forms/LandTileSearch.Designer.cs (from Controls/LandTileSearch.Designer.cs)
+Rename: UoFiddler.Controls/Forms/LandTileSearch.cs (from Controls/LandTileSearch.cs)
+Rename: UoFiddler.Controls/Forms/LandTileSearch.resx (from FiddlerPlugin/ExampleUserControl.resx)
+Rename: UoFiddler.Controls/Forms/MapClearStatics.Designer.cs (from Controls/MapClearStatics.Designer.cs)
+Rename: UoFiddler.Controls/Forms/MapClearStatics.cs (from Controls/MapClearStatics.cs)
+Rename: UoFiddler.Controls/Forms/MapClearStatics.resx (from MassImportPlugin/MassImport.resx)
+Rename: UoFiddler.Controls/Forms/MapDetails.Designer.cs (from Controls/MapDetails.Designer.cs)
+Rename: UoFiddler.Controls/Forms/MapDetails.cs (from Controls/MapDetails.cs)
+Rename: UoFiddler.Controls/Forms/MapDetails.resx (from Controls/MapDetails.resx)
+Rename: UoFiddler.Controls/Forms/MapDiffInsert.Designer.cs (from Controls/MapDiffInsert.Designer.cs)
+Rename: UoFiddler.Controls/Forms/MapDiffInsert.cs (from Controls/MapDiffInsert.cs)
+Rename: UoFiddler.Controls/Forms/MapDiffInsert.resx (from Controls/FontOffset.resx)
+Rename: UoFiddler.Controls/Forms/MapMarker.Designer.cs (from Controls/MapMarker.Designer.cs)
+Rename: UoFiddler.Controls/Forms/MapMarker.cs (from Controls/MapMarker.cs)
+Rename: UoFiddler.Controls/Forms/MapMarker.resx (from Controls/MapMarker.resx)
+Rename: UoFiddler.Controls/Forms/MapMeltStatics.Designer.cs (from Controls/MapMeltStatics.Designer.cs)
+Rename: UoFiddler.Controls/Forms/MapMeltStatics.cs (from Controls/MapMeltStatics.cs)
+Rename: UoFiddler.Controls/Forms/MapMeltStatics.resx (from Controls/ItemSearch.resx)
+Rename: UoFiddler.Controls/Forms/MapReplace.Designer.cs (from Controls/MapReplace.Designer.cs)
+Rename: UoFiddler.Controls/Forms/MapReplace.cs (from Controls/MapReplace.cs)
+Rename: UoFiddler.Controls/Forms/MapReplace.resx (from Controls/ClilocAdd.resx)
+Rename: UoFiddler.Controls/Forms/MapReplaceTiles.Designer.cs (from Controls/MapReplaceTiles.Designer.cs)
+Rename: UoFiddler.Controls/Forms/MapReplaceTiles.cs (from Controls/MapReplaceTiles.cs)
+Rename: UoFiddler.Controls/Forms/MapReplaceTiles.resx (from Controls/MapReplaceTiles.resx)
+Rename: UoFiddler.Controls/Forms/MultiImport.Designer.cs (from Controls/MultiImport.Designer.cs)
+Rename: UoFiddler.Controls/Forms/MultiImport.cs (from Controls/MultiImport.cs)
+Rename: UoFiddler.Controls/Forms/MultiImport.resx (from Controls/MultiImport.resx)
+Rename: UoFiddler.Controls/Forms/ProgressBar.Designer.cs (from Controls/ProgressBar.Designer.cs)
+Rename: UoFiddler.Controls/Forms/ProgressBar.cs (from Controls/ProgressBar.cs)
+Rename: UoFiddler.Controls/Forms/ProgressBar.resx (from Controls/ProgressBar.resx)
+Rename: UoFiddler.Controls/Forms/SoundsSearch.Designer.cs (from Controls/SoundsSearch.Designer.cs)
+Rename: UoFiddler.Controls/Forms/SoundsSearch.cs (from Controls/SoundsSearch.cs)
+Rename: UoFiddler.Controls/Forms/SoundsSearch.resx (from Controls/SoundsSearch.resx)
+Rename: UoFiddler.Controls/Forms/TextureSearch.Designer.cs (from Controls/TextureSearch.Designer.cs)
+Rename: UoFiddler.Controls/Forms/TextureSearch.cs (from Controls/TextureSearch.cs)
+Rename: UoFiddler.Controls/Forms/TextureSearch.resx (from Controls/TextureSearch.resx)
+Rename: UoFiddler.Controls/Forms/TileDataFilter.Designer.cs (from Controls/TileDataFilter.Designer.cs)
+Rename: UoFiddler.Controls/Forms/TileDataFilter.cs (from Controls/TileDataFilter.cs)
+Rename: UoFiddler.Controls/Forms/TileDataFilter.resx (from Controls/FontText.resx)
+Rename: UoFiddler.Controls/Forms/TileDatasSearch.Designer.cs (from Controls/TileDatasSearch.Designer.cs)
+Rename: UoFiddler.Controls/Forms/TileDatasSearch.cs (from Controls/TileDatasSearch.cs)
+Rename: UoFiddler.Controls/Forms/TileDatasSearch.resx (from Controls/TileDatasSearch.resx)
+Rename: UoFiddler.Controls/Helpers/RichTextBoxExtensions.cs (from Controls/Helpers/RichTextBoxExtensions.cs)
+Rename: UoFiddler.Controls/Helpers/StringExtensions.cs (from Controls/Helpers/StringExtensions.cs)
+Rename: UoFiddler.Controls/Helpers/TreeViewExtensions.cs (from Controls/Helpers/TreeViewExtensions.cs)
+Added: UoFiddler.Controls/Plugin/GlobalPlugins.cs
+Added: UoFiddler.Controls/Plugin/Interfaces/IPluginHost.cs
+Added: UoFiddler.Controls/Plugin/PluginBase.cs
+Added: UoFiddler.Controls/Plugin/PluginEvents.cs
+Rename: UoFiddler.Controls/Plugin/PluginServices.cs (from Controls/Host.cs)
+Added: UoFiddler.Controls/Plugin/Types/AvailablePlugin.cs
+Added: UoFiddler.Controls/Plugin/Types/AvailablePlugins.cs
+Rename: UoFiddler.Controls/Properties/AssemblyInfo.cs (from Controls/Properties/AssemblyInfo.cs)
+Rename: UoFiddler.Controls/Properties/Resources.Designer.cs (from Controls/Properties/Resources.Designer.cs)
+Rename: UoFiddler.Controls/Properties/Resources.resx (from Controls/Properties/Resources.resx)
+Rename: UoFiddler.Controls/Resources/QuadradoCheio.jpg (from Controls/Resources/QuadradoCheio.jpg)
+Rename: UoFiddler.Controls/Resources/QuadradoVazio.gif (from Controls/Resources/QuadradoVazio.gif)
+Rename: UoFiddler.Controls/Resources/cadeado.gif (from Controls/Resources/cadeado.gif)
+Rename: UoFiddler.Controls/Resources/mouse.bmp (from Controls/Resources/mouse.bmp)
+Rename: UoFiddler.Controls/Resources/staticPlayButton.png (from Controls/Resources/staticPlayButton.png)
+Rename: UoFiddler.Controls/UoFiddler.Controls.csproj (from Controls/Controls.csproj)
+Rename: UoFiddler.Controls/UserControls/AnimData.Designer.cs (from Controls/AnimData.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/AnimData.cs (from Controls/AnimData.cs)
+Rename: UoFiddler.Controls/UserControls/AnimData.resx (from Controls/AnimData.resx)
+Rename: UoFiddler.Controls/UserControls/Animationlist.Designer.cs (from Controls/Animationlist.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/Animationlist.cs (from Controls/Animationlist.cs)
+Rename: UoFiddler.Controls/UserControls/Animationlist.resx (from Controls/Animationlist.resx)
+Rename: UoFiddler.Controls/UserControls/Cliloc.Designer.cs (from Controls/Cliloc.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/Cliloc.cs (from Controls/Cliloc.cs)
+Rename: UoFiddler.Controls/UserControls/Cliloc.resx (from Controls/Cliloc.resx)
+Rename: UoFiddler.Controls/UserControls/CollapsibleSplitter.Designer.cs (from Controls/CollapsibleSplitter.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/CollapsibleSplitter.cs (from Controls/CollapsibleSplitter.cs)
+Rename: UoFiddler.Controls/UserControls/Dress.Designer.cs (from Controls/Dress.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/Dress.cs (from Controls/Dress.cs)
+Rename: UoFiddler.Controls/UserControls/Dress.resx (from Controls/Dress.resx)
+Rename: UoFiddler.Controls/UserControls/Fonts.Designer.cs (from Controls/Fonts.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/Fonts.cs (from Controls/Fonts.cs)
+Rename: UoFiddler.Controls/UserControls/Fonts.resx (from Controls/Fonts.resx)
+Rename: UoFiddler.Controls/UserControls/Gump.Designer.cs (from Controls/Gump.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/Gump.cs (from Controls/Gump.cs)
+Rename: UoFiddler.Controls/UserControls/Gump.resx (from Controls/Gump.resx)
+Rename: UoFiddler.Controls/UserControls/Hues.Designer.cs (from Controls/Hues.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/Hues.cs (from Controls/Hues.cs)
+Rename: UoFiddler.Controls/UserControls/Hues.resx (from Controls/Hues.resx)
+Rename: UoFiddler.Controls/UserControls/ItemShow.Designer.cs (from Controls/ItemShow.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/ItemShow.cs (from Controls/ItemShow.cs)
+Rename: UoFiddler.Controls/UserControls/ItemShow.resx (from Controls/ItemShow.resx)
+Rename: UoFiddler.Controls/UserControls/ItemShowAlternative.Designer.cs (from Controls/ItemShowAlternative.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/ItemShowAlternative.cs (from Controls/ItemShowAlternative.cs)
+Rename: UoFiddler.Controls/UserControls/ItemShowAlternative.resx (from Controls/ItemShowAlternative.resx)
+Rename: UoFiddler.Controls/UserControls/LandTiles.Designer.cs (from Controls/LandTiles.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/LandTiles.cs (from Controls/LandTiles.cs)
+Rename: UoFiddler.Controls/UserControls/LandTiles.resx (from Controls/LandTiles.resx)
+Rename: UoFiddler.Controls/UserControls/LandTilesAlternative.Designer.cs (from Controls/LandTilesAlternative.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/LandTilesAlternative.cs (from Controls/LandTilesAlternative.cs)
+Rename: UoFiddler.Controls/UserControls/LandTilesAlternative.resx (from Controls/LandTilesAlternative.resx)
+Rename: UoFiddler.Controls/UserControls/Light.Designer.cs (from Controls/Light.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/Light.cs (from Controls/Light.cs)
+Rename: UoFiddler.Controls/UserControls/Light.resx (from Controls/Light.resx)
+Rename: UoFiddler.Controls/UserControls/Map.Designer.cs (from Controls/Map.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/Map.cs (from Controls/Map.cs)
+Rename: UoFiddler.Controls/UserControls/Map.resx (from Controls/Map.resx)
+Rename: UoFiddler.Controls/UserControls/MultiMap.Designer.cs (from Controls/MultiMap.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/MultiMap.cs (from Controls/MultiMap.cs)
+Rename: UoFiddler.Controls/UserControls/MultiMap.resx (from Controls/MultiMap.resx)
+Rename: UoFiddler.Controls/UserControls/Multis.Designer.cs (from Controls/Multis.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/Multis.cs (from Controls/Multis.cs)
+Rename: UoFiddler.Controls/UserControls/Multis.resx (from Controls/Multis.resx)
+Rename: UoFiddler.Controls/UserControls/RadarColor.Designer.cs (from Controls/RadarColor.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/RadarColor.cs (from Controls/RadarColor.cs)
+Rename: UoFiddler.Controls/UserControls/RadarColor.resx (from Controls/RadarColor.resx)
+Rename: UoFiddler.Controls/UserControls/SkillGrp.Designer.cs (from Controls/SkillGrp.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/SkillGrp.cs (from Controls/SkillGrp.cs)
+Rename: UoFiddler.Controls/UserControls/SkillGrp.resx (from Controls/ItemDetail.resx)
+Rename: UoFiddler.Controls/UserControls/Skills.Designer.cs (from Controls/Skills.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/Skills.cs (from Controls/Skills.cs)
+Rename: UoFiddler.Controls/UserControls/Skills.resx (from Controls/Skills.resx)
+Rename: UoFiddler.Controls/UserControls/Sounds.Designer.cs (from Controls/Sounds.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/Sounds.cs (from Controls/Sounds.cs)
+Rename: UoFiddler.Controls/UserControls/Sounds.resx (from Controls/Sounds.resx)
+Rename: UoFiddler.Controls/UserControls/Speech.Designer.cs (from Controls/Speech.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/Speech.cs (from Controls/Speech.cs)
+Rename: UoFiddler.Controls/UserControls/Speech.resx (from Controls/Speech.resx)
+Rename: UoFiddler.Controls/UserControls/Texture.Designer.cs (from Controls/Texture.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/Texture.cs (from Controls/Texture.cs)
+Rename: UoFiddler.Controls/UserControls/Texture.resx (from Controls/Texture.resx)
+Rename: UoFiddler.Controls/UserControls/TextureAlternative.Designer.cs (from Controls/TextureAlternative.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/TextureAlternative.cs (from Controls/TextureAlternative.cs)
+Rename: UoFiddler.Controls/UserControls/TextureAlternative.resx (from Controls/TextureAlternative.resx)
+Rename: UoFiddler.Controls/UserControls/TileDatas.Designer.cs (from Controls/TileDatas.Designer.cs)
+Rename: UoFiddler.Controls/UserControls/TileDatas.cs (from Controls/TileDatas.cs)
+Rename: UoFiddler.Controls/UserControls/TileDatas.resx (from Controls/TileDatas.resx)
+Rename: UoFiddler.Plugin.Compare/Classes/SecondArt.cs (from ComparePlugin/SecondArt.cs)
+Rename: UoFiddler.Plugin.Compare/Classes/SecondFileIndex.cs (from ComparePlugin/SecondFileIndex.cs)
+Rename: UoFiddler.Plugin.Compare/Classes/SecondGump.cs (from ComparePlugin/SecondGump.cs)
+Rename: UoFiddler.Plugin.Compare/Classes/SecondHue.cs (from ComparePlugin/SecondHue.cs)
+Rename: UoFiddler.Plugin.Compare/Classes/SecondTexture.cs (from ComparePlugin/SecondTexture.cs)
+Rename: UoFiddler.Plugin.Compare/ComparePluginBase.cs (from ComparePlugin/ComparePlugin.cs)
+Rename: UoFiddler.Plugin.Compare/Properties/AssemblyInfo.cs (from ComparePlugin/Properties/AssemblyInfo.cs)
+Rename: UoFiddler.Plugin.Compare/Properties/Resources.Designer.cs (from ComparePlugin/Properties/Resources.Designer.cs)
+Rename: UoFiddler.Plugin.Compare/Properties/Resources.resx (from ComparePlugin/Properties/Resources.resx)
+Rename: UoFiddler.Plugin.Compare/UoFiddler.Plugin.Compare.csproj (from ComparePlugin/ComparePlugin.csproj)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareCliLoc.Designer.cs (from ComparePlugin/CompareCliLoc.Designer.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareCliLoc.cs (from ComparePlugin/CompareCliLoc.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareCliLoc.resx (from ComparePlugin/CompareCliLoc.resx)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareGump.Designer.cs (from ComparePlugin/CompareGump.Designer.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareGump.cs (from ComparePlugin/CompareGump.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareGump.resx (from ComparePlugin/CompareGump.resx)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareHues.Designer.cs (from ComparePlugin/CompareHues.Designer.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareHues.cs (from ComparePlugin/CompareHues.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareHues.resx (from ComparePlugin/CompareHues.resx)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareItem.Designer.cs (from ComparePlugin/CompareItem.Designer.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareItem.cs (from ComparePlugin/CompareItem.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareItem.resx (from ComparePlugin/CompareItem.resx)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareLand.Designer.cs (from ComparePlugin/CompareLand.Designer.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareLand.cs (from ComparePlugin/CompareLand.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareLand.resx (from ComparePlugin/CompareLand.resx)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareMap.Designer.cs (from ComparePlugin/CompareMap.Designer.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareMap.cs (from ComparePlugin/CompareMap.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareMap.resx (from ComparePlugin/CompareMap.resx)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareTexture.Designer.cs (from ComparePlugin/CompareTexture.Designer.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareTexture.cs (from ComparePlugin/CompareTexture.cs)
+Rename: UoFiddler.Plugin.Compare/UserControls/CompareTexture.resx (from ComparePlugin/CompareTexture.resx)
+Rename: UoFiddler.Plugin.ExamplePlugin/ExamplePluginBase.cs (from FiddlerPlugin/ExamplePlugin.cs)
+Rename: UoFiddler.Plugin.ExamplePlugin/Forms/Example.Designer.cs (from FiddlerPlugin/Example.Designer.cs)
+Rename: UoFiddler.Plugin.ExamplePlugin/Forms/Example.cs (from FiddlerPlugin/Example.cs)
+Rename: UoFiddler.Plugin.ExamplePlugin/Forms/Example.resx (from FiddlerPlugin/Example.resx)
+Rename: UoFiddler.Plugin.ExamplePlugin/Properties/AssemblyInfo.cs (from FiddlerPlugin/Properties/AssemblyInfo.cs)
+Rename: UoFiddler.Plugin.ExamplePlugin/UoFiddler.Plugin.ExamplePlugin.csproj (from FiddlerPlugin/FiddlerPlugin.csproj)
+Rename: UoFiddler.Plugin.ExamplePlugin/UserControls/ExampleUserControl.Designer.cs (from FiddlerPlugin/ExampleUserControl.Designer.cs)
+Rename: UoFiddler.Plugin.ExamplePlugin/UserControls/ExampleUserControl.cs (from FiddlerPlugin/ExampleUserControl.cs)
+Added: UoFiddler.Plugin.ExamplePlugin/UserControls/ExampleUserControl.resx
+Rename: UoFiddler.Plugin.MassImport/Forms/MassImport.Designer.cs (from MassImportPlugin/MassImport.Designer.cs)
+Rename: UoFiddler.Plugin.MassImport/Forms/MassImport.cs (from MassImportPlugin/MassImport.cs)
+Added: UoFiddler.Plugin.MassImport/Forms/MassImport.resx
+Rename: UoFiddler.Plugin.MassImport/MassImportPluginBase.cs (from MassImportPlugin/MassImportPlugin.cs)
+Rename: UoFiddler.Plugin.MassImport/Properties/AssemblyInfo.cs (from MassImportPlugin/Properties/AssemblyInfo.cs)
+Rename: UoFiddler.Plugin.MassImport/UoFiddler.Plugin.MassImport.csproj (from MassImportPlugin/MassImportPlugin.csproj)
+Rename: UoFiddler.Plugin.MultiEditor/Classes/MultiEditorComponentList.cs (from MultiEditor/MultiEditorComponentList.cs)
+Rename: UoFiddler.Plugin.MultiEditor/MultiEditor.resx (from MultiEditor/MultiEditor.resx)
+Rename: UoFiddler.Plugin.MultiEditor/MultiEditorPluginBase.cs (from MultiEditor/MultiEditorPlugin.cs)
+Rename: UoFiddler.Plugin.MultiEditor/Properties/AssemblyInfo.cs (from MultiEditor/Properties/AssemblyInfo.cs)
+Rename: UoFiddler.Plugin.MultiEditor/Properties/Resources.Designer.cs (from MultiEditor/Properties/Resources.Designer.cs)
+Rename: UoFiddler.Plugin.MultiEditor/Properties/Resources.resx (from MultiEditor/Properties/Resources.resx)
+Rename: UoFiddler.Plugin.MultiEditor/UoFiddler.Plugin.MultiEditor.csproj (from MultiEditor/MultiEditor.csproj)
+Rename: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditor.Designer.cs (from MultiEditor/MultiEditor.Designer.cs)
+Rename: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditor.cs (from MultiEditor/MultiEditor.cs)
+Added: UoFiddler.Plugin.MultiEditor/UserControls/MultiEditor.resx
+Rename: UoFiddler.Plugin.MultiEditor/images/AltitudeButton.bmp (from MultiEditor/images/AltitudeButton.bmp)
+Rename: UoFiddler.Plugin.MultiEditor/images/AltitudeButton_Selected.bmp (from MultiEditor/images/AltitudeButton_Selected.bmp)
+Rename: UoFiddler.Plugin.MultiEditor/images/AltitudeButton_Selected.psd (from MultiEditor/images/AltitudeButton_Selected.psd)
+Rename: UoFiddler.Plugin.MultiEditor/images/DrawButton.bmp (from MultiEditor/images/DrawButton.bmp)
+Rename: UoFiddler.Plugin.MultiEditor/images/DrawButton_Selected.bmp (from MultiEditor/images/DrawButton_Selected.bmp)
+Rename: UoFiddler.Plugin.MultiEditor/images/PipetteButton.bmp (from MultiEditor/images/PipetteButton.bmp)
+Rename: UoFiddler.Plugin.MultiEditor/images/PipetteButton_Selected.bmp (from MultiEditor/images/PipetteButton_Selected.bmp)
+Rename: UoFiddler.Plugin.MultiEditor/images/RemoveButton.bmp (from MultiEditor/images/RemoveButton.bmp)
+Rename: UoFiddler.Plugin.MultiEditor/images/RemoveButton_Selected.bmp (from MultiEditor/images/RemoveButton_Selected.bmp)
+Rename: UoFiddler.Plugin.MultiEditor/images/SelectButton.bmp (from MultiEditor/images/SelectButton.bmp)
+Rename: UoFiddler.Plugin.MultiEditor/images/SelectButton_Selected.bmp (from MultiEditor/images/SelectButton_Selected.bmp)
+Rename: UoFiddler.Plugin.MultiEditor/images/TransButton.bmp (from MultiEditor/images/TransButton.bmp)
+Rename: UoFiddler.Plugin.MultiEditor/images/TransButton_Selected.bmp (from MultiEditor/images/TransButton_Selected.bmp)
+Rename: UoFiddler.Plugin.MultiEditor/images/TransButton_Selected.psd (from MultiEditor/images/TransButton_Selected.psd)
+Rename: UoFiddler.Plugin.MultiEditor/images/VirtualFloorButton.bmp (from MultiEditor/images/VirtualFloorButton.bmp)
+Rename: UoFiddler.Plugin.MultiEditor/images/VirtualFloorButton_Selected.bmp (from MultiEditor/images/VirtualFloorButton_Selected.bmp)
+Rename: UoFiddler.Plugin.MultiEditor/images/VirtualFloorButton_Selected.psd (from MultiEditor/images/VirtualFloorButton_Selected.psd)
+Rename: UoFiddler.Plugin.MultiEditor/images/treeViewImage.bmp (from MultiEditor/images/treeViewImage.bmp)
+Rename: UoFiddler.Plugin.MultiEditor/multieditor.xml (from MultiEditor/multieditor.xml)
+Rename: UoFiddler.Plugin.SendItem/Forms/Option.Designer.cs (from SendItem/Option.Designer.cs)
+Rename: UoFiddler.Plugin.SendItem/Forms/Option.cs (from SendItem/Option.cs)
+Rename: UoFiddler.Plugin.SendItem/Forms/Option.resx (from SendItem/Option.resx)
+Rename: UoFiddler.Plugin.SendItem/Properties/AssemblyInfo.cs (from SendItem/Properties/AssemblyInfo.cs)
+Rename: UoFiddler.Plugin.SendItem/SendItem.cs (from SendItem/SendItem.cs)
+Rename: UoFiddler.Plugin.SendItem/UoFiddler.Plugin.SendItem.csproj (from SendItem/SendItem.csproj)
+Modified: UoFiddler.sln
+Rename: UoFiddler/Classes/ExternTool.cs (from UoFiddler/ExternTool.cs)
+Rename: UoFiddler/Classes/FiddlerOptions.cs (from UoFiddler/Options.cs)
+Rename: UoFiddler/Forms/AboutBox.Designer.cs (from UoFiddler/AboutBox.Designer.cs)
+Rename: UoFiddler/Forms/AboutBox.cs (from UoFiddler/AboutBox.cs)
+Rename: UoFiddler/Forms/AboutBox.resx (from UoFiddler/AboutBox.resx)
+Rename: UoFiddler/Forms/ExceptionForm.Designer.cs (from UoFiddler/ExceptionForm.Designer.cs)
+Rename: UoFiddler/Forms/ExceptionForm.cs (from UoFiddler/ExceptionForm.cs)
+Rename: UoFiddler/Forms/ExceptionForm.resx (from UoFiddler/ExceptionForm.resx)
+Rename: UoFiddler/Forms/LoadProfile.Designer.cs (from UoFiddler/LoadProfile.Designer.cs)
+Rename: UoFiddler/Forms/LoadProfile.cs (from UoFiddler/LoadProfile.cs)
+Rename: UoFiddler/Forms/LoadProfile.resx (from UoFiddler/LoadProfile.resx)
+Rename: UoFiddler/Forms/ManagePlugins.Designer.cs (from UoFiddler/ManagePlugins.Designer.cs)
+Rename: UoFiddler/Forms/ManagePlugins.cs (from UoFiddler/ManagePlugins.cs)
+Rename: UoFiddler/Forms/ManagePlugins.resx (from UoFiddler/ManagePlugins.resx)
+Rename: UoFiddler/Forms/ManageTools.Designer.cs (from UoFiddler/ManageTools.Designer.cs)
+Rename: UoFiddler/Forms/ManageTools.cs (from UoFiddler/ManageTools.cs)
+Rename: UoFiddler/Forms/ManageTools.resx (from UoFiddler/ManageTools.resx)
+Rename: UoFiddler/Forms/OptionsForm.Designer.cs (from UoFiddler/OptionsForm.Designer.cs)
+Added: UoFiddler/Forms/OptionsForm.cs
+Rename: UoFiddler/Forms/OptionsForm.resx (from UoFiddler/OptionsForm.resx)
+Rename: UoFiddler/Forms/PathSettings.Designer.cs (from UoFiddler/PathSettings.Designer.cs)
+Rename: UoFiddler/Forms/PathSettings.cs (from UoFiddler/PathSettings.cs)
+Rename: UoFiddler/Forms/PathSettings.resx (from UoFiddler/PathSettings.resx)
+Rename: UoFiddler/Forms/UnDocked.Designer.cs (from UoFiddler/UnDocked.Designer.cs)
+Rename: UoFiddler/Forms/UnDocked.cs (from UoFiddler/UnDocked.cs)
+Rename: UoFiddler/Forms/UnDocked.resx (from UoFiddler/UnDocked.resx)
+Rename: UoFiddler/Forms/UoFiddler.Designer.cs (from UoFiddler/UoFiddler.Designer.cs)
+Rename: UoFiddler/Forms/UoFiddler.cs (from UoFiddler/UoFiddler.cs)
+Rename: UoFiddler/Forms/UoFiddler.resx (from UoFiddler/UoFiddler.resx)
+Deleted: UoFiddler/OptionsForm.cs
+Modified: UoFiddler/Program.cs
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: da634a72dc3a3d84ef5a5c12f84c225bf76386b0
+Author: AsY!um- <web@asylum.pl>
+Date: 2/23/2020 4:49:53 PM
+Message:
+Cleanup of Ultima project to make it easier for comparison with ServUO version.
+
+----
+Modified: ComparePlugin/CompareItem.cs
+Modified: ComparePlugin/CompareMap.cs
+Modified: Controls/AnimData.cs
+Modified: Controls/AnimationEdit.cs
+Modified: Controls/AnimationlistNewEntries.cs
+Modified: Controls/Dress.cs
+Modified: Controls/FontText.cs
+Modified: Controls/Fonts.cs
+Modified: Controls/GumpSearch.cs
+Modified: Controls/ItemSearch.cs
+Modified: Controls/ItemShow.cs
+Modified: Controls/ItemShowAlternative.cs
+Modified: Controls/Light.cs
+Modified: Controls/Map.cs
+Modified: Controls/MapDetails.cs
+Modified: Controls/MapDiffInsert.cs
+Modified: Controls/MapMeltStatics.cs
+Modified: Controls/MapReplace.cs
+Modified: Controls/MapReplaceTiles.cs
+Modified: Controls/Multis.cs
+Modified: Controls/RadarColor.cs
+Modified: Controls/Sounds.cs
+Modified: Controls/Speech.cs
+Modified: Controls/TileDataFilter.cs
+Modified: Controls/TileDatas.cs
+Modified: Controls/TileDatasSearch.cs
+Modified: MassImportPlugin/MassImport.cs
+Modified: MultiEditor/MultiEditor.cs
+Modified: MultiEditor/MultiEditorComponentList.cs
+Modified: Ultima/ASCIIFont.cs
+Modified: Ultima/AnimationEdit.cs
+Modified: Ultima/Animations.cs
+Modified: Ultima/Animdata.cs
+Modified: Ultima/Art.cs
+Modified: Ultima/CalibrationInfo.cs
+Modified: Ultima/Client.cs
+Modified: Ultima/ClientHandles.cs
+Modified: Ultima/FileIndex.cs
+Modified: Ultima/Files.cs
+Modified: Ultima/Gumps.cs
+Modified: Ultima/Hues.cs
+Modified: Ultima/Light.cs
+Modified: Ultima/Map.cs
+Modified: Ultima/MultiMap.cs
+Modified: Ultima/Multis.cs
+Modified: Ultima/NativeMethods.cs
+Modified: Ultima/ProcessStream.cs
+Modified: Ultima/RadarCol.cs
+Modified: Ultima/SkillGroups.cs
+Modified: Ultima/Skills.cs
+Modified: Ultima/Sound.cs
+Modified: Ultima/SpeechList.cs
+Modified: Ultima/StringEntry.cs
+Modified: Ultima/StringList.cs
+Modified: Ultima/Textures.cs
+Modified: Ultima/TileData.cs
+Modified: Ultima/TileList.cs
+Modified: Ultima/TileMatrix.cs
+Modified: Ultima/TileMatrixPatch.cs
+Modified: Ultima/UnicodeFont.cs
+Modified: Ultima/Verdata.cs
+Modified: Ultima/WindowProcessStream.cs
+Modified: UoFiddler/UoFiddler.cs
+
+Revision: 059bf266f56ad9237ab070437d88ee591749c777
+Author: AsY!um- <web@asylum.pl>
+Date: 2/25/2020 8:02:59 PM
+Message:
+Code cleanup.
+
+----
+Modified: ComparePlugin/CompareCliLoc.Designer.cs
+Modified: ComparePlugin/CompareCliLoc.cs
+Modified: ComparePlugin/CompareGump.Designer.cs
+Modified: ComparePlugin/CompareGump.cs
+Modified: ComparePlugin/CompareGump.resx
+Modified: ComparePlugin/CompareHues.Designer.cs
+Modified: ComparePlugin/CompareHues.cs
+Modified: ComparePlugin/CompareHues.resx
+Modified: ComparePlugin/CompareItem.Designer.cs
+Modified: ComparePlugin/CompareItem.cs
+Modified: ComparePlugin/CompareItem.resx
+Modified: ComparePlugin/CompareLand.Designer.cs
+Modified: ComparePlugin/CompareLand.cs
+Modified: ComparePlugin/CompareLand.resx
+Modified: ComparePlugin/CompareMap.Designer.cs
+Modified: ComparePlugin/CompareMap.cs
+Modified: ComparePlugin/CompareMap.resx
+Modified: ComparePlugin/ComparePlugin.cs
+Modified: ComparePlugin/ComparePlugin.csproj
+Modified: ComparePlugin/CompareTexture.Designer.cs
+Modified: ComparePlugin/CompareTexture.cs
+Modified: ComparePlugin/Properties/AssemblyInfo.cs
+Modified: ComparePlugin/Properties/Resources.Designer.cs
+Modified: ComparePlugin/SecondArt.cs
+Modified: ComparePlugin/SecondFileIndex.cs
+Modified: ComparePlugin/SecondGump.cs
+Modified: ComparePlugin/SecondHue.cs
+Modified: ComparePlugin/SecondTexture.cs
+Modified: Controls/AnimData.Designer.cs
+Modified: Controls/AnimData.cs
+Modified: Controls/AnimationEdit.Designer.cs
+Modified: Controls/AnimationEdit.cs
+Modified: Controls/Animationlist.Designer.cs
+Modified: Controls/Animationlist.cs
+Modified: Controls/AnimationlistNewEntries.Designer.cs
+Modified: Controls/AnimationlistNewEntries.cs
+Modified: Controls/Cliloc.Designer.cs
+Modified: Controls/Cliloc.cs
+Modified: Controls/Cliloc.resx
+Modified: Controls/ClilocAdd.cs
+Modified: Controls/ClilocDetail.Designer.cs
+Modified: Controls/ClilocDetail.cs
+Modified: Controls/ClilocDetail.resx
+Modified: Controls/CollapsibleSplitter.Designer.cs
+Modified: Controls/CollapsibleSplitter.cs
+Modified: Controls/Controls.csproj
+Modified: Controls/Dress.Designer.cs
+Modified: Controls/Dress.cs
+Modified: Controls/Events.cs
+Modified: Controls/FontOffset.cs
+Modified: Controls/FontText.cs
+Modified: Controls/Fonts.Designer.cs
+Modified: Controls/Fonts.cs
+Modified: Controls/Gump.Designer.cs
+Modified: Controls/Gump.cs
+Modified: Controls/GumpSearch.Designer.cs
+Modified: Controls/GumpSearch.cs
+Modified: Controls/Helpers/RichTextBoxExtensions.cs
+Modified: Controls/Helpers/StringExtensions.cs
+Modified: Controls/Helpers/TreeViewExtensions.cs
+Modified: Controls/Host.cs
+Modified: Controls/HueEdit.Designer.cs
+Modified: Controls/HueEdit.cs
+Modified: Controls/HueEdit.resx
+Modified: Controls/HuePopUp.cs
+Modified: Controls/HuePopUpDress.cs
+Modified: Controls/HuePopUpItem.cs
+Modified: Controls/Hues.Designer.cs
+Modified: Controls/Hues.cs
+Modified: Controls/ItemDetail.Designer.cs
+Modified: Controls/ItemDetail.cs
+Modified: Controls/ItemSearch.Designer.cs
+Modified: Controls/ItemSearch.cs
+Modified: Controls/ItemShow.Designer.cs
+Modified: Controls/ItemShow.cs
+Modified: Controls/ItemShowAlternative.Designer.cs
+Modified: Controls/ItemShowAlternative.cs
+Modified: Controls/ItemShowAlternative.resx
+Modified: Controls/LandTileSearch.Designer.cs
+Modified: Controls/LandTileSearch.cs
+Modified: Controls/LandTiles.Designer.cs
+Modified: Controls/LandTiles.cs
+Modified: Controls/LandTilesAlternative.Designer.cs
+Modified: Controls/LandTilesAlternative.cs
+Modified: Controls/Light.Designer.cs
+Modified: Controls/Light.cs
+Modified: Controls/Map.Designer.cs
+Modified: Controls/Map.cs
+Modified: Controls/Map.resx
+Modified: Controls/MapClearStatics.cs
+Modified: Controls/MapDetails.cs
+Modified: Controls/MapDiffInsert.cs
+Modified: Controls/MapMarker.cs
+Modified: Controls/MapMeltStatics.cs
+Modified: Controls/MapReplace.cs
+Modified: Controls/MapReplaceTiles.cs
+Modified: Controls/MultiImport.cs
+Modified: Controls/MultiMap.cs
+Modified: Controls/Multis.Designer.cs
+Modified: Controls/Multis.cs
+Modified: Controls/Multis.resx
+Added: Controls/MyEventArgs.cs
+Modified: Controls/Options.cs
+Modified: Controls/Plugin.cs
+Modified: Controls/ProgressBar.cs
+Modified: Controls/Properties/AssemblyInfo.cs
+Modified: Controls/Properties/Resources.Designer.cs
+Modified: Controls/RadarColor.Designer.cs
+Modified: Controls/RadarColor.cs
+Modified: Controls/SkillGrp.Designer.cs
+Modified: Controls/SkillGrp.cs
+Modified: Controls/Skills.cs
+Modified: Controls/Sounds.Designer.cs
+Modified: Controls/Sounds.cs
+Modified: Controls/Sounds.resx
+Modified: Controls/SoundsSearch.Designer.cs
+Modified: Controls/SoundsSearch.cs
+Modified: Controls/Speech.Designer.cs
+Modified: Controls/Speech.cs
+Modified: Controls/Speech.resx
+Modified: Controls/Texture.Designer.cs
+Modified: Controls/Texture.cs
+Modified: Controls/TextureAlternative.Designer.cs
+Modified: Controls/TextureAlternative.cs
+Modified: Controls/TextureSearch.Designer.cs
+Modified: Controls/TextureSearch.cs
+Modified: Controls/TileDataFilter.cs
+Modified: Controls/TileDatas.Designer.cs
+Modified: Controls/TileDatas.cs
+Modified: Controls/TileDatas.resx
+Modified: Controls/TileDatasSearch.Designer.cs
+Modified: Controls/TileDatasSearch.cs
+Modified: Controls/Utils.cs
+Modified: FiddlerPlugin/ExamplePlugin.cs
+Modified: FiddlerPlugin/ExampleUserControl.Designer.cs
+Modified: FiddlerPlugin/ExampleUserControl.cs
+Modified: FiddlerPlugin/FiddlerPlugin.csproj
+Modified: FiddlerPlugin/Properties/AssemblyInfo.cs
+Modified: MassImportPlugin/MassImport.cs
+Modified: MassImportPlugin/MassImportPlugin.cs
+Modified: MassImportPlugin/MassImportPlugin.csproj
+Modified: MassImportPlugin/Properties/AssemblyInfo.cs
+Modified: MultiEditor/MultiEditor.Designer.cs
+Modified: MultiEditor/MultiEditor.cs
+Modified: MultiEditor/MultiEditor.csproj
+Modified: MultiEditor/MultiEditor.resx
+Modified: MultiEditor/MultiEditorComponentList.cs
+Modified: MultiEditor/MultiEditorPlugin.cs
+Modified: MultiEditor/Properties/AssemblyInfo.cs
+Modified: MultiEditor/Properties/Resources.Designer.cs
+Modified: SendItem/Option.Designer.cs
+Modified: SendItem/Option.cs
+Modified: SendItem/Option.resx
+Modified: SendItem/Properties/AssemblyInfo.cs
+Modified: SendItem/SendItem.cs
+Modified: SendItem/SendItem.csproj
+Modified: Ultima/ASCIIFont.cs
+Modified: Ultima/AnimationEdit.cs
+Modified: Ultima/Animations.cs
+Modified: Ultima/Animdata.cs
+Modified: Ultima/Art.cs
+Modified: Ultima/BinaryExtensions.cs
+Modified: Ultima/CalibrationInfo.cs
+Modified: Ultima/Client.cs
+Modified: Ultima/ClientHandles.cs
+Modified: Ultima/FileIndex.cs
+Modified: Ultima/Files.cs
+Modified: Ultima/Gumps.cs
+Modified: Ultima/Helpers/Extensions.cs
+Modified: Ultima/Hues.cs
+Modified: Ultima/Light.cs
+Modified: Ultima/Map.cs
+Modified: Ultima/MultiMap.cs
+Modified: Ultima/Multis.cs
+Modified: Ultima/NativeMethods.cs
+Modified: Ultima/ProcessStream.cs
+Modified: Ultima/RadarCol.cs
+Modified: Ultima/SkillGroups.cs
+Modified: Ultima/Skills.cs
+Modified: Ultima/Sound.cs
+Modified: Ultima/SpeechList.cs
+Modified: Ultima/StringEntry.cs
+Modified: Ultima/StringList.cs
+Modified: Ultima/Textures.cs
+Modified: Ultima/TileData.cs
+Modified: Ultima/TileList.cs
+Modified: Ultima/TileMatrix.cs
+Modified: Ultima/TileMatrixPatch.cs
+Modified: Ultima/Ultima.csproj
+Modified: Ultima/UnicodeFont.cs
+Modified: Ultima/Verdata.cs
+Modified: Ultima/WaveFormat.cs
+Modified: Ultima/WindowProcessStream.cs
+Modified: UoFiddler/AboutBox.Designer.cs
+Modified: UoFiddler/AboutBox.cs
+Modified: UoFiddler/AboutBox.resx
+Modified: UoFiddler/ExceptionForm.Designer.cs
+Modified: UoFiddler/ExceptionForm.cs
+Modified: UoFiddler/ExceptionForm.resx
+Added: UoFiddler/ExternTool.cs
+Modified: UoFiddler/LoadProfile.Designer.cs
+Modified: UoFiddler/LoadProfile.cs
+Modified: UoFiddler/ManagePlugins.Designer.cs
+Modified: UoFiddler/ManagePlugins.cs
+Modified: UoFiddler/ManagePlugins.resx
+Modified: UoFiddler/ManageTools.Designer.cs
+Modified: UoFiddler/ManageTools.cs
+Modified: UoFiddler/Options.cs
+Modified: UoFiddler/OptionsForm.Designer.cs
+Modified: UoFiddler/OptionsForm.cs
+Modified: UoFiddler/Options_default.xml
+Modified: UoFiddler/PathSettings.Designer.cs
+Modified: UoFiddler/PathSettings.cs
+Modified: UoFiddler/Program.cs
+Modified: UoFiddler/Properties/AssemblyInfo.cs
+Modified: UoFiddler/Properties/Resources.Designer.cs
+Modified: UoFiddler/Properties/app.manifest
+Modified: UoFiddler/UnDocked.cs
+Modified: UoFiddler/UoFiddler.Designer.cs
+Modified: UoFiddler/UoFiddler.cs
+Modified: UoFiddler/UoFiddler.csproj
+Modified: UoFiddler/app.config
+
+Revision: 8178e572d2e86c2de53631eef9c5b68c92952d5e
+Author: Admin-Yukiko <hopelivesproject@gmail.com>
+Date: 2/26/2020 3:09:53 PM
+Message:
+Changed version number and added new version info to the About form.
+
+----
+Modified: UoFiddler/AboutBox.Designer.cs
+Modified: UoFiddler/AboutBox.resx
+Modified: UoFiddler/Properties/AssemblyInfo.cs
+
+Revision: f9d4adad91bb8b254806225e9545b17fadca085c
+Author: AsY!um- <web@asylum.pl>
+Date: 2/25/2020 2:53:38 PM
+Message:
+Cleanup of PluginTest plugin. Add basic option select multiple items in Items view. Add possibility to export all selected items to itemdesc.cfg instead of just one item. Added option to generate item graphic offset.cfg - it will export all items at once. Subsequent exports will replace existing file in UOFiddlers profile folder.
+
+----
+Modified: Controls/ItemShow.Designer.cs
+Deleted: FiddlerPlugin/Class1.cs
+Rename: FiddlerPlugin/Example.Designer.cs (from FiddlerPlugin/Form1.Designer.cs)
+Rename: FiddlerPlugin/Example.cs (from FiddlerPlugin/Form1.cs)
+Added: FiddlerPlugin/Example.resx
+Added: FiddlerPlugin/ExamplePlugin.cs
+Rename: FiddlerPlugin/ExampleUserControl.Designer.cs (from FiddlerPlugin/UserControl1.Designer.cs)
+Rename: FiddlerPlugin/ExampleUserControl.cs (from FiddlerPlugin/UserControl1.cs)
+Rename: FiddlerPlugin/ExampleUserControl.resx (from FiddlerPlugin/UserControl1.resx)
+Modified: FiddlerPlugin/FiddlerPlugin.csproj
+
+Revision: fd5446d2fed96eccaef7e107d4271876ae6137e9
+Author: AsY!um- <web@asylum.pl>
+Date: 2/24/2020 4:14:09 PM
+Message:
+Add graphic size & offset information to Item details box. Add missing Copy/Select all context menu when alternative design is on.
+
+----
+Modified: Controls/ItemShow.cs
+Modified: Controls/ItemShowAlternative.cs
+
+Revision: d14f56d8a409fe211cca0bc59076e999bdef5eee
+Author: AsY!um- <web@asylum.pl>
+Date: 2/23/2020 9:58:33 AM
+Message:
+Update ItemShow.Designer.cs
+
+----
+Modified: Controls/ItemShow.Designer.cs
+
+Revision: ba01c60a49f88b68842a3ca0007b2d4dd6927e8a
+Author: AsY!um- <web@asylum.pl>
+Date: 2/23/2020 9:50:01 AM
+Message:
+Add helper for RichTextBox with simple ContextMenuStrip for ItemShow.cs and ItemDetail.cs
+
+----
+Modified: Controls/Controls.csproj
+Added: Controls/Helpers/RichTextBoxExtensions.cs
+Modified: Controls/ItemDetail.cs
+Modified: Controls/ItemShow.Designer.cs
+Modified: Controls/ItemShow.cs
+
+Revision: 95931c64099735480c5ece1816eba343de81191b
+Author: v0icer <voicer@o2.pl>
+Date: 3/17/2018 10:17:43 AM
+Message:
+minor changes
+
+----
+Modified: Controls/ItemShow.Designer.cs
+Modified: Controls/ItemShow.cs
+Modified: Controls/ItemShow.resx
+
+Revision: 88ac48ed80d39219e2762d1886eda45b0d015a7c
+Author: v0icer <voicer@o2.pl>
+Date: 3/17/2018 9:53:34 AM
+Message:
+fix: missing dispose on replace option
+
+----
+Modified: Controls/ItemShow.cs
+Modified: Controls/LandTiles.resx
+Modified: Ultima/AnimationEdit.cs
+
+Revision: 95cea49b9e26b7b64f2e36e728b4165f292b7bbd
+Author: v0icer <voicer@o2.pl>
+Date: 3/14/2018 9:35:18 AM
+Message:
+- merged Wyatt UOP support for artlegacy, gumpartlegacy, mapXlegacymul and soundlegacymul uop files.
+- added Show Free Slots feature in LandTiles tab.
+----
+Modified: Controls/LandTiles.Designer.cs
+Modified: Controls/LandTiles.cs
+Modified: Ultima/Art.cs
+Modified: Ultima/FileIndex.cs
+Modified: Ultima/Files.cs
+Modified: Ultima/Gumps.cs
+Modified: Ultima/Multis.cs
+Modified: Ultima/NativeMethods.cs
+Modified: Ultima/Sound.cs
+Modified: Ultima/StringEntry.cs
+Modified: Ultima/StringList.cs
+Modified: Ultima/TileMatrix.cs
+
+Revision: c23eb5668575507acbe724111c36d06cfb10ae0e
+Author: Admin-Yukiko <hopelives@outlook.com>
+Date: 11/27/2017 2:23:34 AM
+Message:
+Fix for Gump Studio POL Export plug-in
+
+A big thank you to Turley for giving me help to fix the POL plug-in for
+Gump Studio. It now exports the text colour correctly. Also in this
+commit I am removing extraneous files from the PDG directory.,
+specifically the backup folder and files generated by Visual Studio when
+it upgraded the solution to VS 2015.
+----
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: 87bc3484a079ea41827be5efe487a8c2b912443e
+Author: ares <ares@alathair.de>
+Date: 6/9/2017 3:44:06 PM
+Message:
+Just some "pling" suppressing
+
+----
+Modified: Controls/Gump.cs
+Modified: Controls/GumpSearch.cs
+Modified: Controls/ItemSearch.cs
+Modified: Controls/ItemShow.cs
+Modified: Controls/LandTileSearch.cs
+Modified: Controls/LandTiles.cs
+Modified: Controls/Sounds.Designer.cs
+Modified: Controls/Sounds.cs
+Modified: Controls/SoundsSearch.cs
+Modified: Controls/Texture.cs
+Modified: Controls/TextureSearch.cs
+Modified: Controls/TileDatas.cs
+Modified: Controls/TileDatasSearch.cs
+
+Revision: 3ec990a6d20a87e6d7fb89a9f1a46160c39a0742
+Author: ares <ares@alathair.de>
+Date: 6/7/2017 3:58:10 PM
+Message:
+more correct version hint
+
+----
+Modified: UoFiddler/AboutBox.resx
+
+Revision: 8bbb9cab3f665b19d599ee12c0eef96a716b319a
+Author: ares <ares@alathair.de>
+Date: 6/7/2017 3:50:32 PM
+Message:
+Merged Alathair Fiddler Version (aka. 4.6.1.4) to Master.
+Changes:
+Fixed Art saving hash algorithm for duplicate finding was applied to odd data.
+Improved search usability: multiple enter results in search next
+Added Shortcut CTRL+F to open search dialog
+Added Cliloc import for current TileData
+Complete Rework of Sounds Tab for more usability
+Fixed sound indexes to correct game indexes
+Fixed translation indexes also support 4 digits
+Fixed sound name sorting with multiple whitespaces
+Fixed exporting sounds ensures extension
+Added showing translated sounds (marked blue and underlined)
+Added sound file cleaning from unsupported wave headers and format checks
+Added sound playback progress and stop-button
+Added capability for renaming sounds
+Fixed a possible crash condition when loading profiles
+Fixed light index files were saved invalid and caused client crashes for empty indexes
+Fixed light resolution was saved in wrong order so non-quadratic lights are supported now.
+Fixed light transparency saving should now work correctly.
+Added tif files in file selectors
+Fixed tile selection in tile data when tile data was not already open
+Fixed performance issue with showing free slots in Items Tab
+Added TileData Save directly on Change state now is saved in settings
+Fixed TileData save directly on change performance issue when changing name
+Added jump to gump option at items tab
+Added Search to gump tab
+Added Quick switch between Male/Female Gumps in Gump Tab
+Added some keyboard tweaks
+
+.. and some minor stuff ..
+----
+Modified: Controls/AnimationEdit.cs
+Modified: Controls/Cliloc.Designer.cs
+Modified: Controls/Cliloc.cs
+Modified: Controls/Cliloc.resx
+Modified: Controls/Controls.csproj
+Modified: Controls/Fonts.cs
+Modified: Controls/Gump.Designer.cs
+Modified: Controls/Gump.cs
+Added: Controls/GumpSearch.Designer.cs
+Added: Controls/GumpSearch.cs
+Added: Controls/GumpSearch.resx
+Added: Controls/Helpers/StringExtensions.cs
+Added: Controls/Helpers/TreeViewExtensions.cs
+Modified: Controls/ItemSearch.Designer.cs
+Modified: Controls/ItemSearch.cs
+Modified: Controls/ItemShow.Designer.cs
+Modified: Controls/ItemShow.cs
+Modified: Controls/ItemShowAlternative.cs
+Modified: Controls/LandTileSearch.Designer.cs
+Modified: Controls/LandTileSearch.cs
+Modified: Controls/LandTiles.Designer.cs
+Modified: Controls/LandTiles.cs
+Modified: Controls/LandTilesAlternative.cs
+Modified: Controls/Light.cs
+Modified: Controls/Options.cs
+Modified: Controls/Sounds.Designer.cs
+Modified: Controls/Sounds.cs
+Modified: Controls/Sounds.resx
+Added: Controls/SoundsSearch.Designer.cs
+Added: Controls/SoundsSearch.cs
+Added: Controls/SoundsSearch.resx
+Modified: Controls/Texture.Designer.cs
+Modified: Controls/Texture.cs
+Modified: Controls/TextureAlternative.cs
+Modified: Controls/TextureSearch.Designer.cs
+Modified: Controls/TextureSearch.cs
+Modified: Controls/TileDatas.Designer.cs
+Modified: Controls/TileDatas.cs
+Modified: Controls/TileDatasSearch.Designer.cs
+Modified: Controls/TileDatasSearch.cs
+Modified: Ultima/Art.cs
+Added: Ultima/BinaryExtensions.cs
+Added: Ultima/Helpers/Extensions.cs
+Modified: Ultima/Light.cs
+Modified: Ultima/Sound.cs
+Modified: Ultima/Ultima.csproj
+Added: Ultima/WaveFormat.cs
+Added: Ultima/WaveFormatException.cs
+Modified: UoFiddler/AboutBox.Designer.cs
+Modified: UoFiddler/AboutBox.resx
+Modified: UoFiddler/LoadProfile.Designer.cs
+Modified: UoFiddler/LoadProfile.cs
+Modified: UoFiddler/Options.cs
+Modified: UoFiddler/PathSettings.Designer.cs
+Modified: UoFiddler/Properties/AssemblyInfo.cs
+Modified: UoFiddler/UoFiddler.cs
+
+Revision: afb702b6bfd460751cb9f33c8f64da2cbb492218
+Author: Marcin Boberek <marcin.boberek@gmail.com>
+Date: 10/21/2016 6:30:34 AM
+Message:
+Version 4.6b
+
+----
+Modified: UoFiddler/UoFiddler.cs
+Modified: UoFiddler/UoFiddler.csproj
+
+Revision: 9ca6632f1eb476d0003307fe491f233a11617c8e
+Author: Marcin Boberek <marcin.boberek@gmail.com>
+Date: 10/17/2016 6:42:49 AM
+Message:
+.gitignore
+
+----
+Added: .gitignore
+
+Revision: 21df04001f178cbef1d183fd255694ade5a27ae1
+Author: Marcin Boberek <marcin.boberek@gmail.com>
+Date: 10/17/2016 6:11:08 AM
+Message:
+Adjust UoFiddler multi component to work with TOL multifile (there here multis missing in UI form 0x2000)
+
+----
+Modified: Controls/Multis.cs
+Modified: Ultima/Multis.cs
+
+Revision: d0bf5ee17ec6609f207fbf58de64c149fbb1e04a
+Author: frozenblit <rozenblit@gmail.com>
+Date: 10/7/2014 1:51:38 PM
+Message:
+Moved tools into root folder
+
+----
+Added: ComparePlugin/CompareCliLoc.Designer.cs
+Added: ComparePlugin/CompareCliLoc.cs
+Added: ComparePlugin/CompareCliLoc.resx
+Added: ComparePlugin/CompareGump.Designer.cs
+Added: ComparePlugin/CompareGump.cs
+Added: ComparePlugin/CompareGump.resx
+Added: ComparePlugin/CompareHues.Designer.cs
+Added: ComparePlugin/CompareHues.cs
+Added: ComparePlugin/CompareHues.resx
+Added: ComparePlugin/CompareItem.Designer.cs
+Added: ComparePlugin/CompareItem.cs
+Added: ComparePlugin/CompareItem.resx
+Added: ComparePlugin/CompareLand.Designer.cs
+Added: ComparePlugin/CompareLand.cs
+Added: ComparePlugin/CompareLand.resx
+Added: ComparePlugin/CompareMap.Designer.cs
+Added: ComparePlugin/CompareMap.cs
+Added: ComparePlugin/CompareMap.resx
+Added: ComparePlugin/ComparePlugin.cs
+Added: ComparePlugin/ComparePlugin.csproj
+Added: ComparePlugin/CompareTexture.Designer.cs
+Added: ComparePlugin/CompareTexture.cs
+Added: ComparePlugin/CompareTexture.resx
+Added: ComparePlugin/Properties/AssemblyInfo.cs
+Added: ComparePlugin/Properties/Resources.Designer.cs
+Added: ComparePlugin/Properties/Resources.resx
+Added: ComparePlugin/SecondArt.cs
+Added: ComparePlugin/SecondFileIndex.cs
+Added: ComparePlugin/SecondGump.cs
+Added: ComparePlugin/SecondHue.cs
+Added: ComparePlugin/SecondTexture.cs
+Added: Controls/AnimData.Designer.cs
+Added: Controls/AnimData.cs
+Added: Controls/AnimData.resx
+Added: Controls/AnimationEdit.Designer.cs
+Added: Controls/AnimationEdit.cs
+Added: Controls/AnimationEdit.resx
+Added: Controls/Animationlist.Designer.cs
+Added: Controls/Animationlist.cs
+Added: Controls/Animationlist.resx
+Added: Controls/AnimationlistNewEntries.Designer.cs
+Added: Controls/AnimationlistNewEntries.cs
+Added: Controls/AnimationlistNewEntries.resx
+Added: Controls/Cliloc.Designer.cs
+Added: Controls/Cliloc.cs
+Added: Controls/Cliloc.resx
+Added: Controls/ClilocAdd.Designer.cs
+Added: Controls/ClilocAdd.cs
+Added: Controls/ClilocAdd.resx
+Added: Controls/ClilocDetail.Designer.cs
+Added: Controls/ClilocDetail.cs
+Added: Controls/ClilocDetail.resx
+Added: Controls/CollapsibleSplitter.Designer.cs
+Added: Controls/CollapsibleSplitter.cs
+Added: Controls/Controls.csproj
+Added: Controls/Dress.Designer.cs
+Added: Controls/Dress.cs
+Added: Controls/Dress.resx
+Added: Controls/Events.cs
+Added: Controls/FontOffset.Designer.cs
+Added: Controls/FontOffset.cs
+Added: Controls/FontOffset.resx
+Added: Controls/FontText.Designer.cs
+Added: Controls/FontText.cs
+Added: Controls/FontText.resx
+Added: Controls/Fonts.Designer.cs
+Added: Controls/Fonts.cs
+Added: Controls/Fonts.resx
+Added: Controls/Gump.Designer.cs
+Added: Controls/Gump.cs
+Added: Controls/Gump.resx
+Added: Controls/Host.cs
+Added: Controls/HueEdit.Designer.cs
+Added: Controls/HueEdit.cs
+Added: Controls/HueEdit.resx
+Added: Controls/HuePopUp.Designer.cs
+Added: Controls/HuePopUp.cs
+Added: Controls/HuePopUp.resx
+Added: Controls/HuePopUpDress.Designer.cs
+Added: Controls/HuePopUpDress.cs
+Added: Controls/HuePopUpDress.resx
+Added: Controls/HuePopUpItem.Designer.cs
+Added: Controls/HuePopUpItem.cs
+Added: Controls/HuePopUpItem.resx
+Added: Controls/Hues.Designer.cs
+Added: Controls/Hues.cs
+Added: Controls/Hues.resx
+Added: Controls/ItemDetail.Designer.cs
+Added: Controls/ItemDetail.cs
+Added: Controls/ItemDetail.resx
+Added: Controls/ItemSearch.Designer.cs
+Added: Controls/ItemSearch.cs
+Added: Controls/ItemSearch.resx
+Added: Controls/ItemShow.Designer.cs
+Added: Controls/ItemShow.cs
+Added: Controls/ItemShow.resx
+Added: Controls/ItemShowAlternative.Designer.cs
+Added: Controls/ItemShowAlternative.cs
+Added: Controls/ItemShowAlternative.resx
+Added: Controls/LandTileSearch.Designer.cs
+Added: Controls/LandTileSearch.cs
+Added: Controls/LandTileSearch.resx
+Added: Controls/LandTiles.Designer.cs
+Added: Controls/LandTiles.cs
+Added: Controls/LandTiles.resx
+Added: Controls/LandTilesAlternative.Designer.cs
+Added: Controls/LandTilesAlternative.cs
+Added: Controls/LandTilesAlternative.resx
+Added: Controls/Light.Designer.cs
+Added: Controls/Light.cs
+Added: Controls/Light.resx
+Added: Controls/Map.Designer.cs
+Added: Controls/Map.cs
+Added: Controls/Map.resx
+Added: Controls/MapClearStatics.Designer.cs
+Added: Controls/MapClearStatics.cs
+Added: Controls/MapClearStatics.resx
+Added: Controls/MapDetails.Designer.cs
+Added: Controls/MapDetails.cs
+Added: Controls/MapDetails.resx
+Added: Controls/MapDiffInsert.Designer.cs
+Added: Controls/MapDiffInsert.cs
+Added: Controls/MapDiffInsert.resx
+Added: Controls/MapMarker.Designer.cs
+Added: Controls/MapMarker.cs
+Added: Controls/MapMarker.resx
+Added: Controls/MapMeltStatics.Designer.cs
+Added: Controls/MapMeltStatics.cs
+Added: Controls/MapMeltStatics.resx
+Added: Controls/MapReplace.Designer.cs
+Added: Controls/MapReplace.cs
+Added: Controls/MapReplace.resx
+Added: Controls/MapReplaceTiles.Designer.cs
+Added: Controls/MapReplaceTiles.cs
+Added: Controls/MapReplaceTiles.resx
+Added: Controls/MultiImport.Designer.cs
+Added: Controls/MultiImport.cs
+Added: Controls/MultiImport.resx
+Added: Controls/MultiMap.Designer.cs
+Added: Controls/MultiMap.cs
+Added: Controls/MultiMap.resx
+Added: Controls/Multis.Designer.cs
+Added: Controls/Multis.cs
+Added: Controls/Multis.resx
+Added: Controls/Options.cs
+Added: Controls/Plugin.cs
+Added: Controls/ProgressBar.Designer.cs
+Added: Controls/ProgressBar.cs
+Added: Controls/ProgressBar.resx
+Added: Controls/Properties/AssemblyInfo.cs
+Added: Controls/Properties/Resources.Designer.cs
+Added: Controls/Properties/Resources.resx
+Added: Controls/RadarColor.Designer.cs
+Added: Controls/RadarColor.cs
+Added: Controls/RadarColor.resx
+Added: Controls/Resources/QuadradoCheio.jpg
+Added: Controls/Resources/QuadradoVazio.gif
+Added: Controls/Resources/cadeado.gif
+Added: Controls/Resources/mouse.bmp
+Added: Controls/Resources/staticPlayButton.png
+Added: Controls/SkillGrp.Designer.cs
+Added: Controls/SkillGrp.cs
+Added: Controls/SkillGrp.resx
+Added: Controls/Skills.Designer.cs
+Added: Controls/Skills.cs
+Added: Controls/Skills.resx
+Added: Controls/Sounds.Designer.cs
+Added: Controls/Sounds.cs
+Added: Controls/Sounds.resx
+Added: Controls/Speech.Designer.cs
+Added: Controls/Speech.cs
+Added: Controls/Speech.resx
+Added: Controls/Texture.Designer.cs
+Added: Controls/Texture.cs
+Added: Controls/Texture.resx
+Added: Controls/TextureAlternative.Designer.cs
+Added: Controls/TextureAlternative.cs
+Added: Controls/TextureAlternative.resx
+Added: Controls/TextureSearch.Designer.cs
+Added: Controls/TextureSearch.cs
+Added: Controls/TextureSearch.resx
+Added: Controls/TileDataFilter.Designer.cs
+Added: Controls/TileDataFilter.cs
+Added: Controls/TileDataFilter.resx
+Added: Controls/TileDatas.Designer.cs
+Added: Controls/TileDatas.cs
+Added: Controls/TileDatas.resx
+Added: Controls/TileDatasSearch.Designer.cs
+Added: Controls/TileDatasSearch.cs
+Added: Controls/TileDatasSearch.resx
+Added: Controls/Utils.cs
+Added: FiddlerPlugin/Class1.cs
+Added: FiddlerPlugin/FiddlerPlugin.csproj
+Added: FiddlerPlugin/Form1.Designer.cs
+Added: FiddlerPlugin/Form1.cs
+Added: FiddlerPlugin/Properties/AssemblyInfo.cs
+Added: FiddlerPlugin/UserControl1.Designer.cs
+Added: FiddlerPlugin/UserControl1.cs
+Added: FiddlerPlugin/UserControl1.resx
+Added: MassImportPlugin/MassImport.Designer.cs
+Added: MassImportPlugin/MassImport.cs
+Added: MassImportPlugin/MassImport.resx
+Added: MassImportPlugin/MassImportPlugin.cs
+Added: MassImportPlugin/MassImportPlugin.csproj
+Added: MassImportPlugin/Properties/AssemblyInfo.cs
+Added: MultiEditor/MultiEditor.Designer.cs
+Added: MultiEditor/MultiEditor.cs
+Added: MultiEditor/MultiEditor.csproj
+Added: MultiEditor/MultiEditor.resx
+Added: MultiEditor/MultiEditorComponentList.cs
+Added: MultiEditor/MultiEditorPlugin.cs
+Added: MultiEditor/Properties/AssemblyInfo.cs
+Added: MultiEditor/Properties/Resources.Designer.cs
+Added: MultiEditor/Properties/Resources.resx
+Added: MultiEditor/images/AltitudeButton.bmp
+Added: MultiEditor/images/AltitudeButton_Selected.bmp
+Added: MultiEditor/images/AltitudeButton_Selected.psd
+Added: MultiEditor/images/DrawButton.bmp
+Added: MultiEditor/images/DrawButton_Selected.bmp
+Added: MultiEditor/images/PipetteButton.bmp
+Added: MultiEditor/images/PipetteButton_Selected.bmp
+Added: MultiEditor/images/RemoveButton.bmp
+Added: MultiEditor/images/RemoveButton_Selected.bmp
+Added: MultiEditor/images/SelectButton.bmp
+Added: MultiEditor/images/SelectButton_Selected.bmp
+Added: MultiEditor/images/TransButton.bmp
+Added: MultiEditor/images/TransButton_Selected.bmp
+Added: MultiEditor/images/TransButton_Selected.psd
+Added: MultiEditor/images/VirtualFloorButton.bmp
+Added: MultiEditor/images/VirtualFloorButton_Selected.bmp
+Added: MultiEditor/images/VirtualFloorButton_Selected.psd
+Added: MultiEditor/images/treeViewImage.bmp
+Added: MultiEditor/multieditor.xml
+Added: SendItem/Option.Designer.cs
+Added: SendItem/Option.cs
+Added: SendItem/Option.resx
+Added: SendItem/Properties/AssemblyInfo.cs
+Added: SendItem/SendItem.cs
+Added: SendItem/SendItem.csproj
+Added: Ultima/ASCIIFont.cs
+Added: Ultima/AnimationEdit.cs
+Added: Ultima/Animations.cs
+Added: Ultima/Animdata.cs
+Added: Ultima/Art.cs
+Added: Ultima/AssemblyInfo.cs
+Added: Ultima/CalibrationInfo.cs
+Added: Ultima/Client.cs
+Added: Ultima/ClientHandles.cs
+Added: Ultima/FileIndex.cs
+Added: Ultima/Files.cs
+Added: Ultima/Gumps.cs
+Added: Ultima/Hues.cs
+Added: Ultima/Light.cs
+Added: Ultima/LocationPointer.cs
+Added: Ultima/Map.cs
+Added: Ultima/MultiMap.cs
+Added: Ultima/Multis.cs
+Added: Ultima/NativeMethods.cs
+Added: Ultima/ProcessStream.cs
+Added: Ultima/RadarCol.cs
+Added: Ultima/SkillGroups.cs
+Added: Ultima/Skills.cs
+Added: Ultima/Sound.cs
+Added: Ultima/SpeechList.cs
+Added: Ultima/StringEntry.cs
+Added: Ultima/StringList.cs
+Added: Ultima/Textures.cs
+Added: Ultima/TileData.cs
+Added: Ultima/TileList.cs
+Added: Ultima/TileMatrix.cs
+Added: Ultima/TileMatrixPatch.cs
+Added: Ultima/Ultima.csproj
+Added: Ultima/UnicodeFont.cs
+Added: Ultima/Verdata.cs
+Added: Ultima/WindowProcessStream.cs
+Added: UoFiddler.sln
+Added: UoFiddler/AboutBox.Designer.cs
+Added: UoFiddler/AboutBox.cs
+Added: UoFiddler/AboutBox.resx
+Added: UoFiddler/Animationlist.xml
+Added: UoFiddler/ExceptionForm.Designer.cs
+Added: UoFiddler/ExceptionForm.cs
+Added: UoFiddler/ExceptionForm.resx
+Added: UoFiddler/LoadProfile.Designer.cs
+Added: UoFiddler/LoadProfile.cs
+Added: UoFiddler/LoadProfile.resx
+Added: UoFiddler/ManagePlugins.Designer.cs
+Added: UoFiddler/ManagePlugins.cs
+Added: UoFiddler/ManagePlugins.resx
+Added: UoFiddler/ManageTools.Designer.cs
+Added: UoFiddler/ManageTools.cs
+Added: UoFiddler/ManageTools.resx
+Added: UoFiddler/Multilist.xml
+Added: UoFiddler/Options.cs
+Added: UoFiddler/OptionsForm.Designer.cs
+Added: UoFiddler/OptionsForm.cs
+Added: UoFiddler/OptionsForm.resx
+Added: UoFiddler/Options_default.xml
+Added: UoFiddler/PathSettings.Designer.cs
+Added: UoFiddler/PathSettings.cs
+Added: UoFiddler/PathSettings.resx
+Added: UoFiddler/Program.cs
+Added: UoFiddler/Properties/AssemblyInfo.cs
+Added: UoFiddler/Properties/Resources.Designer.cs
+Added: UoFiddler/Properties/Resources.resx
+Added: UoFiddler/Properties/Settings.Designer.cs
+Added: UoFiddler/Properties/Settings.settings
+Added: UoFiddler/Properties/app.manifest
+Added: UoFiddler/UOFiddler.ico
+Added: UoFiddler/UOFiddler.jpg
+Added: UoFiddler/UnDocked.Designer.cs
+Added: UoFiddler/UnDocked.cs
+Added: UoFiddler/UnDocked.resx
+Added: UoFiddler/UoFiddler.Designer.cs
+Added: UoFiddler/UoFiddler.cs
+Added: UoFiddler/UoFiddler.csproj
+Added: UoFiddler/UoFiddler.csproj.user
+Added: UoFiddler/UoFiddler.resx
+Added: UoFiddler/app.config
+
