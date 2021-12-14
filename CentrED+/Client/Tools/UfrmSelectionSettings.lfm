@@ -1,0 +1,12 @@
+inherited frmSelectionSettings: TfrmSelectionSettings
+  Left = 1122
+  Height = 116
+  Top = 613
+  Width = 188
+  Caption = 'Опции выделения'
+  OnCreate = FormCreate
+  OnShow = FormShow
+  inherited tmClose: TTimer
+    left = 80
+  end
+end

@@ -1,0 +1,731 @@
+<?xml version="1.0" ?>	<!--
+Type:	 DR	 DL	 UL	 UR	 LL	 UU	 FF
+ 		□■	■□	■■	■■	■□	■■	■■		
+ 		■■	■■	■□	□■	■□	□□	■■		
+Code:	x0E	x0D	x0B	x07	x09	x03	x0F		-->
+<!--
+Type ISO:	 DR		DL		UL		UR		 LL		UU		FF
+ 			 □		■		■		■		 ■		■		■		
+			■■	   ■□	   ■■	   □■		■□	   □■	   ■■			
+ 			 ■		■		□		■		 □		□		■		
+Code:		x0E		x0D		x0B		x07		x09		x03		x0F		
+White: the neighbouring tile type, Grey: the current tile type-->
+
+
+<!-- Note: this config is unfinished and contains many errors and wrong tiles. 
+	 Be carefully, loading some brushes from it can cause errors. 
+	 This very need fixing or remaking. If someone have or whanted to fix\complete
+	 it for OSI nonpatch it will be great help.
+-->
+
+
+<TilesBrush>
+	<Brush Id="0002" Name="Dirt">
+		<Land ID="0x0070" Chance="0,20" />
+		<Land ID="0x0071" Chance="0,20" />
+		<Land ID="0x0072" Chance="0,20" />
+		<Land ID="0x0073" Chance="0,20" />
+		<Land ID="0x0074" Chance="0,20" />
+		<Land ID="0x0075" />
+		<Land ID="0x0076" />
+		<Land ID="0x0077" />
+		<Land ID="0x0078" />
+		<Edge To="0202" >	<!-- Forest -->
+			<Land Type="LL" ID="0x014d" />
+			<Land Type="UU" ID="0x014e" />
+			<Land Type="LL" ID="0x0166" />
+			<Land Type="UU" ID="0x0165" />
+			<Land Type="DL" ID="0x00e0" />
+			<Land Type="UL" ID="0x00e1" />
+			<Land Type="UR" ID="0x00e2" />
+			<Land Type="DR" ID="0x00e3" />
+			<Land Type="DL" ID="0x016a" />
+			<Land Type="UL" ID="0x016c" />
+			<Land Type="UR" ID="0x0169" />
+			<Land Type="DR" ID="0x016b" />
+		</Edge>
+		<Edge To="0203" >	<!-- Grass -->	
+			<Land Type="UL" ID="0x0079" />
+			<Land Type="DR" ID="0x007A" />
+			<Land Type="UR" ID="0x007B" />
+			<Land Type="DL" ID="0x007C" />
+			<Land Type="UU" ID="0x0085" />
+			<Land Type="UU" ID="0x0086" />
+			<Land Type="LL" ID="0x0087" />
+			<Land Type="LL" ID="0x0088" />
+		</Edge>
+		<Edge To="0205" >	<!-- Rock -->
+			<Land Type="LL" ID="0x00dc" />
+			<Land Type="UU" ID="0x00dd" />
+			<Land Type="DL" ID="0x00e0" />
+			<Land Type="UL" ID="0x00e1" />
+			<Land Type="UR" ID="0x00e2" />
+			<Land Type="DR" ID="0x00e3" />
+			<Land Type="DL" ID="0x0143" />
+			<Land Type="UL" ID="0x0142" />
+			<Land Type="UR" ID="0x0144" />
+			<Land Type="DR" ID="0x0141" />
+			<Land Type="DL" ID="0x00e8" />
+			<Land Type="UL" ID="0x00e9" />
+			<Land Type="UR" ID="0x00ea" />
+			<Land Type="DR" ID="0x00eb" />
+		</Edge>
+		<Edge To="0226" >	<!-- Cave -->
+			<Land Type="LL" ID="0x01de" />
+			<Land Type="UU" ID="0x01dc" />
+			<Land Type="DL" ID="0x01e6" />
+			<Land Type="UL" ID="0x01e5" />
+			<Land Type="UR" ID="0x01e7" />
+			<Land Type="DR" ID="0x01e4" />
+		</Edge>		
+		<Edge To="0206" >	<!-- Jungle -->
+			<Land Type="LL" ID="0x026f" />
+			<Land Type="UU" ID="0x026e" />
+			<Land Type="UL" ID="0x01f0" />
+			<Land Type="DR" ID="0x01f1" />
+			<Land Type="UR" ID="0x01f2" />
+			<Land Type="DL" ID="0x01f3" />
+			<Land Type="UL" ID="0x0272" />
+			<Land Type="DR" ID="0x0273" />
+			<Land Type="UR" ID="0x0275" />
+			<Land Type="DL" ID="0x0274" />
+			<Land Type="UL" ID="0x0280" />
+			<Land Type="DR" ID="0x027e" />
+			<Land Type="UR" ID="0x0281" />
+			<Land Type="DL" ID="0x027f" />
+		</Edge>		
+	</Brush>
+	<Brush Id="0202" Name="Forest">
+		<Land ID="0x00C4" />
+		<Land ID="0x00C5" />
+		<Land ID="0x00C6" />
+		<Land ID="0x00C7" />
+		<Land ID="0x00F8" />
+		<Land ID="0x00F9" />
+		<Land ID="0x00FA" />
+		<Land ID="0x00FB" />
+		<Edge To="0002" >	<!-- Grass -->	
+			<Land Type="UU" ID="0x00c8" />
+			<Land Type="UU" ID="0x00c9" />
+			<Land Type="LL" ID="0x00cb" />
+			<Land Type="LL" ID="0x00cc" />
+			<Land Type="DR" ID="0x00d5" />
+			<Land Type="DR" ID="0x00d0" />
+			<Land Type="UL" ID="0x00d6" />
+			<Land Type="UL" ID="0x00cd" />
+			<Land Type="DL" ID="0x00d3" />
+			<Land Type="DL" ID="0x00d4" />
+			<Land Type="UR" ID="0x00d7" />
+			<Land Type="UR" ID="0x00ca" />
+		</Edge>
+		<Edge To="0203" >	<!-- Dirt -->
+			<Land Type="LL" ID="0x014f" />
+			<Land Type="UU" ID="0x014c" />
+			<Land Type="LL" ID="0x0167" />
+			<Land Type="UU" ID="0x0168" />
+			<Land Type="DL" ID="0x0162" />
+			<Land Type="UR" ID="0x0161" />
+			<Land Type="UL" ID="0x0164" />
+			<Land Type="DR" ID="0x0163" />
+			<Land Type="DL" ID="0x0171" />
+			<Land Type="UR" ID="0x0172" />
+			<Land Type="UL" ID="0x0173" />
+			<Land Type="DR" ID="0x0174" />
+		</Edge>
+		<Edge To="0205" >	<!-- Rock -->
+			<Land Type="LL" ID="0x00ed" />
+			<Land Type="UU" ID="0x00ee" />
+			<Land Type="DL" ID="0x00f0" />
+			<Land Type="UL" ID="0x00f1" />
+			<Land Type="UR" ID="0x00f2" />
+			<Land Type="DR" ID="0x00f3" />
+		</Edge>
+	</Brush>
+	<Brush Id="0203" Name="Grass">
+		<Land ID="0x0003" />
+		<Land ID="0x0004" />
+		<Land ID="0x0005" />
+		<Land ID="0x0006" />
+		<Edge To="0211" >	<!-- Furrows WN -->
+			<Land Type="LL" ID="0x000c" />
+			<Land Type="UU" ID="0x000d" />
+			<Land Type="UL" ID="0x0011" />
+			<Land Type="DL" ID="0x000f" />
+			<Land Type="DR" ID="0x0010" />
+			<Land Type="UR" ID="0x0012" />
+		</Edge>
+		<Edge To="209" > <!-- Furrows EN -->
+			<Land Type="LL" ID="0x0154" />
+			<Land Type="UU" ID="0x0153" />
+			<Land Type="UL" ID="0x0158" />
+			<Land Type="DL" ID="0x0159" />
+			<Land Type="DR" ID="0x0157" />
+			<Land Type="UR" ID="0x0156" />
+		</Edge>
+		<Edge To="0202" >	<!-- Forest -->
+			<Land Type="UL" ID="0x00d9" />
+			<Land Type="UR" ID="0x00db" />
+			<Land Type="DR" ID="0x00d8" />
+			<Land Type="DR" ID="0x00ce" />
+			<Land Type="DL" ID="0x00da" />
+			<Land Type="LL" ID="0x00cf" />
+			<Land Type="UU" ID="0x00d1" />
+		</Edge>
+		<Edge To="0002" >	<!-- Dirt -->
+			<Land Type="UL" ID="0x016f" />
+			<Land Type="DR" ID="0x016e" />
+			<Land Type="UR" ID="0x0170" />
+			<Land Type="DL" ID="0x016d" />
+			<Land Type="UL" ID="0x007D" />
+			<Land Type="DR" ID="0x007E" />
+			<Land Type="UR" ID="0x0082" />
+			<Land Type="DL" ID="0x0083" />
+			<Land Type="LL" ID="0x0089" />
+			<Land Type="LL" ID="0x008A" />
+			<Land Type="UU" ID="0x008B" />
+			<Land Type="UU" ID="0x008C" />
+		</Edge>
+		<Edge To="0204" >	<!-- Sand -->
+			<Land Type="LL" ID="0x0038" />
+			<Land Type="UU" ID="0x003a" />
+			<Land Type="DL" ID="0x003b" />
+			<Land Type="UR" ID="0x003c" />
+			<Land Type="UL" ID="0x003d" />
+			<Land Type="DR" ID="0x003e" />
+		</Edge>
+		<Edge To="0208" >	<!-- Dirt Cliff EN-->
+			<Land Type="LL" ID="0x008e" />
+			<Land Type="LL" ID="0x0090" />
+			<Land Type="LL" ID="0x009b" />
+			<Land Type="LL" ID="0x009e" />
+			<Land Type="LL" ID="0x009f" />
+			<Land Type="DR" ID="0x00a0" />
+			<Land Type="DL" ID="0x00a1" />
+		</Edge>
+		<Edge To="0209" >	<!-- Dirt Cliff WN-->
+			<Land Type="UU" ID="0x0093" />
+			<Land Type="UU" ID="0x0094" />
+			<Land Type="UU" ID="0x009a" />
+			<Land Type="UU" ID="0x009c" />
+			<Land Type="UU" ID="0x009d" />
+			<Land Type="UR" ID="0x00a2" />
+			<Land Type="UL" ID="0x00a3" />
+		</Edge>
+		<Edge To="0224" >	<!-- Dirt Cliff SN-->
+			<Land Type="DR" ID="0x0097" />
+			<Land Type="UL" ID="0x0098" />
+		</Edge>
+		<Edge To="0206" >	<!--  Jungle-->
+			<Land Type="LL" ID="0x00b3" />
+			<Land Type="UU" ID="0x00b6" />
+			<Land Type="DL" ID="0x00c1" />
+			<Land Type="UL" ID="0x00c2" />
+			<Land Type="UR" ID="0x00c3" />
+			<Land Type="DR" ID="0x00c0" />
+		</Edge>
+		<Edge To="0205" >	<!--  Rock-->
+			<Land Type="LL" ID="0x0242" />
+			<Land Type="UU" ID="0x0241" />
+			<Land Type="LL" ID="0x023c" />
+			<Land Type="UU" ID="0x0239" />
+			<Land Type="DL" ID="0x0234" />
+			<Land Type="UL" ID="0x0231" />
+			<Land Type="UR" ID="0x0232" />
+			<Land Type="DR" ID="0x0232" />
+			<Land Type="DL" ID="0x0240" />
+			<Land Type="UL" ID="0x023d" />
+			<Land Type="UR" ID="0x023e" />
+			<Land Type="DR" ID="0x023f" />
+		</Edge>
+	</Brush>
+	<Brush Id="0204" Name="Sand">
+		<Land ID="0x0016" />
+		<Land ID="0x0017" />
+		<Land ID="0x0018" />
+		<Land ID="0x0019" />
+		<Edge To="0203" >	<!-- Grass -->
+			<Land Type="UR" ID="0x0034" />
+			<Land Type="UL" ID="0x0033" />
+			<Land Type="DR" ID="0x0035" />
+			<Land Type="DL" ID="0x0036" />
+			<Land Type="LL" ID="0x0037" />
+			<Land Type="UU" ID="0x0039" />
+		</Edge>
+		<Edge To="0205" >	<!-- Rock -->
+			<Land Type="UL" ID="0x0120" />
+			<Land Type="UR" ID="0x0121" />
+			<Land Type="DR" ID="0x011e" />
+			<Land Type="DL" ID="0x011f" />
+			<Land Type="LL" ID="0x0126" />
+			<Land Type="UU" ID="0x0127" />
+		</Edge>
+		<Edge To="0213" >	<!-- Sand Cliff EN -->
+			<Land Type="LL" ID="0x01c6" />
+			<Land Type="UU" ID="0x01c8" />
+		</Edge>
+		<Edge To="0214" >	<!-- Sand Cliff WN -->
+			<Land Type="UL" ID="0x0120" />
+			<Land Type="UR" ID="0x0121" />
+			<Land Type="DR" ID="0x011e" />
+			<Land Type="DL" ID="0x011f" />
+			<Land Type="LL" ID="0x0126" />
+			<Land Type="UU" ID="0x0127" />
+		</Edge>
+		<Edge To="0206" >	<!-- Jungle -->
+			<Land Type="UL" ID="0x028b" />
+			<Land Type="UR" ID="0x028d" />
+			<Land Type="DR" ID="0x028a" />
+			<Land Type="DL" ID="0x028c" />
+			<Land Type="LL" ID="0x0283" />
+			<Land Type="UU" ID="0x0282" />
+			<Land Type="UL" ID="0x0290" />
+			<Land Type="UR" ID="0x0291" />
+			<Land Type="DR" ID="0x028e" />
+			<Land Type="DL" ID="0x028f" />
+		</Edge>
+		<Edge To="0204" >	<!-- Planks NE -->
+			<Land Type="UL" ID="0x02a1" />
+			<Land Type="UR" ID="0x02a2" />
+			<Land Type="DR" ID="0x02a3" />
+			<Land Type="DL" ID="0x02a0" />
+			<Land Type="LL" ID="0x029e" />
+			<Land Type="LL" ID="0x029f" />
+			<Land Type="UU" ID="0x029a" />
+			<Land Type="UU" ID="0x029b" />
+		</Edge>
+		<Edge To="0241" >	<!-- Planks WN -->
+			<Land Type="UL" ID="0x02b2" />
+			<Land Type="UR" ID="0x02b1" />
+			<Land Type="DR" ID="0x02b4" />
+			<Land Type="DL" ID="0x02b3" />
+			<Land Type="LL" ID="0x02ab" />
+			<Land Type="LL" ID="0x02ac" />
+			<Land Type="LL" ID="0x02b6" />
+			<Land Type="UU" ID="0x02af" />
+			<Land Type="UU" ID="0x02b0" />
+		</Edge>
+	</Brush>
+	<Brush Id="0205" Name="Rock">
+		<Land ID="0x022c" />
+		<Land ID="0x022d" />
+		<Land ID="0x022e" />
+		<Land ID="0x022f" />
+		<Edge To="0204" >	<!-- Sand -->
+			<Land Type="LL" ID="0x0128" />
+			<Land Type="UU" ID="0x0129" />
+			<Land Type="UL" ID="0x0122" />
+			<Land Type="UR" ID="0x0123" />
+			<Land Type="DR" ID="0x0124" />
+			<Land Type="DL" ID="0x0125" />
+		</Edge>
+		<Edge To="0203" >	<!-- Dirt -->
+			<Land Type="LL" ID="0x00de" />
+			<Land Type="UU" ID="0x00df" />
+			<Land Type="UL" ID="0x00e4" />
+			<Land Type="UR" ID="0x00e5" />
+			<Land Type="DR" ID="0x00e6" />
+			<Land Type="DL" ID="0x00e7" />
+		</Edge>
+		<Edge To="0202" >	<!-- Forest -->
+			<Land Type="LL" ID="0x00ef" />
+			<Land Type="UU" ID="0x00ec" />
+			<Land Type="DL" ID="0x00f7" />
+			<Land Type="UL" ID="0x00f4" />
+			<Land Type="UR" ID="0x00f5" />
+			<Land Type="DR" ID="0x00f6" />
+		</Edge>
+		<Edge To="0206" >	<!-- Jungle -->
+			<Land Type="LL" ID="0x00ff" />
+			<Land Type="UU" ID="0x00fc" />
+			<Land Type="DL" ID="0x0106" />
+			<Land Type="UL" ID="0x0107" />
+			<Land Type="UR" ID="0x0104" />
+			<Land Type="DR" ID="0x0105" />
+		</Edge>
+		<Edge To="0207" >	<!-- Snow -->
+			<Land Type="LL" ID="0x0115" />
+			<Land Type="UU" ID="0x0116" />
+			<Land Type="DL" ID="0x0113" />
+			<Land Type="UL" ID="0x0110" />
+			<Land Type="UR" ID="0x0111" />
+			<Land Type="DR" ID="0x0112" />
+		</Edge>	
+		<Edge To="0235" >	<!-- Cave entry -->
+			<Land Type="LL" ID="0x01da" />
+			<Land Type="UU" ID="0x01d4" />
+			<Land Type="UR" ID="0x01d5" />
+			<Land Type="DR" ID="0x01d7" />
+			<Land Type="DL" ID="0x01d9" />
+			<Land Type="UL" ID="0x01d3" />
+		</Edge>
+		<Edge To="0205" >	<!--  Grass-->
+			<Land Type="LL" ID="0x023a" />
+			<Land Type="UU" ID="0x023b" />
+			<Land Type="LL" ID="0x0243" />
+			<Land Type="DL" ID="0x0238" />
+			<Land Type="UL" ID="0x0235" />
+			<Land Type="UR" ID="0x0236" />
+			<Land Type="DR" ID="0x0237" />
+		</Edge>
+	</Brush>
+	<Brush Id="0206" Name="Jungle">
+		<Land ID="0x00ac" />
+		<Land ID="0x00ad" />
+		<Land ID="0x00ae" />
+		<Land ID="0x00af" />
+		<Land ID="0x0108" />
+		<Land ID="0x0109" />
+		<Land ID="0x010a" />
+		<Land ID="0x010b" />
+		<Edge To="0204" >	<!-- Sand -->
+			<Land Type="UU" ID="0x0284" />
+			<Land Type="LL" ID="0x0285" />
+			<Land Type="UR" ID="0x0289" />
+			<Land Type="DR" ID="0x0287" />
+			<Land Type="DL" ID="0x0288" />
+			<Land Type="UL" ID="0x0286" />
+		</Edge>
+		<Edge To="0203" >	<!-- Grass -->
+			<Land Type="UU" ID="0x00b0" />
+			<Land Type="LL" ID="0x00b9" />
+			<Land Type="UR" ID="0x00bd" />
+			<Land Type="DR" ID="0x00be" />
+			<Land Type="DL" ID="0x00bf" />
+			<Land Type="UU" ID="0x00bc" />
+		</Edge>
+		<Edge To="0203" >	<!-- Dirt -->
+			<Land Type="UU" ID="0x00b0" />
+			<Land Type="UU" ID="0x00bc" />
+			<Land Type="LL" ID="0x00b9" />
+			<Land Type="UU" ID="0x0271" />
+			<Land Type="LL" ID="0x0270" />
+			<Land Type="UR" ID="0x00bd" />
+			<Land Type="DR" ID="0x00be" />
+			<Land Type="DL" ID="0x00bf" />
+			<Land Type="UR" ID="0x027d" />
+			<Land Type="DR" ID="0x027a" />
+			<Land Type="DL" ID="0x027b" />
+			<Land Type="UL" ID="0x027c" />
+			<Land Type="UL" ID="0x0277" />
+			<Land Type="UR" ID="0x0279" />
+			<Land Type="DR" ID="0x0276" />
+			<Land Type="DL" ID="0x0278" />
+		</Edge>
+		<Edge To="0205" >	<!-- Rock -->
+			<Land Type="LL" ID="0x00fd" />
+			<Land Type="UU" ID="0x00fe" />
+			<Land Type="DL" ID="0x0100" />
+			<Land Type="UL" ID="0x0101" />
+			<Land Type="UR" ID="0x0102" />
+			<Land Type="DR" ID="0x0103" />
+		</Edge>
+	</Brush>
+	<Brush Id="0207" Name="Snow">
+		<Land ID="0x011a" />
+		<Land ID="0x011b" />
+		<Land ID="0x011c" />
+		<Land ID="0x011d" />
+		<Land ID="0x0118" Chance="0,10"/>
+		<Land ID="0x0119" Chance="0,10"/>
+		<Edge To="0205" >	<!-- Rock -->
+			<Land Type="LL" ID="0x0117" />
+			<Land Type="UU" ID="0x0114" />
+			<Land Type="DL" ID="0x0107" />
+			<Land Type="UL" ID="0x0104" />
+			<Land Type="UR" ID="0x0105" />
+			<Land Type="DR" ID="0x0106" />
+		</Edge>
+		<Edge To="0232" > 	<!-- Snow Cliff NE -->
+			<Land Type="LL" ID="0x0182" />
+			<Land Type="LL" ID="0x0186" />
+		</Edge>
+		<Edge To="0233" > 	<!-- Snow Cliff WN -->
+			<Land Type="LL" ID="0x0180" />
+			<Land Type="LL" ID="0x0188" />
+		</Edge>
+	</Brush>
+	<Brush Id="0208" Name="Dirt Cliff EN">
+		<Land ID="0x008d" />
+		<Edge To="0203" >	<!-- Grass -->
+			<Land Type="LL" ID="0x008f" />
+			<Land Type="LL" ID="0x0096" />
+		</Edge>
+		<Edge To="0205" >	<!-- Rock -->
+		</Edge>
+	</Brush>
+	<Brush Id="0209" Name="Dirt Cliff WN">
+		<Land ID="0x0091" />
+		<Edge To="0203" >	<!-- Grass -->
+			<Land Type="UU" ID="0x0092" />
+			<Land Type="UU" ID="0x0099" />
+		</Edge>
+		<Edge To="0205" >	<!-- Rock -->
+		</Edge>
+	</Brush>
+	<Brush Id="0210" Name="Furrows EN">
+		<Land ID="0x0150" />
+		<Edge To="0203" >	<!-- Grass -->
+			<Land Type="LL" ID="0x0152" />
+			<Land Type="UU" ID="0x0151" />
+			<Land Type="DL" ID="0x015c" />
+			<Land Type="UL" ID="0x0155" />
+			<Land Type="UR" ID="0x015b" />
+			<Land Type="DR" ID="0x0154" />
+		</Edge>
+		<Edge To="0205" >	<!-- Rock -->
+		</Edge>
+	</Brush>
+	<Brush Id="0211" Name="Furrows WN">
+		<Land ID="0x0007" />
+		<Land ID="0x0008" />
+		<Land ID="0x0009" />
+		<Edge To="0203" >	<!-- Grass -->
+			<Land Type="LL" ID="0x000a" />
+			<Land Type="UU" ID="0x000b" />
+			<Land Type="UL" ID="0x000e" />
+			<Land Type="DL" ID="0x0014" />
+			<Land Type="DR" ID="0x0013" />
+			<Land Type="UR" ID="0x0015" />
+		</Edge>
+		<Edge To="0205" >	<!-- Rock -->
+		</Edge>
+	</Brush>
+	<Brush Id="0213" Name="Sand Cliff EN">
+		<Land ID="0x001a" />
+		<Land ID="0x01b9" />
+		<Edge To="0204" >	<!-- Sand -->
+			<Land Type="LL" ID="0x01c1" />
+			<Land Type="LL" ID="0x01c9" />
+		</Edge>
+		<Edge To="0205" >	<!-- Rock -->
+		</Edge>
+	</Brush>
+	<Brush Id="0214" Name="Sand Cliff WN">
+		<Land ID="0x01ba" />
+		<Edge To="0204" >	<!-- Sand -->
+			<Land Type="UU" ID="0x01c3" />
+			<Land Type="UU" ID="0x01cb" />
+		</Edge>
+		<Edge To="0205" >	<!-- Rock -->
+		</Edge>
+	</Brush>
+	<Brush Id="0215" Name="Sand Cliff SN">
+		<Land ID="0x01bb" />
+		<Edge To="0205" >	<!-- Rock -->
+		</Edge>
+		<Edge To="0204" >	<!-- Sand -->
+			<Land Type="DR" ID="0x01bc" />
+			<Land Type="UL" ID="0x01bd" />
+			<Land Type="UL" ID="0x01cd" />
+		</Edge>
+	</Brush>
+	<Brush Id="0217" Name="Planks NE">
+		<Land ID="0x0296" />
+		<Land ID="0x02a4" />
+		<Edge To="0204" >	<!-- Sand -->
+			<Land Type="UU" ID="0x0298" />
+			<Land Type="UU" ID="0x0299" />
+			<Land Type="LL" ID="0x029c" />
+			<Land Type="LL" ID="0x029d" />
+			<Land Type="UL" ID="0x02a5" />
+			<Land Type="UR" ID="0x02a6" />
+			<Land Type="DR" ID="0x02a7" />
+			<Land Type="DL" ID="0x02bb" />
+		</Edge>
+		<Edge To="0205" >	<!-- Rock -->
+		</Edge>
+	</Brush>
+
+
+	<Brush Id="0224" Name="Dirt Cliff SN">
+		<Land ID="0x0095" />
+	</Brush>
+	<Brush Id="0225" Name="Water">
+		<Land ID="0x00a8" />
+		<Land ID="0x00a9" />
+		<Land ID="0x00aa" />
+		<Land ID="0x00ab" />
+		<Land ID="0x0136" />
+		<Land ID="0x0137" />
+		<Land ID="0x0138" />
+		<Land ID="0x0139" />
+		<Land ID="0x0140" />
+	</Brush>
+	<Brush Id="0226" Name="Cave">
+		<Land ID="0x0245" />
+		<Land ID="0x0246" />
+		<Land ID="0x0247" />
+		<Land ID="0x0248" />
+		<Land ID="0x0249" />
+		<Edge To="0239" >	<!-- Dirt -->
+			<Land Type="UU" ID="0x0253" />
+			<Land Type="UU" ID="0x024e" />
+			<Land Type="UU" ID="0x024f" />
+			<Land Type="LL" ID="0x0254" />
+			<Land Type="LL" ID="0x0255" />
+			<Land Type="LL" ID="0x0256" />
+			<Land Type="UL" ID="0x025a" />
+			<Land Type="DR" ID="0x024d" />
+			<Land Type="DL" ID="0x024c" />
+			<Land Type="UR" ID="0x024b" />
+		</Edge>
+	</Brush>
+	<Brush Id="0227" Name="Lava">
+		<Land ID="0x01f4" />
+		<Land ID="0x01f5" />
+		<Land ID="0x01f6" />
+		<Land ID="0x01f7" />
+	</Brush>
+	<Brush Id="0228" Name="Stars">
+		<Land ID="0x01f8" />
+		<Land ID="0x01f9" />
+		<Land ID="0x01fa" />
+		<Land ID="0x01fb" />
+		<Land ID="0x01fc" />
+		<Land ID="0x01fd" />
+		<Land ID="0x01fe" />
+		<Land ID="0x01ff" />
+	</Brush>
+	<Brush Id="0229" Name="Red Tile">
+		<Land ID="0x0200" />
+		<Land ID="0x0205" />
+		<Land ID="0x0206" />
+		<Land ID="0x0207" />
+		<Land ID="0x0208" />
+		<Land ID="0x0209" />
+		<Land ID="0x020a" />
+		<Land ID="0x020b" />
+		<Land ID="0x020c" />
+	</Brush>
+	<Brush Id="0230" Name="Flagstone">
+		<Land ID="0x0201" />
+		<Land ID="0x0202" />
+		<Land ID="0x0203" />
+		<Land ID="0x0204" />
+	</Brush>
+	<Brush Id="0231" Name="Snow Cliff SN">
+		<Land ID="0x0179" />
+		<Edge To="0207" >	<!-- Snow -->
+			<Land Type="DR" ID="0x017c" />
+			<Land Type="UL" ID="0x017d" />
+		</Edge>
+	</Brush>
+	<Brush Id="0232" Name="Snow Cliff NE">
+		<Land ID="0x017b" />
+		<Land ID="0x0189" />
+		<Land ID="0x018a" />
+		<Edge To="0207" >	<!-- Snow -->
+			<Land Type="LL" ID="0x0181" />
+			<Land Type="LL" ID="0x0185" />
+		</Edge>
+	</Brush>
+	<Brush Id="0233" Name="Snow Cliff WN">
+		<Land ID="0x017a" />
+		<Edge To="0207" >	<!-- Snow -->
+			<Land Type="DL" ID="0x017d" />
+			<Land Type="UR" ID="0x017e" />
+		</Edge>
+	</Brush>
+	<Brush Id="0235" Name="Cave Entry">
+		<Land ID="0x01db" />
+		<Edge To="0205" >	<!-- Rock -->
+			<Land Type="LL" ID="0x01d6" />
+			<Land Type="UU" ID="0x01d8" />
+		</Edge>
+	</Brush>
+	<Brush Id="0236" Name="Dark Rock">
+		<Land ID="0x0230" />
+		<Edge To="0237" >	<!-- Black Rock -->
+			<Land Type="LL" ID="0x0220" />
+			<Land Type="UU" ID="0x021f" />
+			<Land Type="UR" ID="0x0227" />
+			<Land Type="DR" ID="0x0228" />
+			<Land Type="DL" ID="0x0229" />
+			<Land Type="UL" ID="0x022a" />
+		</Edge>
+	</Brush>
+	<Brush Id="0237" Name="Black Rock">
+		<Land ID="0x022b" />
+		<Edge To="0236" >	<!-- Dark Rock -->
+			<Land Type="LL" ID="0x0221" />
+			<Land Type="UU" ID="0x0222" />
+			<Land Type="UR" ID="0x0223" />
+			<Land Type="DR" ID="0x0224" />
+			<Land Type="DL" ID="0x0225" />
+			<Land Type="UL" ID="0x0226" />
+		</Edge>
+	</Brush>
+	<Brush Id="0238" Name="Blue Tile">
+		<Land ID="0x0210" />
+		<Land ID="0x0211" />
+		<Land ID="0x0212" />
+		<Land ID="0x0213" />
+		<Land ID="0x0214" />
+		<Land ID="0x0215" />
+		<Land ID="0x0216" />
+		<Land ID="0x0217" />
+		<Land ID="0x0218" />
+	</Brush>
+	<Brush Id="0239" Name="Dark">
+		<Land ID="0x0244" />
+		<Edge To="0226" >	<!-- Cave Floor -->
+			<Land Type="UU" ID="0x0257" />
+			<Land Type="UU" ID="0x0258" />
+			<Land Type="UU" ID="0x0259" />
+			<Land Type="LL" ID="0x0250" />
+			<Land Type="LL" ID="0x0251" />
+			<Land Type="LL" ID="0x0252" />			
+			<Land Type="UL" ID="0x0265" />
+			<Land Type="DR" ID="0x0262" />
+			<Land Type="DL" ID="0x0263" />
+			<Land Type="UR" ID="0x0264" />
+		</Edge>
+	</Brush>
+	<Brush Id="0240" Name="Cave Wall">
+		<Land ID="0x0001" />
+		<Edge To="0226" >	<!-- Cave Floor -->
+			<Land Type="UU" ID="0x025b" />
+			<Land Type="UU" ID="0x025c" />
+			<Land Type="UU" ID="0x025d" />
+			<Land Type="UU" ID="0x025e" />
+			<Land Type="UU" ID="0x025f" />
+			<Land Type="UU" ID="0x0261" />
+			<Land Type="LL" ID="0x0267" />
+			<Land Type="LL" ID="0x0268" />
+			<Land Type="LL" ID="0x0269" />
+			<Land Type="LL" ID="0x026b" />
+			<Land Type="LL" ID="0x026c" />
+			<Land Type="LL" ID="0x026d" />
+			<Land Type="UL" ID="0x0268" />
+			<Land Type="DR" ID="0x025a" />
+			<Land Type="DL" ID="0x026a" />
+			<Land Type="UR" ID="0x025e" />
+			<Land Type="UR" ID="0x0268" />
+			<Land Type="DL" ID="0x025a" />
+			<Land Type="DR" ID="0x026a" />
+			<Land Type="UL" ID="0x025e" />
+			<Land Type="DL" ID="0x0268" />
+			<Land Type="UR" ID="0x025a" />
+			<Land Type="UL" ID="0x026a" />
+			<Land Type="DR" ID="0x025e" />
+			<Land Type="DR" ID="0x0268" />
+			<Land Type="UL" ID="0x025a" />
+			<Land Type="UR" ID="0x026a" />
+			<Land Type="DL" ID="0x025e" />
+		</Edge>
+	</Brush>
+	<Brush Id="0241" Name="Planks WN">
+		<Land ID="0x0297" />
+		<Land ID="0x02b5" />
+		<Edge To="0204" >	<!-- Sand -->
+			<Land Type="LL" ID="0x02a9" />
+			<Land Type="LL" ID="0x02aa" />
+			<Land Type="DL" ID="0x02b7" />
+			<Land Type="UL" ID="0x02aa" />
+			<Land Type="DR" ID="0x02aa" />
+			<Land Type="UR" ID="0x02aa" />
+		</Edge>
+		<Edge To="0205" >	<!-- Rock -->
+		</Edge>
+	</Brush>
+</TilesBrush>

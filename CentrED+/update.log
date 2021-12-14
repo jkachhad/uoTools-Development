@@ -1,0 +1,2636 @@
+CentrED+_v0.7.2
+Developer: Andreas Schneider
+Website: https://redmine.aksdb.de/projects/centred/ | Git: https://git.aksdb.de/aksdb/CentrED
+
+----
+
+Revision: 98b69e9d0357cac4f108eacd7d981915e1430f01
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 5/1/2015 8:49:57 AM
+Message:
+* Removed assetpack (which can be built anytime)
+
+----
+Deleted: bin/Assetspack.dat
+
+Revision: 6155d91a89139ba299bfe2713468337c8da5f53a
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 5/1/2015 8:44:54 AM
+Message:
+* Added missing assets
+* Fixed compilation on linux
+----
+Modified: Client/CentrED.lpi
+Modified: Client/CentrED.lpr
+Modified: Client/GUI/VirtualList.pas
+Added: Client/Overlay/About.bmp
+Added: Client/Overlay/LightBulb_24bb.tga
+Added: Client/Overlay/LightBulb_24bg.tga
+Added: Client/Overlay/LightBulb_24bl.tga
+Added: Client/Overlay/LightBulb_24bo.tga
+Added: Client/Overlay/LightBulb_24bp.tga
+Added: Client/Overlay/LightBulb_24br.tga
+Added: Client/Overlay/LightBulb_24bw.tga
+Added: Client/Overlay/LightBulb_24by.tga
+Added: Client/Overlay/LightBulb_24nn.tga
+Added: Client/Overlay/LightBulb_24ny.tga
+Added: Client/Overlay/LightBulb_24tb.tga
+Added: Client/Overlay/LightBulb_24tg.tga
+Added: Client/Overlay/LightBulb_24to.tga
+Added: Client/Overlay/LightBulb_24tw.tga
+Added: Client/Overlay/LightBulb_24ty.tga
+Added: Client/Overlay/Splash.bmp
+Added: Client/Overlay/Splash.png
+Added: Client/Overlay/baner-f0.png
+Added: Client/Overlay/baner-f1.png
+Added: Client/Overlay/baner-sp0.bmp
+Added: Client/Overlay/baner-sp1.bmp
+Added: Client/Overlay/light_bulb_16.tga
+Added: Client/Overlay/light_bulb_24.tga
+Added: Client/Overlay/light_bulb_32.tga
+Added: Client/Overlay/light_bulb_48.tga
+Modified: Client/Tools/UfrmFilter.pas
+Modified: Client/Tools/UfrmHueSettings.pas
+Modified: Client/UfrmAbout.pas
+Modified: Client/UfrmLogin.pas
+Modified: Client/UfrmMain.pas
+Modified: Client/UfrmRadar.pas
+Modified: Server/UConfig.pas
+Modified: Server/UPackets.pas
+Modified: Server/cedserver.lpi
+Modified: Server/cedserver.lpr
+Added: bin/Assetspack.dat
+Deleted: bin/CentrED.dat
+Added: bin/Language/English.ini
+Added: bin/Language/Italian.ini
+Added: bin/Language/Russian.ini
+Added: bin/Language/Spanish.ini
+Added: bin/Language/Template.txt
+Added: bin/LocalData/ColorLight.xml
+Added: bin/LocalData/SurfaceInf.xml
+Added: bin/LocalData/TilesBrush.xml
+Added: bin/LocalData/TilesEntry.xml
+Added: bin/LocalData/TilesGroup.xml
+Added: bin/LocalData/VirtualTiles.xml
+Deleted: bin/nodraw.txt
+
+Revision: 58b24b35ec012e408407c9bca7510d4bbf64ad55
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 5/1/2015 6:48:35 AM
+Message:
+* Fixed compilation with FPC 3.1.1 and Lazarus 1.5
+
+----
+Modified: Client/CentrED.lpr
+Modified: Client/GUI/AeroGlass.pas
+Modified: Client/GUI/VirtualList.pas
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+Modified: UCacheManager.pas
+
+Revision: fe6b65844fcf9745f9265f75624c78898fd63ee1
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 5/1/2015 6:23:22 AM
+Message:
+* Added missing cursors
+
+----
+Added: Client/Cursors/BC_AlternateSelect.cur
+Added: Client/Cursors/BC_Busy.cur
+Added: Client/Cursors/BC_DiagonalResize1.cur
+Added: Client/Cursors/BC_DiagonalResize2.cur
+Added: Client/Cursors/BC_Handwriting.cur
+Added: Client/Cursors/BC_HelpSelect.cur
+Added: Client/Cursors/BC_HorizontalResize.cur
+Added: Client/Cursors/BC_LinkSelect.cur
+Added: Client/Cursors/BC_Move.cur
+Added: Client/Cursors/BC_NormalSelect.cur
+Added: Client/Cursors/BC_PrecisionSelect.cur
+Added: Client/Cursors/BC_TextSelect.cur
+Added: Client/Cursors/BC_Unavailable.cur
+Added: Client/Cursors/BC_VerticalResize.cur
+Added: Client/Cursors/BC_WorkingInBackground.cur
+Added: Client/Cursors/BI_Alternate.cur
+Added: Client/Cursors/BI_Busy.ani
+Added: Client/Cursors/BI_DiagonalResize1.cur
+Added: Client/Cursors/BI_DiagonalResize2.cur
+Added: Client/Cursors/BI_Handwriting.cur
+Added: Client/Cursors/BI_Help.cur
+Added: Client/Cursors/BI_HorizontalResize.cur
+Added: Client/Cursors/BI_Link.cur
+Added: Client/Cursors/BI_Move.cur
+Added: Client/Cursors/BI_Normal.cur
+Added: Client/Cursors/BI_Precision.cur
+Added: Client/Cursors/BI_Text.cur
+Added: Client/Cursors/BI_Unavailable.cur
+Added: Client/Cursors/BI_VerticalResize.cur
+Added: Client/Cursors/BI_Working.ani
+Added: Client/Cursors/RO_Hand.cur
+Added: Client/Cursors/RO_HandBusy.cur
+Added: Client/Cursors/RO_HandBusyAlpha.cur
+Added: Client/Cursors/RO_HandHelp.cur
+Added: Client/Cursors/RO_HandWait.cur
+Added: Client/Cursors/TN_Busy.cur
+Added: Client/Cursors/TN_HelpSelect.cur
+Added: Client/Cursors/TN_LinkSelect.cur
+Added: Client/Cursors/TN_NormalSelect.cur
+Added: Client/Cursors/TN_Unavailable.cur
+Added: Client/Cursors/TN_WorkingInBackground.cur
+Added: Client/Cursors/UO_AttackMode.cur
+Added: Client/Cursors/UO_Gauntlet.cur
+Added: Client/Cursors/UO_Help.cur
+Added: Client/Cursors/UO_HorizontAlresize.cur
+Added: Client/Cursors/UO_Move.cur
+Added: Client/Cursors/UO_NE-Swresize.cur
+Added: Client/Cursors/UO_NW-Seresize.cur
+Added: Client/Cursors/UO_Pen.cur
+Added: Client/Cursors/UO_Precision.cur
+Added: Client/Cursors/UO_Text.cur
+Added: Client/Cursors/UO_Unavailable.cur
+Added: Client/Cursors/UO_Verticalresize.cur
+Added: Client/Cursors/UO_Wait.ani
+Added: Client/Cursors/UO_WorkingInBackground.ani
+
+Revision: 34637d40cea81f0ecc94b43538357bd5ff59f8d1
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 5/1/2015 6:23:03 AM
+Message:
+* Added CentrED+ code (thanks to StaticZ for his awesome work!)
+
+----
+Modified: Client/CentrED.ico
+Modified: Client/CentrED.lpi
+Modified: Client/CentrED.lpr
+Modified: Client/CentrED.manifest
+Added: Client/Crc32Hash.pas
+Added: Client/GUI/AeroGlass.pas
+Added: Client/GUI/GlowLabel.pas
+Added: Client/GUI/VirtualList.pas
+Modified: Client/ResourceList.txt
+Added: Client/Sounds/MusicInf.wav
+Modified: Client/Tools/UfrmBoundaries.lfm
+Modified: Client/Tools/UfrmBoundaries.pas
+Modified: Client/Tools/UfrmConfirmation.lfm
+Modified: Client/Tools/UfrmConfirmation.pas
+Modified: Client/Tools/UfrmDrawSettings.lfm
+Modified: Client/Tools/UfrmDrawSettings.pas
+Modified: Client/Tools/UfrmElevateSettings.lfm
+Modified: Client/Tools/UfrmElevateSettings.pas
+Added: Client/Tools/UfrmFillSettings.lfm
+Added: Client/Tools/UfrmFillSettings.pas
+Modified: Client/Tools/UfrmFilter.lfm
+Modified: Client/Tools/UfrmFilter.pas
+Modified: Client/Tools/UfrmHueSettings.lfm
+Modified: Client/Tools/UfrmHueSettings.pas
+Modified: Client/Tools/UfrmLightlevel.lfm
+Modified: Client/Tools/UfrmLightlevel.pas
+Modified: Client/Tools/UfrmMoveSettings.lfm
+Modified: Client/Tools/UfrmMoveSettings.pas
+Added: Client/Tools/UfrmSelectionSettings.lfm
+Added: Client/Tools/UfrmSelectionSettings.pas
+Added: Client/Tools/UfrmSurfElevateSettings.lfm
+Added: Client/Tools/UfrmSurfElevateSettings.pas
+Added: Client/Tools/UfrmSurfSmoothSettings.lfm
+Added: Client/Tools/UfrmSurfSmoothSettings.pas
+Added: Client/Tools/UfrmSurfStretchSettings.lfm
+Added: Client/Tools/UfrmSurfStretchSettings.pas
+Modified: Client/Tools/UfrmToolWindow.lfm
+Modified: Client/Tools/UfrmVirtualLayer.lfm
+Modified: Client/Tools/UfrmVirtualLayer.pas
+Modified: Client/UGameResources.pas
+Modified: Client/ULandscape.pas
+Modified: Client/ULightManager.pas
+Modified: Client/UOverlayUI.pas
+Modified: Client/UPackets.pas
+Modified: Client/UPlatformTypes.pas
+Modified: Client/UResourceManager.pas
+Modified: Client/UdmNetwork.lfm
+Modified: Client/UdmNetwork.pas
+Modified: Client/UfrmAbout.lfm
+Modified: Client/UfrmAbout.pas
+Modified: Client/UfrmAccountControl.lfm
+Modified: Client/UfrmAccountControl.pas
+Modified: Client/UfrmEditAccount.lfm
+Modified: Client/UfrmEditAccount.pas
+Modified: Client/UfrmInitialize.lfm
+Modified: Client/UfrmInitialize.pas
+Modified: Client/UfrmLargeScaleCommand.lfm
+Modified: Client/UfrmLargeScaleCommand.pas
+Modified: Client/UfrmLogin.lfm
+Modified: Client/UfrmLogin.pas
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+Modified: Client/UfrmRadar.lfm
+Modified: Client/UfrmRadar.pas
+Modified: Client/UfrmRegionControl.lfm
+Modified: Client/UfrmRegionControl.pas
+Added: Client/UndoRedoCmd.pas
+Added: Client/language.pas
+Modified: Imaging/ImagingClasses.pas
+Modified: Imaging/ImagingComponents.pas
+Modified: MulProvider/UArtProvider.pas
+Modified: MulProvider/UTexmapProvider.pas
+Modified: MulProvider/UTileDataProvider.pas
+Modified: ResourceBuilder.pas
+Modified: Server/UAccount.pas
+Modified: Server/UAdminHandling.pas
+Modified: Server/UCEDServer.pas
+Modified: Server/UClientHandling.pas
+Modified: Server/UConfig.pas
+Modified: Server/UConnectionHandling.pas
+Modified: Server/ULandscape.pas
+Modified: Server/UPacketHandlers.pas
+Modified: Server/URadarMap.pas
+Modified: Server/cedserver.lpi
+Modified: Server/cedserver.lpr
+Added: Server/language.pas
+Modified: UEnums.pas
+Modified: UOLib/UArt.pas
+Modified: UOLib/ULight.pas
+Modified: UOLib/UMap.pas
+Modified: UOLib/UStatics.pas
+Modified: UOLib/UTexture.pas
+Modified: UOLib/UTiledata.pas
+Added: UOLib/UUopFile.pas
+Modified: UOLib/UWorldItem.pas
+Modified: version.inc
+Added: vinfo.pas
+
+Revision: 2e62fd570ae45af2e923a17dabb984a97763958e
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 5/1/2015 6:14:15 AM
+Message:
+* Unified line-endings (using hgeol)
+
+----
+Added: .hgeol
+Modified: Client/CentrED.lpr
+Modified: Client/Tools/UfrmConfirmation.lfm
+Modified: Client/Tools/UfrmConfirmation.pas
+Modified: Client/Tools/UfrmDrawSettings.lfm
+Modified: Client/Tools/UfrmDrawSettings.pas
+Modified: Client/Tools/UfrmFilter.lfm
+Modified: Client/Tools/UfrmFilter.pas
+Modified: Client/Tools/UfrmLightlevel.lfm
+Modified: Client/Tools/UfrmToolWindow.pas
+Modified: Client/UGameResources.pas
+Modified: Client/UOverlayUI.pas
+Modified: Client/UPacketHandlers.pas
+Modified: Client/UPackets.pas
+Modified: Client/UPlatformTypes.pas
+Modified: Client/UResourceManager.pas
+Modified: Client/UdmNetwork.pas
+Modified: Client/UfrmAccountControl.lfm
+Modified: Client/UfrmAccountControl.pas
+Modified: Client/UfrmEditAccount.lfm
+Modified: Client/UfrmInitialize.lfm
+Modified: Client/UfrmInitialize.pas
+Modified: Client/UfrmLargeScaleCommand.lfm
+Modified: Client/UfrmLargeScaleCommand.pas
+Modified: Client/UfrmLogin.lfm
+Modified: Client/UfrmLogin.pas
+Modified: Client/UfrmRegionControl.lfm
+Modified: Client/UfrmRegionControl.pas
+Modified: Imaging/JpegLib/imjcapimin.pas
+Modified: Imaging/JpegLib/imjcapistd.pas
+Modified: Imaging/JpegLib/imjccoefct.pas
+Modified: Imaging/JpegLib/imjccolor.pas
+Modified: Imaging/JpegLib/imjcdctmgr.pas
+Modified: Imaging/JpegLib/imjchuff.pas
+Modified: Imaging/JpegLib/imjcinit.pas
+Modified: Imaging/JpegLib/imjcmainct.pas
+Modified: Imaging/JpegLib/imjcmarker.pas
+Modified: Imaging/JpegLib/imjcmaster.pas
+Modified: Imaging/JpegLib/imjcomapi.pas
+Modified: Imaging/JpegLib/imjconfig.inc
+Modified: Imaging/JpegLib/imjcparam.pas
+Modified: Imaging/JpegLib/imjcphuff.pas
+Modified: Imaging/JpegLib/imjcprepct.pas
+Modified: Imaging/JpegLib/imjcsample.pas
+Modified: Imaging/JpegLib/imjdapimin.pas
+Modified: Imaging/JpegLib/imjdapistd.pas
+Modified: Imaging/JpegLib/imjdcoefct.pas
+Modified: Imaging/JpegLib/imjdcolor.pas
+Modified: Imaging/JpegLib/imjdct.pas
+Modified: Imaging/JpegLib/imjddctmgr.pas
+Modified: Imaging/JpegLib/imjdeferr.pas
+Modified: Imaging/JpegLib/imjdhuff.pas
+Modified: Imaging/JpegLib/imjdinput.pas
+Modified: Imaging/JpegLib/imjdmainct.pas
+Modified: Imaging/JpegLib/imjdmaster.pas
+Modified: Imaging/JpegLib/imjdmerge.pas
+Modified: Imaging/JpegLib/imjdphuff.pas
+Modified: Imaging/JpegLib/imjdpostct.pas
+Modified: Imaging/JpegLib/imjdsample.pas
+Modified: Imaging/JpegLib/imjerror.pas
+Modified: Imaging/JpegLib/imjfdctflt.pas
+Modified: Imaging/JpegLib/imjfdctfst.pas
+Modified: Imaging/JpegLib/imjfdctint.pas
+Modified: Imaging/JpegLib/imjidctasm.pas
+Modified: Imaging/JpegLib/imjidctflt.pas
+Modified: Imaging/JpegLib/imjidctfst.pas
+Modified: Imaging/JpegLib/imjidctint.pas
+Modified: Imaging/JpegLib/imjidctred.pas
+Modified: Imaging/JpegLib/imjinclude.pas
+Modified: Imaging/JpegLib/imjmorecfg.pas
+Modified: Imaging/JpegLib/imjpeglib.pas
+Modified: Imaging/JpegLib/imjquant1.pas
+Modified: Imaging/JpegLib/imjquant2.pas
+Modified: Imaging/JpegLib/imjutils.pas
+Modified: Imaging/JpegLib/readme.txt
+Modified: Imaging/ZLib/imadler.pas
+Modified: Imaging/ZLib/iminfblock.pas
+Modified: Imaging/ZLib/iminftrees.pas
+Modified: Imaging/ZLib/iminfutil.pas
+Modified: Imaging/ZLib/imzconf.inc
+Modified: Imaging/ZLib/imzutil.pas
+Modified: Imaging/ZLib/readme.txt
+Modified: Logging.pas
+Modified: MulProvider/UAnimDataProvider.pas
+Modified: MulProvider/UArtProvider.pas
+Modified: MulProvider/UGumpProvider.pas
+Modified: MulProvider/UHueProvider.pas
+Modified: MulProvider/ULightProvider.pas
+Modified: MulProvider/UMulManager.pas
+Modified: MulProvider/UMulProvider.pas
+Modified: MulProvider/URadarProvider.pas
+Modified: MulProvider/UTileDataProvider.pas
+Modified: ResourceBuilder.pas
+Modified: Server/UNetState.pas
+Modified: Server/UPacketHandlers.pas
+Modified: Server/UPackets.pas
+Modified: UBufferedStreams.pas
+Modified: UEnhancedMemoryStream.pas
+Modified: ULinkedList.pas
+Modified: UOLib/UArt.pas
+Modified: UOLib/UGenericIndex.pas
+Modified: UOLib/UGraphicHelper.pas
+Modified: UOLib/UGump.pas
+Modified: UOLib/UHue.pas
+Modified: UOLib/ULight.pas
+Modified: UOLib/ULocalization.pas
+Modified: UOLib/UMulBlock.pas
+Modified: UOLib/UMultiMap.pas
+Modified: UOLib/UTexture.pas
+Modified: UOLib/UTiledata.pas
+Modified: UOLib/UVerdata.pas
+Modified: UPacket.pas
+Modified: bin/nodraw.txt
+
+Revision: 03b9097465e27b60cf1748bead024d750906f909
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/24/2009 10:34:29 AM
+Message:
+- Bumped version to 0.6.1
+- Added silk icon reference to the about dialog
+----
+Modified: Client/CentrED.lpi
+Modified: Client/UfrmAbout.lfm
+Modified: Client/UfrmAbout.pas
+Modified: Server/cedserver.lpi
+Modified: Setup/CentrED_win32.iss
+Modified: Setup/Changelog.txt
+Modified: version.inc
+
+Revision: d461774816633c56363ba351622b9620b214986d
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/24/2009 9:49:15 AM
+Message:
+- Added optional highlight for (un)walkable tiles
+- Fixed lightmanager to draw in the correct color
+- Fixed TMapBlock and TStaticBlock to correctly initialize itself as "unchanged"
+- Cleanup in the server project
+----
+Modified: Client/ULandscape.pas
+Modified: Client/ULightManager.pas
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+Modified: Server/ULandscape.pas
+Modified: Server/cedserver.lpi
+Modified: Server/cedserver.lpr
+Modified: UOLib/UMap.pas
+Modified: UOLib/UStatics.pas
+
+Revision: f2764e928e7eca771956d15cd46bf0891b4465db
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/23/2009 2:54:56 PM
+Message:
+- Added option to set the render background to white (fixes #59)
+
+----
+Modified: Client/CentrED.lpi
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+
+Revision: 46d045a46bcb1e1825f6a7343dacc1d88eacc658
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/23/2009 11:12:58 AM
+Message:
+- Fixed frmLightLevel to repaint the game window (when the slider changes)
+
+----
+Modified: Client/Tools/UfrmLightlevel.pas
+
+Revision: 8332241ab7b0aa1782c07a918e37e784aeb95a95
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/23/2009 10:44:50 AM
+Message:
+- Removed sorting debug data from TfrmMain
+
+----
+Modified: Client/UfrmMain.pas
+
+Revision: 0eac70ec86ab02e07410cc41c64a8fcb6862cb84
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/23/2009 10:40:34 AM
+Message:
+- Removed CentrED.rc from version tracking
+
+----
+Deleted: Client/CentrED.rc
+
+Revision: cf4c1558582637b50a5c0506f219ef80eba4589b
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/23/2009 10:39:24 AM
+Message:
+- Changed TWorldItem and TWorldBlock Change-tracking
+- Reverted TStaticItem.UpdatePriorities
+- Fixed vdtTiles' HintCanvas to use the desired font when drawing
+- Fixed UpdateFilter to no longer call ForceUpdateCurrentTile
+- Several code cleanups
+----
+Modified: Client/CentrED.lpi
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+Modified: Server/ULandscape.pas
+Modified: Server/cedserver.lpi
+Modified: UOLib/UMap.pas
+Modified: UOLib/UStatics.pas
+Modified: UOLib/UWorldItem.pas
+
+Revision: 34b62f6cd0a69384ac235545501d48082081bb20
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/22/2009 3:37:16 PM
+Message:
+- Fixed gamewindow not resetting the clear-color
+
+----
+Modified: Client/UfrmMain.pas
+
+Revision: e9d90d8a397fbb1b0a7b5c7318f523a67839a7f2
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/22/2009 3:32:27 PM
+Message:
+Added tag 0.6 for changeset 64b5b297746c
+
+----
+
+Revision: db0ef54660e5c2c1499ed7aa123881dd689c3451
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/22/2009 2:51:43 PM
+Message:
+- Pushed version to 0.6
+
+----
+Modified: Client/CentrED.lpi
+Modified: Client/CentrED.rc
+Modified: Server/cedserver.lpi
+Modified: Server/cedserver.lpr
+Modified: Setup/CentrED_win32.iss
+Modified: Setup/Changelog.txt
+Modified: version.inc
+
+Revision: eb62553f5c179cab826135962d6cdcd90b5d0edd
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/22/2009 1:47:46 PM
+Message:
+- Fixed static tiles with hue 1 using the wrong cache id
+- Commented some debug messages
+----
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+
+Revision: ca8f47d2a9481cf929da1e3a642deb2c8d651672
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/22/2009 11:38:34 AM
+Message:
+- Fixed intensity of translucent tiles
+- Changed statics priority
+----
+Modified: Client/UfrmMain.pas
+Modified: UOLib/UStatics.pas
+
+Revision: 186527c606c82c73a5a6a07892a6b8f0e088e0b8
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/22/2009 7:51:17 AM
+Message:
+- Fixed/Changed light source evaluation (again) to match the UO client
+
+----
+Modified: Client/ULightManager.pas
+
+Revision: fd8fa39e0dc7b34e3113b0ac47ae1f8e8c37b568
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/22/2009 5:49:48 AM
+Message:
+- Code cleanup
+
+----
+Modified: Client/CentrED.lpi
+Modified: Client/ULightManager.pas
+Modified: Client/UPlatformTypes.pas
+Modified: MulProvider/ULightProvider.pas
+
+Revision: 207f14d6ba23f1f2f5904ec71dc56d77724a69c6
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/22/2009 5:44:33 AM
+Message:
+- Remove obj/ dir restrictions
+
+----
+Modified: Client/CentrED.lpi
+Deleted: obj/i386-linux-gtk/.hgdir
+Deleted: obj/i386-linux-gtk2/.hgdir
+Deleted: obj/i386-win32-win32/.hgdir
+
+Revision: 841061abbbaf62240d55a42e9eafafc6b15b2417
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/22/2009 3:36:35 AM
+Message:
+- Added FBO based light source rendering
+- Fixed memory leak in TLightManager.UpdateLightMap
+----
+Modified: Client/CentrED.lpi
+Modified: Client/ULandscape.pas
+Modified: Client/ULightManager.pas
+
+Revision: a19e23a82eac2e0d371b1d9c6590fcff2e21d146
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/21/2009 4:26:52 PM
+Message:
+- Changed light source evaluation
+- Fixed possible crash in TLightManager.UpdateOverlay
+----
+Modified: Client/ULightManager.pas
+
+Revision: 21e398ae924e176a50d02b7ad1a718d041546cc7
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/21/2009 2:12:45 PM
+Message:
+- Added lightlevel slider
+
+----
+Modified: Client/CentrED.lpi
+Added: Client/Tools/UfrmLightlevel.lfm
+Added: Client/Tools/UfrmLightlevel.pas
+Modified: Client/UdmNetwork.pas
+Modified: Client/UfrmLogin.lfm
+Modified: Client/UfrmLogin.pas
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+
+Revision: 3ffe710c31add96d152f557e723df3c68c51eec8
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/21/2009 1:07:07 PM
+Message:
+- Added "select offset" button/functionality to frmLargeScaleCommand (fixes #56)
+- Fixed frmFilter placement (fixes #57)
+----
+Modified: Client/Tools/UfrmFilter.pas
+Modified: Client/UfrmLargeScaleCommand.lfm
+Modified: Client/UfrmLargeScaleCommand.pas
+
+Revision: 8976774665ae843254747971244209617e59a949
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/21/2009 7:41:18 AM
+Message:
+- Fixed lightsources to not draw in flat mode and when the lightlevel is 0
+- Fixed tile changes not causing a filter update
+- Cleanup the project file
+----
+Modified: Client/CentrED.lpi
+Modified: Client/CentrED.lpr
+Modified: Client/ULightManager.pas
+Modified: Client/UfrmMain.pas
+
+Revision: 4f4e9eb0d7b2c31132141a14c4f54306189a50c4
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/20/2009 7:43:44 PM
+Message:
+- Fixed memory leak when moving statics
+
+----
+Modified: Server/ULandscape.pas
+
+Revision: a7c74c114ed50261567149118c3558124b657aaf
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/20/2009 6:55:19 PM
+Message:
+- Fixed light source placement
+- Removed unnecessary texturemanager reference
+----
+Modified: Client/ULightManager.pas
+Modified: Client/UfrmMain.pas
+
+Revision: 5049955303dc4c585bcafffc7c2cc2334bd93612
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/20/2009 6:13:26 PM
+Message:
+- Added light loading
+- Use lights for the light sources
+----
+Modified: Client/CentrED.lpi
+Modified: Client/CentrED.lpr
+Modified: Client/UGameResources.pas
+Modified: Client/ULightManager.pas
+Modified: Client/UfrmMain.pas
+Modified: MulProvider/UArtProvider.pas
+Added: MulProvider/ULightProvider.pas
+Added: UOLib/ULight.pas
+
+Revision: 7b46795bc170536381d50435f47461e3f89cb15e
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/20/2009 4:05:15 PM
+Message:
+- Implemented basic light source rendering
+
+----
+Modified: Client/CentrED.lpi
+Modified: Client/CentrED.lpr
+Added: Client/ULightManager.pas
+Modified: Client/UOverlayUI.pas
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+
+Revision: ee9a44219f9d55c17688f3ae3a5c807b414ff30a
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/20/2009 9:49:19 AM
+Message:
+- Fixed string type in TfrmAccountControl
+
+----
+Modified: Client/UfrmAccountControl.lfm
+Modified: Client/UfrmAccountControl.pas
+
+Revision: 158403e41a00bc6767de1264805b7bafaf977c59
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/19/2009 1:01:48 PM
+Message:
+- Removed custom tile info window
+- Updated VirtualTreeView
+- Added tile info as owner drawn hint to vdtTiles (fixes #55)
+----
+Modified: Client/CentrED.lpi
+Modified: Client/CentrED.lpr
+Modified: Client/Tools/UfrmFilter.lfm
+Modified: Client/UdmNetwork.pas
+Modified: Client/UfrmLargeScaleCommand.lfm
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+Modified: Client/UfrmRegionControl.lfm
+Deleted: Client/UfrmTileInfo.lfm
+Deleted: Client/UfrmTileInfo.pas
+
+Revision: 9ab8e5901b4e5567ad6eb9730e7173dded8919da
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/19/2009 8:43:22 AM
+Message:
+- Replaced array with generic list (TfrmMain.FAccessChangedListeners)
+
+----
+Modified: Client/UfrmMain.pas
+
+Revision: a9f278ae218013113a89f0673eb9cedc3761b56e
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/19/2009 8:39:14 AM
+Message:
+- Realigned frmRegionControl
+- Added coordinate grabbing to TfrmRegionControl
+- Added hints to the grab buttons in frmLargeScaleCommand
+----
+Modified: Client/UfrmLargeScaleCommand.lfm
+Modified: Client/UfrmRegionControl.lfm
+Modified: Client/UfrmRegionControl.pas
+
+Revision: 387d5fb28df7008cb47d37ab1cd4f35fac4ee8d1
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/19/2009 7:57:29 AM
+Message:
+- Added selection listener to TfrmMain
+- Added "grab coordinates" using the new selection listener to TfrmLargeScaleCommand (fixes #54)
+----
+Modified: Client/UfrmLargeScaleCommand.lfm
+Modified: Client/UfrmLargeScaleCommand.pas
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+
+Revision: ff87bdea1531df61bd8b3f76312a0eef10cf5fa1
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/18/2009 7:02:06 PM
+Message:
+- Realigned TfrmLargeScaleCommand
+- Fixed overlay being drawn with correct color and alpha
+----
+Modified: Client/CentrED.lpi
+Modified: Client/UfrmLargeScaleCommand.lfm
+Modified: Client/UfrmLargeScaleCommand.pas
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+
+Revision: 5d7c40d579892e8b5b03fb28ae066bbdba9814bc
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/18/2009 12:43:55 PM
+Message:
+- Fixed TfrmToolWindow.FormDeactivate to check CanClose first
+- Fixed TfrmDrawSettings and TfrmHueSettings to be shown non-modal (fixes #49)
+----
+Modified: Client/Tools/UfrmDrawSettings.lfm
+Modified: Client/Tools/UfrmDrawSettings.pas
+Modified: Client/Tools/UfrmToolWindow.pas
+Modified: Client/UfrmMain.pas
+
+Revision: e502321f35acd1659abca53e972b8d5d02a0a969
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/18/2009 8:24:35 AM
+Message:
+- Added more nodraw.txt locations
+- Improved nodraw.txt parsing
+----
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.pas
+Modified: bin/nodraw.txt
+
+Revision: 7adf94010a057c91b5cd110a01462ad4307982ef
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/18/2009 7:57:37 AM
+Message:
+- Fixed TNormals to use GLfloat
+
+----
+Modified: Client/ULandscape.pas
+
+Revision: 12a28c79b253a24ca8e6148ff75b1c686bdaa9f9
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/17/2009 8:35:25 PM
+Message:
+- Replaced own UVector with unit matrix from the RTL
+
+----
+Modified: Client/ULandscape.pas
+Deleted: UVector.pas
+
+Revision: 1e84b76c63aadeeb31a9fe60f7c7b17cdad81444
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/17/2009 7:53:09 PM
+Message:
+- Added external nodraw definition
+
+----
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.pas
+Added: bin/nodraw.txt
+
+Revision: 365fa72dc99c73d5bfccb3feb61955abdac9db12
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/17/2009 7:07:55 PM
+Message:
+- Changed TfrmMain.BuildTileList to use all available static tiles
+- Added static tile id checking to the random preset loading
+----
+Modified: Client/CentrED.lpi
+Modified: Client/UfrmMain.pas
+
+Revision: 73e704e5fa53eb57dde05324a8cff64465f9e5ed
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/17/2009 6:17:42 PM
+Message:
+- Changed TAnimDataProvider to load as much animdata as the input files provides
+- Added TBufferedStream.GetSize
+- Added TIndexedMulProvider.EntryCount
+- Added TAnimDataProvider.AnimCount
+- Added TLandscape.MaxStaticID
+- Some more code cleanups
+----
+Modified: Client/ULandscape.pas
+Modified: MulProvider/UAnimDataProvider.pas
+Modified: MulProvider/UMulProvider.pas
+Modified: Server/cedserver.lpi
+Modified: UBufferedStreams.pas
+
+Revision: bdc97b89f52287e9daf168bf9bfad9b58815159a
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/17/2009 5:01:06 PM
+Message:
+- Added dynamic tiledata loading (everything after $4000 will be treated as static)
+- Fixed server's TLandscape to validate statics and throw errors if no tiledata entry is found
+----
+Modified: MulProvider/UTileDataProvider.pas
+Modified: Server/ULandscape.pas
+Modified: Server/UPacketHandlers.pas
+Modified: Server/cedserver.lpi
+Modified: UOLib/UTiledata.pas
+
+Revision: b0b014f66a6487cbc21de9346abcd6ce93c0fb7a
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/17/2009 3:05:46 PM
+Message:
+- Added saving of random presets when creating or overwriting one
+
+----
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+
+Revision: c41fd3be952c616e5c309a9f7d94812f3ec63ac7
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/17/2009 9:41:54 AM
+Message:
+- Several code cleanups
+- Fixed TArt.RefreshBuffer using the wrong variable (j <> i)
+- Suppressed some hints
+----
+Modified: Client/Tools/UfrmFilter.lfm
+Modified: Client/Tools/UfrmFilter.pas
+Modified: Client/ULandscape.pas
+Modified: Client/UPacketHandlers.pas
+Modified: Client/UPackets.pas
+Modified: Client/UResourceManager.pas
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+Modified: Client/UfrmTileInfo.pas
+Modified: Logging.pas
+Modified: MulProvider/UMulManager.pas
+Modified: MulProvider/URadarProvider.pas
+Modified: UOLib/UArt.pas
+Modified: UOLib/UHue.pas
+Modified: UOLib/UMap.pas
+Modified: UOLib/UMulBlock.pas
+Modified: UOLib/UStatics.pas
+
+Revision: 13264d325174fefe2a0d78d0db95ceb48cfd2263
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/16/2009 6:36:26 PM
+Message:
+- Fixed potential crash when using the Mouse Wheel
+
+----
+Modified: Client/UfrmMain.pas
+
+Revision: 3969493d90c1a5f831f8ecf8db526dc76c10cc67
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/16/2009 5:24:57 PM
+Message:
+- Added XML storage for Random Presets
+
+----
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+
+Revision: 34c0e9c901b325b8169fca8d87521777db8d2024
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/16/2009 10:03:35 AM
+Message:
+- Implemented saving and loading of locations to/from xml
+
+----
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+
+Revision: 797abbfa0711c55189fdfe90cbd8a0b01837fc7e
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/16/2009 9:18:42 AM
+Message:
+- Fixed ref counting for the virtual layer (fixes #53)
+
+----
+Modified: Client/UfrmMain.pas
+
+Revision: 8fcbe75e662c69291bc322d41e52d6f105f8aabb
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/11/2009 12:24:04 PM
+Message:
+Added tag 0.5 for changeset 47750245a450
+
+----
+
+Revision: e259ecd622cd3ee0801b6f7981d6f63a2e4e9523
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/11/2009 12:22:15 PM
+Message:
+- Bumped version to 0.5
+- Updated changelog
+----
+Modified: Client/CentrED.lpi
+Modified: Client/CentrED.rc
+Modified: Setup/CentrED_win32.iss
+Modified: Setup/Changelog.txt
+Modified: version.inc
+
+Revision: 2763f4357c298a5c19ad7b153849cea32032ec2f
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/10/2009 4:23:26 PM
+Message:
+- Fixed alignment in frmLogin
+
+----
+Modified: Client/UfrmLogin.lfm
+
+Revision: 908bddda0701b45a433146e198ffdb67208a996d
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/10/2009 4:18:25 PM
+Message:
+- Added generic tiledata access to TTileDataProvider (to avoid cloning)
+- Fixed TfrmMain.BuildTileList to use that non-cloning tiledata access to remove a memory leak
+- Convert the filter text to ISO8859-1 first
+----
+Modified: Client/UfrmMain.pas
+Modified: MulProvider/UTileDataProvider.pas
+
+Revision: 34765f7235a647202ae931a6fe6c7df58ac26495
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/10/2009 4:05:38 PM
+Message:
+- Fixed Art and TexMap to no longer get loaded if their Size is <= 0
+
+----
+Modified: Client/CentrED.lpi
+Modified: Client/CentrED.lpr
+Modified: Client/UGameResources.pas
+Modified: MulProvider/UArtProvider.pas
+Modified: MulProvider/UMulProvider.pas
+Modified: MulProvider/UTexmapProvider.pas
+
+Revision: 5c3de09d10a0697695ebdb5c8077553771584090
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/10/2009 3:40:14 PM
+Message:
+- Added ref counting to TMaterial
+- Added cache growing to TCacheManager
+- Fixed ImagingOptions.inc to not include JPEG support
+- Fixed TfrmRadar to save the radar map to the correct location
+- Fixed statics using the wrong hue when being painted
+- Removed obsolete TLandTextureManager.GetFlatLandMaterial (and the according cache)
+----
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.pas
+Modified: Client/UfrmRadar.lfm
+Modified: Client/UfrmRadar.pas
+Modified: Imaging/ImagingOptions.inc
+Modified: UCacheManager.pas
+
+Revision: 59ab7046c4d41babc2159d6e9357584f00f9ed3f
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/10/2009 10:54:43 AM
+Message:
+- Relect selection of the random tile list with the normal list list (fixes #51)
+
+----
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+
+Revision: 5a2cde2ac8439ce84fb9b9adb0d90d1f79fc2960
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/10/2009 8:32:29 AM
+Message:
+- Fixed locations backups being placed in the app dir instead of config dir
+
+----
+Modified: Client/UfrmMain.pas
+
+Revision: 9c010eeb89d2443546cbcb9ac0adaceb9fdba0af
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/10/2009 8:30:47 AM
+Message:
+- Added option to toggle animated tiles
+- Added option to toggle the security question when performing area commands
+----
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+
+Revision: 222abd54fde59d9ea861182ef7db0c1284c34b44
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/10/2009 8:16:46 AM
+Message:
+- Fixed TAnimMaterial to cache the textures
+- Fixed texture size calculation in TMaterial
+----
+Modified: Client/ULandscape.pas
+
+Revision: 80412fa86705edd8b9b44b9998247d7fa26c1250
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/9/2009 3:25:29 PM
+Message:
+- Fixed typo in TGLArrow (RealWidth <> RealHeight)
+- Fixed TGLArrow.HitTest
+----
+Modified: Client/UOverlayUI.pas
+
+Revision: 3bd5add656438f673c1095b79bf806b43c32bed5
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/9/2009 1:10:07 PM
+Message:
+- More adjustements to frmLogin
+- Added property storage to several frmMain options
+----
+Modified: Client/UfrmLogin.lfm
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+
+Revision: 36afc1e1d9e19b04aed1599cd1f349cdb4d05aaf
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/9/2009 10:56:39 AM
+Message:
+- Fixed tiles only being checked for animdata if they have the appropriate tiledata flag
+
+----
+Modified: Client/ULandscape.pas
+
+Revision: be935a6bcbc4f1da6f5ea343f8404375e11479f4
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/9/2009 10:26:12 AM
+Message:
+- Added TAnimMaterial
+- Implemented animated tiles
+- Fixed TAnimData.FrameData to use ShortInt instead of Byte
+----
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.pas
+Modified: UOLib/UAnimData.pas
+
+Revision: 2a3e17fa579979334d9d27f21a7eb1928352f88c
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/9/2009 8:36:53 AM
+Message:
+- Abstracted TMaterial
+- Removed unnecessary width/height processing from TMaterial
+- Added TSimpleMaterial for one-graphic-textures
+----
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.pas
+
+Revision: 3df7b446f58f6f78381bd4a9a0bc36d18fcbf0d7
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/8/2009 6:19:45 PM
+Message:
+- Changed profile, preset, locations and radar cache path to the user directory (fixes #50)
+
+----
+Modified: Client/CentrED.lpr
+Modified: Client/UfrmLogin.lfm
+Modified: Client/UfrmLogin.pas
+Modified: Client/UfrmMain.pas
+Modified: Client/UfrmRadar.lfm
+Modified: Client/UfrmRadar.pas
+
+Revision: 1759e0763cf07713c6101e4a7d77f13f6937e2d6
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/8/2009 4:17:39 PM
+Message:
+- Fixed typo in UMulManager
+- Added array initialization to TAnimDataProvider
+- Adjusted frmLogin
+- Some code cleanups
+----
+Modified: Client/UGameResources.pas
+Modified: Client/UdmNetwork.lfm
+Modified: Client/UdmNetwork.pas
+Modified: Client/UfrmLogin.lfm
+Modified: Client/UfrmLogin.pas
+Modified: MulProvider/UAnimDataProvider.pas
+Modified: MulProvider/UMulManager.pas
+Modified: UOLib/UAnimData.pas
+
+Revision: 06c9c2c507359b8cf4c60726053e871617cc2f17
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/8/2009 2:22:45 PM
+Message:
+- Added AnimDataProvider
+- Some code cleanups
+----
+Modified: Client/CentrED.lpi
+Modified: Client/CentrED.lpr
+Added: MulProvider/UAnimDataProvider.pas
+Modified: MulProvider/UMulManager.pas
+Modified: MulProvider/UTileDataProvider.pas
+Modified: UOLib/UAnimData.pas
+Modified: UOLib/UTiledata.pas
+
+Revision: 392bd3db145b44f85228e393fa451115852c2aea
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/8/2009 10:17:45 AM
+Message:
+- Added missing icon
+- Fixed compilation of server
+----
+Added: Client/CentrED.ico
+Modified: Server/ULandscape.pas
+
+Revision: 446e10403111d4eda7f1e388b4698dbb61310dad
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/8/2009 9:30:53 AM
+Message:
+- Made ULandscape.GetID inline
+- Removed some constraints on TileIDs and map coordinates
+- Removed another unnecessary typecast
+----
+Modified: Client/ULandscape.pas
+
+Revision: dde886b051411fc6fb2478e615e4b26eededf66f
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/8/2009 9:12:09 AM
+Message:
+- Generalized TCacheManager (for more type-safety and cleaner code)
+
+----
+Modified: Client/ULandscape.pas
+Modified: UCacheManager.pas
+
+Revision: c0b5051b00d6e2de5a46cfacbda9b18774312be4
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/7/2009 10:26:47 AM
+Message:
+- Added Keyboard movement to oglGameWindow (fixes #5)
+
+----
+Modified: Client/CentrED.lpi
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+
+Revision: 09bd74675e13facb948234eed3c585bc63a7c470
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/6/2009 8:15:56 PM
+Message:
+- Added highlighting of the target region for copy/move operations in frmLargeScaleCommand (fixes #40)
+
+----
+Modified: Client/UfrmLargeScaleCommand.lfm
+Modified: Client/UfrmLargeScaleCommand.pas
+
+Revision: 6eaf10e73e9a6e8b2f200d90c664f25d8dbf799d
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/6/2009 2:03:24 PM
+Message:
+- Added error handling when loading Locations and Profiles (fixes #2)
+
+----
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+
+Revision: 4280db3f7e9ac5594a458060dacca205d442e8ad
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/5/2009 11:37:33 AM
+Message:
+- Added flat-mode settings to toggle height display
+
+----
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+
+Revision: be3f8c05dfb3727dbff09dc5866968e571e78b0e
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/5/2009 11:26:22 AM
+Message:
+- Updated Vampyre Imaging Lib
+- Added font rendering
+- Added height display in flat mode
+----
+Modified: Client/CentrED.lpi
+Modified: Client/CentrED.lpr
+Added: Client/GLFont/DejaVu.fnt
+Added: Client/GLFont/DejaVu.png
+Modified: Client/ResourceList.txt
+Added: Client/UGLFont.pas
+Modified: Client/ULandscape.pas
+Modified: Client/UResourceManager.pas
+Modified: Client/UfrmMain.pas
+Modified: Imaging/Imaging.pas
+Modified: Imaging/ImagingBitmap.pas
+Modified: Imaging/ImagingCanvases.pas
+Modified: Imaging/ImagingClasses.pas
+Modified: Imaging/ImagingColors.pas
+Modified: Imaging/ImagingComponents.pas
+Modified: Imaging/ImagingDds.pas
+Modified: Imaging/ImagingExport.pas
+Modified: Imaging/ImagingFormats.pas
+Modified: Imaging/ImagingGif.pas
+Modified: Imaging/ImagingIO.pas
+Modified: Imaging/ImagingJpeg.pas
+Modified: Imaging/ImagingNetworkGraphics.pas
+Modified: Imaging/ImagingOpenGL.pas
+Modified: Imaging/ImagingOptions.inc
+Modified: Imaging/ImagingPortableMaps.pas
+Modified: Imaging/ImagingTarga.pas
+Modified: Imaging/ImagingTypes.pas
+Modified: Imaging/ImagingUtility.pas
+Modified: Imaging/JpegLib/imjdmarker.pas
+Modified: Imaging/JpegLib/imjmemmgr.pas
+Modified: Imaging/JpegLib/imjmemnobs.pas
+Modified: Imaging/ZLib/dzlib.pas
+Modified: Imaging/ZLib/iminfcodes.pas
+Modified: Imaging/ZLib/iminffast.pas
+Modified: Imaging/ZLib/impaszlib.pas
+Modified: Imaging/ZLib/imtrees.pas
+Modified: Imaging/ZLib/imzdeflate.pas
+Modified: Imaging/ZLib/imzinflate.pas
+Added: Tools/convertfontmap/ConvertFontMap.lpi
+Added: Tools/convertfontmap/ConvertFontMap.lpr
+
+Revision: a5128b0d05784e8e21ea9372d63c9c17ea7fa217
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/4/2009 8:04:27 PM
+Message:
+- Enable double buffering for the tile info label
+
+----
+Modified: Client/UfrmMain.pas
+
+Revision: dd88d845cd00df0ea2fce923f3f0be54ecf3679d
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/4/2009 7:24:58 PM
+Message:
+- Added translucent static tile support (fixes #46)
+- Fixed infinite recursion when updating ghost map tiles
+----
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.pas
+
+Revision: 833c470cb74b1758d23566dcb549f6b0582e78b0
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/4/2009 7:06:01 PM
+Message:
+- Fixed CurrentTile to be updated on changes (fixes #47)
+
+----
+Modified: Client/UfrmMain.pas
+
+Revision: 4da488a02b03d1e0580c5ad641e5e203ebb0e745
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/4/2009 6:57:55 PM
+Message:
+- Fixed TfrmMain.OnStaticElevated to correctly handle off-screen updates
+
+----
+Modified: Client/UfrmMain.pas
+
+Revision: a5082879fe2d02c417856217e288b5d54c4267ed
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/4/2009 6:40:05 PM
+Message:
+- Fixed static tiles to be added several times (due to ghost tile replication)
+- Added more debug info to UfrmMain
+----
+Modified: Client/CentrED.lpi
+Modified: Client/UfrmMain.pas
+
+Revision: b223f447218f36d13efb0037d38c2fef4c459b2f
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/4/2009 5:30:39 PM
+Message:
+- Fixed cedserver to compile again (using generics now)
+- Added multilog dependency to cedserver for easier debugging
+- Several code cleanups
+----
+Modified: Client/CentrED.lpi
+Modified: Server/UCEDServer.pas
+Modified: Server/ULandscape.pas
+Modified: Server/ULargeScaleOperations.pas
+Modified: Server/cedserver.lpi
+Modified: Server/cedserver.lpr
+
+Revision: 2fedab62cc9c628f36e7b2d30ddd7778fb25091d
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/4/2009 2:24:36 PM
+Message:
+- Added Undo operation
+
+----
+Modified: Client/UPackets.pas
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+
+Revision: 14ab47bdf8f2d98eb70cf681dd133140459d911a
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/4/2009 9:52:27 AM
+Message:
+- Changed several OpenGL calls with their integer-equivalents (we don't use floats anyway)
+- Added a "real quad" to the screenbuffer to keep track of the original terrain locations
+- Added OpenGL based hit test to TScreenBuffer.Find
+----
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.pas
+
+Revision: 082770f18390fa0bc8d608070dcb8320cd506392
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/3/2009 9:17:05 PM
+Message:
+- Fixed mouse-up handling when no SelectedTile is given
+
+----
+Modified: Client/UfrmMain.pas
+
+Revision: b6dfd64d41ae473975c18ffc801b273a7eb509e3
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/3/2009 8:33:59 PM
+Message:
+- (Re-)Added drawing of tiles (using the ghost tiles)
+- Fixed ghost tiles to be in edit-mode
+----
+Modified: Client/UfrmMain.pas
+
+Revision: 20747a4e0ce26e44944c4142777c672bd5d6ba06
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/3/2009 8:20:56 PM
+Message:
+- Fixed TfrmMain.SetCurrentTile to exit only under correct conditions
+- Fixed ghost tile creation to handle random height
+- Changed UpdateSelection to only process the selection changes if necessary
+- Changed TMapCell.GhostZ to be readable (necessary for simplier increase with random altitude)
+----
+Modified: Client/UfrmMain.pas
+Modified: UOLib/UMap.pas
+
+Revision: 211866d6c19ee602c41257779b67a21d228ff96a
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/3/2009 8:00:02 PM
+Message:
+- Fixed ghost tiles to use the proper priorities
+- Fixed mouse-up handling to correctly reset the selected tile
+- Moved ghost tile adding to the appropriate single- and multi-select blocks
+- Fixed AddGhostTile to use the correct tile (current <> selected) as base for certain assumptions
+----
+Modified: Client/UfrmMain.pas
+
+Revision: fda2be2b8c7f698830b5cedb4e0b22fc73572ff2
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/3/2009 7:27:06 PM
+Message:
+- Added static ghost tiles
+
+----
+Modified: Client/UfrmMain.pas
+
+Revision: be9d56f7c9f5b31ae227cff1b2e01b6d099c342a
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/3/2009 6:58:59 PM
+Message:
+- Added virtual getters for Z and TileID to TWorldItem
+- Added ghost information to TMap
+- Added ghost tiles (currently for map tiles only)
+----
+Modified: Client/CentrED.lpi
+Modified: Client/CentrED.lpr
+Modified: Client/UfrmMain.pas
+Modified: UOLib/UMap.pas
+Modified: UOLib/UWorldItem.pas
+
+Revision: 2fdbc698ac9a1311af1b6b2b76fec031b5cc5bc2
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/3/2009 12:56:08 PM
+Message:
+- Added more appropriate handling of the selection rectangle (no +1 and an own compare function)
+
+----
+Modified: Client/UfrmMain.pas
+
+Revision: e337c931ed6829b465230e2043703398c0762a4d
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/3/2009 9:41:49 AM
+Message:
+- Fixed another case of off-screen updating
+- Removed old GhostTile handling
+----
+Modified: Client/UfrmMain.pas
+
+Revision: 0f2130730bd68a76719450c03c0f336c1254a5ca
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/3/2009 9:38:11 AM
+Message:
+- Fixed UpdateSortOrder to handle off-screen updates correctly
+
+----
+Modified: Client/ULandscape.pas
+
+Revision: a74bfce923b96a6d7879aabdf58a195e23c9f92e
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/2/2009 7:38:42 PM
+Message:
+- Re-enabled lighting normals
+
+----
+Modified: Client/UfrmMain.pas
+
+Revision: fffb420299daad33b492e51bed4bd6d62b6a9f9c
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/2/2009 7:35:29 PM
+Message:
+- Some code cleanups in UfrmMain and ULandscape
+- Fixed GetPlainNormals in ULandscape to actually return a value
+----
+Modified: Client/CentrED.lpi
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.pas
+
+Revision: d5e55107604fddd9ea7f653b9e71438418df2b32
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/2/2009 6:04:19 PM
+Message:
+- Added TTileDataFlag enum
+- Added TTileDataFlags set
+- Changed TTiledata.Flags to use the TTileDataFlags set
+- Added hue highlighting to TfrmMain
+- Added TTextureManager.GetStaticMaterial to handle tiledata and hues
+----
+Modified: Client/CentrED.lpi
+Modified: Client/CentrED.lpr
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.pas
+Modified: Client/UfrmTileInfo.pas
+Modified: UOLib/UStatics.pas
+Modified: UOLib/UTiledata.pas
+
+Revision: b90ea0242104d6a047ebecd94ae7f9e8676b501f
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/2/2009 3:50:16 PM
+Message:
+- Fixed TWorldItem.Delete freeing itself
+- Fixed order in which statics get deleted (first call item.Delete THEN delete it from the objectlist which will free the item)
+----
+Modified: UOLib/UWorldItem.pas
+
+Revision: 01e7b98a126a8230e396d87a68c5e0e855f85de0
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/2/2009 1:14:00 PM
+Message:
+- Added generic lists for world items, static items and map items
+- Added appropriate compare functions
+- Some local cleanups
+----
+Modified: Client/CentrED.lpi
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.pas
+Modified: UOLib/UMap.pas
+Modified: UOLib/UStatics.pas
+Modified: UOLib/UWorldItem.pas
+
+Revision: 8df2313b4df5a2a81bc9859bc6abbf215666bab5
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/2/2009 12:40:03 PM
+Message:
+- Fixed TfrmLogin to create the profile path if it doesn't exist
+- Removed old code from TfrmMain.Render
+- Bumped version to 0.4.5
+- Moved TVirtualTile to UWorldItem
+- Added TVirtualTile handling to CompareWorldItems
+- Added priorities to the virtual tiles
+----
+Modified: Client/CentrED.lpi
+Modified: Client/CentrED.rc
+Modified: Client/UfrmLogin.lfm
+Modified: Client/UfrmLogin.pas
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+Modified: UOLib/UWorldItem.pas
+Modified: version.inc
+
+Revision: c030b9c586b4422391d9e1f00f087a5e99db00dd
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 11/24/2009 7:53:43 AM
+Message:
+- Updated to new VirtualTreeView (UTF8String --> String)
+
+----
+Modified: Client/CentrED.lpi
+Modified: Client/CentrED.rc
+Modified: Client/UfrmLargeScaleCommand.lfm
+Modified: Client/UfrmLargeScaleCommand.pas
+Modified: Client/UfrmMain.pas
+
+Revision: f58bef6d6380c272967268facd907c0b2c8fc398
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 10/24/2009 8:29:32 AM
+Message:
+- Fixed drawing of TileName in the tile list (assuming ISO8859-1 encoding) - fixes #37
+
+----
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+
+Revision: c3bdc98219764a6d88fb43ee94331eb3d6571ccc
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 10/2/2009 5:52:02 PM
+Message:
+- Moved WriteMap handling from TdmNetwork to TLandscape
+- Added repainting when accesslevel display changes (toolstate, update write map)
+----
+Modified: Client/ULandscape.pas
+Modified: Client/UdmNetwork.pas
+Modified: Client/UfrmMain.pas
+
+Revision: f888443ed02a65274bfb4e0f7d31a4ad3c2c1620
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 10/2/2009 12:18:59 PM
+Message:
+- Changed TLandscape.FOpenRequests to use TBits instead of a boolean array
+
+----
+Modified: Client/ULandscape.pas
+
+Revision: 69a5b97b64b030a112bbe0b8bb2927519921f629
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 10/2/2009 12:12:36 PM
+Message:
+- Fixed some events not correctly triggering a repaint
+
+----
+Modified: Client/UfrmMain.pas
+
+Revision: 7d038013b231dfad09912e4c86152e2c6a5d2302
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 10/2/2009 12:10:21 PM
+Message:
+- Fixed TLandscape.FillDrawList to unnecessarily check upper/lower bounds
+
+----
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.pas
+
+Revision: 6c9a47400394902013c5f5bd483982a986eb430f
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 9/30/2009 1:29:32 PM
+Message:
+- Changed handling of CurrentTile and SelectedTile to avoid unnecessary invalidations
+
+----
+Modified: Client/UfrmMain.pas
+
+Revision: 94d77d4a005d6ca313adf99ad0bad808fca17e97
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 9/29/2009 10:06:52 AM
+Message:
+- Changed TVirtualTile to inherit directly from TWorldItem
+- Added FRepaintNeeded to minimize unnecessary repaints
+----
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+
+Revision: 0cee996fbc4ca8d842807956dc2ae6aa1bbeeeca
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 9/28/2009 8:25:19 PM
+Message:
+- Reimplemented the Virtual Layer
+
+----
+Modified: Client/Tools/UfrmVirtualLayer.lfm
+Modified: Client/Tools/UfrmVirtualLayer.pas
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.pas
+
+Revision: 99c21fa951fcc0a63fae842252222d547ea320c9
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 9/28/2009 12:16:29 PM
+Message:
+- Added Logging unit and MultiLog dependency
+- Removed StaticsFilter parameter from FillDrawList
+----
+Modified: Client/CentrED.lpi
+Modified: Client/CentrED.lpr
+Modified: Client/CentrED.rc
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+Added: Logging.pas
+
+Revision: b9ef61c0db0234e2bfc1b8107b226d0cf0ec9ca5
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 9/1/2009 9:21:39 PM
+Message:
+- Added UfrmToolWindow
+- Changed the tool windows to inherit from TfrmToolWindow
+- Added a "close timer" to TfrmToolWindow to handle different focus behaviours of window managers
+- Moved position changes for the tool windows to the appropriate TfrmToolWindow.FormShow event
+----
+Modified: Client/CentrED.lpi
+Modified: Client/CentrED.lpr
+Modified: Client/CentrED.rc
+Modified: Client/Tools/UfrmBoundaries.lfm
+Modified: Client/Tools/UfrmBoundaries.pas
+Modified: Client/Tools/UfrmDrawSettings.lfm
+Modified: Client/Tools/UfrmDrawSettings.pas
+Modified: Client/Tools/UfrmElevateSettings.lfm
+Modified: Client/Tools/UfrmElevateSettings.pas
+Modified: Client/Tools/UfrmHueSettings.lfm
+Modified: Client/Tools/UfrmHueSettings.pas
+Modified: Client/Tools/UfrmMoveSettings.lfm
+Modified: Client/Tools/UfrmMoveSettings.pas
+Added: Client/Tools/UfrmToolWindow.lfm
+Added: Client/Tools/UfrmToolWindow.pas
+Modified: Client/Tools/UfrmVirtualLayer.lfm
+Modified: Client/Tools/UfrmVirtualLayer.pas
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+Modified: Client/UfrmTileInfo.lfm
+Modified: Client/UfrmTileInfo.pas
+
+Revision: d769c7ddc3e89ae574c5c03a72279d0669f3c9f6
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/31/2009 4:24:54 PM
+Message:
+- Added version info to the project options
+- Added new icon
+----
+Modified: Client/CentrED.lpi
+Modified: Client/CentrED.lpr
+Added: Client/CentrED.manifest
+Added: Client/CentrED.rc
+Deleted: Client/CentrED.res
+
+Revision: 237c9765cdb5573be835ec19a3415521a6e7092d
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/6/2009 11:34:55 AM
+Message:
+- Added filter management to TfrmMain
+- Changed screen buffer state handling to enums
+----
+Modified: Client/Tools/UfrmBoundaries.pas
+Modified: Client/Tools/UfrmFilter.lfm
+Modified: Client/Tools/UfrmFilter.pas
+Modified: Client/UfrmMain.pas
+
+Revision: 2cfde3eea5f16915fdc705f2ef3515c92dfef008
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/6/2009 9:42:19 AM
+Message:
+- Changed TfrmFilter to enable tile and hue filter on tile/hue list changes
+- Changed TfrmFilter placement to be off by -4 in x and y direction
+- Disabled "scroll to center" in TfrmMain's TileList
+- Disabled unncessary drag operations in TfrmMain's TileList
+----
+Modified: Client/Tools/UfrmBoundaries.lfm
+Modified: Client/Tools/UfrmBoundaries.pas
+Modified: Client/Tools/UfrmFilter.lfm
+Modified: Client/Tools/UfrmFilter.pas
+Modified: Client/UfrmMain.lfm
+
+Revision: 2b040fc5e37549ab8203056c07f6b3ceda3750ff
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/6/2009 9:04:09 AM
+Message:
+- Disabled use of normals (weren't really in use anyway)
+- Added updating of the last shortcut in TScreenBuffer
+----
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.pas
+
+Revision: 28969d94f7f270cb138bb9d6c1afba5b970155e1
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/4/2009 12:02:39 PM
+Message:
+- Removed merge sort implementation
+- Use a temporary array and QuickSort (TList.Sort) to sort the initial drawlist
+- Clear the drawlist in the TLandscape.FillDrawList method
+----
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.pas
+
+Revision: 1f1f5ac7b4389ba469e0a7df8429759bd88bd8fe
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/3/2009 1:32:03 PM
+Message:
+- Added TLandscape.OnMapChanged to handle changes to map tiles
+- Reenabled terrain, statics, nodraw and flat toggles
+- Fixed editing target list generation (in OnMouseUp) to only consider "normal" tiles, use their correct new order and the CanBeEdited attribute
+- Removed obsolete TfrmMain.CanBeModified
+----
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+
+Revision: 2ea86014021dec7ea921d3d4ec766e832601ffc1
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/3/2009 12:55:54 PM
+Message:
+- Added handling for hue changes (OnStaticHued)
+
+----
+Modified: Client/UfrmMain.pas
+
+Revision: a71c1bd570df3ef98bd7482be2f52a36265bf1fe
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/3/2009 12:40:31 PM
+Message:
+- Added fpdoc paths
+- Started some documenting
+- Added TScreenBuffer.UpdateSortOrder to handle elevations
+----
+Modified: Client/CentrED.lpi
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.pas
+Added: doc/ulandscape.xml
+
+Revision: 1bc9ad3fe1260cb63cad0e25375ccbe1c9739b7a
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/2/2009 6:29:55 PM
+Message:
+- Added handling of new blocks (OnNewBlock event)
+
+----
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.pas
+
+Revision: 2e1626939734a273ffcc55977f7b45eddf39d7ab
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/2/2009 2:45:23 PM
+Message:
+- Extracted TfrmMain.PrepareScreenBlock from RebuildScreenBuffer
+- Added events for OnStatic-Inserted, -Deleted and -Elevated
+----
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+
+Revision: fbbe988dd62e1af58663cd1c841db4eb9f4af129
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/2/2009 1:08:56 PM
+Message:
+- Replaced usages of UListSort with TList.Sort
+- Removed now obsolete UListSort.pas
+- Removed GameResourceManager dependency from TStatics
+- Moved TSeperatedStaticBlock to the according ULandscape units
+- Cleanup some unnecessary <> nil checks
+----
+Modified: Client/UGameResources.pas
+Modified: Client/ULandscape.pas
+Modified: Server/ULandscape.pas
+Deleted: UOLib/UListSort.pas
+Modified: UOLib/UStatics.pas
+
+Revision: dc932985e284378165ecbd5ddbec62f734d0f190
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/2/2009 12:43:32 PM
+Message:
+- Made cedserver compile with FPC 2.2.3
+
+----
+Modified: Server/UConfig.pas
+Modified: Server/cedserver.lpi
+Modified: Server/cedserver.lpr
+
+Revision: b70f03ba2adb4918bfdace94d40abffe4e252c35
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/2/2009 7:45:26 AM
+Message:
+- Added iterator to TCacheManager
+- Added access (CanBeWritten) tracking to TStaticItem
+- Moved TLandscape.UpdateStaticsPriorities to TStaticItem.UpdatePriorities
+- Moved ULandscape.CompareWorldItems to UWorldItem
+- Renamed TSeperatedStaticBlock.RefreshList to RebuildList
+- Changed TStaticBlock.Sort to use CompareWorldItems and TList.Sort
+- Some code style changes
+----
+Modified: Client/ULandscape.pas
+Modified: Client/UdmNetwork.lfm
+Modified: Client/UdmNetwork.pas
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+Modified: UCacheManager.pas
+Modified: UOLib/UStatics.pas
+Modified: UOLib/UWorldItem.pas
+
+Revision: f3888db49ca20293c38809b00e7542fcde6aab97
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 7/31/2009 11:03:26 AM
+Message:
+- Removed several unnecessary panels from frmMain (using Anchors instead)
+
+----
+Modified: Client/Tools/UfrmFilter.lfm
+Modified: Client/Tools/UfrmFilter.pas
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+
+Revision: dc1f4253539f597d5111ca2934c752eff21bba10
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 7/30/2009 2:31:29 PM
+Message:
+- Added tracking of "Highlighted" state in the screen buffer
+
+----
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.pas
+
+Revision: 01d5fb98d1f7313cb457c41722e73d6079f7048f
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 7/30/2009 11:04:49 AM
+Message:
+- Optimized blockInfo.ScreenRect calculation for static tiles
+- Fixed TScreenBuffer.Find to correctly handle the new buffer usage (search at the end, not the beginning)
+----
+Modified: Client/CentrED.lpi
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+
+Revision: 1196ad64256efcbff0f3de274136694be67825d4
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 6/12/2009 6:31:14 AM
+Message:
+- Fix Z-order calculation for terrain tiles (thanks Turley)
+
+----
+Modified: Client/ULandscape.pas
+
+Revision: 31d2623df94c8142f5182519e62d749f74cd78fd
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 6/11/2009 8:41:30 AM
+Message:
+- Changed terrain rendering from GL_TRIANGLES to GL_QUADS to fix coastlines and other overlapping (thanks Turley)
+
+----
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+
+Revision: 7fdfd1ee233090b15ea975fc70f5a7351f6209e9
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 5/20/2009 12:16:18 PM
+Message:
+- Merged TTileList into TScreenBuffer
+- Added shortcuts to TScreenBuffer to speed up the InsertionSort
+- Renamed TScreenBuffer.Store to TScreenBuffer.Insert
+- Added TScreenBuffer.Add to append to the list
+- Added TScreenBuffer.Sort to sort the list using MergeSort
+- Changed TLandscape.FillDrawList to just append to the list and sort afterwards
+- Added screen buffer invalidation on TfrmMain.OnLandscapeChanged
+----
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+
+Revision: 0d6c151c5f8b17a68f62cda238b563b597dd96f2
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 5/17/2009 6:33:59 PM
+Message:
+- Removed TVector2D
+- Added screen buffer (in)validation
+- Moved distance calculations to RebuildScreenBuffer
+- Added tile drawing to the Render method
+- Added DrawQuad precalculation to the post processing of the screen buffer
+- Renamed the members of TScreenState
+- Changed the DrawQuad to consist of TGLfloats for direct pointer passing
+- Fixed the while loop condition in TScreenBuffer.Store
+----
+Modified: Client/CentrED.lpr
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.pas
+Modified: UVector.pas
+
+Revision: 561104a9244106fa2f0da047fcab5b98ccaf4dd9
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 5/17/2009 4:06:42 PM
+Message:
+- Added screen buffer pre processing (prepare materials and normals)
+- Added 2D Vector to store the points for drawing terrain
+- Added additional GetNormals function to TLandscape to fill an existing array
+----
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.pas
+Modified: UVector.pas
+
+Revision: fee66eada81956b10e8eaf6e13adb04fc75fdd5a
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 5/17/2009 9:32:51 AM
+Message:
+- Refined state handling for TBlockInfo
+- Added caching of normals into TBlockInfo
+- Added differentiation for low and high res materials to TBlockInfo
+- Removed draw list clearing from FillDrawList
+- Changed TScreenBuffer.Store to return a reference to the stored TBlockInfo
+- Added missing ; to GetSerial
+- More cleanups in ULandscape.pas
+- Moved several local variables of TfrmMain.Render into TfrmMain members
+- Moved several size related variable initializations from Render into OnResize
+- Extracted GetDrawOffset
+- Added seperate RebuildScreenBuffer
+----
+Modified: Client/CentrED.lpi
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+
+Revision: 61db743ee58e9787680ae6cd22b6a24020f6ed03
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 5/17/2009 8:12:52 AM
+Message:
+- Cleanup in ULandscape.pas
+- Removed unncessary virtual and ghost tile handling from FillDrawList
+- Added serial generation and tracking to TScreenBuffer
+- Added editing state tracking to TScreenBuffer
+- Changed TScreenBuffer.Store to perform an InsertSort
+- Changed TScreenBuffer.Store to handle only the most necessary parameters
+----
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+
+Revision: 2f560a773846d8605d3a175b545e91e55d50039d
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 5/15/2009 5:37:10 PM
+Message:
+- Changed rendering to build the draw list for the whole range
+- Added CanBeEdited flag to TWorldItem
+- Changed list sorting from custom heap sort implementation to the FCL standard (QuickSort)
+----
+Modified: Client/CentrED.lpi
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+Modified: Client/UfrmRegionControl.lfm
+Modified: UOLib/UWorldItem.pas
+
+Revision: c20a160543bd7e097d31533952a014b5a1637133
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 5/15/2009 4:10:51 PM
+Message:
+- Some cleanups in UArt.pas
+- Changed the console command for the cedserver project
+----
+Modified: Server/cedserver.lpi
+Modified: UOLib/UArt.pas
+
+Revision: 7e86c7400cefbe05104b5b542e40119454b71534
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 3/9/2009 12:24:53 PM
+Message:
+- Added more checks to statics loading and saving and replaced unnecessary LongInt casts
+
+----
+Modified: Server/ULandscape.pas
+Modified: Server/cedserver.lpi
+Modified: UOLib/UStatics.pas
+
+Revision: 114c218ca60c36bdb3f2d08f5b162f3ca5b8bc31
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 2/15/2009 12:04:54 PM
+Message:
+- Added some more comments to ULandscape.pas
+- Renamed a somewhat unclearly named series of local variables ("item" --> "subscriptionItem") to better suite its context
+----
+Modified: Server/ULandscape.pas
+
+Revision: 45537315b5a0d39a9a4fc4d9d17f466c982d7c53
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 1/27/2009 4:45:01 AM
+Message:
+- Updated to a recent VirtualTrees revision
+- Updated README accordingly
+----
+Modified: Client/CentrED.lpi
+Modified: Client/Tools/UfrmFilter.lfm
+Modified: Client/UfrmAccountControl.lfm
+Modified: Client/UfrmAccountControl.pas
+Modified: Client/UfrmLargeScaleCommand.lfm
+Modified: Client/UfrmLargeScaleCommand.pas
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+Modified: Client/UfrmRegionControl.lfm
+Modified: Client/UfrmRegionControl.pas
+Modified: README
+
+Revision: e727aadcf2ce564d37161a59ee2f9cfaa2d5a47a
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 9/28/2008 4:00:32 PM
+Message:
+- Fixed TfrmEditAccount.RegionDeleted to check, if the region is known (to prevent index out of bounds errors)
+- Fixed UfrmMain to be compatible with newer versions of FPC
+- Added a slider to frmRegionControl
+- Added buttons to add and delete regions to frmRegionControl
+- Fixed unsaved regions not being removed in TfrmRegionControl
+- Extracted TfrmRegionControl.CheckUnsaved
+----
+Modified: Client/UfrmEditAccount.lfm
+Modified: Client/UfrmEditAccount.pas
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+Modified: Client/UfrmRegionControl.lfm
+Modified: Client/UfrmRegionControl.pas
+
+Revision: 01f5b2ca5825c6253d4b62df53b3e23b792d5b1a
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 10/22/2008 5:46:50 AM
+Message:
+- Removed an unnecessary file from the project file
+
+----
+Modified: Client/CentrED.lpi
+
+Revision: da87485fc56d88fc76fb6e918c1f70939e49c73e
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 9/15/2008 4:58:46 PM
+Message:
+- Changed TTileData.FFileName to get trimmed after initialization
+
+----
+Modified: UOLib/UTiledata.pas
+
+Revision: ac3762574689e44a7128a8525f43102302854824
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 9/7/2008 9:41:58 AM
+Message:
+Added tag 0.4.1 for changeset 49a3b10841f0
+
+----
+
+Revision: 8a3f00fd4c481999dfe876fb5441be4da67e4f06
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 9/7/2008 9:40:23 AM
+Message:
+- Updated version to 0.4.1
+- Updated changelog
+----
+Modified: Client/UfrmMain.lfm
+Modified: Setup/CentrED_win32.iss
+Modified: Setup/Changelog.txt
+Modified: version.inc
+
+Revision: 7399b13fd0998ea3b8bacde1aa1d08f44099c084
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 9/6/2008 5:08:50 PM
+Message:
+- Fixed WheelDelta not being adjusted right
+
+----
+Modified: Client/CentrED.lpi
+Modified: Client/CentrED.lpr
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+
+Revision: cc8eee1b1b641d3508cca070badf4eb69ed021c8
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/29/2008 8:55:00 AM
+Message:
+- Fixed VirtualLayer preparation for corner cases (where the size would have been too small)
+
+----
+Modified: Client/UfrmMain.pas
+
+Revision: 0e841f864d04b5545bdbcfc0dacac078342d00a4
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/29/2008 6:09:26 AM
+Message:
+- Merged changes from Turley (elevate with random altitude)
+- Rearranged the TfrmElevateSettings dialog
+- Fixed transparency settings of the images in the TfrmLogin dialog
+- Fixed TfrmRegionControl to not react on mouse clicks if no region is selected
+- Updated Vampyre Imaging Lib to recent SVN
+- Added missing cedserver_config_2_3 project file
+----
+Modified: Client/Tools/UfrmElevateSettings.lfm
+Modified: Client/Tools/UfrmElevateSettings.pas
+Modified: Client/ULandscape.pas
+Modified: Client/UOverlayUI.pas
+Modified: Client/UfrmLogin.lfm
+Modified: Client/UfrmMain.pas
+Modified: Client/UfrmRegionControl.lfm
+Modified: Client/UfrmRegionControl.pas
+Modified: Imaging/Imaging.pas
+Modified: Imaging/ImagingBitmap.pas
+Modified: Imaging/ImagingCanvases.pas
+Modified: Imaging/ImagingClasses.pas
+Modified: Imaging/ImagingComponents.pas
+Modified: Imaging/ImagingDds.pas
+Modified: Imaging/ImagingFormats.pas
+Modified: Imaging/ImagingGif.pas
+Modified: Imaging/ImagingJpeg.pas
+Modified: Imaging/ImagingNetworkGraphics.pas
+Modified: Imaging/ImagingOpenGL.pas
+Modified: Imaging/ImagingOptions.inc
+Modified: Imaging/ImagingPortableMaps.pas
+Modified: Imaging/ImagingTypes.pas
+Modified: Imaging/ImagingUtility.pas
+Added: Tools/cedserver_config_2_3/cedserver_config_2_3.lpi
+
+Revision: fcb7c8a79485cddfdf2cdcabf89aede1861a4177
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/27/2008 2:59:06 PM
+Message:
+Added tag 0.4.0 for changeset 7fc49d217f99
+
+----
+
+Revision: d0c65f912b9221522e70f4e385716330891a7220
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/27/2008 2:56:31 PM
+Message:
+- Fixed a missing event assignment in TfrmBoundaries (Min/Max spinedits didn't react to OnChange)
+- Fixed a typo in cedserver_config_2_3.lpr ("Accesslevel" <> "AccessLevel")
+----
+Modified: Client/Tools/UfrmBoundaries.lfm
+Modified: Tools/cedserver_config_2_3/cedserver_config_2_3.lpr
+
+Revision: de21e6efdea39cf59f7d3b03a59b80288bd0f064
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/27/2008 7:18:09 AM
+Message:
+- Added converter for cedserver configs from version 2 to 3
+- Updated changelog
+- Updated installer
+- Updated version to 0.4.0 and revision to 64
+- Fixed about dialog
+- Added some more exclusions to .hgignore
+----
+Modified: .hgignore
+Modified: Client/CentrED.lpi
+Modified: Client/UfrmAbout.lfm
+Modified: Server/cedserver.lpi
+Modified: Setup/CentrED_win32.iss
+Modified: Setup/Changelog.txt
+Added: Tools/cedserver_config_2_3/cedserver_config_2_3.lpr
+Modified: version.inc
+
+Revision: 1c3d6249497c399e5b029c3dcffd753c682aefea
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/26/2008 4:48:48 PM
+Message:
+- Added client side visualization of area restrictions
+- Added an icon to the "Region control" menu item
+- Changed the former TAccessLevelChangedPacket and the TLoginResponsePacket to add informations about the writeable areas
+- Changed OnModifyUserPacket to update clients according to new accesslevel/area restrictions
+- Changed OnModifyRegionPacket to update clients using that particular region
+- Fixed UPacketHandlers.ValidateAccess to check the region bounds according to the PtInRect function
+----
+Modified: Client/UdmNetwork.pas
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+Modified: Client/UfrmRegionControl.pas
+Modified: Server/UAccount.pas
+Modified: Server/UAdminHandling.pas
+Modified: Server/UClientHandling.pas
+Modified: Server/UConnectionHandling.pas
+Modified: Server/UPacketHandlers.pas
+Modified: Server/cedserver.lpr
+
+Revision: 91af86a29459f75b2391fe1d7112f2d0a2535bff
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/25/2008 11:33:38 AM
+Message:
+- Added ability to edit regions for accounts
+- Added AccessChangedListener to allow several listeners to react on accesslevel changes
+- Changed TModifyUserPacket to support the region lists
+- Fixed a region list parsing bug in TfrmAccountControl.OnListUsersPacket (Unsigned vs. Signed Integer)
+- Fixed the order of form creation in TdmNetwork to assure the functionality of the region and account control
+- Added some glob entries to .hgignore
+----
+Modified: .hgignore
+Modified: Client/CentrED.lpr
+Modified: Client/UAdminHandling.pas
+Modified: Client/UdmNetwork.pas
+Modified: Client/UfrmAccountControl.pas
+Modified: Client/UfrmEditAccount.lfm
+Modified: Client/UfrmEditAccount.pas
+Modified: Client/UfrmLogin.lfm
+Modified: Client/UfrmMain.pas
+Modified: Client/UfrmRegionControl.pas
+Modified: Server/UAdminHandling.pas
+
+Revision: 85cc0c00662d9e8c5dce0f3fae825fb570de7bc7
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/23/2008 5:09:20 PM
+Message:
+- Fixed/Removed some compiler warnings and hints
+- Some more syntactic changes to UfrmRegionControl.pas
+- Implemented region modification and deletion
+- Changed the server side region handling to broadcast the changes
+- Added safer admin packet registration
+- Added some more units to the project files
+----
+Modified: Client/CentrED.lpi
+Modified: Client/CentrED.lpr
+Modified: Client/UAdminHandling.pas
+Modified: Client/UfrmAccountControl.pas
+Modified: Client/UfrmLargeScaleCommand.lfm
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+Modified: Client/UfrmRegionControl.lfm
+Modified: Client/UfrmRegionControl.pas
+Modified: Server/UAccount.pas
+Modified: Server/UAdminHandling.pas
+Modified: Server/UConfig.pas
+Modified: Server/UConnectionHandling.pas
+Modified: Server/ULandscape.pas
+Modified: Server/ULargeScaleOperations.pas
+Modified: Server/UPacketHandlers.pas
+Modified: Server/URadarMap.pas
+Modified: Server/URegions.pas
+Modified: Server/cedserver.lpi
+Modified: UXmlHelper.pas
+
+Revision: 49e095a83fbe3d82aeba3cfa88a53d1abe671678
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/19/2008 9:35:14 AM
+Message:
+- Added missing URegions.pas
+- Disabled .hgignore for now
+----
+Modified: .hgignore
+Added: Server/URegions.pas
+
+Revision: d5069bbb5085a7eb586819c191aa795ec2a54d18
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/17/2008 2:12:36 PM
+Message:
+- Fixed memory leak in TfrmFilter (not freeing FCheckedHues)
+- Fixed memory leak in TfrmMain (not freeing the strings in the location info nodes)
+- Rearranged frmEditAccount to allow region handling
+- Added region handling to the client side account specific network packets
+- Fixed some more code style inconsistencies in UfrmRegionControl.pas
+- Fixed redrawing in TfrmRegionControl
+- Fixed memory leak in TAccount (not freeing FRegions)
+- Fixed the TModifyRegionResponsePacket ID
+- Fixed the content of the TUserListPacket to not contain the list of all regions
+----
+Modified: Client/CentrED.lpi
+Modified: Client/CentrED.lpr
+Modified: Client/Tools/UfrmFilter.lfm
+Modified: Client/Tools/UfrmFilter.pas
+Modified: Client/UfrmAccountControl.lfm
+Modified: Client/UfrmAccountControl.pas
+Modified: Client/UfrmEditAccount.lfm
+Modified: Client/UfrmEditAccount.pas
+Modified: Client/UfrmLargeScaleCommand.lfm
+Modified: Client/UfrmLargeScaleCommand.pas
+Modified: Client/UfrmLogin.lfm
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmMain.pas
+Modified: Client/UfrmRegionControl.lfm
+Modified: Client/UfrmRegionControl.pas
+Modified: Server/UAccount.pas
+Modified: Server/UAdminHandling.pas
+
+Revision: c7d845997e0541fc9acb3ccd8e0a3625553b4922
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/17/2008 9:38:54 AM
+Message:
+- Changed alignment of frmBoundaries and frmVirtualLayer
+- Added ParentFont to all controls to keep a consistent look among all widgetsets and DE settings
+----
+Modified: Client/CentrED.lpi
+Modified: Client/Tools/UfrmBoundaries.lfm
+Modified: Client/Tools/UfrmBoundaries.pas
+Modified: Client/Tools/UfrmConfirmation.lfm
+Modified: Client/Tools/UfrmDrawSettings.lfm
+Modified: Client/Tools/UfrmElevateSettings.lfm
+Modified: Client/Tools/UfrmFilter.lfm
+Modified: Client/Tools/UfrmHueSettings.lfm
+Modified: Client/Tools/UfrmMoveSettings.lfm
+Modified: Client/Tools/UfrmVirtualLayer.lfm
+Modified: Client/Tools/UfrmVirtualLayer.pas
+Modified: Client/UfrmAbout.lfm
+Modified: Client/UfrmAccountControl.lfm
+Modified: Client/UfrmEditAccount.lfm
+Modified: Client/UfrmInitialize.lfm
+Modified: Client/UfrmLargeScaleCommand.lfm
+Modified: Client/UfrmLogin.lfm
+Modified: Client/UfrmMain.lfm
+Modified: Client/UfrmRegionControl.lfm
+
+Revision: 3e958a4dfce6ea09294e8e08317d33c374c59bee
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/12/2008 7:59:56 AM
+Message:
+- Added missing files from last commit
+
+----
+Added: Client/UfrmRegionControl.lfm
+Added: Client/UfrmRegionControl.pas
+
+Revision: 2edc2a7424938f709011c5d38b11ff82ca0f2ab1
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/12/2008 7:46:45 AM
+Message:
+- Merged client side changes from Turley (with syntactic modifications)
+- Changed alignment in frmDrawSettings
+----
+Modified: Client/CentrED.lpi
+Modified: Client/CentrED.lpr
+Modified: Client/Tools/UfrmDrawSettings.lfm
+Modified: Client/Tools/UfrmDrawSettings.pas
+Modified: Client/UdmNetwork.pas
+Modified: Client/UfrmAccountControl.lfm
+Modified: Client/UfrmAccountControl.pas
+Modified: Client/UfrmMain.pas
+
+Revision: c95ba906a7d187c684afb9e728013d9cc17fc959
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/11/2008 4:48:45 PM
+Message:
+- Imported server changes from Turley (with modifications)
+- Bumped version to 0.3.7
+- Changed ProtocolVersion o 6
+- Fixed TXmlHelper's child node parsing (incorrect usage of FindNode)
+- Added TModifyRegionStatus and TDeleteRegionStatus
+----
+Modified: Server/UAccount.pas
+Modified: Server/UAdminHandling.pas
+Modified: Server/UConfig.pas
+Modified: Server/ULandscape.pas
+Modified: Server/UPacketHandlers.pas
+Modified: Server/cedserver.lpr
+Modified: UEnums.pas
+Added: URectList.pas
+Modified: UXmlHelper.pas
+Modified: version.inc
+
+Revision: 2409b861e3c6cff9b211d5801eb21c575feef498
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 8/9/2008 1:38:09 PM
+Message:
+- Added GTK2 support to UGUIPlatformUtils.pas
+- Fixed compilation of the ImagingLib with newer Lazarus versions
+- Renamed TInvalidConfigVersionExeption to TInvalidConfigException
+- Cleanup in ULandscape.pas
+- Removed widgetset and platform constraints from the project file
+----
+Modified: Client/CentrED.lpi
+Modified: Client/Tools/UfrmFilter.lfm
+Modified: Client/UGUIPlatformUtils.pas
+Modified: Client/UfrmAbout.lfm
+Modified: Client/UfrmAbout.pas
+Modified: Client/UfrmMain.lfm
+Modified: Imaging/ImagingComponents.pas
+Modified: Server/UConfig.pas
+Modified: Server/ULandscape.pas
+
+Revision: 5b4ea92bb191a7af9256b1114ffc7be34e1449f9
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 3/9/2008 5:11:48 PM
+Message:
+- Fixed a bug in ULandscape.pas which causes problems with InsideUO (staidx.size was not correctly set to zero when the entry was empty)
+
+----
+Modified: Server/ULandscape.pas
+
+Revision: 15bcaa0686bde0d63e2d47b18b9f2bc757e16d6d
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 3/7/2008 12:28:55 PM
+Message:
+- Added more verbose status messages
+
+----
+Modified: Server/ULandscape.pas
+Modified: Server/cedserver.lpi
+Modified: Server/cedserver.lpr
+Modified: version.inc
+
+Revision: 12773fd63eb913275d50ded96920faa217876717
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 3/6/2008 4:55:49 PM
+Message:
+- Fixed "UTiledata" spelling in ULandscape.pas
+- Added ISerializable and IInvalidate interfaces
+- Implemented a TConfig class and XML storage
+- Added some more detailed messages when a login fails to the server console
+- Removed obsolete IStream interface references
+- Readded lbHue in TfrmHueSettings
+----
+Modified: Client/Tools/UfrmHueSettings.lfm
+Modified: Client/Tools/UfrmHueSettings.pas
+Modified: Client/ULandscape.pas
+Modified: Client/UfrmLogin.lfm
+Modified: Client/UfrmMain.lfm
+Modified: Server/UAccount.pas
+Modified: Server/UAdminHandling.pas
+Modified: Server/UCEDServer.pas
+Modified: Server/UClientHandling.pas
+Modified: Server/UConfig.pas
+Modified: Server/UConnectionHandling.pas
+Modified: Server/ULandscape.pas
+Modified: Server/cedserver.lpi
+Modified: Server/cedserver.lpr
+Deleted: UIStream.pas
+Added: UInterfaces.pas
+Modified: UStreamHelper.pas
+Added: UXmlHelper.pas
+
+Revision: 04a459b5249495686ad54382e0d91e5338c603a7
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 1/12/2008 11:58:36 AM
+Message:
+- Removed unnecessary VirtualTrees.patch
+- Updated README to reflect this change
+- Updated .hgignore to a more sane regexp and put .lrs on the black list
+----
+Modified: .hgignore
+Modified: README
+Deleted: VirtualTrees.patch
+
+Revision: dd7f4c126d89037dca4faec5b3d15308b73704f6
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/21/2007 5:14:41 PM
+Message:
+- Added missing Profiles directory
+- Added precompiled resource bundle to the output directory
+----
+Added: bin/CentrED.dat
+Added: bin/Profiles/README
+
+Revision: c0a125042bf6f8af6208cb633d92fc7596b470ed
+Author: Andreas Schneider <aksdb@gmx.de>
+Date: 12/21/2007 3:31:58 PM
+Message:
+- Initial import from internal repository
+
+----
+Added: .hgignore
+Added: Client/CentrED.lpi
+Added: Client/CentrED.lpr
+Added: Client/CentrED.res
+Added: Client/Overlay/LeftTopArrow.tga
+Added: Client/Overlay/TopArrow.tga
+Added: Client/Overlay/VirtualLayer.tga
+Added: Client/ResourceList.txt
+Added: Client/Tools/UfrmBoundaries.lfm
+Added: Client/Tools/UfrmBoundaries.pas
+Added: Client/Tools/UfrmConfirmation.lfm
+Added: Client/Tools/UfrmConfirmation.pas
+Added: Client/Tools/UfrmDrawSettings.lfm
+Added: Client/Tools/UfrmDrawSettings.pas
+Added: Client/Tools/UfrmElevateSettings.lfm
+Added: Client/Tools/UfrmElevateSettings.pas
+Added: Client/Tools/UfrmFilter.lfm
+Added: Client/Tools/UfrmFilter.pas
+Added: Client/Tools/UfrmHueSettings.lfm
+Added: Client/Tools/UfrmHueSettings.pas
+Added: Client/Tools/UfrmMoveSettings.lfm
+Added: Client/Tools/UfrmMoveSettings.pas
+Added: Client/Tools/UfrmVirtualLayer.lfm
+Added: Client/Tools/UfrmVirtualLayer.pas
+Added: Client/UAdminHandling.pas
+Added: Client/UGUIPlatformUtils.pas
+Added: Client/UGameResources.pas
+Added: Client/ULandscape.pas
+Added: Client/UOverlayUI.pas
+Added: Client/UPacketHandlers.pas
+Added: Client/UPackets.pas
+Added: Client/UPlatformTypes.pas
+Added: Client/UResourceManager.pas
+Added: Client/UdmNetwork.lfm
+Added: Client/UdmNetwork.pas
+Added: Client/UfrmAbout.lfm
+Added: Client/UfrmAbout.pas
+Added: Client/UfrmAccountControl.lfm
+Added: Client/UfrmAccountControl.pas
+Added: Client/UfrmEditAccount.lfm
+Added: Client/UfrmEditAccount.pas
+Added: Client/UfrmInitialize.lfm
+Added: Client/UfrmInitialize.pas
+Added: Client/UfrmLargeScaleCommand.lfm
+Added: Client/UfrmLargeScaleCommand.pas
+Added: Client/UfrmLogin.lfm
+Added: Client/UfrmLogin.pas
+Added: Client/UfrmMain.lfm
+Added: Client/UfrmMain.pas
+Added: Client/UfrmRadar.lfm
+Added: Client/UfrmRadar.pas
+Added: Client/UfrmTileInfo.lfm
+Added: Client/UfrmTileInfo.pas
+Added: Imaging/Imaging.pas
+Added: Imaging/ImagingBitmap.pas
+Added: Imaging/ImagingCanvases.pas
+Added: Imaging/ImagingClasses.pas
+Added: Imaging/ImagingColors.pas
+Added: Imaging/ImagingComponents.pas
+Added: Imaging/ImagingDds.pas
+Added: Imaging/ImagingExport.pas
+Added: Imaging/ImagingFormats.pas
+Added: Imaging/ImagingGif.pas
+Added: Imaging/ImagingIO.pas
+Added: Imaging/ImagingJpeg.pas
+Added: Imaging/ImagingNetworkGraphics.pas
+Added: Imaging/ImagingOpenGL.pas
+Added: Imaging/ImagingOptions.inc
+Added: Imaging/ImagingPortableMaps.pas
+Added: Imaging/ImagingTarga.pas
+Added: Imaging/ImagingTypes.pas
+Added: Imaging/ImagingUtility.pas
+Added: Imaging/JpegLib/imjcapimin.pas
+Added: Imaging/JpegLib/imjcapistd.pas
+Added: Imaging/JpegLib/imjccoefct.pas
+Added: Imaging/JpegLib/imjccolor.pas
+Added: Imaging/JpegLib/imjcdctmgr.pas
+Added: Imaging/JpegLib/imjchuff.pas
+Added: Imaging/JpegLib/imjcinit.pas
+Added: Imaging/JpegLib/imjcmainct.pas
+Added: Imaging/JpegLib/imjcmarker.pas
+Added: Imaging/JpegLib/imjcmaster.pas
+Added: Imaging/JpegLib/imjcomapi.pas
+Added: Imaging/JpegLib/imjconfig.inc
+Added: Imaging/JpegLib/imjcparam.pas
+Added: Imaging/JpegLib/imjcphuff.pas
+Added: Imaging/JpegLib/imjcprepct.pas
+Added: Imaging/JpegLib/imjcsample.pas
+Added: Imaging/JpegLib/imjdapimin.pas
+Added: Imaging/JpegLib/imjdapistd.pas
+Added: Imaging/JpegLib/imjdcoefct.pas
+Added: Imaging/JpegLib/imjdcolor.pas
+Added: Imaging/JpegLib/imjdct.pas
+Added: Imaging/JpegLib/imjddctmgr.pas
+Added: Imaging/JpegLib/imjdeferr.pas
+Added: Imaging/JpegLib/imjdhuff.pas
+Added: Imaging/JpegLib/imjdinput.pas
+Added: Imaging/JpegLib/imjdmainct.pas
+Added: Imaging/JpegLib/imjdmarker.pas
+Added: Imaging/JpegLib/imjdmaster.pas
+Added: Imaging/JpegLib/imjdmerge.pas
+Added: Imaging/JpegLib/imjdphuff.pas
+Added: Imaging/JpegLib/imjdpostct.pas
+Added: Imaging/JpegLib/imjdsample.pas
+Added: Imaging/JpegLib/imjerror.pas
+Added: Imaging/JpegLib/imjfdctflt.pas
+Added: Imaging/JpegLib/imjfdctfst.pas
+Added: Imaging/JpegLib/imjfdctint.pas
+Added: Imaging/JpegLib/imjidctasm.pas
+Added: Imaging/JpegLib/imjidctflt.pas
+Added: Imaging/JpegLib/imjidctfst.pas
+Added: Imaging/JpegLib/imjidctint.pas
+Added: Imaging/JpegLib/imjidctred.pas
+Added: Imaging/JpegLib/imjinclude.pas
+Added: Imaging/JpegLib/imjmemmgr.pas
+Added: Imaging/JpegLib/imjmemnobs.pas
+Added: Imaging/JpegLib/imjmorecfg.pas
+Added: Imaging/JpegLib/imjpeglib.pas
+Added: Imaging/JpegLib/imjquant1.pas
+Added: Imaging/JpegLib/imjquant2.pas
+Added: Imaging/JpegLib/imjutils.pas
+Added: Imaging/JpegLib/readme.txt
+Added: Imaging/ZLib/dzlib.pas
+Added: Imaging/ZLib/imadler.pas
+Added: Imaging/ZLib/iminfblock.pas
+Added: Imaging/ZLib/iminfcodes.pas
+Added: Imaging/ZLib/iminffast.pas
+Added: Imaging/ZLib/iminftrees.pas
+Added: Imaging/ZLib/iminfutil.pas
+Added: Imaging/ZLib/impaszlib.pas
+Added: Imaging/ZLib/imtrees.pas
+Added: Imaging/ZLib/imzconf.inc
+Added: Imaging/ZLib/imzdeflate.pas
+Added: Imaging/ZLib/imzinflate.pas
+Added: Imaging/ZLib/imzutil.pas
+Added: Imaging/ZLib/readme.txt
+Added: MulProvider/UArtProvider.pas
+Added: MulProvider/UGumpProvider.pas
+Added: MulProvider/UHueProvider.pas
+Added: MulProvider/UMulManager.pas
+Added: MulProvider/UMulProvider.pas
+Added: MulProvider/URadarProvider.pas
+Added: MulProvider/UTexmapProvider.pas
+Added: MulProvider/UTileDataProvider.pas
+Added: README
+Added: ResourceBuilder.pas
+Added: Server/UAccount.pas
+Added: Server/UAdminHandling.pas
+Added: Server/UCEDServer.pas
+Added: Server/UClientHandling.pas
+Added: Server/UConfig.pas
+Added: Server/UConnectionHandling.pas
+Added: Server/ULandscape.pas
+Added: Server/ULargeScaleOperations.pas
+Added: Server/UNetState.pas
+Added: Server/UPacketHandlers.pas
+Added: Server/UPackets.pas
+Added: Server/URadarMap.pas
+Added: Server/cedserver.lpi
+Added: Server/cedserver.lpr
+Added: Setup/CentrED_win32.iss
+Added: Setup/Changelog.txt
+Added: UBufferedStreams.pas
+Added: UCacheManager.pas
+Added: UEnhancedMemoryStream.pas
+Added: UEnums.pas
+Added: UIStream.pas
+Added: ULinkedList.pas
+Added: UOLib/UAnimData.pas
+Added: UOLib/UArt.pas
+Added: UOLib/UGenericIndex.pas
+Added: UOLib/UGraphicHelper.pas
+Added: UOLib/UGump.pas
+Added: UOLib/UHue.pas
+Added: UOLib/UListSort.pas
+Added: UOLib/ULocalization.pas
+Added: UOLib/UMap.pas
+Added: UOLib/UMulBlock.pas
+Added: UOLib/UMultiMap.pas
+Added: UOLib/UStatics.pas
+Added: UOLib/UTexture.pas
+Added: UOLib/UTiledata.pas
+Added: UOLib/UVerdata.pas
+Added: UOLib/UWorldItem.pas
+Added: UPacket.pas
+Added: UStreamHelper.pas
+Added: UVector.pas
+Added: VirtualTrees.patch
+Added: bin/.hgdir
+Added: cddl.html
+Added: obj/i386-linux-gtk/.hgdir
+Added: obj/i386-linux-gtk2/.hgdir
+Added: obj/i386-win32-win32/.hgdir
+Added: version.inc

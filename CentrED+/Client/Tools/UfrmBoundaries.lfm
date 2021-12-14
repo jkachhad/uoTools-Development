@@ -1,0 +1,324 @@
+inherited frmBoundaries: TfrmBoundaries
+  Left = 1259
+  Height = 141
+  Top = 502
+  Width = 403
+  Anchors = [akTop, akLeft, akBottom]
+  Caption = 'Границы видимости'
+  ClientHeight = 141
+  ClientWidth = 403
+  OnCreate = FormCreate
+  object tbMaxZ: TTrackBar[0]
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = tbMinZ
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 8
+    Height = 30
+    Top = 28
+    Width = 387
+    Frequency = 10
+    Max = 127
+    Min = -128
+    OnChange = tbMaxZChange
+    PageSize = 1
+    Position = 127
+    TickMarks = tmTopLeft
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 20
+    BorderSpacing.Right = 8
+    TabOrder = 1
+  end
+  object GroupBox1: TGroupBox[1]
+    AnchorSideLeft.Control = tbMaxZ
+    AnchorSideTop.Control = tbMaxZ
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = tbMaxZ
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 216
+    Height = 72
+    Top = 60
+    Width = 179
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 2
+    BorderSpacing.Bottom = 4
+    Caption = 'Границы высоты'
+    ClientHeight = 54
+    ClientWidth = 175
+    TabOrder = 2
+    object seMinZ: TSpinEdit
+      AnchorSideTop.Control = GroupBox1
+      AnchorSideRight.Control = GroupBox1
+      AnchorSideRight.Side = asrBottom
+      Left = 119
+      Height = 23
+      Top = 0
+      Width = 48
+      Anchors = [akTop, akRight]
+      BorderSpacing.Right = 8
+      MaxValue = 127
+      MinValue = -128
+      OnChange = seMinZChange
+      TabOrder = 0
+      Value = -128
+    end
+    object seMaxZ: TSpinEdit
+      AnchorSideTop.Control = seMinZ
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = GroupBox1
+      AnchorSideRight.Side = asrBottom
+      Left = 119
+      Height = 23
+      Top = 28
+      Width = 48
+      Anchors = [akTop, akRight]
+      BorderSpacing.Top = 5
+      BorderSpacing.Right = 8
+      MaxValue = 127
+      MinValue = -128
+      OnChange = seMaxZChange
+      TabOrder = 1
+      Value = 127
+    end
+    object lblMinZ: TLabel
+      AnchorSideLeft.Control = GroupBox1
+      AnchorSideTop.Control = seMinZ
+      AnchorSideTop.Side = asrCenter
+      Left = 8
+      Height = 16
+      Top = 3
+      Width = 93
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 6
+      Caption = 'Z Минимальная:'
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object lblMaxZ: TLabel
+      AnchorSideLeft.Control = lblMinZ
+      AnchorSideTop.Control = seMaxZ
+      AnchorSideTop.Side = asrCenter
+      Left = 8
+      Height = 16
+      Top = 31
+      Width = 97
+      Caption = 'Z Максимальная:'
+      Layout = tlCenter
+      ParentColor = False
+    end
+  end
+  object GroupBox2: TGroupBox[2]
+    AnchorSideLeft.Control = tbMaxZ
+    AnchorSideTop.Control = GroupBox1
+    AnchorSideRight.Control = GroupBox1
+    AnchorSideBottom.Control = GroupBox1
+    AnchorSideBottom.Side = asrBottom
+    Left = 8
+    Height = 72
+    Top = 60
+    Width = 201
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Right = 7
+    Caption = 'Границы дальности обзора'
+    ClientHeight = 54
+    ClientWidth = 197
+    TabOrder = 3
+    object seMaxX: TSpinEdit
+      AnchorSideTop.Control = GroupBox2
+      AnchorSideRight.Control = GroupBox2
+      AnchorSideRight.Side = asrBottom
+      Left = 137
+      Height = 23
+      Top = 0
+      Width = 54
+      Anchors = [akTop, akRight]
+      BorderSpacing.Right = 6
+      MaxValue = 12288
+      OnChange = seMaxXChange
+      TabOrder = 0
+      Value = 12288
+    end
+    object seMaxY: TSpinEdit
+      AnchorSideTop.Control = seMaxX
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = GroupBox2
+      AnchorSideRight.Side = asrBottom
+      Left = 137
+      Height = 23
+      Top = 28
+      Width = 54
+      Anchors = [akTop, akRight]
+      BorderSpacing.Top = 5
+      BorderSpacing.Right = 6
+      MaxValue = 8192
+      OnChange = seMaxYChange
+      TabOrder = 1
+      Value = 8192
+    end
+    object seMinY: TSpinEdit
+      AnchorSideTop.Control = seMaxY
+      AnchorSideRight.Control = seMaxY
+      Left = 64
+      Height = 23
+      Top = 28
+      Width = 54
+      Anchors = [akTop, akRight]
+      BorderSpacing.Right = 19
+      MaxValue = 8192
+      OnChange = seMinYChange
+      TabOrder = 2
+    end
+    object seMinX: TSpinEdit
+      AnchorSideTop.Control = seMaxX
+      AnchorSideRight.Control = seMaxX
+      Left = 64
+      Height = 23
+      Top = 0
+      Width = 54
+      Anchors = [akTop, akRight]
+      BorderSpacing.Right = 19
+      MaxValue = 12288
+      OnChange = seMinXChange
+      TabOrder = 3
+    end
+    object lblAxeX: TLabel
+      AnchorSideLeft.Control = sbClearXbnd
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = seMinZ
+      AnchorSideTop.Side = asrCenter
+      Left = 23
+      Height = 16
+      Top = 3
+      Width = 35
+      BorderSpacing.Left = 3
+      BorderSpacing.Top = 6
+      Caption = 'Ось X:'
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object lblAxeY: TLabel
+      AnchorSideLeft.Control = sbClearYbnd
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = seMinZ
+      AnchorSideTop.Side = asrCenter
+      Left = 23
+      Height = 16
+      Top = 31
+      Width = 35
+      BorderSpacing.Left = 3
+      BorderSpacing.Top = 6
+      Caption = 'Ось Y:'
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object lblAxeX1: TLabel
+      AnchorSideLeft.Control = seMinX
+      AnchorSideTop.Control = seMaxX
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = seMaxX
+      AnchorSideRight.Side = asrBottom
+      Left = 112
+      Height = 16
+      Top = 3
+      Width = 31
+      Alignment = taCenter
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Left = 48
+      BorderSpacing.Top = 6
+      BorderSpacing.Right = 48
+      Caption = '—'
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object lblAxeY1: TLabel
+      AnchorSideLeft.Control = seMinY
+      AnchorSideTop.Control = seMaxY
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = seMaxY
+      AnchorSideRight.Side = asrBottom
+      Left = 112
+      Height = 16
+      Top = 31
+      Width = 31
+      Alignment = taCenter
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Left = 48
+      BorderSpacing.Top = 6
+      BorderSpacing.Right = 48
+      Caption = '—'
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object sbClearXbnd: TSpeedButton
+      AnchorSideLeft.Control = GroupBox2
+      AnchorSideTop.Control = seMaxX
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = lblAxeX
+      Left = 4
+      Height = 16
+      Top = 3
+      Width = 16
+      BorderSpacing.Left = 4
+      BorderSpacing.Right = 2
+      Caption = '✇'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -8
+      Font.Name = 'Tahoma'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      NumGlyphs = 0
+      OnClick = sbClearXbndClick
+      ShowHint = True
+      ParentFont = False
+      ParentShowHint = False
+    end
+    object sbClearYbnd: TSpeedButton
+      AnchorSideLeft.Control = GroupBox2
+      AnchorSideTop.Control = seMaxY
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = lblAxeX
+      Left = 4
+      Height = 16
+      Top = 31
+      Width = 16
+      BorderSpacing.Left = 4
+      BorderSpacing.Right = 2
+      Caption = '✇'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -8
+      Font.Name = 'Tahoma'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      NumGlyphs = 0
+      OnClick = sbClearYbndClick
+      ShowHint = True
+      ParentFont = False
+      ParentShowHint = False
+    end
+  end
+  object tbMinZ: TTrackBar[3]
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 8
+    Height = 30
+    Top = 8
+    Width = 387
+    Frequency = 10
+    Max = 127
+    Min = -128
+    OnChange = tbMinZChange
+    PageSize = 1
+    Position = -128
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Around = 8
+    TabOrder = 0
+  end
+  inherited tmClose: TTimer[4]
+    left = 312
+  end
+end

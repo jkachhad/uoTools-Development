@@ -1,0 +1,79 @@
+object frmRadarMap: TfrmRadarMap
+  Left = 1091
+  Height = 262
+  Top = 724
+  Width = 603
+  HorzScrollBar.Page = 478
+  VertScrollBar.Page = 359
+  Caption = 'Миникарта (1:8)'
+  ClientHeight = 262
+  ClientWidth = 603
+  Constraints.MinHeight = 192
+  Constraints.MinWidth = 230
+  FormStyle = fsStayOnTop
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnResize = FormResize
+  Position = poOwnerFormCenter
+  ShowInTaskBar = stAlways
+  LCLVersion = '0.9.30.2'
+  object pnlBottom: TPanel
+    Left = 0
+    Height = 21
+    Top = 241
+    Width = 603
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 21
+    ClientWidth = 603
+    TabOrder = 0
+    object lblPosition: TLabel
+      Left = 8
+      Height = 21
+      Top = 0
+      Width = 1
+      Align = alLeft
+      BorderSpacing.Left = 8
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object cbStayOnTop: TCheckBox
+      Left = 461
+      Height = 21
+      Top = 0
+      Width = 142
+      Align = alRight
+      Caption = 'Поверх главного окна'
+      Checked = True
+      OnChange = cbStayOnTopChange
+      State = cbChecked
+      TabOrder = 0
+    end
+  end
+  object sbMain: TScrollBox
+    Left = 0
+    Height = 241
+    Top = 0
+    Width = 603
+    HorzScrollBar.Page = 475
+    HorzScrollBar.Range = 292
+    VertScrollBar.Page = 335
+    VertScrollBar.Range = 202
+    Align = alClient
+    AutoScroll = False
+    ClientHeight = 237
+    ClientWidth = 599
+    TabOrder = 1
+    object pbRadar: TPaintBox
+      Left = 0
+      Height = 202
+      Top = 0
+      Width = 292
+      OnMouseDown = pbRadarMouseDown
+      OnMouseMove = pbRadarMouseMove
+      OnMouseLeave = pbRadarMouseLeave
+      OnPaint = pbRadarPaint
+    end
+  end
+end

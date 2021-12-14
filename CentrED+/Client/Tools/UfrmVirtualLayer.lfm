@@ -1,0 +1,195 @@
+inherited frmVirtualLayer: TfrmVirtualLayer
+  Left = 1164
+  Height = 88
+  Top = 443
+  Width = 210
+  Caption = 'Виртуальный слой'
+  ClientHeight = 88
+  ClientWidth = 210
+  OnCreate = FormCreate
+  object tbZ: TTrackBar[0]
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = cbShowBlocks
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 8
+    Height = 36
+    Top = 44
+    Width = 194
+    Frequency = 10
+    Max = 127
+    Min = -128
+    OnChange = tbZChange
+    PageSize = 1
+    Position = 0
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Top = 9
+    BorderSpacing.Around = 8
+    TabOrder = 0
+  end
+  object cbShowLayer: TCheckBox[1]
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = seZ
+    AnchorSideTop.Side = asrCenter
+    Left = 8
+    Height = 19
+    Top = 8
+    Width = 131
+    BorderSpacing.Left = 8
+    Caption = 'Показать на высоте:'
+    OnChange = cbShowLayerChange
+    TabOrder = 1
+  end
+  object cbShowBlocks: TCheckBox[2]
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = cbShowLayer
+    AnchorSideTop.Side = asrBottom
+    AnchorSideBottom.Side = asrBottom
+    Left = 8
+    Height = 19
+    Top = 27
+    Width = 166
+    BorderSpacing.Left = 8
+    Caption = 'Выделять границы блоков'
+    OnChange = cbShowLayerChange
+    TabOrder = 3
+  end
+  object btnZi20: TButton[3]
+    AnchorSideTop.Control = tbZ
+    AnchorSideRight.Control = tbZ
+    AnchorSideRight.Side = asrBottom
+    Left = 172
+    Height = 14
+    Top = 72
+    Width = 28
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 28
+    BorderSpacing.Right = 2
+    Caption = '+20'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Consolas'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    OnClick = btnZ_Click
+    ParentFont = False
+    TabOrder = 4
+  end
+  object btnZi05: TButton[4]
+    AnchorSideTop.Control = btnZi20
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = btnZi20
+    Left = 142
+    Height = 14
+    Top = 72
+    Width = 28
+    Anchors = [akTop, akRight]
+    BorderSpacing.Right = 2
+    Caption = '+5'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Consolas'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    OnClick = btnZ_Click
+    ParentFont = False
+    TabOrder = 5
+  end
+  object btnZd20: TButton[5]
+    AnchorSideLeft.Control = tbZ
+    AnchorSideTop.Control = btnZi20
+    AnchorSideTop.Side = asrCenter
+    Left = 10
+    Height = 14
+    Top = 72
+    Width = 28
+    BorderSpacing.Left = 2
+    Caption = '-20'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Consolas'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    OnClick = btnZ_Click
+    ParentFont = False
+    TabOrder = 6
+  end
+  object btnZd05: TButton[6]
+    AnchorSideLeft.Control = btnZd20
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = btnZi20
+    AnchorSideTop.Side = asrCenter
+    Left = 40
+    Height = 14
+    Top = 72
+    Width = 28
+    BorderSpacing.Left = 2
+    Caption = '-5'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Consolas'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    OnClick = btnZ_Click
+    ParentFont = False
+    TabOrder = 7
+  end
+  object btnZd03: TButton[7]
+    AnchorSideLeft.Control = btnZd05
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = btnZi20
+    AnchorSideTop.Side = asrCenter
+    Left = 70
+    Height = 14
+    Top = 72
+    Width = 28
+    BorderSpacing.Left = 2
+    Caption = '-3'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Consolas'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    OnClick = btnZ_Click
+    ParentFont = False
+    TabOrder = 8
+  end
+  object btnZi03: TButton[8]
+    AnchorSideTop.Control = btnZi20
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = btnZi05
+    Left = 112
+    Height = 14
+    Top = 72
+    Width = 28
+    Anchors = [akTop, akRight]
+    BorderSpacing.Right = 2
+    Caption = '+3'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Consolas'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    OnClick = btnZ_Click
+    ParentFont = False
+    TabOrder = 9
+  end
+  object seZ: TSpinEdit[9]
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 152
+    Height = 23
+    Top = 6
+    Width = 50
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 6
+    BorderSpacing.Right = 8
+    MaxValue = 127
+    MinValue = -128
+    OnChange = seZChange
+    TabOrder = 2
+  end
+  inherited tmClose: TTimer[10]
+  end
+end

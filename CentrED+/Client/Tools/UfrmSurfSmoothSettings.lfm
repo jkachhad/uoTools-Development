@@ -1,0 +1,12 @@
+inherited frmSurfSmoothSettings: TfrmSurfSmoothSettings
+  Left = 1122
+  Height = 87
+  Top = 613
+  Width = 231
+  Caption = 'Опции растягивания меша'
+  OnCreate = FormCreate
+  OnShow = FormShow
+  inherited tmClose: TTimer
+    left = 80
+  end
+end

@@ -1,0 +1,1788 @@
+object frmLargeScaleCommand: TfrmLargeScaleCommand
+  Left = 1190
+  Height = 390
+  Top = 54
+  Width = 620
+  Caption = 'Глобальные Операции'
+  ClientHeight = 390
+  ClientWidth = 620
+  Constraints.MinHeight = 390
+  Constraints.MinWidth = 620
+  Font.Height = -11
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  Position = poOwnerFormCenter
+  ShowInTaskBar = stAlways
+  LCLVersion = '0.9.30.2'
+  object nbActions: TNotebook
+    AnchorSideLeft.Control = vstActions
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = btnClose
+    Left = 152
+    Height = 349
+    Top = 0
+    Width = 468
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    PageIndex = 5
+    ShowTabs = False
+    TabOrder = 0
+    object pgArea: TPage
+      Caption = 'Выбрать Область'
+      ClientWidth = 460
+      ClientHeight = 341
+      object sbArea: TScrollBox
+        Left = 0
+        Height = 341
+        Top = 0
+        Width = 460
+        Align = alClient
+        ClientHeight = 337
+        ClientWidth = 456
+        TabOrder = 0
+        object pbArea: TPaintBox
+          Left = 0
+          Height = 105
+          Top = 0
+          Width = 105
+          OnMouseDown = pbAreaMouseDown
+          OnMouseMove = pbAreaMouseMove
+          OnPaint = pbAreaPaint
+        end
+      end
+    end
+    object pgCopyMove: TPage
+      Caption = 'Копировать/Двигать'
+      ClientWidth = 460
+      ClientHeight = 341
+      object rgCMAction: TRadioGroup
+        AnchorSideLeft.Control = pgCopyMove
+        AnchorSideTop.Control = pgCopyMove
+        Left = 8
+        Height = 40
+        Top = 8
+        Width = 184
+        AutoFill = True
+        BorderSpacing.Around = 8
+        Caption = 'Действие'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.TopBottomSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 2
+        ClientHeight = 22
+        ClientWidth = 180
+        Columns = 2
+        ItemIndex = 0
+        Items.Strings = (
+          'Копировать'
+          'Двигать'
+        )
+        TabOrder = 0
+      end
+      object gbCMOffset: TGroupBox
+        AnchorSideLeft.Control = rgCMAction
+        AnchorSideTop.Control = rgCMAction
+        AnchorSideTop.Side = asrBottom
+        Left = 8
+        Height = 81
+        Top = 56
+        Width = 121
+        Caption = 'Смещение'
+        ClientHeight = 63
+        ClientWidth = 117
+        TabOrder = 1
+        object Label9: TLabel
+          AnchorSideLeft.Control = gbCMOffset
+          AnchorSideTop.Control = seCMOffsetX
+          AnchorSideTop.Side = asrCenter
+          Left = 8
+          Height = 14
+          Top = 11
+          Width = 10
+          BorderSpacing.Around = 8
+          Caption = 'X:'
+          ParentColor = False
+        end
+        object Label10: TLabel
+          AnchorSideLeft.Control = Label9
+          AnchorSideTop.Control = seCMOffsetY
+          AnchorSideTop.Side = asrCenter
+          Left = 8
+          Height = 14
+          Top = 40
+          Width = 9
+          Caption = 'Y:'
+          ParentColor = False
+        end
+        object seCMOffsetX: TSpinEdit
+          AnchorSideLeft.Control = Label9
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = gbCMOffset
+          AnchorSideRight.Control = btnGrabOffset
+          Left = 26
+          Height = 21
+          Top = 8
+          Width = 61
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Top = 4
+          BorderSpacing.Bottom = 4
+          BorderSpacing.Around = 4
+          TabOrder = 0
+        end
+        object seCMOffsetY: TSpinEdit
+          AnchorSideLeft.Control = seCMOffsetX
+          AnchorSideTop.Control = seCMOffsetX
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = seCMOffsetX
+          AnchorSideRight.Side = asrBottom
+          Left = 26
+          Height = 21
+          Top = 37
+          Width = 61
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Bottom = 8
+          TabOrder = 1
+        end
+        object btnGrabOffset: TSpeedButton
+          AnchorSideTop.Control = gbCMOffset
+          AnchorSideTop.Side = asrCenter
+          AnchorSideRight.Control = gbCMOffset
+          AnchorSideRight.Side = asrBottom
+          Left = 91
+          Height = 22
+          Hint = 'Выбрать тайл в главном окне и взять смещение для выбранной области из его координат.'
+          Top = 20
+          Width = 22
+          Anchors = [akTop, akRight]
+          BorderSpacing.Around = 4
+          Enabled = False
+          Glyph.Data = {
+            36040000424D3604000000000000360000002800000010000000100000000100
+            2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF007F7F7F067C7C
+            7CE6787878CC75757581FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008383835DAAAA
+            AAFFDBDBDBFF797979F275757506FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF0097979709FFFFFF00FFFFFF00FFFFFF00888888E7DBDB
+            DBFFB7B7B7FF7D7D7D80FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF009C9C9CC99898981EFFFFFF0090909050ADADADFFF2F2
+            F2FF848484FD8181810FFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00A0A0A0FF9C9C9CE798989836949494DFD9D9D9FFC1C1
+            C1FF898989A0FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00A4A4A4FFD7D7D7FF9D9D9DF8D0D0D0FFEEEEEEFF9191
+            91FE8D8D8D18FFFFFF00FFFFFF00818181097E7E7E09FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00A9A9A9FFF2F2F2FFE5E5E5FFE2E2E2FFE3E3E3FF9595
+            95F4919191CC8D8D8DF9898989FF86868693FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00ADADADFFEEEEEEFFE1E1E1FFDFDFDFFFE0E0E0FFE7E7
+            E7FFE4E4E4FFBBBBBBFF8E8E8E93FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00B1B1B1FFF0F0F0FFE4E4E4FFE2E2E2FFE2E2E2FFE7E7
+            E7FFC1C1C1FF96969690FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00B5B5B5FFF2F2F2FFE8E8E8FFE7E7E7FFEAEAEAFFC6C6
+            C6FF9E9E9E8DFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00B9B9B9FFF4F4F4FFECECECFFEDEDEDFFCBCBCBFFA7A7
+            A78AFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00BDBDBDFFF7F7F7FFEFEFEFFFD0D0D0FFAFAFAF8AFFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00C1C1C1FFF7F7F7FFD5D5D5FFB6B6B687FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00C4C4C4FFD9D9D9FFBEBEBE84FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00C8C8C8FFC5C5C581FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00CBCBCB7EFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+          }
+          NumGlyphs = 0
+          OnClick = btnGrabOffsetClick
+          ShowHint = True
+          ParentShowHint = False
+        end
+      end
+      object cbCMEraseTarget: TCheckBox
+        AnchorSideLeft.Control = gbCMOffset
+        AnchorSideTop.Control = gbCMOffset
+        AnchorSideTop.Side = asrBottom
+        Left = 8
+        Height = 19
+        Top = 145
+        Width = 248
+        BorderSpacing.Top = 8
+        Caption = 'Стереть выбраную область (по смещению)'
+        TabOrder = 2
+      end
+    end
+    object pgModifyAltitude: TPage
+      Caption = 'Изменить высоту'
+      ClientWidth = 460
+      ClientHeight = 341
+      object Label2: TLabel
+        AnchorSideRight.Control = seTerrainAltitude1
+        Left = 30
+        Height = 40
+        Top = 27
+        Width = 185
+        Align = alCustom
+        Anchors = [akTop, akLeft, akRight]
+        AutoSize = False
+        BorderSpacing.Left = 22
+        BorderSpacing.Right = 13
+        Caption = 'Высота статики будет изменена согласно изменению высоты рельефа.'
+        Enabled = False
+        ParentColor = False
+        WordWrap = True
+      end
+      object Label3: TLabel
+        AnchorSideTop.Control = rbSetTerrainAltitude
+        Left = 228
+        Height = 14
+        Top = 8
+        Width = 207
+        Caption = 'Установить высоту из этого диапазона'
+        ParentColor = False
+        WordWrap = True
+      end
+      object Label4: TLabel
+        AnchorSideLeft.Control = seTerrainAltitude1
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = seTerrainAltitude1
+        AnchorSideTop.Side = asrCenter
+        Left = 286
+        Height = 14
+        Top = 33
+        Width = 14
+        BorderSpacing.Left = 8
+        Caption = 'до'
+        ParentColor = False
+      end
+      object rbSetTerrainAltitude: TRadioButton
+        AnchorSideLeft.Control = pgModifyAltitude
+        AnchorSideTop.Control = pgModifyAltitude
+        Left = 8
+        Height = 19
+        Top = 8
+        Width = 168
+        BorderSpacing.Left = 8
+        BorderSpacing.Top = 8
+        Caption = 'Установить высоту рельефа'
+        Checked = True
+        TabOrder = 0
+        TabStop = True
+      end
+      object rbRelativeAltitudeChange: TRadioButton
+        AnchorSideLeft.Control = rbSetTerrainAltitude
+        AnchorSideTop.Control = Label2
+        AnchorSideTop.Side = asrBottom
+        Left = 8
+        Height = 19
+        Top = 75
+        Width = 207
+        BorderSpacing.Top = 8
+        Caption = 'Изменение относительной высоты'
+        TabOrder = 1
+      end
+      object seTerrainAltitude1: TSpinEdit
+        AnchorSideLeft.Control = Label3
+        AnchorSideTop.Control = Label3
+        AnchorSideTop.Side = asrBottom
+        Left = 228
+        Height = 21
+        Top = 30
+        Width = 50
+        BorderSpacing.Top = 8
+        MaxValue = 127
+        MinValue = -128
+        TabOrder = 2
+      end
+      object seTerrainAltitude2: TSpinEdit
+        AnchorSideLeft.Control = Label4
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = seTerrainAltitude1
+        Left = 308
+        Height = 21
+        Top = 30
+        Width = 50
+        BorderSpacing.Left = 8
+        MaxValue = 127
+        MinValue = -128
+        TabOrder = 3
+      end
+      object seRelativeAltitude: TSpinEdit
+        AnchorSideLeft.Control = Label2
+        AnchorSideTop.Control = rbRelativeAltitudeChange
+        AnchorSideTop.Side = asrBottom
+        Left = 30
+        Height = 21
+        Top = 94
+        Width = 50
+        MaxValue = 127
+        MinValue = -128
+        TabOrder = 4
+      end
+    end
+    object pgDrawTerrain: TPage
+      Caption = 'Рисовать рельеф'
+      ClientWidth = 460
+      ClientHeight = 341
+      object gbDrawTerrainTiles: TGroupBox
+        AnchorSideLeft.Control = pgDrawTerrain
+        AnchorSideTop.Control = pgDrawTerrain
+        AnchorSideBottom.Control = pgDrawTerrain
+        AnchorSideBottom.Side = asrBottom
+        Left = 8
+        Height = 325
+        Top = 8
+        Width = 225
+        Anchors = [akTop, akLeft, akBottom]
+        BorderSpacing.Around = 8
+        Caption = 'Тайлы'
+        ClientHeight = 307
+        ClientWidth = 221
+        TabOrder = 0
+        object lblDrawTerrainTilesDesc: TLabel
+          AnchorSideLeft.Control = gbDrawTerrainTiles
+          AnchorSideTop.Control = gbDrawTerrainTiles
+          AnchorSideRight.Control = gbDrawTerrainTiles
+          AnchorSideRight.Side = asrBottom
+          Left = 4
+          Height = 53
+          Top = 0
+          Width = 213
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 4
+          BorderSpacing.Right = 4
+          BorderSpacing.Bottom = 4
+          Caption = 'Перетащите в список тайлы рельефа из главного окна. Для каждой клетки указанной области будет случайно перерисован один из этих тайлов.'
+          ParentColor = False
+          WordWrap = True
+        end
+        object vdtTerrainTiles: TVirtualDrawTree
+          Tag = 1
+          AnchorSideLeft.Control = gbDrawTerrainTiles
+          AnchorSideTop.Control = lblDrawTerrainTilesDesc
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = gbDrawTerrainTiles
+          AnchorSideBottom.Control = btnDeleteTerrain
+          Cursor = 63
+          Left = 4
+          Height = 220
+          Top = 57
+          Width = 215
+          Anchors = [akTop, akLeft, akBottom]
+          BorderSpacing.Left = 4
+          BorderSpacing.Right = 4
+          BorderSpacing.Bottom = 4
+          Color = 16052980
+          DefaultNodeHeight = 44
+          DragMode = dmAutomatic
+          DragType = dtVCL
+          Header.AutoSizeIndex = 0
+          Header.Columns = <          
+            item
+              Position = 0
+              Text = 'ID'
+              Width = 40
+            end          
+            item
+              Position = 1
+              Text = 'Тайл'
+              Width = 44
+            end          
+            item
+              Position = 2
+              Text = 'Название'
+              Width = 108
+            end          
+            item
+              MaxWidth = 10
+              MinWidth = 0
+              Position = 3
+              Text = 'tile_separator'
+              Width = 2
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coAllowFocus]
+              Position = 4
+              Text = 'tile_S1'
+              Width = 46
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coAllowFocus]
+              Position = 5
+              Text = 'tile_S2'
+              Width = 46
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coAllowFocus]
+              Position = 6
+              Text = 'tile_S3'
+              Width = 46
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coAllowFocus]
+              Position = 7
+              Text = 'tile_S4'
+              Width = 46
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coAllowFocus]
+              Position = 8
+              Text = 'tile_M1'
+              Width = 62
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coAllowFocus]
+              Position = 9
+              Text = 'tile_M2'
+              Width = 62
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coAllowFocus]
+              Position = 10
+              Text = 'tile_M3'
+              Width = 62
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coAllowFocus]
+              Position = 11
+              Text = 'tile_L1'
+              Width = 93
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coAllowFocus]
+              Position = 12
+              Text = 'tile_L2'
+              Width = 93
+            end          
+            item
+              MaxWidth = 10
+              MinWidth = 0
+              Position = 13
+              Text = 'tile_separator'
+              Width = 2
+            end>
+          Header.DefaultHeight = 17
+          Header.Options = [hoVisible]
+          Header.ParentFont = True
+          Header.Style = hsFlatButtons
+          ScrollBarOptions.AlwaysVisible = True
+          ScrollBarOptions.ScrollBars = ssVertical
+          TabOrder = 0
+          TreeOptions.AutoOptions = [toAutoScroll, toAutoScrollOnExpand, toAutoTristateTracking, toAutoDeleteMovedNodes]
+          TreeOptions.MiscOptions = [toFullRepaintOnResize, toInitOnSave, toToggleOnDblClick, toWheelPanning, toFullRowDrag]
+          TreeOptions.PaintOptions = [toHideFocusRect, toShowButtons, toShowDropmark, toThemeAware, toUseBlendedImages, toStaticBackground]
+          TreeOptions.SelectionOptions = [toFullRowSelect]
+          OnDragOver = vdtTerrainTilesDragOver
+          OnDragDrop = vdtTerrainTilesDragDrop
+          OnDrawNode = vdtTerrainTilesDrawNode
+        end
+        object btnClearTerrain: TSpeedButton
+          AnchorSideLeft.Control = btnDeleteTerrain
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideBottom.Control = btnDeleteTerrain
+          AnchorSideBottom.Side = asrBottom
+          Left = 30
+          Height = 22
+          Hint = 'Очистить список'
+          Top = 281
+          Width = 22
+          Anchors = [akLeft, akBottom]
+          Glyph.Data = {
+            36040000424D3604000000000000360000002800000010000000100000000100
+            2000000000000004000064000000640000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            000000000000000000000000F1FF0000F1FF0000F1FF0000F1FF0000EFFF0000
+            EFFF0000EDFF0000EDFF00000000000000000000000000000000000000000000
+            0000000000000000F5FF1A20F5FF3C4CF9FF3A49F8FF3847F8FF3545F8FF3443
+            F7FF3242F7FF141BF1FF0000EDFF000000000000000000000000000000000000
+            00000000F7FF1D23F9FF4453FAFF2429F9FF1212F7FF0F0FF6FF0C0CF5FF0909
+            F5FF161BF5FF3343F7FF141BF1FF0000EDFF0000000000000000000000000000
+            F9FF1F25FAFF4A58FBFF4247FBFFC9C9FDFF3B3BF9FF1313F7FF1010F6FF3333
+            F7FFC5C5FDFF3035F7FF3444F7FF141BF2FF0000EDFF00000000000000000000
+            FBFF4F5DFDFF3237FBFFCBCBFEFFF2F2FFFFEBEBFEFF3B3BF9FF3939F8FFEAEA
+            FEFFF1F1FEFFC5C5FDFF181DF6FF3343F7FF0000EFFF00000000000000000000
+            FDFF525FFDFF2828FCFF4747FCFFECECFFFFF2F2FFFFECECFFFFECECFEFFF1F1
+            FFFFEAEAFEFF3434F7FF0B0BF5FF3545F8FF0000EFFF00000000000000000000
+            FDFF5562FEFF2C2CFDFF2929FCFF4848FCFFEDEDFFFFF2F2FFFFF2F2FFFFECEC
+            FEFF3A3AF9FF1212F7FF0F0FF6FF3848F8FF0000F1FF00000000000000000000
+            FDFF5764FEFF3030FDFF2D2DFDFF4B4BFCFFEDEDFFFFF2F2FFFFF2F2FFFFECEC
+            FFFF3D3DF9FF1616F8FF1313F7FF3C4BF8FF0000F1FF00000000000000000000
+            FFFF5A67FEFF3333FEFF5050FDFFEDEDFFFFF3F3FFFFEDEDFFFFEDEDFFFFF2F2
+            FFFFECECFEFF3E3EFAFF1717F8FF3F4EF9FF0000F1FF00000000000000000000
+            FFFF5B68FFFF4347FEFFCFCFFFFFF3F3FFFFEDEDFFFF4C4CFCFF4A4AFCFFECEC
+            FFFFF2F2FFFFCACAFEFF2A2FFAFF4251FAFF0000F3FF00000000000000000000
+            FFFF262BFFFF5D6AFFFF585BFFFFCFCFFFFF5252FEFF2F2FFDFF2C2CFDFF4B4B
+            FCFFCCCCFEFF484CFBFF4957FBFF1D23F9FF0000F5FF00000000000000000000
+            00000000FFFF262BFFFF5D6AFFFF4347FFFF3434FEFF3232FEFF3030FDFF2D2D
+            FDFF383CFCFF4F5DFCFF1F25FAFF0000F7FF0000000000000000000000000000
+            0000000000000000FFFF262BFFFF5C69FFFF5B68FFFF5A67FEFF5865FEFF5663
+            FEFF5461FEFF2227FCFF0000FBFF000000000000000000000000000000000000
+            000000000000000000000000FFFF0000FFFF0000FFFF0000FFFF0000FDFF0000
+            FDFF0000FDFF0000FDFF00000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000
+          }
+          NumGlyphs = 0
+          OnClick = btnClearTerrainClick
+          ShowHint = True
+          ParentShowHint = False
+        end
+        object btnDeleteTerrain: TSpeedButton
+          AnchorSideLeft.Control = gbDrawTerrainTiles
+          AnchorSideBottom.Control = gbDrawTerrainTiles
+          AnchorSideBottom.Side = asrBottom
+          Left = 4
+          Height = 22
+          Hint = 'Удалить выбраное'
+          Top = 281
+          Width = 22
+          Anchors = [akLeft, akBottom]
+          BorderSpacing.Around = 4
+          Glyph.Data = {
+            36040000424D3604000000000000360000002800000010000000100000000100
+            2000000000000004000064000000640000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000003853BEFF3551BDFF304BBCFF2E4E
+            B8FF000000000000000000000000000000000000000000000000000000000000
+            000000000000000000004255C6FF3C52CCFF757AE8FF8F92EEFF8F92EEFF7178
+            E4FF334DC1FF2B4AB7FF00000000000000000000000000000000000000000000
+            0000000000004959CBFF5C65E0FFA1A6F5FF7E86EFFF5B63E9FF595DE7FF7D84
+            EEFF9EA0F4FF515DD7FF2B4AB7FF000000000000000000000000000000000000
+            00005361CFFF616BE3FFA1ACF5FF545FECFF505CEAFF4D59E9FF4E59E6FF4C56
+            E6FF5056E6FF9EA2F4FF5460D6FF2A4AB8FF0000000000000000000000000000
+            00004B56DBFFA2ABF6FF5664F0FF5266EEFF4D59E9FF4D59E9FF4D59E9FF4D59
+            E9FF4C58E6FF525AE6FF9FA3F5FF3450C4FF0000000000000000000000005C62
+            D7FF818CEEFF7E91F7FF5D73F3FF4D59E9FF4D59E9FF4D59E9FF4D59E9FF4D59
+            E9FF4D59E9FF4F5BE9FF7B83F0FF757BE2FF2E4BBAFF00000000000000005F63
+            DAFFA1ABF7FF7086F8FF6882F6FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFF4D59E9FF5C66EAFF969CF1FF3250BCFF00000000000000006469
+            DBFFAFB9F9FF7F93FAFF7085F0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFF4D59E9FF5E6AEEFF969DF1FF364FBEFF0000000000000000676A
+            DEFFA5AFF5FF9DABFAFF778CF0FF545FECFF545FECFF545FECFF545FECFF545F
+            ECFF545FECFF6377F2FF818EF4FF787FE9FF3A53C0FF00000000000000000000
+            00007D83EAFFCDD4FCFF8B9DFAFF7E93F7FF758AEEFF6C84F6FF6C84F6FF6C84
+            F6FF6C84F6FF6379F3FFA4AFF8FF3E4FD0FF0000000000000000000000000000
+            00006A69E0FFA3A7F3FFD4DBFDFF879AFAFF7F91F0FF7A8EF1FF7F94F8FF7E92
+            F9FF768CF8FFA8B6F8FF636EE3FF4557C7FF0000000000000000000000000000
+            0000000000006A69E0FFAAADF2FFD8DCFDFFAEBAFAFF91A3FAFF8B9DFAFF9CA9
+            FBFFBAC7FCFF707BE9FF4C5BCCFF000000000000000000000000000000000000
+            000000000000000000006A6ADFFF8E93EDFFBEC3F8FFCCD3F9FFC4CBF9FFAAB4
+            F4FF6670E2FF535ED1FF00000000000000000000000000000000000000000000
+            000000000000000000000000000000000000686ADDFF6364DCFF6164DAFF5D63
+            D9FF000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000
+          }
+          NumGlyphs = 0
+          OnClick = btnDeleteTerrainClick
+          ShowHint = True
+          ParentShowHint = False
+        end
+      end
+    end
+    object pgDeleteStatics: TPage
+      Caption = 'Удалить статику'
+      ClientWidth = 460
+      ClientHeight = 341
+      object gbDeleteStaticsTiles: TGroupBox
+        AnchorSideLeft.Control = pgDeleteStatics
+        AnchorSideTop.Control = pgDeleteStatics
+        AnchorSideBottom.Control = pgDeleteStatics
+        AnchorSideBottom.Side = asrBottom
+        Left = 8
+        Height = 325
+        Top = 8
+        Width = 225
+        Anchors = [akTop, akLeft, akBottom]
+        BorderSpacing.Around = 8
+        Caption = 'Тайлы'
+        ClientHeight = 307
+        ClientWidth = 221
+        TabOrder = 0
+        object lblDeleteStaticsTilesDesc: TLabel
+          AnchorSideLeft.Control = gbDeleteStaticsTiles
+          AnchorSideTop.Control = gbDeleteStaticsTiles
+          AnchorSideRight.Control = gbDeleteStaticsTiles
+          AnchorSideRight.Side = asrBottom
+          Left = 4
+          Height = 53
+          Top = 0
+          Width = 213
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 4
+          BorderSpacing.Right = 4
+          BorderSpacing.Bottom = 4
+          Caption = 'Перетащите в список тайлы статики из главного окна. Только выбранная статика будет удалена, Если список пуст, будет удалена вся статика.'
+          ParentColor = False
+          WordWrap = True
+        end
+        object vdtDeleteStaticsTiles: TVirtualDrawTree
+          Tag = 1
+          AnchorSideLeft.Control = gbDeleteStaticsTiles
+          AnchorSideTop.Control = lblDeleteStaticsTilesDesc
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = gbDeleteStaticsTiles
+          AnchorSideRight.Side = asrBottom
+          AnchorSideBottom.Control = btnDeleteDStaticsTiles
+          Cursor = 63
+          Left = 4
+          Height = 220
+          Top = 57
+          Width = 213
+          Anchors = [akTop, akLeft, akRight, akBottom]
+          BorderSpacing.Left = 4
+          BorderSpacing.Right = 4
+          BorderSpacing.Bottom = 4
+          Color = 16052980
+          DefaultNodeHeight = 44
+          DragMode = dmAutomatic
+          DragType = dtVCL
+          Header.AutoSizeIndex = 0
+          Header.Columns = <          
+            item
+              Position = 0
+              Text = 'ID'
+              Width = 40
+            end          
+            item
+              Position = 1
+              Text = 'Тайл'
+              Width = 44
+            end          
+            item
+              Position = 2
+              Text = 'Название'
+              Width = 108
+            end          
+            item
+              MaxWidth = 10
+              MinWidth = 0
+              Position = 3
+              Text = 'tile_separator'
+              Width = 2
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coAllowFocus]
+              Position = 4
+              Text = 'tile_S1'
+              Width = 46
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coAllowFocus]
+              Position = 5
+              Text = 'tile_S2'
+              Width = 46
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coAllowFocus]
+              Position = 6
+              Text = 'tile_S3'
+              Width = 46
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coAllowFocus]
+              Position = 7
+              Text = 'tile_S4'
+              Width = 46
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coAllowFocus]
+              Position = 8
+              Text = 'tile_M1'
+              Width = 62
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coAllowFocus]
+              Position = 9
+              Text = 'tile_M2'
+              Width = 62
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coAllowFocus]
+              Position = 10
+              Text = 'tile_M3'
+              Width = 62
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coAllowFocus]
+              Position = 11
+              Text = 'tile_L1'
+              Width = 93
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coAllowFocus]
+              Position = 12
+              Text = 'tile_L2'
+              Width = 93
+            end          
+            item
+              MaxWidth = 10
+              MinWidth = 0
+              Position = 13
+              Text = 'tile_separator'
+              Width = 2
+            end>
+          Header.DefaultHeight = 17
+          Header.Options = [hoVisible]
+          Header.ParentFont = True
+          Header.Style = hsFlatButtons
+          ScrollBarOptions.AlwaysVisible = True
+          ScrollBarOptions.ScrollBars = ssVertical
+          TabOrder = 0
+          TreeOptions.AutoOptions = [toAutoScroll, toAutoScrollOnExpand, toAutoTristateTracking, toAutoDeleteMovedNodes]
+          TreeOptions.MiscOptions = [toFullRepaintOnResize, toInitOnSave, toToggleOnDblClick, toWheelPanning, toFullRowDrag]
+          TreeOptions.PaintOptions = [toHideFocusRect, toShowButtons, toShowDropmark, toThemeAware, toUseBlendedImages, toStaticBackground]
+          TreeOptions.SelectionOptions = [toFullRowSelect]
+          OnDragOver = vdtTerrainTilesDragOver
+          OnDragDrop = vdtTerrainTilesDragDrop
+          OnDrawNode = vdtTerrainTilesDrawNode
+        end
+        object btnClearDStaticsTiles: TSpeedButton
+          AnchorSideLeft.Control = btnDeleteDStaticsTiles
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideBottom.Control = btnDeleteDStaticsTiles
+          AnchorSideBottom.Side = asrBottom
+          Left = 30
+          Height = 22
+          Hint = 'Очистить список'
+          Top = 281
+          Width = 22
+          Anchors = [akLeft, akBottom]
+          Glyph.Data = {
+            36040000424D3604000000000000360000002800000010000000100000000100
+            2000000000000004000064000000640000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            000000000000000000000000F1FF0000F1FF0000F1FF0000F1FF0000EFFF0000
+            EFFF0000EDFF0000EDFF00000000000000000000000000000000000000000000
+            0000000000000000F5FF1A20F5FF3C4CF9FF3A49F8FF3847F8FF3545F8FF3443
+            F7FF3242F7FF141BF1FF0000EDFF000000000000000000000000000000000000
+            00000000F7FF1D23F9FF4453FAFF2429F9FF1212F7FF0F0FF6FF0C0CF5FF0909
+            F5FF161BF5FF3343F7FF141BF1FF0000EDFF0000000000000000000000000000
+            F9FF1F25FAFF4A58FBFF4247FBFFC9C9FDFF3B3BF9FF1313F7FF1010F6FF3333
+            F7FFC5C5FDFF3035F7FF3444F7FF141BF2FF0000EDFF00000000000000000000
+            FBFF4F5DFDFF3237FBFFCBCBFEFFF2F2FFFFEBEBFEFF3B3BF9FF3939F8FFEAEA
+            FEFFF1F1FEFFC5C5FDFF181DF6FF3343F7FF0000EFFF00000000000000000000
+            FDFF525FFDFF2828FCFF4747FCFFECECFFFFF2F2FFFFECECFFFFECECFEFFF1F1
+            FFFFEAEAFEFF3434F7FF0B0BF5FF3545F8FF0000EFFF00000000000000000000
+            FDFF5562FEFF2C2CFDFF2929FCFF4848FCFFEDEDFFFFF2F2FFFFF2F2FFFFECEC
+            FEFF3A3AF9FF1212F7FF0F0FF6FF3848F8FF0000F1FF00000000000000000000
+            FDFF5764FEFF3030FDFF2D2DFDFF4B4BFCFFEDEDFFFFF2F2FFFFF2F2FFFFECEC
+            FFFF3D3DF9FF1616F8FF1313F7FF3C4BF8FF0000F1FF00000000000000000000
+            FFFF5A67FEFF3333FEFF5050FDFFEDEDFFFFF3F3FFFFEDEDFFFFEDEDFFFFF2F2
+            FFFFECECFEFF3E3EFAFF1717F8FF3F4EF9FF0000F1FF00000000000000000000
+            FFFF5B68FFFF4347FEFFCFCFFFFFF3F3FFFFEDEDFFFF4C4CFCFF4A4AFCFFECEC
+            FFFFF2F2FFFFCACAFEFF2A2FFAFF4251FAFF0000F3FF00000000000000000000
+            FFFF262BFFFF5D6AFFFF585BFFFFCFCFFFFF5252FEFF2F2FFDFF2C2CFDFF4B4B
+            FCFFCCCCFEFF484CFBFF4957FBFF1D23F9FF0000F5FF00000000000000000000
+            00000000FFFF262BFFFF5D6AFFFF4347FFFF3434FEFF3232FEFF3030FDFF2D2D
+            FDFF383CFCFF4F5DFCFF1F25FAFF0000F7FF0000000000000000000000000000
+            0000000000000000FFFF262BFFFF5C69FFFF5B68FFFF5A67FEFF5865FEFF5663
+            FEFF5461FEFF2227FCFF0000FBFF000000000000000000000000000000000000
+            000000000000000000000000FFFF0000FFFF0000FFFF0000FFFF0000FDFF0000
+            FDFF0000FDFF0000FDFF00000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000
+          }
+          NumGlyphs = 0
+          OnClick = btnClearDStaticsTilesClick
+          ShowHint = True
+          ParentShowHint = False
+        end
+        object btnDeleteDStaticsTiles: TSpeedButton
+          AnchorSideLeft.Control = gbDeleteStaticsTiles
+          AnchorSideBottom.Control = gbDeleteStaticsTiles
+          AnchorSideBottom.Side = asrBottom
+          Left = 4
+          Height = 22
+          Hint = 'Удалить выбранное'
+          Top = 281
+          Width = 22
+          Anchors = [akLeft, akBottom]
+          BorderSpacing.Around = 4
+          Glyph.Data = {
+            36040000424D3604000000000000360000002800000010000000100000000100
+            2000000000000004000064000000640000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000003853BEFF3551BDFF304BBCFF2E4E
+            B8FF000000000000000000000000000000000000000000000000000000000000
+            000000000000000000004255C6FF3C52CCFF757AE8FF8F92EEFF8F92EEFF7178
+            E4FF334DC1FF2B4AB7FF00000000000000000000000000000000000000000000
+            0000000000004959CBFF5C65E0FFA1A6F5FF7E86EFFF5B63E9FF595DE7FF7D84
+            EEFF9EA0F4FF515DD7FF2B4AB7FF000000000000000000000000000000000000
+            00005361CFFF616BE3FFA1ACF5FF545FECFF505CEAFF4D59E9FF4E59E6FF4C56
+            E6FF5056E6FF9EA2F4FF5460D6FF2A4AB8FF0000000000000000000000000000
+            00004B56DBFFA2ABF6FF5664F0FF5266EEFF4D59E9FF4D59E9FF4D59E9FF4D59
+            E9FF4C58E6FF525AE6FF9FA3F5FF3450C4FF0000000000000000000000005C62
+            D7FF818CEEFF7E91F7FF5D73F3FF4D59E9FF4D59E9FF4D59E9FF4D59E9FF4D59
+            E9FF4D59E9FF4F5BE9FF7B83F0FF757BE2FF2E4BBAFF00000000000000005F63
+            DAFFA1ABF7FF7086F8FF6882F6FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFF4D59E9FF5C66EAFF969CF1FF3250BCFF00000000000000006469
+            DBFFAFB9F9FF7F93FAFF7085F0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFF4D59E9FF5E6AEEFF969DF1FF364FBEFF0000000000000000676A
+            DEFFA5AFF5FF9DABFAFF778CF0FF545FECFF545FECFF545FECFF545FECFF545F
+            ECFF545FECFF6377F2FF818EF4FF787FE9FF3A53C0FF00000000000000000000
+            00007D83EAFFCDD4FCFF8B9DFAFF7E93F7FF758AEEFF6C84F6FF6C84F6FF6C84
+            F6FF6C84F6FF6379F3FFA4AFF8FF3E4FD0FF0000000000000000000000000000
+            00006A69E0FFA3A7F3FFD4DBFDFF879AFAFF7F91F0FF7A8EF1FF7F94F8FF7E92
+            F9FF768CF8FFA8B6F8FF636EE3FF4557C7FF0000000000000000000000000000
+            0000000000006A69E0FFAAADF2FFD8DCFDFFAEBAFAFF91A3FAFF8B9DFAFF9CA9
+            FBFFBAC7FCFF707BE9FF4C5BCCFF000000000000000000000000000000000000
+            000000000000000000006A6ADFFF8E93EDFFBEC3F8FFCCD3F9FFC4CBF9FFAAB4
+            F4FF6670E2FF535ED1FF00000000000000000000000000000000000000000000
+            000000000000000000000000000000000000686ADDFF6364DCFF6164DAFF5D63
+            D9FF000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000
+          }
+          NumGlyphs = 0
+          OnClick = btnDeleteDStaticsTilesClick
+          ShowHint = True
+          ParentShowHint = False
+        end
+      end
+      object GroupBox1: TGroupBox
+        AnchorSideLeft.Control = gbDeleteStaticsTiles
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = gbDeleteStaticsTiles
+        Left = 241
+        Height = 95
+        Top = 8
+        Width = 142
+        AutoSize = True
+        Caption = 'Границы по высоте'
+        ClientHeight = 77
+        ClientWidth = 138
+        TabOrder = 1
+        object Label7: TLabel
+          AnchorSideLeft.Control = GroupBox1
+          AnchorSideTop.Control = GroupBox1
+          AnchorSideRight.Control = GroupBox1
+          AnchorSideRight.Side = asrBottom
+          Left = 4
+          Height = 40
+          Top = 0
+          Width = 130
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 4
+          BorderSpacing.Right = 4
+          BorderSpacing.Bottom = 4
+          Caption = 'Будет удалена только статика на высоте в указанном диапазоне.'
+          ParentColor = False
+          WordWrap = True
+        end
+        object Label8: TLabel
+          AnchorSideLeft.Control = seDeleteStaticsZ1
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = seDeleteStaticsZ1
+          AnchorSideTop.Side = asrCenter
+          Left = 62
+          Height = 14
+          Top = 51
+          Width = 14
+          Caption = 'до'
+          ParentColor = False
+        end
+        object seDeleteStaticsZ1: TSpinEdit
+          AnchorSideTop.Control = Label7
+          AnchorSideTop.Side = asrBottom
+          Left = 4
+          Height = 21
+          Top = 48
+          Width = 50
+          BorderSpacing.Around = 8
+          MaxValue = 127
+          MinValue = -128
+          TabOrder = 0
+          Value = -128
+        end
+        object seDeleteStaticsZ2: TSpinEdit
+          AnchorSideLeft.Control = Label8
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = seDeleteStaticsZ1
+          Left = 84
+          Height = 21
+          Top = 48
+          Width = 50
+          BorderSpacing.Left = 8
+          MaxValue = 127
+          MinValue = -128
+          TabOrder = 1
+          Value = 127
+        end
+      end
+    end
+    object pgInsertStatics: TPage
+      Caption = 'Добавить статику'
+      ClientWidth = 460
+      ClientHeight = 341
+      object gbInserStaticsTiles: TGroupBox
+        AnchorSideLeft.Control = pgInsertStatics
+        AnchorSideTop.Control = pgInsertStatics
+        AnchorSideBottom.Control = pgInsertStatics
+        AnchorSideBottom.Side = asrBottom
+        Left = 8
+        Height = 325
+        Top = 8
+        Width = 225
+        Anchors = [akTop, akLeft, akBottom]
+        BorderSpacing.Around = 8
+        Caption = 'Тайлы'
+        ClientHeight = 307
+        ClientWidth = 221
+        TabOrder = 0
+        object lblInsertStaticsTiles: TLabel
+          AnchorSideLeft.Control = gbInserStaticsTiles
+          AnchorSideTop.Control = gbInserStaticsTiles
+          AnchorSideRight.Control = gbInserStaticsTiles
+          AnchorSideRight.Side = asrBottom
+          Left = 4
+          Height = 53
+          Top = 0
+          Width = 213
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 4
+          BorderSpacing.Right = 4
+          BorderSpacing.Bottom = 4
+          Caption = 'Перетащите в список тайлы статики из главного окна. На каждую клетку указанной области будет случайно нарисован один из этих тайлов.'
+          ParentColor = False
+          WordWrap = True
+        end
+        object vdtInsertStaticsTiles: TVirtualDrawTree
+          Tag = 1
+          AnchorSideLeft.Control = gbInserStaticsTiles
+          AnchorSideTop.Control = lblInsertStaticsTiles
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = gbInserStaticsTiles
+          AnchorSideRight.Side = asrBottom
+          AnchorSideBottom.Control = btnDeleteIStaticsTiles
+          Left = 4
+          Height = 220
+          Top = 57
+          Width = 213
+          Anchors = [akTop, akLeft, akRight, akBottom]
+          BorderSpacing.Left = 4
+          BorderSpacing.Right = 4
+          BorderSpacing.Bottom = 4
+          Color = 16052980
+          DefaultNodeHeight = 44
+          DragMode = dmAutomatic
+          DragType = dtVCL
+          Header.AutoSizeIndex = 0
+          Header.Columns = <          
+            item
+              Position = 0
+              Text = 'ID'
+              Width = 40
+            end          
+            item
+              Position = 1
+              Text = 'Тайл'
+              Width = 44
+            end          
+            item
+              Position = 2
+              Text = 'Название'
+              Width = 108
+            end          
+            item
+              MaxWidth = 10
+              MinWidth = 0
+              Position = 3
+              Text = 'tile_separator'
+              Width = 2
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coAllowFocus]
+              Position = 4
+              Text = 'tile_S1'
+              Width = 46
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coAllowFocus]
+              Position = 5
+              Text = 'tile_S2'
+              Width = 46
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coAllowFocus]
+              Position = 6
+              Text = 'tile_S3'
+              Width = 46
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coAllowFocus]
+              Position = 7
+              Text = 'tile_S4'
+              Width = 46
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coAllowFocus]
+              Position = 8
+              Text = 'tile_M1'
+              Width = 62
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coAllowFocus]
+              Position = 9
+              Text = 'tile_M2'
+              Width = 62
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coAllowFocus]
+              Position = 10
+              Text = 'tile_M3'
+              Width = 62
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coAllowFocus]
+              Position = 11
+              Text = 'tile_L1'
+              Width = 93
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coAllowFocus]
+              Position = 12
+              Text = 'tile_L2'
+              Width = 93
+            end          
+            item
+              MaxWidth = 10
+              MinWidth = 0
+              Position = 13
+              Text = 'tile_separator'
+              Width = 2
+            end>
+          Header.DefaultHeight = 17
+          Header.Options = [hoVisible]
+          Header.ParentFont = True
+          Header.Style = hsFlatButtons
+          ScrollBarOptions.AlwaysVisible = True
+          ScrollBarOptions.ScrollBars = ssVertical
+          TabOrder = 0
+          TreeOptions.AutoOptions = [toAutoScroll, toAutoScrollOnExpand, toAutoTristateTracking, toAutoDeleteMovedNodes]
+          TreeOptions.MiscOptions = [toFullRepaintOnResize, toInitOnSave, toToggleOnDblClick, toWheelPanning, toFullRowDrag]
+          TreeOptions.PaintOptions = [toHideFocusRect, toShowButtons, toShowDropmark, toThemeAware, toUseBlendedImages, toStaticBackground]
+          TreeOptions.SelectionOptions = [toFullRowSelect]
+          OnDragOver = vdtTerrainTilesDragOver
+          OnDragDrop = vdtTerrainTilesDragDrop
+          OnDrawNode = vdtTerrainTilesDrawNode
+        end
+        object btnClearIStaticsTiles: TSpeedButton
+          AnchorSideLeft.Control = btnDeleteIStaticsTiles
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = btnDeleteIStaticsTiles
+          Left = 30
+          Height = 22
+          Hint = 'Очистить список'
+          Top = 281
+          Width = 22
+          Glyph.Data = {
+            36040000424D3604000000000000360000002800000010000000100000000100
+            2000000000000004000064000000640000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            000000000000000000000000F1FF0000F1FF0000F1FF0000F1FF0000EFFF0000
+            EFFF0000EDFF0000EDFF00000000000000000000000000000000000000000000
+            0000000000000000F5FF1A20F5FF3C4CF9FF3A49F8FF3847F8FF3545F8FF3443
+            F7FF3242F7FF141BF1FF0000EDFF000000000000000000000000000000000000
+            00000000F7FF1D23F9FF4453FAFF2429F9FF1212F7FF0F0FF6FF0C0CF5FF0909
+            F5FF161BF5FF3343F7FF141BF1FF0000EDFF0000000000000000000000000000
+            F9FF1F25FAFF4A58FBFF4247FBFFC9C9FDFF3B3BF9FF1313F7FF1010F6FF3333
+            F7FFC5C5FDFF3035F7FF3444F7FF141BF2FF0000EDFF00000000000000000000
+            FBFF4F5DFDFF3237FBFFCBCBFEFFF2F2FFFFEBEBFEFF3B3BF9FF3939F8FFEAEA
+            FEFFF1F1FEFFC5C5FDFF181DF6FF3343F7FF0000EFFF00000000000000000000
+            FDFF525FFDFF2828FCFF4747FCFFECECFFFFF2F2FFFFECECFFFFECECFEFFF1F1
+            FFFFEAEAFEFF3434F7FF0B0BF5FF3545F8FF0000EFFF00000000000000000000
+            FDFF5562FEFF2C2CFDFF2929FCFF4848FCFFEDEDFFFFF2F2FFFFF2F2FFFFECEC
+            FEFF3A3AF9FF1212F7FF0F0FF6FF3848F8FF0000F1FF00000000000000000000
+            FDFF5764FEFF3030FDFF2D2DFDFF4B4BFCFFEDEDFFFFF2F2FFFFF2F2FFFFECEC
+            FFFF3D3DF9FF1616F8FF1313F7FF3C4BF8FF0000F1FF00000000000000000000
+            FFFF5A67FEFF3333FEFF5050FDFFEDEDFFFFF3F3FFFFEDEDFFFFEDEDFFFFF2F2
+            FFFFECECFEFF3E3EFAFF1717F8FF3F4EF9FF0000F1FF00000000000000000000
+            FFFF5B68FFFF4347FEFFCFCFFFFFF3F3FFFFEDEDFFFF4C4CFCFF4A4AFCFFECEC
+            FFFFF2F2FFFFCACAFEFF2A2FFAFF4251FAFF0000F3FF00000000000000000000
+            FFFF262BFFFF5D6AFFFF585BFFFFCFCFFFFF5252FEFF2F2FFDFF2C2CFDFF4B4B
+            FCFFCCCCFEFF484CFBFF4957FBFF1D23F9FF0000F5FF00000000000000000000
+            00000000FFFF262BFFFF5D6AFFFF4347FFFF3434FEFF3232FEFF3030FDFF2D2D
+            FDFF383CFCFF4F5DFCFF1F25FAFF0000F7FF0000000000000000000000000000
+            0000000000000000FFFF262BFFFF5C69FFFF5B68FFFF5A67FEFF5865FEFF5663
+            FEFF5461FEFF2227FCFF0000FBFF000000000000000000000000000000000000
+            000000000000000000000000FFFF0000FFFF0000FFFF0000FFFF0000FDFF0000
+            FDFF0000FDFF0000FDFF00000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000
+          }
+          NumGlyphs = 0
+          OnClick = btnClearIStaticsTilesClick
+          ShowHint = True
+          ParentShowHint = False
+        end
+        object btnDeleteIStaticsTiles: TSpeedButton
+          AnchorSideLeft.Control = gbInserStaticsTiles
+          AnchorSideBottom.Control = gbInserStaticsTiles
+          AnchorSideBottom.Side = asrBottom
+          Left = 4
+          Height = 22
+          Hint = 'Удалить выбранное'
+          Top = 281
+          Width = 22
+          Anchors = [akLeft, akBottom]
+          BorderSpacing.Around = 4
+          Glyph.Data = {
+            36040000424D3604000000000000360000002800000010000000100000000100
+            2000000000000004000064000000640000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000003853BEFF3551BDFF304BBCFF2E4E
+            B8FF000000000000000000000000000000000000000000000000000000000000
+            000000000000000000004255C6FF3C52CCFF757AE8FF8F92EEFF8F92EEFF7178
+            E4FF334DC1FF2B4AB7FF00000000000000000000000000000000000000000000
+            0000000000004959CBFF5C65E0FFA1A6F5FF7E86EFFF5B63E9FF595DE7FF7D84
+            EEFF9EA0F4FF515DD7FF2B4AB7FF000000000000000000000000000000000000
+            00005361CFFF616BE3FFA1ACF5FF545FECFF505CEAFF4D59E9FF4E59E6FF4C56
+            E6FF5056E6FF9EA2F4FF5460D6FF2A4AB8FF0000000000000000000000000000
+            00004B56DBFFA2ABF6FF5664F0FF5266EEFF4D59E9FF4D59E9FF4D59E9FF4D59
+            E9FF4C58E6FF525AE6FF9FA3F5FF3450C4FF0000000000000000000000005C62
+            D7FF818CEEFF7E91F7FF5D73F3FF4D59E9FF4D59E9FF4D59E9FF4D59E9FF4D59
+            E9FF4D59E9FF4F5BE9FF7B83F0FF757BE2FF2E4BBAFF00000000000000005F63
+            DAFFA1ABF7FF7086F8FF6882F6FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFF4D59E9FF5C66EAFF969CF1FF3250BCFF00000000000000006469
+            DBFFAFB9F9FF7F93FAFF7085F0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFF4D59E9FF5E6AEEFF969DF1FF364FBEFF0000000000000000676A
+            DEFFA5AFF5FF9DABFAFF778CF0FF545FECFF545FECFF545FECFF545FECFF545F
+            ECFF545FECFF6377F2FF818EF4FF787FE9FF3A53C0FF00000000000000000000
+            00007D83EAFFCDD4FCFF8B9DFAFF7E93F7FF758AEEFF6C84F6FF6C84F6FF6C84
+            F6FF6C84F6FF6379F3FFA4AFF8FF3E4FD0FF0000000000000000000000000000
+            00006A69E0FFA3A7F3FFD4DBFDFF879AFAFF7F91F0FF7A8EF1FF7F94F8FF7E92
+            F9FF768CF8FFA8B6F8FF636EE3FF4557C7FF0000000000000000000000000000
+            0000000000006A69E0FFAAADF2FFD8DCFDFFAEBAFAFF91A3FAFF8B9DFAFF9CA9
+            FBFFBAC7FCFF707BE9FF4C5BCCFF000000000000000000000000000000000000
+            000000000000000000006A6ADFFF8E93EDFFBEC3F8FFCCD3F9FFC4CBF9FFAAB4
+            F4FF6670E2FF535ED1FF00000000000000000000000000000000000000000000
+            000000000000000000000000000000000000686ADDFF6364DCFF6164DAFF5D63
+            D9FF000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000
+          }
+          NumGlyphs = 0
+          OnClick = btnDeleteIStaticsTilesClick
+          ShowHint = True
+          ParentShowHint = False
+        end
+      end
+      object gbStaticsProbability: TGroupBox
+        AnchorSideLeft.Control = gbInserStaticsTiles
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = gbInserStaticsTiles
+        Left = 241
+        Height = 78
+        Top = 8
+        Width = 147
+        Anchors = [akTop, akLeft, akRight]
+        AutoSize = True
+        Caption = 'Вероятность'
+        ClientHeight = 60
+        ClientWidth = 143
+        TabOrder = 1
+        object Label5: TLabel
+          AnchorSideLeft.Control = gbStaticsProbability
+          AnchorSideTop.Control = gbStaticsProbability
+          AnchorSideRight.Control = gbStaticsProbability
+          AnchorSideRight.Side = asrBottom
+          Left = 4
+          Height = 27
+          Top = 0
+          Width = 135
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 4
+          BorderSpacing.Right = 4
+          BorderSpacing.Bottom = 4
+          Caption = 'Тайл будет нирисован с вероятностью:'
+          ParentColor = False
+          WordWrap = True
+        end
+        object Label6: TLabel
+          AnchorSideLeft.Control = seStaticsProbability
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = seStaticsProbability
+          AnchorSideTop.Side = asrCenter
+          Left = 58
+          Height = 14
+          Top = 34
+          Width = 10
+          BorderSpacing.Left = 4
+          Caption = '%'
+          ParentColor = False
+        end
+        object seStaticsProbability: TSpinEdit
+          AnchorSideLeft.Control = Label5
+          AnchorSideTop.Control = Label5
+          AnchorSideTop.Side = asrBottom
+          Left = 4
+          Height = 21
+          Top = 31
+          Width = 50
+          BorderSpacing.Bottom = 8
+          TabOrder = 0
+          Value = 100
+        end
+      end
+      object gbStaticsPlacement: TGroupBox
+        AnchorSideLeft.Control = gbInserStaticsTiles
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = gbStaticsProbability
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = gbStaticsProbability
+        AnchorSideRight.Side = asrBottom
+        Left = 241
+        Height = 108
+        Top = 90
+        Width = 147
+        Anchors = [akTop, akLeft, akRight]
+        AutoSize = True
+        BorderSpacing.Top = 4
+        Caption = 'Расположение по оси Z'
+        ClientHeight = 90
+        ClientWidth = 143
+        TabOrder = 2
+        object rbPlaceStaticsOnTerrain: TRadioButton
+          AnchorSideLeft.Control = gbStaticsPlacement
+          AnchorSideTop.Control = gbStaticsPlacement
+          AnchorSideRight.Control = gbStaticsPlacement
+          AnchorSideRight.Side = asrBottom
+          Left = 4
+          Height = 19
+          Top = 4
+          Width = 135
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 4
+          BorderSpacing.Top = 4
+          BorderSpacing.Right = 4
+          Caption = 'Размещать на рельефе'
+          Checked = True
+          TabOrder = 0
+          TabStop = True
+        end
+        object rbPlaceStaticsOnTop: TRadioButton
+          AnchorSideLeft.Control = rbPlaceStaticsOnTerrain
+          AnchorSideTop.Control = rbPlaceStaticsOnTerrain
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = rbPlaceStaticsOnTerrain
+          AnchorSideRight.Side = asrBottom
+          Left = 4
+          Height = 19
+          Top = 23
+          Width = 135
+          Anchors = [akTop, akLeft, akRight]
+          Caption = 'Размещать на верху'
+          TabOrder = 1
+        end
+        object rbPlaceStaticsOnZ: TRadioButton
+          AnchorSideLeft.Control = rbPlaceStaticsOnTop
+          AnchorSideTop.Control = rbPlaceStaticsOnTop
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = rbPlaceStaticsOnTop
+          AnchorSideRight.Side = asrBottom
+          Left = 4
+          Height = 19
+          Top = 42
+          Width = 135
+          Anchors = [akTop, akLeft, akRight]
+          Caption = 'Размещать на высоте:'
+          TabOrder = 2
+        end
+        object seInsertStaticsZ: TSpinEdit
+          AnchorSideLeft.Control = rbPlaceStaticsOnZ
+          AnchorSideTop.Control = rbPlaceStaticsOnZ
+          AnchorSideTop.Side = asrBottom
+          Left = 26
+          Height = 21
+          Top = 61
+          Width = 50
+          BorderSpacing.Left = 22
+          BorderSpacing.Bottom = 8
+          TabOrder = 3
+        end
+      end
+    end
+  end
+  object btnClose: TButton
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 536
+    Height = 25
+    Top = 357
+    Width = 76
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Around = 8
+    BorderSpacing.InnerBorder = 4
+    Caption = 'Закрыть'
+    OnClick = btnCloseClick
+    TabOrder = 1
+  end
+  object btnExecute: TButton
+    AnchorSideRight.Control = btnClose
+    AnchorSideBottom.Control = btnClose
+    AnchorSideBottom.Side = asrBottom
+    Left = 452
+    Height = 25
+    Top = 357
+    Width = 76
+    Anchors = [akRight, akBottom]
+    BorderSpacing.InnerBorder = 4
+    Caption = 'Выполнить'
+    OnClick = btnExecuteClick
+    TabOrder = 2
+  end
+  object vstArea: TVirtualStringTree
+    AnchorSideLeft.Control = Label1
+    AnchorSideTop.Control = Label1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Label1
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = btnDeleteArea
+    Left = 4
+    Height = 118
+    Top = 154
+    Width = 144
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Bottom = 4
+    Color = 16052980
+    DefaultText = 'Node'
+    Header.AutoSizeIndex = 0
+    Header.Columns = <>
+    Header.DefaultHeight = 17
+    Header.MainColumn = -1
+    Header.Options = [hoColumnResize, hoDrag]
+    TabOrder = 3
+    TreeOptions.PaintOptions = [toShowButtons, toShowDropmark, toThemeAware, toUseBlendedImages]
+    TreeOptions.SelectionOptions = [toFullRowSelect]
+    OnChange = vstAreaChange
+    OnGetText = vstAreaGetText
+  end
+  object Label1: TLabel
+    AnchorSideLeft.Control = vstActions
+    AnchorSideTop.Control = vstActions
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = vstActions
+    AnchorSideRight.Side = asrBottom
+    Left = 4
+    Height = 14
+    Top = 140
+    Width = 144
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Left = 4
+    BorderSpacing.Top = 4
+    BorderSpacing.Right = 4
+    Caption = 'Область:'
+    ParentColor = False
+  end
+  object vstActions: TVirtualStringTree
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    Left = 0
+    Height = 136
+    Top = 0
+    Width = 152
+    Color = 16052980
+    DefaultText = 'Node'
+    Header.AutoSizeIndex = 0
+    Header.Columns = <    
+      item
+        Position = 0
+        Text = 'Действия'
+        Width = 148
+      end>
+    Header.DefaultHeight = 17
+    Header.Options = [hoAutoResize, hoVisible]
+    Header.ParentFont = True
+    Header.Style = hsFlatButtons
+    TabOrder = 4
+    TreeOptions.MiscOptions = [toCheckSupport, toFullRepaintOnResize, toInitOnSave, toToggleOnDblClick, toWheelPanning]
+    TreeOptions.PaintOptions = [toShowButtons, toShowDropmark, toThemeAware, toUseBlendedImages]
+    TreeOptions.SelectionOptions = [toFullRowSelect]
+    OnChange = vstActionsChange
+    OnChecked = vstActionsChecked
+    OnGetText = vstActionsGetText
+    OnPaintText = vstActionsPaintText
+  end
+  object btnAddArea: TSpeedButton
+    AnchorSideTop.Control = btnDeleteArea
+    AnchorSideRight.Control = btnDeleteArea
+    Left = 39
+    Height = 22
+    Hint = 'Добавить область'
+    Top = 276
+    Width = 22
+    Anchors = [akTop, akRight]
+    Glyph.Data = {
+      36040000424D3604000000000000360000002800000010000000100000000100
+      2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000464
+      000C025D0073025D00BA025D00CC025D00CC025D00CC025D00CC025D00CC025D
+      00CC025D00CC025D00CC025D00BA025D00730464000CFFFFFF00FFFFFF00066D
+      0073129208DD20CC10F922D911FF22D911FF22D911FF22D911FF22D911FF22D9
+      11FF22D911FF22D911FF1FCC0FF9109207DD066D0073FFFFFF00FFFFFF000A7D
+      00BA25CA15F922D111FF22D111FF22D111FF22D111FF22B611FF22B611FF22D1
+      11FF22D111FF22D111FF22D111FF20C80FF90A7D00BAFFFFFF00FFFFFF000C84
+      00CC2BCC1AFF22C811FF22C811FF22C811FF22BC11FFE8E8E8FFECECECFF22BC
+      11FF22C811FF22C811FF22C811FF22C811FF0C8400CCFFFFFF00FFFFFF000D89
+      00CC31C620FF22BE11FF22BE11FF22BE11FF22B511FFE4E4E4FFE8E8E8FF22B5
+      11FF22BE11FF22BE11FF22BE11FF23BE12FF0D8900CCFFFFFF00FFFFFF000E8D
+      00CC41C330FF23B412FF22A811FF22A811FF22A411FFE0E0E0FFE4E4E4FF22A4
+      11FF22A811FF22A811FF22B411FF25B514FF0E8D00CCFFFFFF00FFFFFF000F92
+      00CC52C941FF33AF22FFD4D4D4FFD3D3D3FFD7D7D7FFDCDCDCFFE0E0E0FFE4E4
+      E4FFE8E8E8FFECECECFF22A611FF28AF17FF0F9200CCFFFFFF00FFFFFF001096
+      00CC55CC44FF3CB32BFFF8F8F8FFE1E1E1FFD5D5D5FFD7D7D7FFDCDCDCFFE0E0
+      E0FFE4E4E4FFE8E8E8FF22A011FF2CAA1BFF109600CCFFFFFF00FFFFFF00119A
+      00CC5AD149FF47BE36FF3EB52DFF3EB52DFF37AE26FFEBEBEBFFE2E2E2FF259D
+      14FF239B12FF239B12FF279F16FF39B128FF119A00CCFFFFFF00FFFFFF00129E
+      00CC60D74FFF4EC53DFF4EC53DFF4EC53DFF44BB33FFFFFFFFFFFFFFFFFF44BB
+      33FF4EC53DFF4EC53DFF4EC53DFF58CF47FF129E00CCFFFFFF00FFFFFF0013A2
+      00CC67DE56FF57CE46FF57CE46FF57CE46FF4AC139FFFFFFFFFFFFFFFFFF4AC1
+      39FF57CE46FF57CE46FF57CE46FF60D74FFF13A200CCFFFFFF00FFFFFF0014A5
+      00BA64DE53F95FD64EFF5FD64EFF5FD64EFF5FD64EFF50C73FFF50C73FFF5FD6
+      4EFF5FD64EFF5FD64EFF5FD64EFF60DA4FF914A500BAFFFFFF00FFFFFF0014A8
+      007337C124DD66E054F96EE55DFF6EE55DFF6EE55DFF6EE55DFF6DE45CFF6DE4
+      5CFF6DE45CFF6DE45CFF64DF53F936BF23DD14A80073FFFFFF00FFFFFF0015A9
+      000C15AA007315AA00BA15AA00CC15AA00CC15AA00CC15AA00CC15AA00CC15AA
+      00CC15AA00CC15AA00CC15AA00BA15AA007315A9000CFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+    }
+    NumGlyphs = 0
+    OnClick = btnAddAreaClick
+    ShowHint = True
+    ParentShowHint = False
+  end
+  object btnDeleteArea: TSpeedButton
+    AnchorSideLeft.Control = vstArea
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = vstArea
+    AnchorSideBottom.Control = seX1
+    Left = 65
+    Height = 22
+    Hint = 'Удалить область'
+    Top = 276
+    Width = 22
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.Bottom = 4
+    BorderSpacing.Around = 4
+    Glyph.Data = {
+      36040000424D3604000000000000360000002800000010000000100000000100
+      2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000
+      640C00005D7300005DBA00005DCC00005DCC00005DCC00005DCC00005DCC0000
+      5DCC00005DCC00005DCC00005DBA00005D730000640CFFFFFF00FFFFFF000000
+      6D73080893DD1010CCF91111D9FF1111D9FF1111D9FF1111D9FF1111D9FF1111
+      D9FF1111D9FF1111D9FF0F0FCCF9070792DD00006D73FFFFFF00FFFFFF000000
+      7DBA1616CBF91111D1FF1111D1FF1111D1FF1111D1FF1111D1FF1111D1FF1111
+      D1FF1111D1FF1111D1FF1111D1FF0F0FC8F900007DBAFFFFFF00FFFFFF000000
+      84CC1C1CCEFF1111C8FF1111C8FF1111C8FF1111C8FF1111C8FF1111C8FF1111
+      C8FF1111C8FF1111C8FF1111C8FF1111C8FF000084CCFFFFFF00FFFFFF000000
+      89CC2222C8FF1111BEFF1111BEFF1111BEFF1111BEFF1111BEFF1111BEFF1111
+      BEFF1111BEFF1111BEFF1111BEFF1212BEFF000089CCFFFFFF00FFFFFF000000
+      8DCC3434C7FF1212B4FF1111A8FF1111A8FF1111A8FF1111A8FF1111A8FF1111
+      A8FF1111A8FF1111A8FF1111B4FF1414B6FF00008DCCFFFFFF00FFFFFF000000
+      92CC4646CEFF2626B5FFD0D0D0FFCCCCCCFFD1D1D1FFDCDCDCFFE8E8E8FFEEEE
+      EEFFEEEEEEFFEEEEEEFF1111AAFF1818B0FF000092CCFFFFFF00FFFFFF000000
+      96CC4A4AD2FF3333BBFFF8F8F8FFDEDEDEFFCECECEFFD1D1D1FFDCDCDCFFE8E8
+      E8FFEEEEEEFFEEEEEEFF1111A1FF1D1DACFF000096CCFFFFFF00FFFFFF000000
+      9ACC5050D8FF3737BFFF3737BFFF3737BFFF3232BAFF2727B0FF1C1CA6FF1616
+      A0FF12129CFF12129CFF1616A0FF2B2BB5FF00009ACCFFFFFF00FFFFFF000000
+      9ECC5A5AE2FF4242CAFF4242CAFF4242CAFF4242CAFF4242CAFF4242CAFF4242
+      CAFF4242CAFF4242CAFF4242CAFF4E4ED6FF00009ECCFFFFFF00FFFFFF000000
+      A2CC6262EAFF4F4FD7FF4F4FD7FF4F4FD7FF4F4FD7FF4F4FD7FF4F4FD7FF4F4F
+      D7FF4F4FD7FF4F4FD7FF4F4FD7FF5A5AE2FF0000A2CCFFFFFF00FFFFFF000000
+      A5BA6060ECF95B5BE3FF5B5BE3FF5B5BE3FF5B5BE3FF5B5BE3FF5B5BE3FF5B5B
+      E3FF5B5BE3FF5B5BE3FF5B5BE3FF5B5BE7F90000A5BAFFFFFF00FFFFFF000000
+      A8732A2AC7DD6363EFF96D6DF5FF6D6DF5FF6D6DF5FF6D6DF5FF6D6DF5FF6D6D
+      F5FF6D6DF5FF6C6CF4FF6262EEF92929C5DD0000A873FFFFFF00FFFFFF000000
+      A90C0000AA730000AABA0000AACC0000AACC0000AACC0000AACC0000AACC0000
+      AACC0000AACC0000AACC0000AABA0000AA730000A90CFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+    }
+    NumGlyphs = 0
+    OnClick = btnDeleteAreaClick
+    ShowHint = True
+    ParentShowHint = False
+  end
+  object btnClearArea: TSpeedButton
+    AnchorSideLeft.Control = btnDeleteArea
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = btnDeleteArea
+    Left = 91
+    Height = 22
+    Hint = 'Удалить все области'
+    Top = 276
+    Width = 22
+    Glyph.Data = {
+      36040000424D3604000000000000360000002800000010000000100000000100
+      2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000
+      640C00005D7300005DBA00005DCC00005DCC00005DCC00005DCC00005DCC0000
+      5DCC00005DCC00005DCC00005DBA00005D730000640CFFFFFF00FFFFFF000000
+      6D73080893DD1010CCF91111D9FF1111D9FF1111D9FF1111D9FF1111D9FF1111
+      D9FF1111D9FF1111D9FF0F0FCCF9070792DD00006D73FFFFFF00FFFFFF000000
+      7DBA1616CBF91111D1FF1111D1FF1111B6FF1111D1FF1111D1FF1111D1FF1111
+      D1FF1111B6FF1111D1FF1111D1FF0F0FC8F900007DBAFFFFFF00FFFFFF000000
+      84CC1C1CCEFF1111C8FF1111B2FFDCDCDCFF1111B2FF1111C8FF1111C8FF1111
+      B2FFEEEEEEFF1111B2FF1111C8FF1111C8FF000084CCFFFFFF00FFFFFF000000
+      89CC2222C8FF1111BEFFD1D1D1FFD6D6D6FFDCDCDCFF1111ADFF1111ADFFEAEA
+      EAFFEEEEEEFFEEEEEEFF1111BEFF1212BEFF000089CCFFFFFF00FFFFFF000000
+      8DCC3434C7FF1212B4FF1111B4FFD1D1D1FFD6D6D6FFDCDCDCFFE2E2E2FFE6E6
+      E6FFEAEAEAFF1111B4FF1111B4FF1414B6FF00008DCCFFFFFF00FFFFFF000000
+      92CC4646CEFF2626B5FF1414ABFF1111AAFFD1D1D1FFD6D6D6FFDCDCDCFFE2E2
+      E2FF1111AAFF1111AAFF1111AAFF1818B0FF000092CCFFFFFF00FFFFFF000000
+      96CC4A4AD2FF3333BBFF2E2EB8FF13139FFFCECECEFFD1D1D1FFD6D6D6FFDCDC
+      DCFF11119EFF1111A1FF1111A1FF1D1DACFF000096CCFFFFFF00FFFFFF000000
+      9ACC5050D8FF3737BFFF2323ABFFFFFFFFFFF7F7F7FFE8E8E8FFDEDEDEFFDBDB
+      DBFFDDDDDDFF11119BFF1616A0FF2B2BB5FF00009ACCFFFFFF00FFFFFF000000
+      9ECC5A5AE2FF4242CAFFFFFFFFFFFFFFFFFFFFFFFFFF4242CAFF4242CAFFFFFF
+      FFFFFFFFFFFFFFFFFFFF4242CAFF4E4ED6FF00009ECCFFFFFF00FFFFFF000000
+      A2CC6262EAFF4F4FD7FF4F4FD7FFFFFFFFFF4F4FD7FF4F4FD7FF4F4FD7FF4F4F
+      D7FFFFFFFFFF4F4FD7FF4F4FD7FF5A5AE2FF0000A2CCFFFFFF00FFFFFF000000
+      A5BA6060ECF95B5BE3FF5B5BE3FF5B5BE3FF5B5BE3FF5B5BE3FF5B5BE3FF5B5B
+      E3FF5B5BE3FF5B5BE3FF5B5BE3FF5B5BE7F90000A5BAFFFFFF00FFFFFF000000
+      A8732A2AC7DD6363EFF96D6DF5FF6D6DF5FF6D6DF5FF6D6DF5FF6D6DF5FF6D6D
+      F5FF6D6DF5FF6C6CF4FF6262EEF92929C5DD0000A873FFFFFF00FFFFFF000000
+      A90C0000AA730000AABA0000AACC0000AACC0000AACC0000AACC0000AACC0000
+      AACC0000AACC0000AACC0000AABA0000AA730000A90CFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+    }
+    NumGlyphs = 0
+    OnClick = btnClearAreaClick
+    ShowHint = True
+    ParentShowHint = False
+  end
+  object lblX: TLabel
+    AnchorSideLeft.Control = lblY
+    AnchorSideTop.Control = seX1
+    AnchorSideTop.Side = asrCenter
+    Left = 4
+    Height = 14
+    Top = 309
+    Width = 7
+    Caption = 'X'
+    Enabled = False
+    ParentColor = False
+  end
+  object seX1: TSpinEdit
+    AnchorSideLeft.Control = seY1
+    AnchorSideBottom.Control = seY1
+    Left = 18
+    Height = 21
+    Top = 306
+    Width = 50
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.Bottom = 8
+    Color = 16052980
+    Enabled = False
+    OnChange = seX1Change
+    TabOrder = 5
+    Value = 1
+  end
+  object seX2: TSpinEdit
+    AnchorSideLeft.Control = seX1
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = seX1
+    Left = 76
+    Height = 21
+    Top = 306
+    Width = 50
+    BorderSpacing.Left = 8
+    Color = 16052980
+    Enabled = False
+    OnChange = seX1Change
+    TabOrder = 6
+    Value = 1
+  end
+  object lblY: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = seY1
+    AnchorSideTop.Side = asrCenter
+    Left = 4
+    Height = 14
+    Top = 338
+    Width = 6
+    BorderSpacing.Left = 4
+    Caption = 'Y'
+    Enabled = False
+    ParentColor = False
+  end
+  object seY1: TSpinEdit
+    AnchorSideLeft.Control = lblY
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideBottom.Control = btnGrab1
+    Left = 18
+    Height = 21
+    Top = 335
+    Width = 50
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.Left = 8
+    BorderSpacing.Bottom = 4
+    Color = 16052980
+    Enabled = False
+    OnChange = seX1Change
+    TabOrder = 7
+    Value = 1
+  end
+  object seY2: TSpinEdit
+    AnchorSideLeft.Control = seX2
+    AnchorSideTop.Control = seY1
+    Left = 76
+    Height = 21
+    Top = 335
+    Width = 50
+    Color = 16052980
+    Enabled = False
+    OnChange = seX1Change
+    TabOrder = 8
+    Value = 1
+  end
+  object btnGrab1: TSpeedButton
+    AnchorSideLeft.Control = seY1
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 32
+    Height = 22
+    Hint = 'Выбрать тайл в главном окне и взять его координаты.'
+    Top = 360
+    Width = 22
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.Bottom = 8
+    Enabled = False
+    Glyph.Data = {
+      36040000424D3604000000000000360000002800000010000000100000000100
+      2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF007F7F7F067C7C
+      7CE6787878CC75757581FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008383835DAAAA
+      AAFFDBDBDBFF797979F275757506FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF0097979709FFFFFF00FFFFFF00FFFFFF00888888E7DBDB
+      DBFFB7B7B7FF7D7D7D80FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF009C9C9CC99898981EFFFFFF0090909050ADADADFFF2F2
+      F2FF848484FD8181810FFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00A0A0A0FF9C9C9CE798989836949494DFD9D9D9FFC1C1
+      C1FF898989A0FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00A4A4A4FFD7D7D7FF9D9D9DF8D0D0D0FFEEEEEEFF9191
+      91FE8D8D8D18FFFFFF00FFFFFF00818181097E7E7E09FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00A9A9A9FFF2F2F2FFE5E5E5FFE2E2E2FFE3E3E3FF9595
+      95F4919191CC8D8D8DF9898989FF86868693FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00ADADADFFEEEEEEFFE1E1E1FFDFDFDFFFE0E0E0FFE7E7
+      E7FFE4E4E4FFBBBBBBFF8E8E8E93FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00B1B1B1FFF0F0F0FFE4E4E4FFE2E2E2FFE2E2E2FFE7E7
+      E7FFC1C1C1FF96969690FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00B5B5B5FFF2F2F2FFE8E8E8FFE7E7E7FFEAEAEAFFC6C6
+      C6FF9E9E9E8DFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00B9B9B9FFF4F4F4FFECECECFFEDEDEDFFCBCBCBFFA7A7
+      A78AFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00BDBDBDFFF7F7F7FFEFEFEFFFD0D0D0FFAFAFAF8AFFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00C1C1C1FFF7F7F7FFD5D5D5FFB6B6B687FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00C4C4C4FFD9D9D9FFBEBEBE84FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00C8C8C8FFC5C5C581FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00CBCBCB7EFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+    }
+    NumGlyphs = 0
+    OnClick = btnGrab1Click
+    ShowHint = True
+    ParentShowHint = False
+  end
+  object btnGrab2: TSpeedButton
+    AnchorSideLeft.Control = seY2
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideBottom.Control = btnGrab1
+    AnchorSideBottom.Side = asrBottom
+    Left = 90
+    Height = 22
+    Hint = 'Выбрать тайл в главном окне и взять его координаты.'
+    Top = 360
+    Width = 22
+    Anchors = [akLeft, akBottom]
+    Enabled = False
+    Glyph.Data = {
+      36040000424D3604000000000000360000002800000010000000100000000100
+      2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF007F7F7F067C7C
+      7CE6787878CC75757581FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008383835DAAAA
+      AAFFDBDBDBFF797979F275757506FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF0097979709FFFFFF00FFFFFF00FFFFFF00888888E7DBDB
+      DBFFB7B7B7FF7D7D7D80FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF009C9C9CC99898981EFFFFFF0090909050ADADADFFF2F2
+      F2FF848484FD8181810FFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00A0A0A0FF9C9C9CE798989836949494DFD9D9D9FFC1C1
+      C1FF898989A0FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00A4A4A4FFD7D7D7FF9D9D9DF8D0D0D0FFEEEEEEFF9191
+      91FE8D8D8D18FFFFFF00FFFFFF00818181097E7E7E09FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00A9A9A9FFF2F2F2FFE5E5E5FFE2E2E2FFE3E3E3FF9595
+      95F4919191CC8D8D8DF9898989FF86868693FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00ADADADFFEEEEEEFFE1E1E1FFDFDFDFFFE0E0E0FFE7E7
+      E7FFE4E4E4FFBBBBBBFF8E8E8E93FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00B1B1B1FFF0F0F0FFE4E4E4FFE2E2E2FFE2E2E2FFE7E7
+      E7FFC1C1C1FF96969690FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00B5B5B5FFF2F2F2FFE8E8E8FFE7E7E7FFEAEAEAFFC6C6
+      C6FF9E9E9E8DFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00B9B9B9FFF4F4F4FFECECECFFEDEDEDFFCBCBCBFFA7A7
+      A78AFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00BDBDBDFFF7F7F7FFEFEFEFFFD0D0D0FFAFAFAF8AFFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00C1C1C1FFF7F7F7FFD5D5D5FFB6B6B687FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00C4C4C4FFD9D9D9FFBEBEBE84FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00C8C8C8FFC5C5C581FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00CBCBCB7EFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+    }
+    NumGlyphs = 0
+    OnClick = btnGrab1Click
+    ShowHint = True
+    ParentShowHint = False
+  end
+  object pmSelectOffset: TPopupMenu
+    left = 536
+    top = 264
+    object mnuSelectTopLeft: TMenuItem
+      Caption = 'Выбрать Верхний Левый Угол'
+      OnClick = mnuSelectTopLeftClick
+    end
+    object mnuSelectTopRight: TMenuItem
+      Caption = 'Выбрать Верхний Правый Угол'
+      OnClick = mnuSelectTopLeftClick
+    end
+    object mnuSelectBottomLeft: TMenuItem
+      Caption = 'Выбрать Нижний Левый Угол'
+      Checked = True
+      OnClick = mnuSelectTopLeftClick
+    end
+    object mnuSelectBottomRight: TMenuItem
+      Caption = 'Выбрать Нижний Правый Угол'
+      OnClick = mnuSelectTopLeftClick
+    end
+  end
+end

@@ -1,0 +1,48 @@
+object frmInitialize: TfrmInitialize
+  Cursor = crHourGlass
+  Left = 1190
+  Height = 360
+  Top = 662
+  Width = 640
+  AlphaBlend = True
+  AlphaBlendValue = 240
+  BorderIcons = []
+  BorderStyle = bsNone
+  Caption = 'Пожалуйста подождите ...'
+  ClientHeight = 360
+  ClientWidth = 640
+  Font.Height = -11
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '0.9.30.2'
+  object imgSplah: TImage
+    Cursor = crHourGlass
+    Left = 0
+    Height = 360
+    Top = 0
+    Width = 640
+    Align = alClient
+    Center = True
+  end
+  object lblStatus: TLabel
+    Cursor = crHourGlass
+    Left = 0
+    Height = 32
+    Top = 304
+    Width = 640
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Пожалуйста подождите...'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clWhite
+    Font.Height = -16
+    Font.Name = 'Consolas'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    Layout = tlCenter
+    ParentColor = False
+    ParentFont = False
+    WordWrap = True
+  end
+end

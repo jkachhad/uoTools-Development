@@ -1,0 +1,12 @@
+inherited frmSurfStretchSettings: TfrmSurfStretchSettings
+  Left = 1122
+  Height = 71
+  Top = 613
+  Width = 249
+  Caption = 'Опции сглаживания меша'
+  OnCreate = FormCreate
+  OnShow = FormShow
+  inherited tmClose: TTimer
+    left = 80
+  end
+end

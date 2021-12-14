@@ -1,0 +1,12 @@
+inherited frmSurfElevateSettings: TfrmSurfElevateSettings
+  Left = 1122
+  Height = 80
+  Top = 613
+  Width = 244
+  Caption = 'Опции редактирования меша'
+  OnCreate = FormCreate
+  OnShow = FormShow
+  inherited tmClose: TTimer
+    left = 80
+  end
+end

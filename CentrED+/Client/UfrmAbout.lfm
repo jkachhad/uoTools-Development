@@ -1,0 +1,232 @@
+object frmAbout: TfrmAbout
+  Left = 1412
+  Height = 255
+  Top = 424
+  Width = 324
+  AutoSize = True
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'О программе CentrED+'
+  ClientHeight = 255
+  ClientWidth = 324
+  Color = clBlack
+  Font.Height = -11
+  OnCreate = FormCreate
+  OnHide = FormHide
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '0.9.30.2'
+  object Panel3: TPanel
+    AnchorSideTop.Control = Label3
+    Left = 8
+    Height = 22
+    Top = 225
+    Width = 308
+    Align = alBottom
+    BorderSpacing.Around = 8
+    BevelOuter = bvNone
+    ClientHeight = 22
+    ClientWidth = 308
+    TabOrder = 1
+    object btnClose: TButton
+      AnchorSideTop.Control = Panel3
+      Left = 0
+      Height = 22
+      Top = 0
+      Width = 96
+      Align = alLeft
+      BorderSpacing.InnerBorder = 4
+      Caption = 'Закрыть'
+      OnClick = btnCloseClick
+      TabOrder = 0
+    end
+  end
+  object Panel4: TPanel
+    Left = 0
+    Height = 96
+    Top = 124
+    Width = 324
+    Align = alTop
+    BevelOuter = bvNone
+    ClientHeight = 96
+    ClientWidth = 324
+    Color = clBlack
+    ParentColor = False
+    TabOrder = 2
+    object Label3: TLabel
+      Left = 8
+      Height = 28
+      Top = 61
+      Width = 308
+      Align = alTop
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 12
+      BorderSpacing.Right = 8
+      Caption = 'Ultima(tm) Online (c)  1997 Electronic Arts Inc. Ultima, the UO logo, Are You With Us?, ORIGIN, the ORIGIN logo and We create worlds are trademarks or registered trademarks of Electronic Arts Inc. in the U.S. and/or other countries. All rights reserved.'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Color = 6836796
+      Font.Height = -8
+      Font.Name = 'Microsoft Sans Serif'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentColor = False
+      ParentFont = False
+      WordWrap = True
+    end
+    object Label8: TLabel
+      AnchorSideTop.Control = Owner
+      AnchorSideBottom.Side = asrBottom
+      Left = 8
+      Height = 49
+      Top = 0
+      Width = 308
+      Align = alTop
+      BorderSpacing.Left = 8
+      BorderSpacing.Right = 8
+      Caption = '"UO CentrED+" (c) 2013 StaticZ (email: staticz@uoquint.ru)'#13#10'Special for "UO: Quintessence" (www.uoquint.ru) server.'#13#10'"UO CentrED+" is a modification of "UO CentrED" ver 0.6.1'#13#10'original "UO CentrED" (c) 2009 Andreas Schneider'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 14405055
+      Font.Height = -9
+      Font.Name = 'Microsoft Sans Serif'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      WordWrap = True
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 116
+    Top = 0
+    Width = 324
+    Align = alTop
+    BorderSpacing.Bottom = 8
+    BevelOuter = bvNone
+    ClientHeight = 116
+    ClientWidth = 324
+    Color = clOlive
+    ParentColor = False
+    TabOrder = 0
+    OnClick = Panel2Click
+    object imgLogo: TImage
+      Left = 0
+      Height = 116
+      Top = 0
+      Width = 324
+      Align = alClient
+      Proportional = True
+      Stretch = True
+    end
+    object lblVersion: TLabel
+      Left = 200
+      Height = 31
+      Top = 80
+      Width = 99
+      Align = alCustom
+      BorderSpacing.Left = 4
+      BorderSpacing.Right = 4
+      Caption = 'Version: 0.0.0'#13#10'  Build: 1401'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Color = clWhite
+      Font.Height = -13
+      Font.Name = 'Consolas'
+      Font.Pitch = fpFixed
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object lblCopyright: TLabel
+      AnchorSideLeft.Control = imgLogo
+      AnchorSideRight.Control = imgLogo
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = imgLogo
+      AnchorSideBottom.Side = asrBottom
+      Left = 28
+      Height = 15
+      Top = 97
+      Width = 162
+      Align = alCustom
+      Alignment = taCenter
+      Anchors = [akLeft, akBottom]
+      BorderSpacing.Left = 24
+      BorderSpacing.Around = 4
+      Caption = 'Project of uoquint team'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Color = clWhite
+      Font.Height = -12
+      Font.Name = 'Consolas'
+      Font.Pitch = fpFixed
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object lblWebLink: TLabel
+      AnchorSideLeft.Control = imgLogo
+      AnchorSideTop.Control = lblVersion
+      AnchorSideRight.Control = lblVersion
+      AnchorSideRight.Side = asrBottom
+      Cursor = crHandPoint
+      Left = 26
+      Height = 16
+      Top = 80
+      Width = 148
+      Align = alCustom
+      Alignment = taRightJustify
+      BorderSpacing.Left = 26
+      BorderSpacing.Right = 4
+      Caption = 'http://dev.uoquint.ru'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Color = 14781009
+      Font.Height = -13
+      Font.Name = 'Consolas'
+      Font.Pitch = fpFixed
+      Font.Quality = fqDraft
+      Font.Style = [fsBold, fsUnderline]
+      ParentColor = False
+      ParentFont = False
+      OnClick = lblWebLinkClick
+      OnMouseEnter = lblWebLinkMouseEnter
+      OnMouseLeave = lblWebLinkMouseLeave
+    end
+  end
+  object Panel5: TPanel
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 186
+    Height = 40
+    Top = 207
+    Width = 130
+    Align = alCustom
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Around = 8
+    BevelOuter = bvNone
+    BorderStyle = bsSingle
+    ClientHeight = 36
+    ClientWidth = 126
+    ParentColor = False
+    TabOrder = 3
+    Visible = False
+    object imgBaner: TImage
+      Cursor = crHandPoint
+      Left = 0
+      Height = 36
+      Hint = 'Перейти на сайт "www.uoquint.ru"'
+      Top = 0
+      Width = 126
+      Align = alClient
+      Center = True
+      OnClick = imgBanerClick
+      OnMouseEnter = imgBanerMouseEnter
+      OnMouseLeave = imgBanerMouseLeave
+      ParentShowHint = False
+      Proportional = True
+      ShowHint = True
+    end
+  end
+end

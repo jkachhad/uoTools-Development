@@ -1,0 +1,206 @@
+inherited frmFillSettings: TfrmFillSettings
+  Left = 1248
+  Height = 377
+  Top = 177
+  Width = 469
+  Caption = 'Опции заливки'
+  ClientHeight = 377
+  ClientWidth = 469
+  OnCreate = FormCreate
+  OnShow = FormShow
+  object vdtLastPreview: TVirtualDrawTree[0]
+    Tag = -1
+    AnchorSideLeft.Control = cbCategory
+    AnchorSideTop.Control = gbHue
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = gbHue
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Cursor = crHandPoint
+    Left = 4
+    Height = 320
+    Hint = '-'
+    Top = 53
+    Width = 64
+    Anchors = [akTop, akLeft, akBottom]
+    BorderSpacing.Top = 2
+    BorderSpacing.Bottom = 4
+    BorderStyle = bsNone
+    Color = clBlack
+    Colors.DropMarkColor = 16762250
+    Colors.DropTargetColor = 16762250
+    Colors.DropTargetBorderColor = 16762250
+    Colors.FocusedSelectionColor = 16762250
+    Colors.FocusedSelectionBorderColor = 16762250
+    Colors.HotColor = clYellow
+    Colors.SelectionRectangleBlendColor = 16762250
+    Colors.SelectionRectangleBorderColor = 16762250
+    Colors.UnfocusedSelectionColor = 16769734
+    Colors.UnfocusedSelectionBorderColor = 16769734
+    Constraints.MinHeight = 64
+    DefaultNodeHeight = 44
+    DragMode = dmAutomatic
+    DragOperations = []
+    DragType = dtVCL
+    Header.AutoSizeIndex = -1
+    Header.Columns = <>
+    Header.DefaultHeight = 17
+    Header.MainColumn = -1
+    Header.Options = [hoShowHint]
+    Header.ParentFont = True
+    Header.Style = hsFlatButtons
+    HintMode = hmHint
+    ParentShowHint = False
+    ScrollBarOptions.ScrollBars = ssNone
+    ShowHint = True
+    TabOrder = 1
+    TreeOptions.AutoOptions = [toAutoScroll, toAutoScrollOnExpand, toAutoTristateTracking, toAutoDeleteMovedNodes]
+    TreeOptions.MiscOptions = [toFullRepaintOnResize, toInitOnSave, toToggleOnDblClick, toWheelPanning, toFullRowDrag]
+    TreeOptions.PaintOptions = [toHideFocusRect, toShowButtons, toShowDropmark, toThemeAware, toUseBlendedImages, toStaticBackground]
+    TreeOptions.SelectionOptions = [toMultiSelect]
+    Visible = False
+    OnDrawNode = vdtPreviewDrawNode
+  end
+  object vdtEntryPreview: TVirtualDrawTree[1]
+    Tag = -1
+    AnchorSideLeft.Control = vdtLastPreview
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = vdtLastPreview
+    AnchorSideRight.Control = gbHue
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = vdtLastPreview
+    AnchorSideBottom.Side = asrBottom
+    Cursor = crHandPoint
+    Left = 72
+    Height = 320
+    Hint = '-'
+    Top = 53
+    Width = 393
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Left = 4
+    BorderStyle = bsNone
+    Color = clBlack
+    Colors.DropMarkColor = 16762250
+    Colors.DropTargetColor = 16762250
+    Colors.DropTargetBorderColor = 16762250
+    Colors.FocusedSelectionColor = 16762250
+    Colors.FocusedSelectionBorderColor = 16762250
+    Colors.HotColor = clYellow
+    Colors.SelectionRectangleBlendColor = 16762250
+    Colors.SelectionRectangleBorderColor = 16762250
+    Colors.UnfocusedSelectionColor = 16769734
+    Colors.UnfocusedSelectionBorderColor = 16769734
+    Constraints.MinHeight = 64
+    DefaultNodeHeight = 44
+    DragMode = dmAutomatic
+    DragOperations = []
+    DragType = dtVCL
+    Header.AutoSizeIndex = -1
+    Header.Columns = <>
+    Header.DefaultHeight = 17
+    Header.MainColumn = -1
+    Header.Options = [hoShowHint]
+    Header.ParentFont = True
+    Header.Style = hsFlatButtons
+    HintMode = hmHint
+    ParentShowHint = False
+    ScrollBarOptions.AlwaysVisible = True
+    ScrollBarOptions.ScrollBars = ssVertical
+    ShowHint = True
+    TabOrder = 5
+    TreeOptions.AutoOptions = [toAutoScroll, toAutoScrollOnExpand, toAutoTristateTracking, toAutoDeleteMovedNodes]
+    TreeOptions.MiscOptions = [toFullRepaintOnResize, toInitOnSave, toToggleOnDblClick, toWheelPanning, toFullRowDrag]
+    TreeOptions.PaintOptions = [toHideFocusRect, toShowButtons, toShowDropmark, toThemeAware, toUseBlendedImages, toStaticBackground]
+    TreeOptions.SelectionOptions = [toMultiSelect]
+    Visible = False
+    OnDrawNode = vdtPreviewDrawNode
+  end
+  object gbHue: TGroupBox[2]
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 239
+    Height = 49
+    Top = 2
+    Width = 226
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 2
+    BorderSpacing.Right = 4
+    Caption = 'Цвет (Только для Статики)'
+    ClientHeight = 31
+    ClientWidth = 222
+    TabOrder = 0
+    object pbHue: TPaintBox
+      Cursor = crHandPoint
+      Left = 4
+      Height = 27
+      Top = 0
+      Width = 214
+      Align = alClient
+      BorderSpacing.Left = 4
+      BorderSpacing.Right = 4
+      BorderSpacing.Bottom = 4
+      OnClick = pbHueClick
+      OnPaint = pbHuePaint
+    end
+  end
+  object cbCategory: TComboBox[3]
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = lblFillType
+    AnchorSideTop.Side = asrBottom
+    AnchorSideBottom.Side = asrBottom
+    Left = 4
+    Height = 23
+    Top = 20
+    Width = 120
+    BorderSpacing.Left = 4
+    BorderSpacing.Top = 1
+    ItemHeight = 15
+    Sorted = True
+    Style = csDropDownList
+    TabOrder = 2
+  end
+  object cbFillReview: TCheckBox[4]
+    AnchorSideLeft.Control = cbFillConfirm
+    AnchorSideBottom.Control = cbFillConfirm
+    Left = 132
+    Height = 19
+    Top = 7
+    Width = 103
+    Anchors = [akLeft, akBottom]
+    Caption = 'Предпросмотр'
+    TabOrder = 3
+  end
+  object cbFillConfirm: TCheckBox[5]
+    AnchorSideLeft.Control = cbCategory
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Side = asrBottom
+    AnchorSideBottom.Control = gbHue
+    AnchorSideBottom.Side = asrBottom
+    Left = 132
+    Height = 19
+    Top = 26
+    Width = 107
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.Left = 8
+    BorderSpacing.Bottom = 6
+    Caption = 'Подтверждение'
+    TabOrder = 4
+  end
+  object lblFillType: TLabel[6]
+    AnchorSideLeft.Control = cbCategory
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 4
+    Height = 16
+    Top = 3
+    Width = 72
+    BorderSpacing.Top = 3
+    Caption = 'Тип заливки:'
+    ParentColor = False
+  end
+  inherited tmClose: TTimer[7]
+    left = 80
+  end
+end
