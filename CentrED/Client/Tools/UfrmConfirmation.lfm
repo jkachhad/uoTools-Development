@@ -1,0 +1,37 @@
+object frmConfirmation: TfrmConfirmation
+  Left = 290
+  Height = 43
+  Top = 171
+  Width = 108
+  BorderIcons = []
+  BorderStyle = bsToolWindow
+  Caption = 'Apply?'
+  ClientHeight = 43
+  ClientWidth = 108
+  Font.Height = -11
+  LCLVersion = '0.9.25'
+  object btnYes: TButton
+    Left = 8
+    Height = 25
+    Top = 8
+    Width = 40
+    BorderSpacing.InnerBorder = 4
+    Caption = 'Yes'
+    Default = True
+    ModalResult = 6
+    ParentFont = True
+    TabOrder = 0
+  end
+  object btnNo: TButton
+    Left = 56
+    Height = 25
+    Top = 8
+    Width = 40
+    BorderSpacing.InnerBorder = 4
+    Cancel = True
+    Caption = 'No'
+    ModalResult = 7
+    ParentFont = True
+    TabOrder = 1
+  end
+end

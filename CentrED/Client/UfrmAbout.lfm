@@ -1,0 +1,147 @@
+object frmAbout: TfrmAbout
+  Left = 290
+  Height = 308
+  Top = 171
+  Width = 354
+  AutoSize = True
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'About CentrED'
+  ClientHeight = 308
+  ClientWidth = 354
+  Font.Height = -11
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '0.9.31'
+  object Label3: TLabel
+    Left = 8
+    Height = 53
+    Top = 178
+    Width = 338
+    Align = alTop
+    BorderSpacing.Top = 16
+    BorderSpacing.Around = 8
+    Caption = 'Ultima(tm) Online (c)  1997 Electronic Arts Inc. Ultima, the UO logo, Are You With Us?, ORIGIN, the ORIGIN logo and We create worlds are trademarks or registered trademarks of Electronic Arts Inc. in the U.S. and/or other countries. All rights reserved.'
+    ParentColor = False
+    WordWrap = True
+  end
+  object Label5: TLabel
+    Left = 8
+    Height = 14
+    Top = 87
+    Width = 338
+    Align = alTop
+    BorderSpacing.Left = 8
+    BorderSpacing.Right = 8
+    Caption = 'It is using the following great components:'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 16
+    Height = 53
+    Top = 101
+    Width = 330
+    Align = alTop
+    BorderSpacing.Left = 16
+    BorderSpacing.Right = 8
+    Caption = '- Vampyre Imaging Lib by Marek Mauder'#13#10'- lNet by Ales Katona and Micha Nelissen'#13#10'- VirtualTrees by Mike Lischke'#13#10'- Silk Icons by Mark James'
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 8
+    Height = 14
+    Top = 73
+    Width = 338
+    Align = alTop
+    BorderSpacing.Left = 8
+    BorderSpacing.Right = 8
+    Caption = 'CentrED has been developed using Lazarus and FreePascal.'
+    ParentColor = False
+    WordWrap = True
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 65
+    Top = 0
+    Width = 354
+    Align = alTop
+    AutoSize = True
+    BorderSpacing.Bottom = 8
+    BevelOuter = bvNone
+    ClientHeight = 65
+    ClientWidth = 354
+    TabOrder = 0
+    object Panel1: TPanel
+      Left = 0
+      Height = 65
+      Top = 0
+      Width = 190
+      AutoSize = True
+      BevelInner = bvRaised
+      BevelOuter = bvLowered
+      ClientHeight = 65
+      ClientWidth = 190
+      TabOrder = 0
+      object Label1: TLabel
+        Left = 2
+        Height = 38
+        Top = 2
+        Width = 186
+        Align = alTop
+        Alignment = taCenter
+        AutoSize = False
+        Caption = 'UO CentrED'
+        Font.Height = -29
+        Font.Style = [fsBold]
+        Layout = tlCenter
+        ParentColor = False
+        ParentFont = False
+      end
+      object lblVersion: TLabel
+        Left = 6
+        Height = 1
+        Top = 40
+        Width = 178
+        Align = alTop
+        Alignment = taRightJustify
+        BorderSpacing.Left = 4
+        BorderSpacing.Right = 4
+        ParentColor = False
+      end
+      object lblCopyright: TLabel
+        Left = 6
+        Height = 14
+        Top = 45
+        Width = 178
+        Align = alTop
+        Alignment = taCenter
+        BorderSpacing.Around = 4
+        Caption = 'Copyright 2012 Andreas Schneider'
+        ParentColor = False
+      end
+    end
+  end
+  object Panel3: TPanel
+    Left = 8
+    Height = 25
+    Top = 239
+    Width = 338
+    Align = alTop
+    BorderSpacing.Around = 8
+    BevelOuter = bvNone
+    ClientHeight = 25
+    ClientWidth = 338
+    TabOrder = 1
+    object btnClose: TButton
+      Left = 263
+      Height = 25
+      Top = 0
+      Width = 75
+      Align = alRight
+      BorderSpacing.InnerBorder = 4
+      Caption = 'Close'
+      OnClick = btnCloseClick
+      TabOrder = 0
+    end
+  end
+end

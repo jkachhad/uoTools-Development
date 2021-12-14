@@ -1,0 +1,59 @@
+inherited frmVirtualLayer: TfrmVirtualLayer
+  Left = 290
+  Height = 82
+  Top = 171
+  Width = 210
+  ActiveControl = cbShowLayer
+  Caption = 'Virtual Layer'
+  ClientHeight = 82
+  ClientWidth = 210
+  object tbZ: TTrackBar[0]
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = seZ
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 8
+    Height = 36
+    Top = 37
+    Width = 194
+    Frequency = 10
+    Max = 127
+    Min = -128
+    OnChange = tbZChange
+    PageSize = 1
+    Position = 0
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Around = 8
+    TabOrder = 0
+  end
+  object cbShowLayer: TCheckBox[1]
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = seZ
+    AnchorSideTop.Side = asrCenter
+    Left = 8
+    Height = 22
+    Top = 7
+    Width = 126
+    BorderSpacing.Left = 8
+    Caption = 'Show Layer at Z:'
+    OnChange = cbShowLayerChange
+    TabOrder = 1
+  end
+  object seZ: TSpinEdit[2]
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 152
+    Height = 21
+    Top = 8
+    Width = 50
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    MaxValue = 127
+    MinValue = -128
+    OnChange = seZChange
+    TabOrder = 2
+  end
+end

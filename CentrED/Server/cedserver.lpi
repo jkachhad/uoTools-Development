@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <General>
+      <Flags>
+        <MainUnitHasUsesSectionForAllUnits Value="False"/>
+        <LRSInOutputDirectory Value="False"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+    </General>
+    <VersionInfo>
+      <UseVersionInfo Value="True"/>
+      <MinorVersionNr Value="6"/>
+      <RevisionNr Value="4"/>
+      <BuildNr Value="240"/>
+      <StringTable CompanyName="AKS DataBasis" FileDescription="CentrED Server" InternalName="CentrED Server" LegalCopyright="(c) 2013 Andreas Schneider" OriginalFilename="cedserver.exe" ProductName="CentrED" ProductVersion="0.6.4"/>
+    </VersionInfo>
+    <BuildModes Count="7">
+      <Item1 Name="default" Default="True"/>
+      <Item2 Name="Release.Win32">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="../Server.bin/cedserver"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="..;../Imaging"/>
+            <OtherUnitFiles Value="..;../UOLib;../MulProvider;../Imaging/ZLib"/>
+            <UnitOutputDirectory Value="../obj/$(TargetCPU)-$(TargetOS)"/>
+            <SrcPath Value="..;../UOLib;../MulProvider;../Imaging/ZLib"/>
+          </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <CStyleOperator Value="False"/>
+              <UseAnsiStrings Value="False"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <TargetProcessor Value="pentiumm"/>
+            <TargetCPU Value="i386"/>
+            <TargetOS Value="win32"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <UseLineInfoUnit Value="False"/>
+              <StripSymbols Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+          </Linking>
+          <Other>
+            <CustomOptions Value="-dNoLogging"/>
+          </Other>
+        </CompilerOptions>
+      </Item2>
+      <Item3 Name="Release.Linux.x86">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="../Server.bin/cedserver.x86"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="..;../Imaging"/>
+            <OtherUnitFiles Value="..;../UOLib;../MulProvider;../Imaging/ZLib"/>
+            <UnitOutputDirectory Value="../obj/$(TargetCPU)-$(TargetOS)"/>
+            <SrcPath Value="..;../UOLib;../MulProvider;../Imaging/ZLib"/>
+          </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <CStyleOperator Value="False"/>
+              <UseAnsiStrings Value="False"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <TargetProcessor Value="pentiumm"/>
+            <TargetCPU Value="i386"/>
+            <TargetOS Value="linux"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <UseLineInfoUnit Value="False"/>
+              <StripSymbols Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+          </Linking>
+          <Other>
+            <CustomOptions Value="-dNoLogging"/>
+          </Other>
+        </CompilerOptions>
+      </Item3>
+      <Item4 Name="Release.Linux.x64">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="../Server.bin/cedserver.x64"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="..;../Imaging"/>
+            <OtherUnitFiles Value="..;../UOLib;../MulProvider;../Imaging/ZLib"/>
+            <UnitOutputDirectory Value="../obj/$(TargetCPU)-$(TargetOS)"/>
+            <SrcPath Value="..;../UOLib;../MulProvider;../Imaging/ZLib"/>
+          </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <CStyleOperator Value="False"/>
+              <UseAnsiStrings Value="False"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <TargetCPU Value="x86_64"/>
+            <TargetOS Value="linux"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <UseLineInfoUnit Value="False"/>
+              <StripSymbols Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+          </Linking>
+          <Other>
+            <CustomOptions Value="-dNoLogging"/>
+          </Other>
+        </CompilerOptions>
+      </Item4>
+      <Item5 Name="Debug.Win32">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="../Server.bin/cedserver"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="..;../Imaging"/>
+            <OtherUnitFiles Value="..;../UOLib;../MulProvider;../Imaging/ZLib"/>
+            <UnitOutputDirectory Value="../obj/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <CStyleOperator Value="False"/>
+              <UseAnsiStrings Value="False"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <Checks>
+              <OverflowChecks Value="True"/>
+            </Checks>
+            <TargetProcessor Value="pentiumm"/>
+            <TargetCPU Value="i386"/>
+            <TargetOS Value="win32"/>
+          </CodeGeneration>
+          <Other>
+            <CustomOptions Value="-dNoLogging"/>
+          </Other>
+        </CompilerOptions>
+      </Item5>
+      <Item6 Name="Debug.Linux.x86">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="../Server.bin/cedserver"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="..;../Imaging"/>
+            <OtherUnitFiles Value="..;../UOLib;../MulProvider;../Imaging/ZLib"/>
+            <UnitOutputDirectory Value="../obj/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <CStyleOperator Value="False"/>
+              <UseAnsiStrings Value="False"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <Checks>
+              <OverflowChecks Value="True"/>
+            </Checks>
+            <TargetProcessor Value="pentiumm"/>
+            <TargetCPU Value="i386"/>
+            <TargetOS Value="linux"/>
+          </CodeGeneration>
+          <Other>
+            <CustomOptions Value="-dNoLogging"/>
+          </Other>
+        </CompilerOptions>
+      </Item6>
+      <Item7 Name="Debug.Linux.x64">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="../Server.bin/cedserver"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="..;../Imaging"/>
+            <OtherUnitFiles Value="..;../UOLib;../MulProvider;../Imaging/ZLib"/>
+            <UnitOutputDirectory Value="../obj/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <CStyleOperator Value="False"/>
+              <UseAnsiStrings Value="False"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <Checks>
+              <OverflowChecks Value="True"/>
+            </Checks>
+            <TargetCPU Value="x86_64"/>
+            <TargetOS Value="linux"/>
+          </CodeGeneration>
+          <Other>
+            <CustomOptions Value="-dNoLogging"/>
+          </Other>
+        </CompilerOptions>
+      </Item7>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="2">
+      <Item1>
+        <PackageName Value="multiloglaz"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="lnetbase"/>
+      </Item2>
+    </RequiredPackages>
+    <Units Count="18">
+      <Unit0>
+        <Filename Value="cedserver.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="UConfig.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="UCEDServer.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="UNetState.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="UAccount.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="UConnectionHandling.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="URadarMap.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="ULargeScaleOperations.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="../UInterfaces.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="UPacketHandlers.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="ULandscape.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="UPackets.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="UAdminHandling.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="UClientHandling.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="../UOLib/UStatics.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="../UOLib/UMap.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="UMapManagement.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="URegions.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit17>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <Target>
+      <Filename Value="../Server.bin/cedserver"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="..;../Imaging"/>
+      <OtherUnitFiles Value="..;../UOLib;../MulProvider;../Imaging/ZLib"/>
+      <UnitOutputDirectory Value="../obj/$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <CStyleOperator Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2Set"/>
+      </Debugging>
+    </Linking>
+  </CompilerOptions>
+</CONFIG>
