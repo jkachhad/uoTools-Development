@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
+    <PackageId>SpriteFontPlus</PackageId>
+    <AssemblyName>SpriteFontPlus</AssemblyName>
+    <DefineConstants>$(DefineConstants);MONOGAME</DefineConstants>
+    <OutputPath>bin\MonoGame\$(Configuration)</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Framework.Portable" PrivateAssets="All" Version="3.6.0.1625" />
+    <PackageReference Include="Cyotek.Drawing.BitmapFont" Version="$(CyotekDrawingBitmapFontVersion)" />
+    <PackageReference Include="StbImageSharp" Version="$(StbImageSharpVersion)" />
+    <PackageReference Include="StbTrueTypeSharp" Version="$(StbTrueTypeSharpVersion)" />
+  </ItemGroup>
+</Project>

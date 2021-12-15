@@ -1,0 +1,30 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="SonarAnalyzer.CSharp" Version="8.26.0.34506">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="JetBrains.Annotations" Version="2020.1.0" PrivateAssets="all"/>
+        <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net40" Version="1.0.2">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <AdditionalFiles Include="..\..\stylecop.json">
+            <InProject>true</InProject>
+        </AdditionalFiles>
+    </ItemGroup>
+    <PropertyGroup>
+        <CodeAnalysisRuleSet>..\..\stylecop.ruleset</CodeAnalysisRuleSet>
+        <InProject>true</InProject>
+    </PropertyGroup>
+</Project>
