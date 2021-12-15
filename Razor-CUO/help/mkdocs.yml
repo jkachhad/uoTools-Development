@@ -1,0 +1,100 @@
+site_name: Razor - Ultima Online Assistant
+site_description: Razor is a free tool designed to help with simple tasks while playing Ultima Online
+site_author: Project maintained by Mark Wagner (Quick)
+site_url: http://www.razorce.com
+copyright: Copyright 2021 - Mark Wagner (Quick)
+repo_url: https://github.com/markdwags/Razor
+repo_name: Razor
+edit_uri: "tree/master/help/docs"
+nav:
+- Home: index.md
+- Download: download.md
+- Install:
+    - Windows: install/windows.md
+    - Linux: install/linux.md
+- Release Notes: releasenotes.md
+- FAQ: faq.md
+- Help Guide:
+    - Help Overview: help/index.md    
+    - General: help/general.md
+    - Options: help/options.md    
+    - Display/Counters: help/displaycounters.md
+    - Arm/Dress: help/armdress.md
+    - Skills: help/skills.md
+    - Agents: help/agents.md
+    - Filters: help/filters.md
+    - Hot Keys: help/hotkeys.md
+    - Macros: help/macros.md
+    - Scripts: help/scripts.md
+    - Friends: help/friends.md    
+    - Screen Shots: help/screenshots.md
+    - Advanced: help/advanced.md
+- Scripting Guide:
+    - Scripting Overview: guide/index.md
+    - Commands: guide/commands.md
+    - Comments: guide/comments.md
+    - Condition & Loops: guide/conditionloops.md
+    - Expressions: guide/expressions.md
+    - Keywords: guide/keywords.md
+    - Layers: guide/layers.md
+    - Variables: guide/variables.md
+- UOAssist API: uoaapi.md
+
+theme: 
+    name: material    
+    language: en    
+    favicon: images/razor.ico
+    features:
+        - navigation.top
+        - navigation.instant
+    icon:
+        repo: fontawesome/brands/git-alt
+    palette:
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          primary: red
+          accent: blue
+          toggle:
+            icon: material/weather-sunny
+            name: Switch to light mode            
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          primary: red
+          toggle:
+            icon: material/weather-night
+            name: Switch to dark mode
+    font:
+        #text: Mulish
+        #text: Alata
+        #text: Noto Sans JP
+        #text: Lato
+        #text: Ubuntu
+        text: Titillium Web
+        code: Fira Code
+    logo: images/razor.png
+
+markdown_extensions:
+  - admonition
+  - toc:
+        baselevel: 3    
+        permalink: true    
+  - pymdownx.highlight:
+        linenums: true
+        linenums_style: pymdownx.inline
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.keys
+  - pymdownx.tabbed:
+      alternate_style: true 
+
+plugins:
+  - search
+  - git-revision-date
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/markdwags/Razor
+  analytics:
+    provider: google
+    property: G-9ER2MNGL02
