@@ -1,0 +1,698 @@
+GumpStudio_v2.0
+Developer: Voxpire (aka Vorspire)
+Website: n/a | GitHub: https://github.com/Vita-Nex/GumpStudio
+Support @ Discord: https://discord.gg/BWmjh8pY | (Discord Handle: Voxpire#9001)
+
+----
+
+Revision: 3b4ce2aabc274724b1bac69db04e06a0b5d6288f
+Author: VitaNex <admin@vita-nex.com>
+Date: 11/21/2020 1:39:18 PM
+Message:
+Add setting to strip comments from C# output.
+
+----
+Modified: Plugins/CSharpExport/CSharpExport.cs
+Modified: Plugins/SnapToGrid/SnapToGrid.cs
+
+Revision: e25bfe72bc1aef25bffb30e3407a885d0a847a42
+Author: VitaNex <admin@vita-nex.com>
+Date: 11/21/2020 1:07:31 PM
+Message:
+Force settings windows to always stay on top.
+
+----
+Modified: Application/BaseConfig.cs
+
+Revision: c3f5c3b5eaa8f8994015397d69e04fac50e9c842
+Author: VitaNex <admin@vita-nex.com>
+Date: 11/21/2020 12:55:29 PM
+Message:
+Rewrite plugin API and removed extenders.
+
+----
+Added: Application/BaseConfig.cs
+Modified: Application/Elements/BaseElement.cs
+Modified: Application/Elements/GroupElement.cs
+Modified: Application/Elements/ResizeableElement.cs
+Modified: Application/Forms/ClilocBrowser.cs
+Modified: Application/Forms/DesignerForm.cs
+Modified: Application/Forms/PropertyEditor.cs
+Deleted: Application/MoveModeType.cs
+Added: Application/MoveType.cs
+Modified: Application/Plugins/BasePlugin.cs
+Deleted: Application/Plugins/ElementExtender.cs
+Deleted: Application/Plugins/MouseMoveHookEventArgs.cs
+Added: Application/Plugins/MouseMovementEventArgs.cs
+Modified: Application/XMLSettings.cs
+Modified: Plugins/CSharpExport/CSharpExport.cs
+Deleted: Plugins/SnapToGrid/GridConfiguration.cs
+Modified: Plugins/SnapToGrid/SnapToGrid.cs
+Deleted: Plugins/SnapToGrid/SnapToGridExtender.cs
+
+Revision: 068ae9766e2de640f12e7cb88fafa528b7a9d6fe
+Author: VitaNex <admin@vita-nex.com>
+Date: 11/20/2020 8:51:39 PM
+Message:
+Maintainability and housekeeping updates.
+Added generic object property editor form.
+Added settings window for Snap To Grid plugin.
+Added support for hiding the grid while keeping the snap functionality.
+----
+Modified: Application/Forms/DesignerForm.cs
+Added: Application/Forms/PropertyEditor.Designer.cs
+Added: Application/Forms/PropertyEditor.cs
+Added: Application/Forms/PropertyEditor.resx
+Modified: Application/Plugins/BasePlugin.cs
+Modified: Plugins/CSharpExport/CSharpExport.cs
+Modified: Plugins/SnapToGrid/GridConfiguration.cs
+Modified: Plugins/SnapToGrid/SnapToGrid.cs
+
+Revision: 23abddfe5ac56e218e3422bf66dcd79aa72b9afe
+Author: VitaNex <admin@vita-nex.com>
+Date: 11/20/2020 8:53:05 AM
+Message:
+Redundant code removal, core housekeeping & optimizations.
+
+----
+Modified: Application/Elements/AlphaElement.cs
+Modified: Application/Elements/BackgroundElement.cs
+Modified: Application/Elements/BaseElement.cs
+Modified: Application/Elements/ButtonElement.cs
+Modified: Application/Elements/CheckboxElement.cs
+Modified: Application/Elements/GroupElement.cs
+Modified: Application/Elements/HTMLElement.cs
+Modified: Application/Elements/ImageElement.cs
+Modified: Application/Elements/ItemElement.cs
+Modified: Application/Elements/LabelElement.cs
+Modified: Application/Elements/RadioElement.cs
+Modified: Application/Elements/ResizeableElement.cs
+Modified: Application/Elements/TextEntryElement.cs
+Modified: Application/Elements/TiledElement.cs
+Modified: Application/Forms/DesignerForm.cs
+Modified: Application/Forms/PluginManager.cs
+Modified: Application/Forms/SplashBox.cs
+Modified: Plugins/CSharpExport/CSharpExport.cs
+Modified: Plugins/SnapToGrid/SnapToGrid.cs
+
+Revision: 92cea5085753a718089f1cc14ac22bf06ead7699
+Author: VitaNex <admin@vita-nex.com>
+Date: 11/19/2020 9:15:48 PM
+Message:
+Housekeeping.
+
+----
+Modified: .editorconfig
+Modified: Application/Elements/BaseElement.cs
+Modified: Application/Elements/ButtonElement.cs
+Modified: Application/Elements/CheckboxElement.cs
+Modified: Application/Elements/HTMLElement.cs
+Modified: Application/Elements/ImageElement.cs
+Modified: Application/Elements/ItemElement.cs
+Modified: Application/Elements/TextEntryElement.cs
+Modified: Application/Forms/DesignerForm.cs
+Modified: Plugins/CSharpExport/CSharpExport.cs
+
+Revision: 37f98e901eb10a58cfa7f2cc5cb92e9420acbafb
+Author: VitaNex <admin@vita-nex.com>
+Date: 11/19/2020 9:04:59 PM
+Message:
+CSharpExport plugin Support for exporting current selection.
+
+----
+Modified: Plugins/CSharpExport/CSharpExport.cs
+
+Revision: f1e4a803cf5df342625ed046363f64a3aad46288
+Author: VitaNex <admin@vita-nex.com>
+Date: 11/19/2020 9:03:57 PM
+Message:
+Splash & About updates.
+
+----
+Rename: Application/Forms/AboutBox.cs (from Application/Forms/frmAboutBox.cs)
+Rename: Application/Forms/AboutBox.resx (from Application/Forms/frmAboutBox.resx)
+Modified: Application/Forms/DesignerForm.cs
+Rename: Application/Forms/SplashBox.cs (from Application/Forms/frmSplash.cs)
+Rename: Application/Forms/SplashBox.resx (from Application/Forms/frmSplash.resx)
+Modified: Application/GumpStudio.csproj
+
+Revision: 6d85d976c3b7648ffbab699b040baf5a6f42cb79
+Author: VitaNex <admin@vita-nex.com>
+Date: 11/19/2020 6:44:50 PM
+Message:
+Fixed thread safety issue with StringList loading.
+Updated C# export support for missing element functions.
+Fixed the "Copy of" name cascade issue.
+Removed arrow key movement acceleration.
+Added interface for Json export format.
+Normalize names of all elements when importing and copy/pasting.
+Automatically detect and fix potential button/check/radio id conflicts.
+----
+Modified: Application/Elements/BaseElement.cs
+Modified: Application/Elements/ButtonElement.cs
+Modified: Application/Elements/CheckboxElement.cs
+Modified: Application/Elements/GroupElement.cs
+Modified: Application/Elements/HTMLElement.cs
+Added: Application/Elements/IJsonExportable.cs
+Modified: Application/Elements/ImageElement.cs
+Modified: Application/Elements/ItemElement.cs
+Modified: Application/Elements/LabelElement.cs
+Modified: Application/Elements/TextEntryElement.cs
+Modified: Application/Elements/TiledElement.cs
+Modified: Application/Forms/DesignerForm.cs
+Added: Application/Json.cs
+Modified: Plugins/CSharpExport/CSharpExport.cs
+Modified: Ultima/StringList.cs
+
+Revision: 624cbe7e976b7732813c05b5fe3188fc1a6d8435
+Author: VitaNex <admin@vita-nex.com>
+Date: 11/16/2020 3:05:40 AM
+Message:
+Update .editorconfig
+Perform full code clean-up operation.
+----
+Modified: .editorconfig
+Modified: Application/Elements/BackgroundElement.cs
+Modified: Application/Elements/BaseElement.cs
+Modified: Application/Elements/ButtonElement.cs
+Modified: Application/Elements/CheckboxElement.cs
+Modified: Application/Elements/GroupElement.cs
+Modified: Application/Elements/HTMLElement.cs
+Modified: Application/Elements/ImageElement.cs
+Modified: Application/Elements/ItemElement.cs
+Modified: Application/Elements/LabelElement.cs
+Modified: Application/Elements/RadioElement.cs
+Modified: Application/Elements/ResizeableElement.cs
+Modified: Application/Elements/TextEntryElement.cs
+Modified: Application/Elements/TiledElement.cs
+Modified: Application/FontBrowser.cs
+Modified: Application/FontPropEditor.cs
+Modified: Application/Forms/ClilocBrowser.cs
+Modified: Application/Forms/DesignerForm.cs
+Modified: Application/Forms/GumpArtBrowser.cs
+Modified: Application/Forms/LargeTextEditor.cs
+Modified: Application/Forms/PluginManager.cs
+Modified: Application/Forms/Settings.cs
+Modified: Application/Forms/StaticArtBrowser.cs
+Modified: Application/Forms/frmAboutBox.cs
+Modified: Application/Forms/frmSplash.cs
+Modified: Application/GumpIDPropEditor.cs
+Modified: Application/HexHelper.cs
+Modified: Application/HuePickerControl.cs
+Modified: Application/LargeTextPropEditor.cs
+Modified: Application/Plugins/PluginInfo.cs
+Modified: Application/PropertyEditor/ClilocPropEditor.cs
+Modified: Application/PropertyEditor/HuePropEditor.cs
+Modified: Application/PropertyEditor/HuePropStringConverter.cs
+Modified: Application/PropertyEditor/ItemIDPropEditor.cs
+Modified: Application/UndoPoint.cs
+Modified: Application/XMLSettings.cs
+Modified: Plugins/CSharpExport/CSharpExport.cs
+Modified: Plugins/SnapToGrid/SnapToGrid.cs
+Modified: Ultima/ASCIIFont.cs
+Modified: Ultima/AnimationEdit.cs
+Modified: Ultima/Animations.cs
+Modified: Ultima/Animdata.cs
+Modified: Ultima/Art.cs
+Modified: Ultima/CalibrationInfo.cs
+Modified: Ultima/Client.cs
+Modified: Ultima/ClientHandles.cs
+Modified: Ultima/FileIndex.cs
+Modified: Ultima/Files.cs
+Modified: Ultima/Gumps.cs
+Modified: Ultima/Hues.cs
+Modified: Ultima/Light.cs
+Modified: Ultima/Map.cs
+Modified: Ultima/MultiMap.cs
+Modified: Ultima/Multis.cs
+Modified: Ultima/NativeMethods.cs
+Modified: Ultima/ProcessStream.cs
+Modified: Ultima/RadarCol.cs
+Modified: Ultima/SkillGroups.cs
+Modified: Ultima/Skills.cs
+Modified: Ultima/Sound.cs
+Modified: Ultima/SpeechList.cs
+Modified: Ultima/StringEntry.cs
+Modified: Ultima/StringList.cs
+Modified: Ultima/Textures.cs
+Modified: Ultima/TileData.cs
+Modified: Ultima/TileList.cs
+Modified: Ultima/TileMatrix.cs
+Modified: Ultima/TileMatrixPatch.cs
+Modified: Ultima/UnicodeFont.cs
+Modified: Ultima/Verdata.cs
+Modified: Ultima/WindowProcessStream.cs
+
+Revision: df417ce4684c52e44aceffb87cd934d7ac8dd466
+Author: VitaNex <admin@vita-nex.com>
+Date: 11/16/2020 2:00:54 AM
+Message:
+Add .editorconfig
+Perform full code clean-up operation.
+Remove redundant GumpStudioCore namespace.
+----
+Added: .editorconfig
+Modified: Application/ClipBoardMode.cs
+Modified: Application/Elements/AlphaElement.cs
+Modified: Application/Elements/BackgroundElement.cs
+Modified: Application/Elements/BaseElement.cs
+Modified: Application/Elements/ButtonElement.cs
+Modified: Application/Elements/ButtonStateEnum.cs
+Modified: Application/Elements/ButtonTypeEnum.cs
+Modified: Application/Elements/CheckboxElement.cs
+Modified: Application/Elements/GroupElement.cs
+Modified: Application/Elements/GumpProperties.cs
+Modified: Application/Elements/HTMLElement.cs
+Modified: Application/Elements/HTMLElementType.cs
+Modified: Application/Elements/ICSharpExportable.cs
+Modified: Application/Elements/ImageElement.cs
+Modified: Application/Elements/ItemElement.cs
+Modified: Application/Elements/LabelElement.cs
+Modified: Application/Elements/RadioElement.cs
+Modified: Application/Elements/ResizeableElement.cs
+Modified: Application/Elements/TextEntryElement.cs
+Modified: Application/Elements/TiledElement.cs
+Modified: Application/FontBrowser.cs
+Modified: Application/FontPropEditor.cs
+Modified: Application/Forms/ClilocBrowser.cs
+Modified: Application/Forms/DesignerForm.cs
+Modified: Application/Forms/GumpArtBrowser.cs
+Modified: Application/Forms/LargeTextEditor.cs
+Modified: Application/Forms/PluginManager.cs
+Modified: Application/Forms/Settings.cs
+Modified: Application/Forms/StaticArtBrowser.cs
+Modified: Application/Forms/frmAboutBox.cs
+Modified: Application/Forms/frmSplash.cs
+Modified: Application/GlobalObjects.cs
+Modified: Application/GumpCacheEntry.cs
+Modified: Application/GumpDesignerMain.cs
+Modified: Application/GumpIDPropEditor.cs
+Modified: Application/HexHelper.cs
+Modified: Application/HuePickerControl.cs
+Modified: Application/LargeTextPropEditor.cs
+Modified: Application/MoveModeType.cs
+Modified: Application/Plugins/ElementExtender.cs
+Modified: Application/Plugins/MouseMoveHookEventArgs.cs
+Modified: Application/Plugins/PluginInfo.cs
+Modified: Application/PropertyEditor/ClilocPropEditor.cs
+Modified: Application/PropertyEditor/HuePropEditor.cs
+Modified: Application/PropertyEditor/HuePropStringConverter.cs
+Modified: Application/PropertyEditor/ItemIDPropEditor.cs
+Modified: Application/TreeFolder.cs
+Modified: Application/TreeGumpling.cs
+Modified: Application/TreeItem.cs
+Modified: Application/UndoPoint.cs
+Modified: Application/XMLSettings.cs
+Modified: GumpStudio.sln
+Modified: Plugins/CSharpExport/CSharpExport.cs
+Modified: Plugins/SnapToGrid/GridConfiguration.cs
+Modified: Plugins/SnapToGrid/SnapToGrid.cs
+Modified: Plugins/SnapToGrid/SnapToGridExtender.cs
+Modified: Ultima/ASCIIFont.cs
+Modified: Ultima/AnimationEdit.cs
+Modified: Ultima/Animations.cs
+Modified: Ultima/Animdata.cs
+Modified: Ultima/Art.cs
+Modified: Ultima/AssemblyInfo.cs
+Modified: Ultima/CalibrationInfo.cs
+Modified: Ultima/Client.cs
+Modified: Ultima/ClientHandles.cs
+Modified: Ultima/FileIndex.cs
+Modified: Ultima/Files.cs
+Modified: Ultima/Gumps.cs
+Modified: Ultima/Hues.cs
+Modified: Ultima/Light.cs
+Modified: Ultima/Map.cs
+Modified: Ultima/MultiMap.cs
+Modified: Ultima/Multis.cs
+Modified: Ultima/NativeMethods.cs
+Modified: Ultima/ProcessStream.cs
+Modified: Ultima/RadarCol.cs
+Modified: Ultima/SkillGroups.cs
+Modified: Ultima/Skills.cs
+Modified: Ultima/Sound.cs
+Modified: Ultima/SpeechList.cs
+Modified: Ultima/StringEntry.cs
+Modified: Ultima/StringList.cs
+Modified: Ultima/Textures.cs
+Modified: Ultima/TileData.cs
+Modified: Ultima/TileList.cs
+Modified: Ultima/TileMatrix.cs
+Modified: Ultima/TileMatrixPatch.cs
+Modified: Ultima/UnicodeFont.cs
+Modified: Ultima/Verdata.cs
+Modified: Ultima/WindowProcessStream.cs
+
+Revision: 4b29b113fc98bb901b18ea48c96fdb383258cae2
+Author: VitaNex <admin@vita-nex.com>
+Date: 11/16/2020 1:41:06 AM
+Message:
+Resolve issues with loading gump files from older app versions.
+Resolve issues with clipboard copy/paste.
+----
+Modified: Application/Forms/DesignerForm.cs
+
+Revision: a10157a12b8c76446f9fa03c9c3afa6d90eceb58
+Author: VitaNex <admin@vita-nex.com>
+Date: 11/16/2020 1:01:31 AM
+Message:
+Sync projects.
+
+----
+Modified: Plugins/CSharpExport/CSharpExport.csproj
+Modified: Plugins/SnapToGrid/SnapToGrid.csproj
+
+Revision: 93580aa81c586f8fecb33932eeaf01d813da301f
+Author: VitaNex <admin@vita-nex.com>
+Date: 11/15/2020 11:03:51 PM
+Message:
+Sync projects.
+
+----
+Modified: Application/GumpStudio.csproj
+Modified: Plugins/CSharpExport/CSharpExport.csproj
+Modified: Plugins/SnapToGrid/SnapToGrid.csproj
+Modified: Ultima/Ultima.csproj
+
+Revision: 06bc5ae012c7fa3f8a68c31d77d76b2b59386896
+Author: VitaNex <admin@vita-nex.com>
+Date: 11/15/2020 10:44:55 PM
+Message:
+Project restructuring.
+Plugins housekeeping.
+Replace IRunUOExporter with ICSharpExporter.
+----
+Modified: .gitignore
+Rename: Application/ClipBoardMode.cs (from GumpStudio/ClipBoardMode.cs)
+Rename: Application/Elements/AlphaElement.cs (from GumpStudio/Elements/AlphaElement.cs)
+Rename: Application/Elements/BackgroundElement.cs (from GumpStudio/Elements/BackgroundElement.cs)
+Rename: Application/Elements/BaseElement.cs (from GumpStudio/Elements/BaseElement.cs)
+Rename: Application/Elements/ButtonElement.cs (from GumpStudio/Elements/ButtonElement.cs)
+Rename: Application/Elements/ButtonStateEnum.cs (from GumpStudio/Elements/ButtonStateEnum.cs)
+Rename: Application/Elements/ButtonTypeEnum.cs (from GumpStudio/Elements/ButtonTypeEnum.cs)
+Rename: Application/Elements/CheckboxElement.cs (from GumpStudio/Elements/CheckboxElement.cs)
+Rename: Application/Elements/GroupElement.cs (from GumpStudio/Elements/GroupElement.cs)
+Rename: Application/Elements/GumpProperties.cs (from GumpStudio/Elements/GumpProperties.cs)
+Rename: Application/Elements/HTMLElement.cs (from GumpStudio/Elements/HTMLElement.cs)
+Rename: Application/Elements/HTMLElementType.cs (from GumpStudio/Elements/HTMLElementType.cs)
+Added: Application/Elements/ICSharpExportable.cs
+Rename: Application/Elements/ImageElement.cs (from GumpStudio/Elements/ImageElement.cs)
+Rename: Application/Elements/ItemElement.cs (from GumpStudio/Elements/ItemElement.cs)
+Rename: Application/Elements/LabelElement.cs (from GumpStudio/Elements/LabelElement.cs)
+Rename: Application/Elements/RadioElement.cs (from GumpStudio/Elements/RadioElement.cs)
+Rename: Application/Elements/ResizeableElement.cs (from GumpStudio/Elements/ResizeableElement.cs)
+Rename: Application/Elements/TextEntryElement.cs (from GumpStudio/Elements/TextEntryElement.cs)
+Rename: Application/Elements/TiledElement.cs (from GumpStudio/Elements/TiledElement.cs)
+Rename: Application/FontBrowser.cs (from GumpStudio/FontBrowser.cs)
+Rename: Application/FontBrowser.resx (from GumpStudio/FontBrowser.resx)
+Rename: Application/FontPropEditor.cs (from GumpStudio/FontPropEditor.cs)
+Rename: Application/Forms/ClilocBrowser.cs (from GumpStudio/Forms/ClilocBrowser.cs)
+Rename: Application/Forms/ClilocBrowser.resx (from GumpStudio/Forms/ClilocBrowser.resx)
+Rename: Application/Forms/DesignerForm.cs (from GumpStudio/Forms/DesignerForm.cs)
+Rename: Application/Forms/DesignerForm.resx (from GumpStudio/Forms/DesignerForm.resx)
+Rename: Application/Forms/GumpArtBrowser.Designer.cs (from GumpStudio/Forms/GumpArtBrowser.Designer.cs)
+Rename: Application/Forms/GumpArtBrowser.cs (from GumpStudio/Forms/GumpArtBrowser.cs)
+Rename: Application/Forms/GumpArtBrowser.resx (from GumpStudio/Forms/GumpArtBrowser.resx)
+Rename: Application/Forms/LargeTextEditor.cs (from GumpStudio/Forms/LargeTextEditor.cs)
+Rename: Application/Forms/LargeTextEditor.resx (from GumpStudio/Forms/LargeTextEditor.resx)
+Added: Application/Forms/PluginManager.cs
+Rename: Application/Forms/PluginManager.resx (from GumpStudio/Forms/PluginManager.resx)
+Rename: Application/Forms/Settings.cs (from GumpStudio/Forms/Settings.cs)
+Rename: Application/Forms/Settings.resx (from GumpStudio/Forms/Settings.resx)
+Rename: Application/Forms/StaticArtBrowser.cs (from GumpStudio/Forms/StaticArtBrowser.cs)
+Rename: Application/Forms/StaticArtBrowser.resx (from GumpStudio/Forms/StaticArtBrowser.resx)
+Rename: Application/Forms/frmAboutBox.cs (from GumpStudio/Forms/frmAboutBox.cs)
+Rename: Application/Forms/frmAboutBox.resx (from GumpStudio/Forms/frmAboutBox.resx)
+Rename: Application/Forms/frmSplash.cs (from GumpStudio/Forms/frmSplash.cs)
+Rename: Application/Forms/frmSplash.resx (from GumpStudio/Forms/frmSplash.resx)
+Rename: Application/GlobalObjects.cs (from GumpStudio/GlobalObjects.cs)
+Rename: Application/GumpCacheEntry.cs (from GumpStudio/GumpCacheEntry.cs)
+Rename: Application/GumpDesignerMain.cs (from GumpStudio/GumpDesignerMain.cs)
+Rename: Application/GumpIDPropEditor.cs (from GumpStudio/GumpIDPropEditor.cs)
+Added: Application/GumpStudio.csproj
+Rename: Application/HexHelper.cs (from GumpStudio/HexHelper.cs)
+Rename: Application/HuePickerControl.cs (from GumpStudio/HuePickerControl.cs)
+Rename: Application/HuePickerControl.resx (from GumpStudio/HuePickerControl.resx)
+Rename: Application/LargeTextPropEditor.cs (from GumpStudio/LargeTextPropEditor.cs)
+Rename: Application/MoveModeType.cs (from GumpStudio/MoveModeType.cs)
+Added: Application/Plugins/BasePlugin.cs
+Rename: Application/Plugins/ElementExtender.cs (from GumpStudio/Plugins/ElementExtender.cs)
+Rename: Application/Plugins/MouseMoveHookEventArgs.cs (from GumpStudio/Plugins/MouseMoveHookEventArgs.cs)
+Added: Application/Plugins/PluginInfo.cs
+Rename: Application/Properties/Resources.Designer.cs (from GumpStudio/Properties/Resources.Designer.cs)
+Rename: Application/Properties/Resources.resx (from GumpStudio/Properties/Resources.resx)
+Rename: Application/PropertyEditor/ClilocPropEditor.cs (from GumpStudio/PropertyEditor/ClilocPropEditor.cs)
+Rename: Application/PropertyEditor/HuePropEditor.cs (from GumpStudio/PropertyEditor/HuePropEditor.cs)
+Rename: Application/PropertyEditor/HuePropStringConverter.cs (from GumpStudio/PropertyEditor/HuePropStringConverter.cs)
+Rename: Application/PropertyEditor/ItemIDPropEditor.cs (from GumpStudio/PropertyEditor/ItemIDPropEditor.cs)
+Rename: Application/README.md (from GumpStudio/README.md)
+Rename: Application/Resources/Icon.ico (from GumpStudio/Resources/Icon.ico)
+Rename: Application/Resources/PictureBox1.Image.jpg (from GumpStudio/Resources/PictureBox1.Image.jpg)
+Rename: Application/Resources/UOFont.dll (from GumpStudio/Resources/UOFont.dll)
+Rename: Application/Resources/cmdAdd.Image.png (from GumpStudio/Resources/cmdAdd.Image.png)
+Rename: Application/Resources/cmdCache.Image.png (from GumpStudio/Resources/cmdCache.Image.png)
+Rename: Application/Resources/cmdMoveDown.Image.png (from GumpStudio/Resources/cmdMoveDown.Image.png)
+Rename: Application/Resources/cmdMoveUp.Image.png (from GumpStudio/Resources/cmdMoveUp.Image.png)
+Rename: Application/Resources/cmdRemove.Image.png (from GumpStudio/Resources/cmdRemove.Image.png)
+Rename: Application/TreeFolder.cs (from GumpStudio/TreeFolder.cs)
+Rename: Application/TreeGumpling.cs (from GumpStudio/TreeGumpling.cs)
+Rename: Application/TreeItem.cs (from GumpStudio/TreeItem.cs)
+Rename: Application/UndoPoint.cs (from GumpStudio/UndoPoint.cs)
+Rename: Application/XMLSettings.cs (from GumpStudio/XMLSettings.cs)
+Rename: Application/app.config (from GumpStudio/app.config)
+Modified: GumpStudio.sln
+Deleted: GumpStudio/Elements/IRunUOExportable.cs
+Deleted: GumpStudio/Forms/PluginManager.cs
+Deleted: GumpStudio/GumpStudio.csproj
+Deleted: GumpStudio/Plugins/BasePlugin.cs
+Deleted: GumpStudio/Plugins/PluginInfo.cs
+Added: Plugins/CSharpExport/CSharpExport.cs
+Added: Plugins/CSharpExport/CSharpExport.csproj
+Rename: Plugins/SnapToGrid/GridConfiguration.cs (from SnapToGrid/GridConfiguration.cs)
+Added: Plugins/SnapToGrid/SnapToGrid.cs
+Added: Plugins/SnapToGrid/SnapToGrid.csproj
+Rename: Plugins/SnapToGrid/SnapToGridExtender.cs (from SnapToGrid/SnapToGridExtender.cs)
+Deleted: RunUOExport/RunUOExport.cs
+Deleted: RunUOExport/RunUOExport.csproj
+Deleted: SnapToGrid/SnapToGrid.cs
+Deleted: SnapToGrid/SnapToGrid.csproj
+Modified: Ultima/Ultima.csproj
+
+Revision: f80ab4f04f4310e0d60c055fc9eb83d924910a56
+Author: VitaNex <admin@vita-nex.com>
+Date: 11/15/2020 6:10:12 PM
+Message:
+Target .NET 4.8
+
+----
+Modified: .gitignore
+Modified: GumpStudio/GumpStudio.csproj
+Modified: RunUOExport/RunUOExport.csproj
+Modified: SnapToGrid/SnapToGrid.csproj
+Modified: Ultima/Ultima.csproj
+
+Revision: 1a6486c0c27b9b8a9104d225861b1e250b64ef48
+Author: VitaNex <admin@vita-nex.com>
+Date: 11/15/2020 6:04:09 PM
+Message:
+Fixes.
+
+----
+Added: GumpStudio/Resources/UOFont.dll
+Modified: Ultima/Art.cs
+
+Revision: b70bfa7d8fbfac455fb21b6c09c1bf09f4ea3da3
+Author: Merix <miguelamerida.89@gmail.com>
+Date: 8/11/2020 9:34:06 AM
+Message:
+Fix error
+
+----
+Modified: GumpStudio/Elements/HTMLElement.cs
+
+Revision: 0498ffe677cdd3d2ce89f4b445995392b5d30e4e
+Author: Merix <miguelamerida.89@gmail.com>
+Date: 8/11/2020 9:24:40 AM
+Message:
+Fix Html background and scrollbar values
+
+----
+Modified: GumpStudio/Elements/HTMLElement.cs
+
+Revision: b588d00a2e2598567936de3da6ce02c71b8d4d15
+Author: Merix <miguelamerida.89@gmail.com>
+Date: 8/11/2020 6:17:44 AM
+Message:
+Fix AddItem and Label text
+
+----
+Modified: GumpStudio/Elements/ItemElement.cs
+Modified: GumpStudio/Elements/LabelElement.cs
+
+Revision: d9718efb06f04ffe83d6e693a4989ee71e1700bc
+Author: Merix <miguelamerida.89@gmail.com>
+Date: 8/11/2020 3:24:08 AM
+Message:
+Remove old version in releases
+
+----
+Deleted: Releases/GumpStudio-1.9.1-full.nupkg
+Deleted: Releases/GumpStudio-1.9.2-delta.nupkg
+Deleted: Releases/GumpStudio-1.9.2-full.nupkg
+Deleted: Releases/RELEASES
+Deleted: Releases/Setup.msi
+
+Revision: 1254e7d14de92cba98338a0b4079c95372aa6f1e
+Author: Merix <miguelamerida.89@gmail.com>
+Date: 8/11/2020 3:22:22 AM
+Message:
+Remove unnecesary update and remove squirell
+
+----
+Modified: GumpStudio/GumpDesignerMain.cs
+Modified: GumpStudio/GumpStudio.csproj
+Modified: RunUOExport/RunUOExport.csproj
+Modified: SnapToGrid/SnapToGrid.csproj
+
+Revision: 0575eb98cc652307b609a40eadbca0387e4d8014
+Author: Merix <miguelamerida.89@gmail.com>
+Date: 8/11/2020 2:52:00 AM
+Message:
+Added gump studio files
+
+----
+Added: .gitignore
+Added: GumpStudio.sln
+Added: GumpStudio/ClipBoardMode.cs
+Added: GumpStudio/Elements/AlphaElement.cs
+Added: GumpStudio/Elements/BackgroundElement.cs
+Added: GumpStudio/Elements/BaseElement.cs
+Added: GumpStudio/Elements/ButtonElement.cs
+Added: GumpStudio/Elements/ButtonStateEnum.cs
+Added: GumpStudio/Elements/ButtonTypeEnum.cs
+Added: GumpStudio/Elements/CheckboxElement.cs
+Added: GumpStudio/Elements/GroupElement.cs
+Added: GumpStudio/Elements/GumpProperties.cs
+Added: GumpStudio/Elements/HTMLElement.cs
+Added: GumpStudio/Elements/HTMLElementType.cs
+Added: GumpStudio/Elements/IRunUOExportable.cs
+Added: GumpStudio/Elements/ImageElement.cs
+Added: GumpStudio/Elements/ItemElement.cs
+Added: GumpStudio/Elements/LabelElement.cs
+Added: GumpStudio/Elements/RadioElement.cs
+Added: GumpStudio/Elements/ResizeableElement.cs
+Added: GumpStudio/Elements/TextEntryElement.cs
+Added: GumpStudio/Elements/TiledElement.cs
+Added: GumpStudio/FontBrowser.cs
+Added: GumpStudio/FontBrowser.resx
+Added: GumpStudio/FontPropEditor.cs
+Added: GumpStudio/Forms/ClilocBrowser.cs
+Added: GumpStudio/Forms/ClilocBrowser.resx
+Added: GumpStudio/Forms/DesignerForm.cs
+Added: GumpStudio/Forms/DesignerForm.resx
+Added: GumpStudio/Forms/GumpArtBrowser.Designer.cs
+Added: GumpStudio/Forms/GumpArtBrowser.cs
+Added: GumpStudio/Forms/GumpArtBrowser.resx
+Added: GumpStudio/Forms/LargeTextEditor.cs
+Added: GumpStudio/Forms/LargeTextEditor.resx
+Added: GumpStudio/Forms/PluginManager.cs
+Added: GumpStudio/Forms/PluginManager.resx
+Added: GumpStudio/Forms/Settings.cs
+Added: GumpStudio/Forms/Settings.resx
+Added: GumpStudio/Forms/StaticArtBrowser.cs
+Added: GumpStudio/Forms/StaticArtBrowser.resx
+Added: GumpStudio/Forms/frmAboutBox.cs
+Added: GumpStudio/Forms/frmAboutBox.resx
+Added: GumpStudio/Forms/frmSplash.cs
+Added: GumpStudio/Forms/frmSplash.resx
+Added: GumpStudio/GlobalObjects.cs
+Added: GumpStudio/GumpCacheEntry.cs
+Added: GumpStudio/GumpDesignerMain.cs
+Added: GumpStudio/GumpIDPropEditor.cs
+Added: GumpStudio/GumpStudio.csproj
+Added: GumpStudio/HexHelper.cs
+Added: GumpStudio/HuePickerControl.cs
+Added: GumpStudio/HuePickerControl.resx
+Added: GumpStudio/LargeTextPropEditor.cs
+Added: GumpStudio/MoveModeType.cs
+Added: GumpStudio/Plugins/BasePlugin.cs
+Added: GumpStudio/Plugins/ElementExtender.cs
+Added: GumpStudio/Plugins/MouseMoveHookEventArgs.cs
+Added: GumpStudio/Plugins/PluginInfo.cs
+Added: GumpStudio/Properties/Resources.Designer.cs
+Added: GumpStudio/Properties/Resources.resx
+Added: GumpStudio/PropertyEditor/ClilocPropEditor.cs
+Added: GumpStudio/PropertyEditor/HuePropEditor.cs
+Added: GumpStudio/PropertyEditor/HuePropStringConverter.cs
+Added: GumpStudio/PropertyEditor/ItemIDPropEditor.cs
+Added: GumpStudio/README.md
+Added: GumpStudio/Resources/Icon.ico
+Added: GumpStudio/Resources/PictureBox1.Image.jpg
+Added: GumpStudio/Resources/cmdAdd.Image.png
+Added: GumpStudio/Resources/cmdCache.Image.png
+Added: GumpStudio/Resources/cmdMoveDown.Image.png
+Added: GumpStudio/Resources/cmdMoveUp.Image.png
+Added: GumpStudio/Resources/cmdRemove.Image.png
+Added: GumpStudio/TreeFolder.cs
+Added: GumpStudio/TreeGumpling.cs
+Added: GumpStudio/TreeItem.cs
+Added: GumpStudio/UndoPoint.cs
+Added: GumpStudio/XMLSettings.cs
+Added: GumpStudio/app.config
+Modified: README.md
+Added: Releases/GumpStudio-1.9.1-full.nupkg
+Added: Releases/GumpStudio-1.9.2-delta.nupkg
+Added: Releases/GumpStudio-1.9.2-full.nupkg
+Added: Releases/RELEASES
+Added: Releases/Setup.msi
+Added: RunUOExport/RunUOExport.cs
+Added: RunUOExport/RunUOExport.csproj
+Added: SnapToGrid/GridConfiguration.cs
+Added: SnapToGrid/SnapToGrid.cs
+Added: SnapToGrid/SnapToGrid.csproj
+Added: SnapToGrid/SnapToGridExtender.cs
+Added: Ultima/ASCIIFont.cs
+Added: Ultima/AnimationEdit.cs
+Added: Ultima/Animations.cs
+Added: Ultima/Animdata.cs
+Added: Ultima/Art.cs
+Added: Ultima/AssemblyInfo.cs
+Added: Ultima/CalibrationInfo.cs
+Added: Ultima/Client.cs
+Added: Ultima/ClientHandles.cs
+Added: Ultima/FileIndex.cs
+Added: Ultima/Files.cs
+Added: Ultima/Gumps.cs
+Added: Ultima/Hues.cs
+Added: Ultima/Light.cs
+Added: Ultima/LocationPointer.cs
+Added: Ultima/Map.cs
+Added: Ultima/MultiMap.cs
+Added: Ultima/Multis.cs
+Added: Ultima/NativeMethods.cs
+Added: Ultima/ProcessStream.cs
+Added: Ultima/RadarCol.cs
+Added: Ultima/SkillGroups.cs
+Added: Ultima/Skills.cs
+Added: Ultima/Sound.cs
+Added: Ultima/SpeechList.cs
+Added: Ultima/StringEntry.cs
+Added: Ultima/StringList.cs
+Added: Ultima/Textures.cs
+Added: Ultima/TileData.cs
+Added: Ultima/TileList.cs
+Added: Ultima/TileMatrix.cs
+Added: Ultima/TileMatrixPatch.cs
+Added: Ultima/Ultima.csproj
+Added: Ultima/UnicodeFont.cs
+Added: Ultima/Verdata.cs
+Added: Ultima/WindowProcessStream.cs
+
+Revision: 080fa7f21b24570da27d6efc4c5bdeac5527d5e7
+Author: Merix <miguelamerida.89@gmail.com>
+Date: 8/11/2020 2:49:15 AM
+Message:
+first commit
+
+----
+Added: README.md
